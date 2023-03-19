@@ -1,0 +1,2 @@
+# PaganiaTGL
+Slavic rpg server

@@ -1,0 +1,17 @@
+positionradios:
+  seaskipper:
+    enable: true
+    world: world
+    x: -761
+    y: 271
+    z: -1959
+    radius: 64 # in this radius will player be able to hear music
+    hologram: example_hologram
+    hologramOP: example_OP_hologram
+    repeat: true # repeat playlist?
+    random: false # choose random next song from playlist?
+    actionbar: false
+    delay: 0 # delay between songs in seconds (float)
+    playlist: seaskip
+    volume: 100
+

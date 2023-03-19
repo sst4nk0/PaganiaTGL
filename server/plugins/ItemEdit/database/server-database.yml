@@ -1,0 +1,646 @@
+currency_copper_coin:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3218
+    type: PHANTOM_MEMBRANE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Мѣдꙗнiк"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"
+        Валюта"}],"text":""}'
+      custom-model-data: 4
+currency_silver_coin:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3218
+    type: PHANTOM_MEMBRANE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Сребрꙗнiк"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"
+        Валюта"}],"text":""}'
+      custom-model-data: 5
+currency_gold_coin:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3218
+    type: PHANTOM_MEMBRANE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"ζлантнiк"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"
+        Валюта"}],"text":""}'
+      custom-model-data: 6
+tool_formulas:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3218
+    type: PHANTOM_MEMBRANE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Формулы
+        счёта"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"
+        Инструмент"}],"text":""}'
+      custom-model-data: 11
+resource_log_oak:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3218
+    type: PHANTOM_MEMBRANE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Дубовое
+        бревно"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"
+        Ресурс"}],"text":""}'
+      custom-model-data: 15
+resource_log_spruce:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3218
+    type: PHANTOM_MEMBRANE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Хвойное
+        бревно"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"
+        Ресурс"}],"text":""}'
+      custom-model-data: 16
+resource_log_birch:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3218
+    type: PHANTOM_MEMBRANE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Берёзовое
+        бревно"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"
+        Ресурс"}],"text":""}'
+      custom-model-data: 17
+tool_axe_iron:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3218
+    type: IRON_AXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Железный
+        топор"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"
+        Инструмент"}],"text":""}'
+      - '{"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        Подходит для добычи:"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        дуба, хвои, березы, акации."}],"text":""}'
+      attribute-modifiers:
+        GENERIC_ATTACK_DAMAGE:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: GENERIC_ATTACK_DAMAGE
+          uuid: 8dc3153d-d19c-4b3e-8e0d-69a4a5438c44
+          operation: 0
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      - HIDE_DYE
+tool_axe_stone:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3218
+    type: STONE_AXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Каменный
+        топор"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"
+        Инструмент"}],"text":""}'
+      - '{"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        Подходит для добычи:"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        дуба, хвои."}],"text":""}'
+      attribute-modifiers:
+        GENERIC_ATTACK_DAMAGE:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: GENERIC_ATTACK_DAMAGE
+          uuid: 5e7d24c6-1673-4a6b-9476-d287b9db48e4
+          operation: 0
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      - HIDE_DYE
+misc_stone_dirty:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3218
+    type: PHANTOM_MEMBRANE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Камень
+        в грязи"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"
+        Прочее"}],"text":""}'
+      custom-model-data: 24
+gps_bank_korosten:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3218
+    type: COMPASS
+    meta:
+      ==: ItemMeta
+      meta-type: COMPASS
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Компас
+        ["},{"italic":false,"color":"gray","text":"банкир Коростня"},{"italic":false,"color":"white","text":"]"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"
+        Инструмент"}],"text":""}'
+      - '{"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        Красная стрелка покажет куда идти."}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        После использования можно выкинуть."}],"text":""}'
+      - '{"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        Координаты:"},{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"
+        x:862 y:58 z:-1377"}],"text":""}'
+      LodestonePosWorld: minecraft:overworld
+      LodestonePosX: 863
+      LodestonePosY: 58
+      LodestonePosZ: -1378
+      LodestoneTracked: false
+gps_storager_korosten:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3218
+    type: COMPASS
+    meta:
+      ==: ItemMeta
+      meta-type: COMPASS
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Компас
+        ["},{"italic":false,"color":"gray","text":"кладовщик Коростня"},{"italic":false,"color":"white","text":"]"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"
+        Инструмент"}],"text":""}'
+      - '{"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        Красная стрелка покажет куда идти."}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        После использования можно выкинуть."}],"text":""}'
+      - '{"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        Координаты:"},{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"
+        x:862 y:58 z:-1377"}],"text":""}'
+      LodestonePosWorld: minecraft:overworld
+      LodestonePosX: 863
+      LodestonePosY: 58
+      LodestonePosZ: -1378
+      LodestoneTracked: false
+gps_looting_forest:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3218
+    type: COMPASS
+    meta:
+      ==: ItemMeta
+      meta-type: COMPASS
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Компас
+        ["},{"italic":false,"color":"gray","text":"лесничество"},{"italic":false,"color":"white","text":"]"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"
+        Инструмент"}],"text":""}'
+      - '{"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        Красная стрелка покажет куда идти."}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        После использования можно выкинуть."}],"text":""}'
+      - '{"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        Координаты:"},{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"
+        x:596 y:41 z:-1586"}],"text":""}'
+      LodestonePosWorld: minecraft:overworld
+      LodestonePosX: 597
+      LodestonePosY: 41
+      LodestonePosZ: -1585
+      LodestoneTracked: false
+gps_selling_forest:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3218
+    type: COMPASS
+    meta:
+      ==: ItemMeta
+      meta-type: COMPASS
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Компас
+        ["},{"italic":false,"color":"gray","text":"купец дерева"},{"italic":false,"color":"white","text":"]"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"
+        Инструмент"}],"text":""}'
+      - '{"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        Красная стрелка покажет куда идти."}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        После использования можно выкинуть."}],"text":""}'
+      - '{"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        Координаты:"},{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"
+        x:395 y:39 z:-1482"}],"text":""}'
+      LodestonePosWorld: minecraft:overworld
+      LodestonePosX: 395
+      LodestonePosY: 39
+      LodestonePosZ: -1482
+      LodestoneTracked: false
+resource_gold:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3218
+    type: PHANTOM_MEMBRANE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Золото"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"
+        Ресурс"}],"text":""}'
+      custom-model-data: 35
+resource_iron:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3218
+    type: PHANTOM_MEMBRANE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Железо"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"
+        Ресурс"}],"text":""}'
+      custom-model-data: 33
+resource_copper:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3218
+    type: PHANTOM_MEMBRANE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Медь"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"
+        Ресурс"}],"text":""}'
+      custom-model-data: 34
+gps_looting_mineshaft:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3218
+    type: COMPASS
+    meta:
+      ==: ItemMeta
+      meta-type: COMPASS
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Компас
+        ["},{"italic":false,"color":"gray","text":"рудник"},{"italic":false,"color":"white","text":"]"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"
+        Инструмент"}],"text":""}'
+      - '{"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        Красная стрелка покажет куда идти."}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        После использования можно выкинуть."}],"text":""}'
+      - '{"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        Координаты:"},{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"
+        x:617 y:-16 z:-1332"}],"text":""}'
+      LodestonePosWorld: minecraft:overworld
+      LodestonePosX: 614
+      LodestonePosY: -16
+      LodestonePosZ: -1334
+      LodestoneTracked: false
+rune_1_1of3:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3218
+    type: PHANTOM_MEMBRANE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Руна
+        ["},{"italic":false,"color":"white","text":"Аζъ"},{"italic":false,"color":"green","text":"]"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"
+        Коллекционное"}],"text":""}'
+      - '{"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        Руна означающая себя, твоё \"я\","}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        является 1 из 3 рун послания №1."}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        Собери все и предложи их волхву."}],"text":""}'
+      - '{"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        Автор:"},{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"
+        Кий"}],"text":""}'
+      custom-model-data: 8
+rune_1_2of3:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3218
+    type: PHANTOM_MEMBRANE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Руна
+        ["},{"italic":false,"color":"white","text":"ѥсмъ"},{"italic":false,"color":"green","text":"]"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"
+        Коллекционное"}],"text":""}'
+      - '{"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        Значение бытия, \"являться\" кем-то,"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        является 2 из 3 рун послания №1."}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        Собери все и предложи их волхву."}],"text":""}'
+      - '{"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        Автор:"},{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"
+        Хорив и Лыбедь"}],"text":""}'
+      custom-model-data: 8
+rune_1_3of3:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3218
+    type: PHANTOM_MEMBRANE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Руна
+        ["},{"italic":false,"color":"white","text":"творiтель сѥ"},{"italic":false,"color":"green","text":"]"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"
+        Коллекционное"}],"text":""}'
+      - '{"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        Означает \"создатель этого\", \"творец\","}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        является 3 из 3 рун послания №1."}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        Собери все и предложи их волхву."}],"text":""}'
+      - '{"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        Автор:"},{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"
+        Щек"}],"text":""}'
+      custom-model-data: 8
+crate_wooden:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3218
+    type: PHANTOM_MEMBRANE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Деревянная
+        шкатулка"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"
+        Удача"}],"text":""}'
+      - '{"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        Может содержать полезные вещи, такие"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        как: руны, ресурсы, валюту."}],"text":""}'
+      - '{"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#54A06F","text":"
+        → ПКМ рукой, чтобы открыть"}],"text":""}'
+      custom-model-data: 36
+      PublicBukkitValues:
+        excellentcrates:crate.id: crate_wooden
+crate_key_common:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3218
+    type: PHANTOM_MEMBRANE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Ключ"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"
+        Инструмент"}],"text":""}'
+      - '{"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        Откроет деревянную шкатулку."}],"text":""}'
+      custom-model-data: 42
+      PublicBukkitValues:
+        excellentcrates:crate_key.id: key_common
+resource_redspice:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3218
+    type: PHANTOM_MEMBRANE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Красная
+        пряность"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"
+        Ресурс"}],"text":""}'
+      - '{"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        "},{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"Уму
+        вообразить сложно, что она таит.."}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        "},{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"..в
+        себе. Её свойства по достоинству оценят.."}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        "},{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"..поселенцы
+        других цивилизаций. А что если у них.."}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        "},{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"..есть
+        свои пряности?..."}],"text":""}'
+      - '{"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        Источник:"},{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"
+        записки сумасшедшего"}],"text":""}'
+      custom-model-data: 26
+tool_pickaxe_stone:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3218
+    type: STONE_PICKAXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Каменная
+        кирка"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"
+        Инструмент"}],"text":""}'
+      - '{"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        Подходит для добычи: меди"}],"text":""}'
+      attribute-modifiers:
+        GENERIC_ATTACK_DAMAGE:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: GENERIC_ATTACK_DAMAGE
+          uuid: 8dc3153d-d19c-4b3e-8e0d-69a4a5438c44
+          operation: 0
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: GENERIC_ATTACK_DAMAGE
+          uuid: 8db7760d-ca6b-4312-99c5-fa6bd34f1edc
+          operation: 0
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      - HIDE_DYE
+tool_pickaxe_iron:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3218
+    type: IRON_PICKAXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Железная
+        кирка"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"
+        Инструмент"}],"text":""}'
+      - '{"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        Подходит для добычи: меди, железа,"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        золота. Немного эффективнее каменной."}],"text":""}'
+      attribute-modifiers:
+        GENERIC_ATTACK_DAMAGE:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: GENERIC_ATTACK_DAMAGE
+          uuid: 8dc3153d-d19c-4b3e-8e0d-69a4a5438c44
+          operation: 0
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: GENERIC_ATTACK_DAMAGE
+          uuid: 894a4450-bbbc-4c8a-b68b-e94619d4b84a
+          operation: 0
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      - HIDE_DYE
+tool_pickaxe_gold:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3218
+    type: GOLDEN_PICKAXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Золотая
+        кирка"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"
+        Инструмент"}],"text":""}'
+      - '{"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        Подходит для добычи: меди, железа,"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        золота, красной пряности. Эффективнее"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        железной. Добывает по два ресура."}],"text":""}'
+      attribute-modifiers:
+        GENERIC_ATTACK_DAMAGE:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: GENERIC_ATTACK_DAMAGE
+          uuid: 8dc3153d-d19c-4b3e-8e0d-69a4a5438c44
+          operation: 0
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: GENERIC_ATTACK_DAMAGE
+          uuid: e6188221-b697-447b-904f-25ff9ece3263
+          operation: 0
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      - HIDE_DYE
+tool_axe_gold:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3218
+    type: GOLDEN_AXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Золотой
+        топор ["},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#C22F42","text":"✦"},{"italic":false,"color":"white","text":"]"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"
+        Инструмент"}],"text":""}'
+      - '{"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#C22F42","text":"
+        ✦ Заговор: "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Аура
+        везения"}],"text":""}'
+      - '{"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D9C57C","text":"
+        Подходит для добычи любого дерева."}],"text":""}'
+      attribute-modifiers:
+        GENERIC_ATTACK_DAMAGE:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: GENERIC_ATTACK_DAMAGE
+          uuid: 4be8a373-3feb-4367-ab08-0e41f93d11b9
+          operation: 0
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      - HIDE_DYE

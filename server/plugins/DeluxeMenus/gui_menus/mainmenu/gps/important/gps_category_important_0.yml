@@ -1,0 +1,34 @@
+size: 54
+menu_title: 'Важные места'
+items:
+#============== . ===============================================
+  'bankkorosten':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:6
+    slot: 0
+    display_name: "&#f8a049&lБанкир"
+    lore:
+      - '&#d9c57cОбмен монет разных типов.'
+      - '&#d9c57cЛокация:&f город Коростень'
+      - '&#d9c57cКоординаты:&f x:862 y:58 z:-1377'
+      - ''
+      - '&#7da4cb → Нажми ЛКМ, чтобы получить компас'
+    left_click_commands: 
+    - '[console] serveritem give gps_bank_korosten 1 %player_name%'    
+    - '[sound] UI_BUTTON_CLICK 0.3 1'
+    - '[close]'
+
+  'storagerkorosten':
+    material: BARREL
+    slot: 2
+    display_name: "&#f8a049&lКладовщик"
+    lore:
+      - '&#d9c57cНадёжный хранитель ваших ценностей.'
+      - '&#d9c57cЛокация:&f город Коростень'
+      - '&#d9c57cКоординаты:&f x:862 y:58 z:-1377'
+      - ''
+      - '&#7da4cb → Нажми ЛКМ, чтобы получить компас'
+    left_click_commands: 
+    - '[console] serveritem give gps_storager_korosten 1 %player_name%'    
+    - '[sound] UI_BUTTON_CLICK 0.3 1'
+    - '[close]'

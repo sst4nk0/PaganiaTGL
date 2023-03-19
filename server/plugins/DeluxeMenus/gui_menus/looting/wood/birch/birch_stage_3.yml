@@ -1,0 +1,78 @@
+size: 54
+menu_title: '§r&f少'
+items:
+############# Interface ####################################################
+  'oaklog':
+    material: birch_log
+    slots:
+    - 42
+    - 28
+    - 50
+    - 27
+    - 8
+    - 21
+    lore:
+    - ''
+    - '&#54a06f → Нажми ПКМ, чтобы рубить'
+    display_name: "&#f8a049&lБерёза"
+    right_click_commands:
+    - '[close]'
+    - '[console] serveritem give resource_log_birch %random_range_1-2% %player_name%'
+    - '[sound] BLOCK_WOOD_BREAK'
+    - '[sound] BLOCK_WOOD_BREAK<delay=5>'
+    - '[sound] BLOCK_WOOD_BREAK<delay=10>'
+  'goldlog':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:29
+    slot: 1
+    lore:
+    - ''
+    - '&#54a06f → Нажми ПКМ, чтобы рубить'
+    display_name: "&#f8a049&lЗолотая берёза"
+    view_requirement:
+      requirements:
+        checker:
+          type: '!has permission'
+          permission: 'wb.lucker.wood'
+        hasaxe:
+            type: string equals
+            input: "%checkitem_inhand:main,namecontains:Золотой топор%"
+            output: "yes"
+    right_click_commands:
+    - '[console] lp user %player_name% permission settemp wb.lucker.wood true 40m'
+    - '[console] serveritem give currency_silver_coin 1 %player_name%'
+    - '[console] serveritem give currency_silver_coin 1 %player_name%<chance=80>'
+    - '[console] serveritem give currency_silver_coin 1 %player_name%<chance=60>'
+    - '[sound] BLOCK_WOOD_BREAK'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=2>'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=6>'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=10>'
+    - '[refresh]'
+  'fakeitem1':
+    material: birch_leaves
+    slots:
+    - 25
+    - 6
+    - 53
+    lore:
+    - ''
+    - '&#54a06f → Нажми ПКМ, чтобы рубить'
+    display_name: "&#f8a049&lЛиства"
+    right_click_commands:
+    - '[close]'
+    - '[sound] ENTITY_ITEM_BREAK 0.7 1'
+    - '[message] &c我 Рубить нужно только дерево!'
+  'fakeitem2':
+    material: white_wool
+    slots:
+    - 36
+    - 3
+    - 15
+    lore:
+    - ''
+    - '&#54a06f → Нажми ПКМ, чтобы рубить'
+    display_name: "&#f8a049&lШерсть"
+    right_click_commands:
+    - '[close]'
+    - '[sound] ENTITY_ITEM_BREAK 0.7 1'
+    - '[message] &c我 Рубить нужно только дерево!'

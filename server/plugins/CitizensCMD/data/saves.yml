@@ -1,0 +1,50 @@
+npc-data:
+  npc-3:
+    cooldown: 0
+    right-click-commands:
+    - '[player] bank_s4fm45jmgks9'
+    left-click-commands: []
+    price: 0
+  npc-4:
+    cooldown: 0
+    right-click-commands:
+    - '[player] storage_lw6ijkks9'
+    left-click-commands: []
+    price: 0
+  npc-5:
+    cooldown: 0
+    right-click-commands:
+    - '[console] dm open merchant_tool_forest %player_name%'
+    left-click-commands: []
+    price: 0
+  npc-6:
+    cooldown: 0
+    right-click-commands:
+    - '[player] dospecialaction2 merchantwood_tkg95mdxa0'
+    left-click-commands: []
+    price: 0
+  npc-8:
+    cooldown: 0
+    right-click-commands:
+    - '[player] dospecialaction2 seakippar_fl6pqa1bcz'
+    left-click-commands: []
+    price: 0
+  npc-9:
+    cooldown: 10
+    right-click-commands:
+    - '[player] dospecialaction2 seakippar_ht3bko421z'
+    left-click-commands: []
+    price: 0
+  npc-10:
+    cooldown: 0
+    right-click-commands:
+    - '[player] dospecialaction2 seakippar_fl6pqa1bcz'
+    left-click-commands: []
+    price: 0
+  npc-11:
+    cooldown: 0
+    right-click-commands:
+    - '[player] dospecialaction2 merchantpickaxe_zxj45gns09'
+    left-click-commands: []
+    price: 0
+

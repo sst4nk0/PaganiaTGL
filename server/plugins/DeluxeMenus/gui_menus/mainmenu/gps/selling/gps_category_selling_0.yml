@@ -1,0 +1,20 @@
+size: 54
+menu_title: 'Места продажи ресурсов'
+items:
+#============== . ===============================================
+  'forest':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:15
+    slot: 0
+    display_name: "&#f8a049&lКупец дерева"
+    lore:
+      - '&#d9c57c Тут можно продать лишние брёвна,'
+      - '&#d9c57c и купить недостающие'
+      - '&#d9c57c Локация:&f пригород Коростня'
+      - '&#d9c57c Координаты:&f x:395 y:39 z:-1481'
+      - ''
+      - '&#7da4cb → Нажми ЛКМ, чтобы получить компас'
+    left_click_commands: 
+    - '[console] serveritem give gps_selling_forest 1 %player_name%'    
+    - '[sound] UI_BUTTON_CLICK 0.3 1'
+    - '[close]'

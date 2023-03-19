@@ -1,0 +1,84 @@
+size: 54
+menu_title: '§r&f少'
+items:
+############# Interface ####################################################
+  'tree_stem':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:14
+    slots:
+    - 31
+    - 40
+    - 49
+    lore:
+    - '&#d9c57c Перед тобой будут появляться..'
+    - '&#d9c57c разные блоки, тебе нужно будет..'
+    - '&#d9c57c кликать ПКМ только по брёвнам.'
+    - ''
+    - '&#54a06f → Нажми ПКМ, чтобы начать рубить'
+    display_name: "&#f8a049&lБерёза"
+    right_click_commands:
+    - '[sound] BLOCK_WOOD_HIT'
+    - '[openguimenu] birch_stage_1'
+    right_click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true
+      requirements:
+        has3axe:
+            type: string equals
+            input: "%checkitem_inhand:main,namecontains:Алмазный топор%"
+            output: "yes"
+            optional: true
+        has2axe:
+            type: string equals
+            input: "%checkitem_inhand:main,namecontains:Золотой топор%"
+            output: "yes"
+            optional: true
+        has1axe:
+            type: string equals
+            input: "%checkitem_inhand:main,namecontains:Железный топор%"
+            output: "yes"
+            optional: true
+      deny_commands:
+            - '[sound] BLOCK_WOOD_HIT'
+            - '[message] &7的 Возьмите в руку подходящий топор, либо приобретите его у лесника.'
+  'tree_leaves':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:19
+    slots:
+    - 3-5
+    - 11-15
+    - 20-24
+    - 29-30
+    - 32-33
+    lore:
+    - '&#d9c57c Перед тобой будут появляться..'
+    - '&#d9c57c разные блоки, тебе нужно будет..'
+    - '&#d9c57c кликать ПКМ только по брёвнам.'
+    - ''
+    - '&#54a06f → Нажми ПКМ, чтобы начать рубить'
+    display_name: "&#f8a049&lБерёза"
+    right_click_commands:
+    - '[sound] BLOCK_WOOD_HIT'
+    - '[openguimenu] birch_stage_1'
+    right_click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true
+      requirements:
+        has3axe:
+            type: string equals
+            input: "%checkitem_inhand:main,namecontains:Алмазный топор%"
+            output: "yes"
+            optional: true
+        has2axe:
+            type: string equals
+            input: "%checkitem_inhand:main,namecontains:Золотой топор%"
+            output: "yes"
+            optional: true
+        has1axe:
+            type: string equals
+            input: "%checkitem_inhand:main,namecontains:Железный топор%"
+            output: "yes"
+            optional: true
+      deny_commands:
+            - '[sound] BLOCK_WOOD_HIT'
+            - '[message] &7的 Возьмите в руку подходящий топор, либо приобретите его у лесника.'

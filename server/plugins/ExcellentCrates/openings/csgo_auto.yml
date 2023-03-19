@@ -1,0 +1,25 @@
+Title: §r&f箱
+Size: 27
+
+Content:
+
+Rewards:
+  main:
+    Start_Action: AUTO
+    Start_Chance: 100.0
+    Start_Delay: 1
+    Roll_Times: 75
+    Roll_Tick_Interval: 1
+    Roll_Slowdown_Every: 10
+    Roll_Slowdown_Ticks: 1
+    Tick_Sound: BLOCK_NOTE_BLOCK_BELL
+    Slots: 17,16,15,14,13,12,11,10,9
+    Slots_Mode: INHERITANCE
+    Win_Slots: '13'
+
+Animations:
+# Sets Inventory Type for the GUI.
+# https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/inventory/InventoryType.html
+Inventory_Type: CHEST
+# Sets whether to use Paper's MiniMessage API for the GUI Title.
+Use_Mini_Message: false

@@ -1,0 +1,373 @@
+open_command: jobaxe_drj766bbp0q
+register_command: false
+size: 54
+menu_title: '§r&f少'
+items:
+############# Interface ####################################################
+  'avatarRound':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:1
+    slots:
+    - 10-12
+    - 19
+    - 21
+    - 28-30
+    display_name: "&2Лесник"
+  'avatarIcon':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:18
+    slot: 20
+    display_name: "&2Лесник"
+  'communicate':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:3
+    slot: 39
+    priority: 0
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'wb.talkpresent.3'
+    display_name: "&#f8a049&lОбщение"
+    lore:
+    - '&#d9c57c&o Аζъ не разумєти тѥй говор!'
+    - '&#d9c57c&o Ступай лєпѥ сечь древо.'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы побеседовать'
+    left_click_commands:
+    - '[refresh]'
+    - '[sound] ENTITY_EVOKER_HURT 1 0.9'
+  'communicateFirst':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:3
+    slot: 39
+    priority: 1
+    display_name: "&#f8a049&lОбщение"
+    lore:
+    - '&#d9c57c&o Красьнъа погода, сего днꙗ, так?'
+    - '&#d9c57c&o Ты прийдшед до мне за дѣлом. так?'
+    - '&#d9c57c&o Аζъ тобє не видал до cѥ, так?'
+    - '&#d9c57c&o Дамъ тобє пжедмѥт красьнъ!'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы побеседовать'
+    left_click_commands:
+    - '[sound] UI_BUTTON_CLICK 0.3 1'
+    - '[console] lp user %player_name% permission set wb.talkpresent.3'
+    - '[console] serveritem give crate_wooden 1 %player_name%'
+    - '[close]'
+############# free stone axe ####################################################
+  '1trade1':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:1
+    slot: 14
+    display_name: "&#f8a049&lПопросить каменный топор"
+    lore:
+    - '&#d9c57c Вам дадут топор в подарок'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[sound] ENTITY_EVOKER_HURT 1 0.9'
+    - '[message] &2Лесник:&a У меня кончились такие топоры, приходи через час.'
+    left_click_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'wb.giftaxe'
+          deny_commands:
+          - '[close]'
+          - '[console] effect give %player_name% minecraft:slowness 5 4 true'
+          - '[sound] ENTITY_EVOKER_HURT 1 0.9'
+          - '[message] &2Лесник:&a Аζъ даду тобє сєкiру, наипростейшу, каменную...'
+          - '[sound] ENTITY_EVOKER_HURT 1 0.9<delay=36>'
+          - '[message] &2Лесник:&a Твоє дьло - рубитъ мале древы, понеже велiкия древы ты ѥжъ не смогешъ.<delay=36>'
+          - '[sound] ENTITY_EVOKER_HURT 1 0.9<delay=77>'
+          - '[message] &2Лесник:&a Аζъ оставилъ лампу подле всех древ, кторы тебе трєба сечь.<delay=77>'
+          - '[console] si give tool_axe_stone 1 %player_name%<delay=79>'
+          - '[console] lp user %player_name% permission settemp wb.giftaxe true 1h<delay=79>'
+          - '[console] lp user %player_name% permission set wb.stoneaxe true'
+  '1trade2':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:7
+    slot: 15
+    display_name: "&#f8a049&lПопросить каменный топор"
+    lore:
+    - '&#d9c57c Вам дадут топор в подарок'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[sound] ENTITY_EVOKER_HURT 1 0.9'
+    - '[message] &2Лесник:&a У меня кончились такие топоры, приходи через час.'
+    left_click_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'wb.giftaxe'
+          deny_commands:
+          - '[close]'
+          - '[console] lp user %player_name% permission settemp wb.giftaxe true 1h'
+          - '[console] effect give %player_name% minecraft:slowness 5 4 true'
+          - '[sound] ENTITY_EVOKER_HURT 1 0.9'
+          - '[message] &2Лесник:&a Аζъ даду тобє сєкiру, наипростейшу, каменную...'
+          - '[sound] ENTITY_EVOKER_HURT 1 0.9<delay=36>'
+          - '[message] &2Лесник:&a Твоє дьло - рубитъ мале древы, понеже велiки ты ѥжъ не смогешъ.<delay=36>'
+          - '[sound] ENTITY_EVOKER_HURT 1 0.9<delay=77>'
+          - '[message] &2Лесник:&a Аζъ оставилъ лампу подле всех древ, кторы тебе трєба сечь.<delay=77>'
+          - '[console] si give tool_axe_stone 1 %player_name%<delay=79>'
+          - '[console] lp user %player_name% permission set wb.stoneaxe true'
+  '1trade3':
+    material: STONE_AXE
+    slot: 16
+    hide_attributes: true
+    display_name: "&#f8a049&lПопросить каменный топор"
+    lore:
+    - '&#d9c57c Вам дадут топор в подарок'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[sound] ENTITY_EVOKER_HURT 1 0.9'
+    - '[message] &2Лесник:&a У мєни кончились такие топоры, приходи через час.'
+    left_click_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'wb.giftaxe'
+          deny_commands:
+          - '[close]'
+          - '[console] lp user %player_name% permission settemp wb.giftaxe true 1h'
+          - '[console] effect give %player_name% minecraft:slowness 5 4 true'
+          - '[sound] ENTITY_EVOKER_HURT 1 0.9'
+          - '[message] &2Лесник:&a Аζъ даду тобє сєкiру, наипростейшу, каменную...'
+          - '[sound] ENTITY_EVOKER_HURT 1 0.9<delay=36>'
+          - '[message] &2Лесник:&a Твоє дьло - рубитъ мале древы, понеже велiки ты ѥжъ не смогешъ.<delay=36>'
+          - '[sound] ENTITY_EVOKER_HURT 1 0.9<delay=77>'
+          - '[message] &2Лесник:&a Аζъ оставилъ лампу подле всех древ, кторы тебе трєба сечь.<delay=77>'
+          - '[console] si give tool_axe_stone 1 %player_name%<delay=79>'
+          - '[console] lp user %player_name% permission set wb.stoneaxe true'
+############# buy iron axe ####################################################
+  '2trade1':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:5
+    slot: 23
+    amount: 47
+    display_name: "&#f8a049&lКупить железный топор"
+    lore:
+    - '&#d9c57c Железный топор лучше чем каменный!'
+    - '&#d9c57c Им можно срубить берёзу и акацию.'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'wb.stoneaxe'
+    left_click_commands:
+    - '[console] purchasepayment %player_name% 47 silver'
+    - '[console] si give tool_axe_iron 1 %player_name%'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+    - '[console] lp user %player_name% permission set wb.ironaxe true'
+    - '[refresh]'
+    left_click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true 
+      deny_commands:
+            - '[sound] UI_BUTTON_CLICK 1 1'
+            - '[message] &c我 У вас нет столько денег!'
+      requirements:
+        hascoins2:
+            type: '>='
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '47'
+            optional: true
+        hascoins3:
+            type: '>'
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '0'  
+            optional: true
+  '2trade2':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:7
+    slot: 24
+    display_name: "&#f8a049&lКупить железный топор"
+    lore:
+    - '&#d9c57c Железный топор лучше чем каменный!'
+    - '&#d9c57c Им можно срубить берёзу и акацию.'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'wb.stoneaxe'
+    left_click_commands:
+    - '[console] purchasepayment %player_name% 47 silver'
+    - '[console] si give tool_axe_iron 1 %player_name%'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+    - '[console] lp user %player_name% permission set wb.ironaxe true'
+    - '[refresh]'
+    left_click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true 
+      deny_commands:
+            - '[sound] UI_BUTTON_CLICK 1 1'
+            - '[message] &c我 У вас нет столько денег!'
+      requirements:
+        hascoins2:
+            type: '>='
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '47'
+            optional: true
+        hascoins3:
+            type: '>'
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '0'  
+            optional: true
+  '2trade3':
+    material: IRON_AXE
+    slot: 25
+    hide_attributes: true
+    display_name: "&#f8a049&lКупить железный топор"
+    lore:
+    - '&#d9c57c Железный топор лучше чем каменный!'
+    - '&#d9c57c Им можно срубить берёзу и акацию.'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'wb.stoneaxe'
+    left_click_commands:
+    - '[console] purchasepayment %player_name% 47 silver'
+    - '[console] si give tool_axe_iron 1 %player_name%'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+    - '[console] lp user %player_name% permission set wb.ironaxe true'
+    - '[refresh]'
+    left_click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true 
+      deny_commands:
+            - '[sound] UI_BUTTON_CLICK 1 1'
+            - '[message] &c我 У вас нет столько денег!'
+      requirements:
+        hascoins2:
+            type: '>='
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '47'
+            optional: true
+        hascoins3:
+            type: '>'
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '0'  
+            optional: true
+############# buy gold axe ####################################################
+  '3trade1':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:6
+    slot: 32
+    amount: 5
+    display_name: "&#f8a049&lКупить золотой топор"
+    lore:
+    - '&#d9c57c Золотой топор может рубить еще больше..'
+    - '&#d9c57c ..видов деревьев. Более того, говорят, что..'
+    - '&#d9c57c ..он имеет магические способности, подаренные..'
+    - '&#d9c57c ..мудрейшими волхвами былых столетий!'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'wb.ironaxe'
+    left_click_commands:
+    - '[console] purchasepayment %player_name% 5 gold'
+    - '[console] si give tool_axe_gold 1 %player_name%'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+    left_click_requirement:      
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '5'  
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 1 1'
+            - '[message] &c我 У вас нет столько денег!'
+  '3trade2':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:7
+    slot: 33
+    display_name: "&#f8a049&lКупить золотой топор"
+    lore:
+    - '&#d9c57c Золотой топор может рубить еще больше..'
+    - '&#d9c57c ..видов деревьев. Более того, говорят, что..'
+    - '&#d9c57c ..он имеет магические способности, подаренные..'
+    - '&#d9c57c ..мудрейшими волхвами былых столетий!'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'wb.ironaxe'
+    left_click_commands:
+    - '[console] purchasepayment %player_name% 5 gold'
+    - '[console] si give tool_axe_gold 1 %player_name%'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+    left_click_requirement:      
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '5'  
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 1 1'
+            - '[message] &c我 У вас нет столько денег!'
+  '3trade3':
+    material: GOLDEN_AXE
+    slot: 34
+    hide_attributes: true
+    display_name: "&#f8a049&lКупить золотой топор"
+    lore:
+    - '&#d9c57c Золотой топор может рубить еще больше..'
+    - '&#d9c57c ..видов деревьев. Более того, говорят, что..'
+    - '&#d9c57c ..он имеет магические способности, подаренные..'
+    - '&#d9c57c ..мудрейшими волхвами былых столетий!'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'wb.ironaxe'
+    left_click_commands:
+    - '[console] purchasepayment %player_name% 5 gold'
+    - '[console] si give tool_axe_gold 1 %player_name%'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+    left_click_requirement:      
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '5'  
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 1 1'
+            - '[message] &c我 У вас нет столько денег!'
+############# Developer Info ####################################################
+  'dev_info_tech':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:23
+    slot: 0
+    priority: 0
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'wb.developer'
+    display_name: "&#f8a049&lТехнические сведения"
+    lore:
+    - '&#d9c57cМенюшка = /DeluxeMenus/gui_menus/npc_basics/merchant_tool_forest.yml'           

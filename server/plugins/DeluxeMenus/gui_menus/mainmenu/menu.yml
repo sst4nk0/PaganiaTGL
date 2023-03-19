@@ -1,0 +1,91 @@
+open_command:
+  - menu
+  - mm
+  - mn
+register_command: true
+size: 54
+menu_title: '§r&f單'
+items:
+############# Donate ####################################################
+  'donate':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:1
+    slots:
+      - 0-2
+      - 9-11
+      - 18-20
+    display_name: "&#f8a049&lДонат"
+    lore:
+      - '&#d9c57c Тут можно приобрести привелегии,'
+      - '&#d9c57c подписки, валюту.'
+      - ''
+      - '&#7da4cb → Нажми ЛКМ, чтобы открыть меню'
+    left_click_commands:
+    - '[sound] UI_BUTTON_CLICK 0.3 1'
+############# Battlepass #################################################### 
+  'battlepass':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:1
+    slots:
+      - 3-5
+      - 12-14
+      - 21-23
+    display_name: "&#f8a049&lБатлпасс: Ep.%javascript_episode% Акт - %javascript_act%"
+    lore:
+      - '&#d9c57c Сезонные задания и награды'
+      - '&#d9c57c Ожидаемая дата окончания акта - %javascript_actend%'
+      - ''
+      - '&#7da4cb → Нажми ЛКМ, чтобы открыть меню'
+    left_click_commands:
+    - '[sound] UI_BUTTON_CLICK 0.3 1'
+############# GPS navigation ####################################################
+  'gps':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:1
+    slots:
+      - 6-8
+      - 15-17
+      - 24-26
+    display_name: "&#f8a049&lНавигация по миру"
+    lore:
+      - '&#d9c57c Твой помощник по поиску нужного места.'
+      - '&#d9c57c Просто выбери пункт назначения и следуй..'
+      - '&#d9c57c ..за стрелкой компаса!'
+      - ''
+      - '&#7da4cb → Нажми ЛКМ, чтобы открыть навигацию'
+    left_click_commands:
+    - '[openguimenu] gps_categories'
+    - '[sound] UI_BUTTON_CLICK 0.3 1'
+############# None1 ####################################################
+  'none1':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:1
+    slots:
+      - 27-29
+      - 36-38
+      - 45-47
+    display_name: "&8&lНедоступно"
+############# None2 ####################################################
+  'none2':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:1
+    slots:
+      - 30-32
+      - 39-41
+      - 48-50
+    display_name: "&8&lНедоступно"
+############# Settings ####################################################
+  'Settings':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:1
+    slots:
+      - 33-35
+      - 42-44
+      - 51-53
+    display_name: "&#f8a049&lНастройки"
+    lore:
+      - '&#d9c57c Статистика, настройки, улучшения.'
+      - ''
+      - '&#7da4cb → Нажми ЛКМ, чтобы открыть меню'
+    left_click_commands:
+    - '[sound] UI_BUTTON_CLICK 0.3 1'

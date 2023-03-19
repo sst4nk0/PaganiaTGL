@@ -1,0 +1,60 @@
+# DeluxeMenus 1.13.7-DEV-156 main configuration file
+#
+# A full wiki on how to use this plugin can be found at:
+# https://wiki.helpch.at/clips-plugins/deluxemenus
+
+debug: false
+check_updates: false
+gui_menus:
+  menu:
+    file: mainmenu/menu.yml
+  gps_categories:
+    file: mainmenu/gps/gps_categories.yml
+  gps_category_important_0:
+    file: mainmenu/gps/important/gps_category_important_0.yml
+  gps_category_looting_0:
+    file: mainmenu/gps/looting/gps_category_looting_0.yml
+  gps_category_selling_0:
+    file: mainmenu/gps/selling/gps_category_selling_0.yml
+  currency_exchange_0:
+    file: npc_basics/currency_exchange_0.yml
+  storage_manager_0:
+    file: npc_basics/storage_manager_0.yml
+  merchant_forest:
+    file: npc_basics/merchant_forest.yml
+  merchant_forest_seller:
+    file: npc_basics/merchant_forest_seller.yml
+  merchant_tool_forest:
+    file: npc_basics/merchant_tool_forest.yml
+  merchant_tool_mineshaft:
+    file: npc_basics/merchant_tool_mineshaft.yml
+  seaskipper:
+    file: npc_basics/seaskipper.yml
+  seaskipper_escape:
+    file: npc_basics/seaskipper_escape.yml
+  job_oak:
+    file: looting/wood/oak/job_oak.yml
+  oak_stage_1:
+    file: looting/wood/oak/oak_stage_1.yml
+  oak_stage_2:
+    file: looting/wood/oak/oak_stage_2.yml
+  oak_stage_3:
+    file: looting/wood/oak/oak_stage_3.yml
+  job_spruce:
+    file: looting/wood/spruce/job_spruce.yml
+  spruce_stage_1:
+    file: looting/wood/spruce/spruce_stage_1.yml
+  spruce_stage_2:
+    file: looting/wood/spruce/spruce_stage_2.yml
+  spruce_stage_3:
+    file: looting/wood/spruce/spruce_stage_3.yml
+  job_birch:
+    file: looting/wood/birch/job_birch.yml
+  birch_stage_1:
+    file: looting/wood/birch/birch_stage_1.yml
+  birch_stage_2:
+    file: looting/wood/birch/birch_stage_2.yml
+  birch_stage_3:
+    file: looting/wood/birch/birch_stage_3.yml
+  apmenu:
+    file: apmenu.yml

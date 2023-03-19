@@ -1,0 +1,375 @@
+# -----------------------------------------------------------------------------------------------------------#
+# 							MyCommand Blocks Database File (last update v5.0.0)								#
+# 																											#
+#  					BukkitDev Help page : http://dev.bukkit.org/server-mods/mycommand/    					#
+
+block:
+  world:
+    x586y38z-1583:
+      launchby: player
+      command:
+      - /dospecialaction oak_ehmyzz2lgq 1
+    x586y39z-1583:
+      launchby: player
+      command:
+      - /dospecialaction oak_ehmyzz2lgq 1
+    x573y40z-1558:
+      launchby: player
+      command:
+      - /dospecialaction oak_ehmyzz2lgq 2
+    x573y41z-1558:
+      launchby: player
+      command:
+      - /dospecialaction oak_ehmyzz2lgq 2
+    x560y46z-1530:
+      launchby: player
+      command:
+      - /dospecialaction oak_ehmyzz2lgq 3
+    x560y45z-1530:
+      launchby: player
+      command:
+      - /dospecialaction oak_ehmyzz2lgq 3
+    x547y47z-1501:
+      launchby: player
+      command:
+      - /dospecialaction oak_ehmyzz2lgq 4
+    x547y46z-1501:
+      launchby: player
+      command:
+      - /dospecialaction oak_ehmyzz2lgq 4
+    x553y39z-1560:
+      launchby: player
+      command:
+      - /dospecialaction spruce_yy974jutou 5
+    x553y40z-1560:
+      launchby: player
+      command:
+      - /dospecialaction spruce_yy974jutou 5
+    x540y40z-1561:
+      launchby: player
+      command:
+      - /dospecialaction spruce_yy974jutou 6
+    x540y41z-1561:
+      launchby: player
+      command:
+      - /dospecialaction spruce_yy974jutou 6
+    x577y43z-1548:
+      launchby: player
+      command:
+      - /dospecialaction spruce_yy974jutou 7
+    x577y42z-1548:
+      launchby: player
+      command:
+      - /dospecialaction spruce_yy974jutou 7
+    x549y44z-1529:
+      launchby: player
+      command:
+      - /dospecialaction spruce_yy974jutou 8
+    x549y45z-1529:
+      launchby: player
+      command:
+      - /dospecialaction spruce_yy974jutou 8
+    x566y44z-1509:
+      launchby: player
+      command:
+      - /dospecialaction spruce_yy974jutou 9
+    x566y45z-1509:
+      launchby: player
+      command:
+      - /dospecialaction spruce_yy974jutou 9
+    x602y39z-1484:
+      launchby: player
+      command:
+      - /dospecialaction birch_t899c168nx 10
+    x602y40z-1484:
+      launchby: player
+      command:
+      - /dospecialaction birch_t899c168nx 10
+    x571y41z-1489:
+      launchby: player
+      command:
+      - /dospecialaction birch_t899c168nx 11
+    x571y42z-1489:
+      launchby: player
+      command:
+      - /dospecialaction birch_t899c168nx 11
+    x616y-19z-1310:
+      launchby: player
+      command:
+      - /dospecialaction3 copper_dl6mghd049 1
+    x615y-19z-1310:
+      launchby: player
+      command:
+      - /dospecialaction3 copper_dl6mghd049 1
+    x615y-19z-1311:
+      launchby: player
+      command:
+      - /dospecialaction3 copper_dl6mghd049 1
+    x614y-19z-1312:
+      launchby: player
+      command:
+      - /dospecialaction3 copper_dl6mghd049 1
+    x614y-19z-1310:
+      launchby: player
+      command:
+      - /dospecialaction3 copper_dl6mghd049 1
+    x613y-18z-1310:
+      launchby: player
+      command:
+      - /dospecialaction3 copper_dl6mghd049 1
+    x613y-18z-1309:
+      launchby: player
+      command:
+      - /dospecialaction3 copper_dl6mghd049 1
+    x612y-17z-1309:
+      launchby: player
+      command:
+      - /dospecialaction3 copper_dl6mghd049 1
+    x612y-18z-1311:
+      launchby: player
+      command:
+      - /dospecialaction3 copper_dl6mghd049 1
+    x611y-17z-1310:
+      launchby: player
+      command:
+      - /dospecialaction3 copper_dl6mghd049 1
+    x611y-16z-1309:
+      launchby: player
+      command:
+      - /dospecialaction3 copper_dl6mghd049 1
+    x613y-17z-1308:
+      launchby: player
+      command:
+      - /dospecialaction3 copper_dl6mghd049 1
+    x644y-24z-1314:
+      launchby: player
+      command:
+      - /dospecialaction3 copper_dl6mghd049 2
+    x645y-24z-1313:
+      launchby: player
+      command:
+      - /dospecialaction3 copper_dl6mghd049 2
+    x645y-23z-1315:
+      launchby: player
+      command:
+      - /dospecialaction3 copper_dl6mghd049 2
+    x646y-23z-1314:
+      launchby: player
+      command:
+      - /dospecialaction3 copper_dl6mghd049 2
+    x647y-23z-1314:
+      launchby: player
+      command:
+      - /dospecialaction3 copper_dl6mghd049 2
+    x648y-22z-1315:
+      launchby: player
+      command:
+      - /dospecialaction3 copper_dl6mghd049 2
+    x648y-23z-1314:
+      launchby: player
+      command:
+      - /dospecialaction3 copper_dl6mghd049 2
+    x647y-22z-1315:
+      launchby: player
+      command:
+      - /dospecialaction3 copper_dl6mghd049 2
+    x646y-24z-1275:
+      launchby: player
+      command:
+      - /dospecialaction3 copper_dl6mghd049 3
+    x645y-24z-1275:
+      launchby: player
+      command:
+      - /dospecialaction3 copper_dl6mghd049 3
+    x644y-23z-1274:
+      launchby: player
+      command:
+      - /dospecialaction3 copper_dl6mghd049 3
+    x644y-23z-1275:
+      launchby: player
+      command:
+      - /dospecialaction3 copper_dl6mghd049 3
+    x643y-22z-1275:
+      launchby: player
+      command:
+      - /dospecialaction3 copper_dl6mghd049 3
+    x644y-21z-1273:
+      launchby: player
+      command:
+      - /dospecialaction3 copper_dl6mghd049 3
+    x630y-16z-1291:
+      launchby: player
+      command:
+      - /dospecialaction3 copper_dl6mghd049 4
+    x630y-17z-1292:
+      launchby: player
+      command:
+      - /dospecialaction3 copper_dl6mghd049 4
+    x630y-18z-1292:
+      launchby: player
+      command:
+      - /dospecialaction3 copper_dl6mghd049 4
+    x629y-18z-1293:
+      launchby: player
+      command:
+      - /dospecialaction3 copper_dl6mghd049 4
+    x622y-8z-1341:
+      launchby: player
+      command:
+      - /dospecialaction3 iron_gh5zdmgk4l 5
+    x622y-7z-1342:
+      launchby: player
+      command:
+      - /dospecialaction3 iron_gh5zdmgk4l 5
+    x623y-7z-1342:
+      launchby: player
+      command:
+      - /dospecialaction3 iron_gh5zdmgk4l 5
+    x624y-7z-1342:
+      launchby: player
+      command:
+      - /dospecialaction3 iron_gh5zdmgk4l 5
+    x623y-7z-1344:
+      launchby: player
+      command:
+      - /dospecialaction3 iron_gh5zdmgk4l 5
+    x622y-6z-1344:
+      launchby: player
+      command:
+      - /dospecialaction3 iron_gh5zdmgk4l 5
+    x649y-25z-1296:
+      launchby: player
+      command:
+      - /dospecialaction3 iron_gh5zdmgk4l 6
+    x650y-25z-1296:
+      launchby: player
+      command:
+      - /dospecialaction3 iron_gh5zdmgk4l 6
+    x650y-26z-1295:
+      launchby: player
+      command:
+      - /dospecialaction3 iron_gh5zdmgk4l 6
+    x651y-26z-1294:
+      launchby: player
+      command:
+      - /dospecialaction3 iron_gh5zdmgk4l 6
+    x661y-14z-1312:
+      launchby: player
+      command:
+      - /dospecialaction3 iron_gh5zdmgk4l 7
+    x661y-15z-1311:
+      launchby: player
+      command:
+      - /dospecialaction3 iron_gh5zdmgk4l 7
+    x660y-14z-1312:
+      launchby: player
+      command:
+      - /dospecialaction3 iron_gh5zdmgk4l 7
+    x662y-16z-1311:
+      launchby: player
+      command:
+      - /dospecialaction3 iron_gh5zdmgk4l 7
+    x661y-23z-1243:
+      launchby: player
+      command:
+      - /dospecialaction3 iron_gh5zdmgk4l 8
+    x661y-24z-1244:
+      launchby: player
+      command:
+      - /dospecialaction3 iron_gh5zdmgk4l 8
+    x661y-24z-1245:
+      launchby: player
+      command:
+      - /dospecialaction3 iron_gh5zdmgk4l 8
+    x661y-25z-1246:
+      launchby: player
+      command:
+      - /dospecialaction3 iron_gh5zdmgk4l 8
+    x662y-25z-1245:
+      launchby: player
+      command:
+      - /dospecialaction3 iron_gh5zdmgk4l 8
+    x659y-23z-1245:
+      launchby: player
+      command:
+      - /dospecialaction3 iron_gh5zdmgk4l 8
+    x662y-17z-1272:
+      launchby: player
+      command:
+      - /dospecialaction3 gold_p1zfvb6jg7 9
+    x662y-17z-1271:
+      launchby: player
+      command:
+      - /dospecialaction3 gold_p1zfvb6jg7 9
+    x662y-16z-1272:
+      launchby: player
+      command:
+      - /dospecialaction3 gold_p1zfvb6jg7 9
+    x652y-13z-1256:
+      launchby: player
+      command:
+      - /dospecialaction3 gold_p1zfvb6jg7 10
+    x651y-12z-1256:
+      launchby: player
+      command:
+      - /dospecialaction3 gold_p1zfvb6jg7 10
+    x651y-13z-1257:
+      launchby: player
+      command:
+      - /dospecialaction3 gold_p1zfvb6jg7 10
+    x650y-13z-1258:
+      launchby: player
+      command:
+      - /dospecialaction3 gold_p1zfvb6jg7 10
+    x620y-5z-1297:
+      launchby: player
+      command:
+      - /dospecialaction4 gold_p1zfvb6jg7 11
+    x619y-5z-1297:
+      launchby: player
+      command:
+      - /dospecialaction4 gold_p1zfvb6jg7 11
+    x619y-4z-1297:
+      launchby: player
+      command:
+      - /dospecialaction4 gold_p1zfvb6jg7 11
+    x618y-4z-1298:
+      launchby: player
+      command:
+      - /dospecialaction4 gold_p1zfvb6jg7 11
+    x618y-3z-1297:
+      launchby: player
+      command:
+      - /dospecialaction4 gold_p1zfvb6jg7 11
+    x684y-20z-1243:
+      launchby: player
+      command:
+      - /dospecialaction3 gold_p1zfvb6jg7 12
+    x685y-19z-1243:
+      launchby: player
+      command:
+      - /dospecialaction3 gold_p1zfvb6jg7 12
+    x685y-20z-1244:
+      launchby: player
+      command:
+      - /dospecialaction3 gold_p1zfvb6jg7 12
+    x666y-13z-1232:
+      launchby: player
+      command:
+      - /dospecialaction3 redspice_6g8bv31kju 13
+    x665y-13z-1233:
+      launchby: player
+      command:
+      - /dospecialaction3 redspice_6g8bv31kju 13
+    x665y-12z-1232:
+      launchby: player
+      command:
+      - /dospecialaction3 redspice_6g8bv31kju 13
+    x664y-12z-1233:
+      launchby: player
+      command:
+      - /dospecialaction3 redspice_6g8bv31kju 13
+    x664y-11z-1232:
+      launchby: player
+      command:
+      - /dospecialaction3 redspice_6g8bv31kju 13

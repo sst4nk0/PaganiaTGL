@@ -1,0 +1,33 @@
+settings:
+  use-map-color-cache: true
+  allow-end: false
+  warn-on-overload: true
+  permissions-file: permissions.yml
+  update-folder: update
+  plugin-profiling: false
+  connection-throttle: 4000
+  query-plugins: false
+  deprecated-verbose: default
+  shutdown-message: The server needs a rest. Check out our social for any updates!  \\  Серверу
+    необходим отдых. Следите за новостями в наших социальных сетях!
+  minimum-api: none
+spawn-limits:
+  axolotls: 0
+  monsters: 20
+  animals: 8
+  water-animals: 3
+  water-ambient: 1
+  water-underground-creature: 3
+  ambient: 0
+chunk-gc:
+  period-in-ticks: 300
+ticks-per:
+  axolotl-spawns: 1
+  animal-spawns: 400
+  monster-spawns: 12
+  water-spawns: 800
+  water-ambient-spawns: 800
+  water-underground-creature-spawns: 400
+  ambient-spawns: 2400
+  autosave: 16000
+aliases: now-in-commands.yml

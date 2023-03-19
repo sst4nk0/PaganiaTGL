@@ -1,0 +1,329 @@
+open_command: jobpickaxe_drg312bb02f
+register_command: false
+size: 54
+menu_title: '§r&f少'
+items:
+############# Interface ####################################################
+  'avatarRound':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:1
+    slots:
+    - 10-12
+    - 19
+    - 21
+    - 28-30
+    display_name: "&2Главный шахтёр"
+  'avatarIcon':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:32
+    slot: 20
+    display_name: "&2Главный шахтёр"
+  'communicate':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:3
+    slot: 39
+    priority: 0
+    display_name: "&#f8a049&lОбщение"
+    lore:
+    - '&#d9c57c&o Моге даяти тобє всꙗкъ црькъі длꙗ раскопки!'
+    - '&#d9c57c&o Або аζъ не разумєти тѥй рече!'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы побеседовать'
+    left_click_commands:
+    - '[refresh]'
+    - '[sound] ENTITY_EVOKER_HURT 1 1'
+############# free stone pickaxe ####################################################
+  '1trade1':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:1
+    slot: 14
+    display_name: "&#f8a049&lПопросить каменную кирку"
+    lore:
+    - '&#d9c57c Вам дадут кирку в подарок'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[sound] ENTITY_EVOKER_HURT 1 1'
+    - '[message] &2Главный шахтёр:&a Нет такой црькъі боле. Будь чрєз час.'
+    left_click_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'wb.giftpickaxe'
+          deny_commands:
+          - '[close]'
+          - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+          - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+          - '[console] si give tool_pickaxe_stone 1 %player_name%'
+          - '[console] lp user %player_name% permission settemp wb.giftpickaxe true 1h<delay=79>'
+          - '[console] lp user %player_name% permission set wb.stonepickaxe true'
+  '1trade2':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:7
+    slot: 15
+    display_name: "&#f8a049&lПопросить каменную кирку"
+    lore:
+    - '&#d9c57c Вам дадут кирку в подарок'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[sound] ENTITY_EVOKER_HURT 1 1'
+    - '[message] &2Главный шахтёр:&a Нет такой црькъі боле. Будь чрєз час.'
+    left_click_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'wb.giftpickaxe'
+          deny_commands:
+          - '[close]'
+          - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+          - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+          - '[console] si give tool_pickaxe_stone 1 %player_name%'
+          - '[console] lp user %player_name% permission settemp wb.giftpickaxe true 1h<delay=79>'
+          - '[console] lp user %player_name% permission set wb.stonepickaxe true'
+  '1trade3':
+    material: STONE_pickaxe
+    slot: 16
+    hide_attributes: true
+    display_name: "&#f8a049&lПопросить каменную кирку"
+    lore:
+    - '&#d9c57c Вам дадут кирку в подарок'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[sound] ENTITY_EVOKER_HURT 1 1'
+    - '[message] &2Главный шахтёр:&a Нет такой црькъі боле. Будь чрєз час.'
+    left_click_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'wb.giftpickaxe'
+          deny_commands:
+          - '[close]'
+          - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+          - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+          - '[console] si give tool_pickaxe_stone 1 %player_name%'
+          - '[console] lp user %player_name% permission settemp wb.giftpickaxe true 1h<delay=79>'
+          - '[console] lp user %player_name% permission set wb.stonepickaxe true'
+############# buy iron pickaxe ####################################################
+  '2trade1':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:5
+    slot: 23
+    amount: 47
+    display_name: "&#f8a049&lКупить железную кирку"
+    lore:
+    - '&#d9c57c Железной киркой можно добыть не только медь!'
+    - '&#d9c57c А еще золото и железо.'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'wb.stonepickaxe'
+    left_click_commands:
+    - '[console] purchasepayment %player_name% 47 silver'
+    - '[console] si give tool_pickaxe_iron 1 %player_name%'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+    - '[console] lp user %player_name% permission set wb.ironpickaxe true'
+    - '[refresh]'
+    left_click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true 
+      deny_commands:
+            - '[sound] UI_BUTTON_CLICK 1 1'
+            - '[message] &c我 У вас нет столько денег!'
+      requirements:
+        hascoins2:
+            type: '>='
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '47'
+            optional: true
+        hascoins3:
+            type: '>'
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '0'  
+            optional: true
+  '2trade2':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:7
+    slot: 24
+    display_name: "&#f8a049&lКупить железную кирку"
+    lore:
+    - '&#d9c57c Железной киркой можно добыть не только медь!'
+    - '&#d9c57c А еще золото и железо.'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'wb.stonepickaxe'
+    left_click_commands:
+    - '[console] purchasepayment %player_name% 47 silver'
+    - '[console] si give tool_pickaxe_iron 1 %player_name%'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+    - '[console] lp user %player_name% permission set wb.ironpickaxe true'
+    - '[refresh]'
+    left_click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true 
+      deny_commands:
+            - '[sound] UI_BUTTON_CLICK 1 1'
+            - '[message] &c我 У вас нет столько денег!'
+      requirements:
+        hascoins2:
+            type: '>='
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '47'
+            optional: true
+        hascoins3:
+            type: '>'
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '0'  
+            optional: true
+  '2trade3':
+    material: IRON_pickaxe
+    slot: 25
+    hide_attributes: true
+    display_name: "&#f8a049&lКупить железную кирку"
+    lore:
+    - '&#d9c57c Железной киркой можно добыть не только медь!'
+    - '&#d9c57c А еще золото и железо.'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'wb.stonepickaxe'
+    left_click_commands:
+    - '[console] purchasepayment %player_name% 47 silver'
+    - '[console] si give tool_pickaxe_iron 1 %player_name%'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+    - '[console] lp user %player_name% permission set wb.ironpickaxe true'
+    - '[refresh]'
+    left_click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true 
+      deny_commands:
+            - '[sound] UI_BUTTON_CLICK 1 1'
+            - '[message] &c我 У вас нет столько денег!'
+      requirements:
+        hascoins2:
+            type: '>='
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '47'
+            optional: true
+        hascoins3:
+            type: '>'
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '0'  
+            optional: true
+############# buy gold pickaxe ####################################################
+  '3trade1':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:6
+    slot: 32
+    amount: 5
+    display_name: "&#f8a049&lКупить золотую кирку"
+    lore:
+    - '&#d9c57c Золотая кирка совершенна. Почти...'
+    - '&#d9c57c Ей можно добыть редчайшую красную пряность.'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'wb.ironpickaxe'
+    left_click_commands:
+    - '[console] purchasepayment %player_name% 5 gold'
+    - '[console] si give tool_pickaxe_gold 1 %player_name%'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+    left_click_requirement:      
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '5'  
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 1 1'
+            - '[message] &c我 У вас нет столько денег!'
+  '3trade2':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:7
+    slot: 33
+    display_name: "&#f8a049&lКупить золотую кирку"
+    lore:
+    - '&#d9c57c Золотая кирка совершенна. Почти...'
+    - '&#d9c57c Ей можно добыть редчайшую красную пряность.'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'wb.ironpickaxe'
+    left_click_commands:
+    - '[console] purchasepayment %player_name% 5 gold'
+    - '[console] si give tool_pickaxe_gold 1 %player_name%'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+    left_click_requirement:      
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '5'  
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 1 1'
+            - '[message] &c我 У вас нет столько денег!'
+  '3trade3':
+    material: GOLDEN_pickaxe
+    slot: 34
+    hide_attributes: true
+    display_name: "&#f8a049&lКупить золотую кирку"
+    lore:
+    - '&#d9c57c Золотая кирка совершенна. Почти...'
+    - '&#d9c57c Ей можно добыть редчайшую красную пряность.'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'wb.ironpickaxe'
+    left_click_commands:
+    - '[console] purchasepayment %player_name% 5 gold'
+    - '[console] si give tool_pickaxe_gold 1 %player_name%'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+    left_click_requirement:      
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '5'  
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 1 1'
+            - '[message] &c我 У вас нет столько денег!'
+############# Developer Info ####################################################
+  'dev_info_tech':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:23
+    slot: 0
+    priority: 0
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'wb.developer'
+    display_name: "&#f8a049&lТехнические сведения"
+    lore:
+    - '&#d9c57cМенюшка = /DeluxeMenus/gui_menus/npc_basics/merchant_tool_mineshaft.yml'           

@@ -1,0 +1,209 @@
+Name: '&aДеревянная шкатулка'
+Permission_Required: false
+Attached_Citizens: ''
+Opening:
+  Cooldown: 0
+  Cost:
+    MONEY: 0.0
+    EXP: 0.0
+Key:
+  Ids:
+  - key_common
+Block:
+  Locations: []
+  Pushback:
+    Enabled: true
+  Hologram:
+    Enabled: false
+    Offset:
+      Y: 1.5
+    Text:
+    - '&c&l&bCRATE_WOODEN CRATE'
+    - '&7Buy a key at &cwww.myserver.com'
+  Effect:
+    Model: HELIX
+    Particle:
+      Name: FLAME
+      Data: ''
+Animation_Config: csgo_auto
+Rewards:
+  List:
+    мѣдꙗнiк:
+      Name: '&aМѣдꙗнiк'
+      Chance: 54.0
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: 5000080016ip0039mmirj5cdp62pjk79o6gobeehnmqnrdclmm4sj1dpigk003ehgme2g00ti6isrgdhgni2000h762rb502bnm8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh6it31dhkm68hqcpgmosr55gh7arj4clp6oqbecli24ej6c5m76p9c49pn8sj9ddin8q3idtqmeq1279j62r3jckm24rr2cpqn6or1ehim88hqcpgmosr55gh66rrcdtp24eh2ctp6apbe48m24t35f1q24eh2q2ed38ugmjl9j5ugnlkt1eh2fleio8jkcls788hq48h7q2800h66usj51000000102d7m8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh6it31dhkm68hqcpgmosr55gh7arj4clp6oqbecli24ej6c5m76p9c49pn8sj9ddin8q3idtqmeq1279j62r3jckm24rr2cpqn6or1ehim88hqcpgmosr55gh66rrcdtp24eh2chgn4qqvctp62u925gh78pboegh3k8h0q29d1c6gnf8otkc2q2o24vat5gh78pboegh3k8h2fk00600f8dqn6t3fdl6mup35dh262t31000001000400agrfeln780g0
+      Commands:
+      - '[CONSOLE] si give currency_copper_coin 2 %player_name%'
+      Items: []
+      Ignored_For_Permissions: []
+    мѣдꙗнiк1:
+      Name: '&aМѣдꙗнiк'
+      Chance: 48.0
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: 5000080016ip0039mmirj5cdp62pjk79o6gobeehnmqnrdclmm4sj1dpigk003ehgme2g00ti6isrgdhgni2000h762rb502bnm8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh6it31dhkm68hqcpgmosr55gh7arj4clp6oqbecli24ej6c5m76p9c49pn8sj9ddin8q3idtqmeq1279j62r3jckm24rr2cpqn6or1ehim88hqcpgmosr55gh66rrcdtp24eh2ctp6apbe48m24t35f1q24eh2q2ed38ugmjl9j5ugnlkt1eh2fleio8jkcls788hq48h7q2800h66usj51000000102d7m8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh6it31dhkm68hqcpgmosr55gh7arj4clp6oqbecli24ej6c5m76p9c49pn8sj9ddin8q3idtqmeq1279j62r3jckm24rr2cpqn6or1ehim88hqcpgmosr55gh66rrcdtp24eh2chgn4qqvctp62u925gh78pboegh3k8h0q29d1c6gnf8otkc2q2o24vat5gh78pboegh3k8h2fk00600f8dqn6t3fdl6mup35dh262t31000001000400agrfeln781g0
+      Commands:
+      - '[CONSOLE] si give currency_copper_coin 6 %player_name%'
+      Items: []
+      Ignored_For_Permissions: []
+    мѣдꙗнiк2:
+      Name: '&aМѣдꙗнiк'
+      Chance: 56.0
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: 5000080016ip0039mmirj5cdp62pjk79o6gobeehnmqnrdclmm4sj1dpigk003ehgme2g00ti6isrgdhgni2000h762rb502bnm8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh6it31dhkm68hqcpgmosr55gh7arj4clp6oqbecli24ej6c5m76p9c49pn8sj9ddin8q3idtqmeq1279j62r3jckm24rr2cpqn6or1ehim88hqcpgmosr55gh66rrcdtp24eh2ctp6apbe48m24t35f1q24eh2q2ed38ugmjl9j5ugnlkt1eh2fleio8jkcls788hq48h7q2800h66usj51000000102d7m8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh6it31dhkm68hqcpgmosr55gh7arj4clp6oqbecli24ej6c5m76p9c49pn8sj9ddin8q3idtqmeq1279j62r3jckm24rr2cpqn6or1ehim88hqcpgmosr55gh66rrcdtp24eh2chgn4qqvctp62u925gh78pboegh3k8h0q29d1c6gnf8otkc2q2o24vat5gh78pboegh3k8h2fk00600f8dqn6t3fdl6mup35dh262t31000001000400agrfeln78080
+      Commands:
+      - '[CONSOLE] si give currency_copper_coin 1 %player_name%'
+      Items: []
+      Ignored_For_Permissions: []
+    мѣдꙗнiк3:
+      Name: '&aМѣдꙗнiк'
+      Chance: 50.0
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: 5000080016ip0039mmirj5cdp62pjk79o6gobeehnmqnrdclmm4sj1dpigk003ehgme2g00ti6isrgdhgni2000h762rb502bnm8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh6it31dhkm68hqcpgmosr55gh7arj4clp6oqbecli24ej6c5m76p9c49pn8sj9ddin8q3idtqmeq1279j62r3jckm24rr2cpqn6or1ehim88hqcpgmosr55gh66rrcdtp24eh2ctp6apbe48m24t35f1q24eh2q2ed38ugmjl9j5ugnlkt1eh2fleio8jkcls788hq48h7q2800h66usj51000000102d7m8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh6it31dhkm68hqcpgmosr55gh7arj4clp6oqbecli24ej6c5m76p9c49pn8sj9ddin8q3idtqmeq1279j62r3jckm24rr2cpqn6or1ehim88hqcpgmosr55gh66rrcdtp24eh2chgn4qqvctp62u925gh78pboegh3k8h0q29d1c6gnf8otkc2q2o24vat5gh78pboegh3k8h2fk00600f8dqn6t3fdl6mup35dh262t31000001000400agrfeln78100
+      Commands:
+      - '[CONSOLE] si give currency_copper_coin 4 %player_name%'
+      Items: []
+      Ignored_For_Permissions: []
+    сребрꙗнiк:
+      Name: '&aСребрꙗнiк'
+      Chance: 4.0
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: k00010004qb400d6qqbeclhn4ob6egt70q31dpq6uravdlimqojic5n6a2g00dq62poa003m8qbje1m62u880024sobdck09mup2cls78sj148t5mup2c9nmop1279j62r3jckm24qbkc5m6iop279j62r3jckm24tbechin4r39dpim88hqcpgmosr55gh76t3id5lmat38e9nnapr848t6cobcediio8jfc9j7asr3c5q6ap1279j62r3jckm24orfdhnn48hq49jn4pb5doh2o8jkcls788hq4b8a3kc0q2qt1cehg3l9j5ugnlkt1eh2fleio8jkcls788hq48h7q2800h66usj51000000102d7m8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh6it31dhkm68hqcpgmosr55gh7arj4clp6oqbecli24ej6c5m76p9c49pn8sj9ddin8q3idtqmeq1279j62r3jckm24rr2cpqn6or1ehim88hqcpgmosr55gh66rrcdtp24eh2chgn4qqvctp62u925gh78pboegh3k8h0q29d1c6gnf8otkc2q2o24vat5gh78pboegh3k8h2fk00600f8dqn6t3fdl6mup35dh262t31000001800400agrfeln78080
+      Commands:
+      - '[CONSOLE] si give currency_silver_coin 1 %player_name%'
+      Items: []
+      Ignored_For_Permissions: []
+    руна_[аζъ]:
+      Name: '&aРуна [&fАζъ&a]'
+      Chance: 5.0
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: k00010004qb400d6qqbeclhn4ob6egt70q31dpq6uravdlimqojic5n6a2g00dq62poa003m8qbje1m62u880024sobdck0f0up2cls78sj148t5mup2c9nmop1279j62r3jckm24qbkc5m6iop279j62r3jckm24tbechin4r39dpim88hqcpgmosr55gh76t3id5lmat38e9nnapr848t6cobcediio8jfc9j7asr3c5q6ap1279j62r3jckm24orfdhnn48hq49jn4pb5doh2o8jkcls788hq4b8a1kc3q2ut1c10bch7qb3r49kn8obcd5hi4ej6c5m76p9c49hmur3fe8h3k8jnd1kn8p925gh78pboegh3k8mgi37bdkca49uioup2d5q62r39cch3kpj1dhpmab12cdnmorri48t24priclims8hc49q6au3k48t24n92fleio8jkcls788hq48h7q2800h66usj51000000702k7m8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh6it31dhkm68hqcpgmosr55gh7arj4clp6oqbecli24ej6c5m76p9c49pn8sj9ddin8q3idtqmeq1279j62r3jckm24rr2cpqn6or1ehim88hqcpgmosr55gh66rrcdtp24eh2chgn4qqvctp62u925gh78pboegh3k8h0q2dd1fmgnf8bnk5lq2td31mgn38btk5tq2ut1fmgmkh7qn9c49q6au3k48t248jt005nm8jkcls788hq48h7q064fch6au3ke9gi4eirfch64rrccgh3kpj1dhpmab12d5q62r39cch3kpj1dhpmab12eln68pbidhkmspb448t6cobcediio8jjehp6iqr5ehk74rrlctk24ej6c5m76p9c49nm4pjledhm2t35cgh3kpj1dhpmab12cdnmorri48t248q4751jadq348m24t35f1q24eh2438a1kc3q2ut1c10q2vd1dugnn8b1kc7q2od33mhh78b1kcf438o3k5lq2ot33pc438o5k5iq2vd3490bghd33qs48m24vat5gh78pboegh3k8h2fk0c6up2cls78sj148t5mup2c9nmop1279j62r3jckm24qbkc5m6iop279j62r3jckm24tbechin4r39dpim88hqcpgmosr55gh76t3id5lmat38e9nnapr848t6cobcediio8jfc9j7asr3c5q6ap1279j62r3jckm24orfdhnn48hq48hk8ea36krk68hc49q6au3k48t2486hhv8b5k5rq67t1dehgb8o3kcf40oi1k5oq2ri0cp0q60d30ugnkgd1fugnr8o3k5rq2od1fegn38ou872gib32bh2fleio8jkcls788hq48h7q066fch6au3ke9gi4eirfch64rrccgh3kpj1dhpmab12d5q62r39cch3kpj1dhpmab12eln68pbidhkmspb448t6cobcediio8jjehp6iqr5ehk74rrlctk24ej6c5m76p9c49nm4pjledhm2t35cgh3kpj1dhpmab12cdnmorri48t248q4751jadq348m24t35f1q24eh2438a3k5uq2ot1dehg38bg86gmb8o3k5l438bg86gnv8o1k5lq2qd1eugnr8bdk5o438bhkc5438b5k5uq2tt31egmb8o6bh2fleio8jkcls788hq48h7q00bfch78pboegh3k8h2fk0h2up2cls78sj148t5mup2c9nmop1279j62r3jckm24qbkc5m6iop279j62r3jckm24tbechin4r39dpim88hqcpgmosr55gh76t3id5lmat38e9nnapr848t6cobcediio8jfc9j7asr3c5q6ap1279j62r3jckm24orfdhnn48hq48hk8ea36krk68hc49q6au3k48t2486gi38b5kc2q2vd301q49uioup2c9nmop1279j62r3jckm24qbkc5m6iop279q74tb55gh7arj4clp6oqbecli24ej6c5m76p9c49pn8sj9ddin8q3idtqmeq1279j62r3jckm24rr2cpqn6or1ehim88hqcpgmosr55gh66rrcdtp24eh2etk6it3548m24t35f1q24eh24389lk5oq2si4vat5gh78pboegh3k8h2fk00600f8dqn6t3fdl6mup35dh262t31000002000400agrfeln78080
+      Commands:
+      - '[CONSOLE] si give rune_1_1of3 1 %player_name%'
+      Items: []
+      Ignored_For_Permissions: []
+    руна_[ѥсмъ]:
+      Name: '&aРуна [&fѥсмъ&a]'
+      Chance: 5.0
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: a0000g002d5i006jdd5n6aoric5j78ejgd1gmst3fdlfmqpbdc9p62rj518006t31cs5001r4d5pn0r31f440012ec5mma07ifch6au3ke9gi4eirfch64rrccgh3kpj1dhpmab12d5q62r39cch3kpj1dhpmab12eln68pbidhkmspb448t6cobcediio8jjehp6iqr5ehk74rrlctk24ej6c5m76p9c49nm4pjledhm2t35cgh3kpj1dhpmab12cdnmorri48t24priclims8hc49q6au3k48t25k50q61t1fegm0g5m8jt5hti4qbkc5m6iop279j62r3jckm24orfdhnn48hq49rmgqbkckh2o8jkcls788hq4b8qbkc1q2ud32h2fkm7m8j9ehgmoqb348t6cobcediio8j3dtm6ush278h6esj5cln24b12ehingt1278h5q8jtbkm24t35f1q24eh249ugi0049hnn4p88000001o0l1ti4pboehp628hqbdti4ojfdhi24ej6c5m76p9c49kn8obcd5hi4ej6c5m76p9c49qmsp35e9m6irj5cgh3kpj1dhpmab12edq74qbbclq6gsjfeljmg8hqcpgmosr55gh6uoj6elpm6obkcli24ej6c5m76p9c49hmur3fe8h3k8j4c5p6mnr7e9gni8hc49q6au3k48t2486gjb8btk5rq2tt1degnb8odk5oq2vd1fegnn8btk5l49ulqb12ehingt1278h24v801dti4t35f1q24eh249ug1ijr49ingt3ic4h3kmrr49h6ur3448t6cobcediio8j9ehgmoqb348t6cobcediio8jldpi6asjcd5n6ap1279j62r3jckm24srke9kmmpbkd1p6utb7d0h3kpj1dhpmab12dth6ctbjcdgn8pb448t6cobcediio8j3dtm6ush278h26h1p8cqjegp25gh78pboegh3k8h0q2bt1fegm38ofk5lq2ut1e6gmkgd1cehhf8o5k5oq67io82s4b8ovk5iq2tt33uhgb8opkc1q67lo8h0q2td1degngmt30mgnom24vat5gh78pboegh3k8h2fk0c6up2cls78sj148t5mup2c9nmop1279j62r3jckm24qbkc5m6iop279j62r3jckm24tbechin4r39dpim88hqcpgmosr55gh76t3id5lmat38e9nnapr848t6cobcediio8jfc9j7asr3c5q6ap1279j62r3jckm24orfdhnn48hq48hk8ea36krk68hc49q6au3k48t2486hhv8b5k5rq67t1dehgb8o3kcf40p21k5oq2ri0cp0q60d30ugnkgd1fugnr8o3k5rq2od1fegn38ou872gib32bh2fleio8jkcls788hq48h7q066fch6au3ke9gi4eirfch64rrccgh3kpj1dhpmab12d5q62r39cch3kpj1dhpmab12eln68pbidhkmspb448t6cobcediio8jjehp6iqr5ehk74rrlctk24ej6c5m76p9c49nm4pjledhm2t35cgh3kpj1dhpmab12cdnmorri48t248q4751jadq348m24t35f1q24eh2438a3k5uq2ot1dehg38bg86gmb8o3k5l438bg86gnv8o1k5lq2qd1eugnr8bdk5o438bhkc5438b5k5uq2tt31egmb8o6bh2fleio8jkcls788hq48h7q00bfch78pboegh3k8h2fk0iaup2cls78sj148t5mup2c9nmop1279j62r3jckm24qbkc5m6iop279j62r3jckm24tbechin4r39dpim88hqcpgmosr55gh76t3id5lmat38e9nnapr848t6cobcediio8jfc9j7asr3c5q6ap1279j62r3jckm24orfdhnn48hq48hk8ea36krk68hc49q6au3k48t2486gi38b5kc2q2vd301q49uioup2c9nmop1279j62r3jckm24qbkc5m6iop279q74tb55gh7arj4clp6oqbecli24ej6c5m76p9c49pn8sj9ddin8q3idtqmeq1279j62r3jckm24rr2cpqn6or1ehim88hqcpgmosr55gh66rrcdtp24eh2etk6it3548m24t35f1q24eh2438abk5uq60d1e6gm8gd1e10q2dt32ugm78bbk5kq6624vat5gh78pboegh3k8h2fk00600f8dqn6t3fdl6mup35dh262t31000002000400agrfeln78080
+      Commands:
+      - '[CONSOLE] si give rune_1_2of3 1 %player_name%'
+      Items: []
+      Ignored_For_Permissions: []
+    руна_[творiтель_сѥ]:
+      Name: '&aРуна [&fтворiтель сѥ&a]'
+      Chance: 5.0
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: 2g0004000j9cg01krb9dpim6sj1cpq3ks38c5n78rrdbtmmarb2e9gmsp8a001n8ob71800ep39edo6oobp10008jj1dlig203r49ingt3ic4h3kmrr49h6ur3448t6cobcediio8j9ehgmoqb348t6cobcediio8jldpi6asjcd5n6ap1279j62r3jckm24srke9kmmpbkd1p6utb7d0h3kpj1dhpmab12dth6ctbjcdgn8pb448t6cobcediio8j3dtm6ush278h6esj5cln24b12ehingt1278hd186hgf8brk5g41di4v9cfch6it31dhkm68hqcpgmosr55gh66rrcdtp24eh2etk6it3548m24t35f1q24eh2q61d1cmgnr8o0qehgb8bbk5rq6621kc1q6ii4v9cfch6it31dhkm68hqcpgmosr55gh66rrcdtp24eh2ctp6apbe48m24t35f1q24eh2bkh7qn9c49q6au3k48t248jt14008j3fe9igg000003g1a3r49ingt3ic4h3kmrr49h6ur3448t6cobcediio8j9ehgmoqb348t6cobcediio8jldpi6asjcd5n6ap1279j62r3jckm24srke9kmmpbkd1p6utb7d0h3kpj1dhpmab12dth6ctbjcdgn8pb448t6cobcediio8j3dtm6ush278h68obiddfmesj1f4h2o8jkcls788hq48gd16mgnr8bnk5rq2qt1emhgr8bhk5uq2ut1fegnr8ba8jtbkm24t35f1q24eh249ug02rr49q6au3k48t248jt038nm8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh6it31dhkm68hqcpgmosr55gh7arj4clp6oqbecli24ej6c5m76p9c49pn8sj9ddin8q3idtqmeq1279j62r3jckm24rr2cpqn6or1ehim88hqcpgmosr55gh66rrcdtp24eh24d23igpl6t1i4b12ehingt1278h21k4uq2rt1fegm38ofk5gq2qt30h0bghd30egnr8bfk5kq2od30mgmn8bnkcc438orkc2q2vd1cugnpe24b10bghd30mgmb8btkc0q2qt31is48m24vat5gh78pboegh3k8h2fk0c6up2cls78sj148t5mup2c9nmop1279j62r3jckm24qbkc5m6iop279j62r3jckm24tbechin4r39dpim88hqcpgmosr55gh76t3id5lmat38e9nnapr848t6cobcediio8jfc9j7asr3c5q6ap1279j62r3jckm24orfdhnn48hq48hk8ea36krk68hc49q6au3k48t2486hhv8b5k5rq67t1dehgb8o3kcf40pi1k5oq2ri0cp0q60d30ugnkgd1fugnr8o3k5rq2od1fegn38ou872gib32bh2fleio8jkcls788hq48h7q066fch6au3ke9gi4eirfch64rrccgh3kpj1dhpmab12d5q62r39cch3kpj1dhpmab12eln68pbidhkmspb448t6cobcediio8jjehp6iqr5ehk74rrlctk24ej6c5m76p9c49nm4pjledhm2t35cgh3kpj1dhpmab12cdnmorri48t248q4751jadq348m24t35f1q24eh2438a3k5uq2ot1dehg38bg86gmb8o3k5l438bg86gnv8o1k5lq2qd1eugnr8bdk5o438bhkc5438b5k5uq2tt31egmb8o6bh2fleio8jkcls788hq48h7q00bfch78pboegh3k8h2fk0h2up2cls78sj148t5mup2c9nmop1279j62r3jckm24qbkc5m6iop279j62r3jckm24tbechin4r39dpim88hqcpgmosr55gh76t3id5lmat38e9nnapr848t6cobcediio8jfc9j7asr3c5q6ap1279j62r3jckm24orfdhnn48hq48hk8ea36krk68hc49q6au3k48t2486gi38b5kc2q2vd301q49uioup2c9nmop1279j62r3jckm24qbkc5m6iop279q74tb55gh7arj4clp6oqbecli24ej6c5m76p9c49pn8sj9ddin8q3idtqmeq1279j62r3jckm24rr2cpqn6or1ehim88hqcpgmosr55gh66rrcdtp24eh2etk6it3548m24t35f1q24eh2438ajk5lq2t24vat5gh78pboegh3k8h2fk00600f8dqn6t3fdl6mup35dh262t31000002000400agrfeln78080
+      Commands:
+      - '[CONSOLE] si give rune_1_3of3 1 %player_name%'
+      Items: []
+      Ignored_For_Permissions: []
+    дубовое_бревно:
+      Name: '&7Дубовое бревно'
+      Chance: 45.0
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: a0000g002d5i006jdd5n6aoric5j78ejgd1gmst3fdlfmqpbdc9p62rj518006t31cs5001r4d5pn0r31f440012ec5mma053fch6au3ke9gi4eirfch64rrccgh3kpj1dhpmab12d5q62r39cch3kpj1dhpmab12eln68pbidhkmspb448t6cobcediio8jjehp6iqr5ehk74rrlctk24ej6c5m76p9c49nm4pjledhm2t35cgh3kpj1dhpmab12cdnmorri48t24pric5si4b12ehingt1278hd156hgf8b3k5uq2pd1fmgmkgd1cehg38bbk5iq2ut1fh2fleio8jkcls788hq48h7q2800h66usj51000000102d7m8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh6it31dhkm68hqcpgmosr55gh7arj4clp6oqbecli24ej6c5m76p9c49pn8sj9ddin8q3idtqmeq1279j62r3jckm24rr2cpqn6or1ehim88hqcpgmosr55gh66rrcdtp24eh2chgn4qqvctp62u925gh78pboegh3k8h0q2gd1dehg78o7kc0q60i4vat5gh78pboegh3k8h2fk00600f8dqn6t3fdl6mup35dh262t31000003o00400agrfeln780g0
+      Commands:
+      - '[CONSOLE] si give resource_log_oak 2 %player_name%'
+      Items: []
+      Ignored_For_Permissions: []
+    дубовое_бревно1:
+      Name: '&7Дубовое бревно'
+      Chance: 42.0
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: a0000g002d5i006jdd5n6aoric5j78ejgd1gmst3fdlfmqpbdc9p62rj518006t31cs5001r4d5pn0r31f440012ec5mma053fch6au3ke9gi4eirfch64rrccgh3kpj1dhpmab12d5q62r39cch3kpj1dhpmab12eln68pbidhkmspb448t6cobcediio8jjehp6iqr5ehk74rrlctk24ej6c5m76p9c49nm4pjledhm2t35cgh3kpj1dhpmab12cdnmorri48t24pric5si4b12ehingt1278hd156hgf8b3k5uq2pd1fmgmkgd1cehg38bbk5iq2ut1fh2fleio8jkcls788hq48h7q2800h66usj51000000102d7m8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh6it31dhkm68hqcpgmosr55gh7arj4clp6oqbecli24ej6c5m76p9c49pn8sj9ddin8q3idtqmeq1279j62r3jckm24rr2cpqn6or1ehim88hqcpgmosr55gh66rrcdtp24eh2chgn4qqvctp62u925gh78pboegh3k8h0q2gd1dehg78o7kc0q60i4vat5gh78pboegh3k8h2fk00600f8dqn6t3fdl6mup35dh262t31000003o00400agrfeln780o0
+      Commands:
+      - '[CONSOLE] si give resource_log_oak 3 %player_name%'
+      Items: []
+      Ignored_For_Permissions: []
+    хвойное_бревно:
+      Name: '&7Хвойное бревно'
+      Chance: 44.0
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: a0000g002d5i006jdd5n6aoric5j78ejgd1gmst3fdlfmqpbdc9p62rj518006t31cs5001r4d5pn0r31f440012ec5mma053fch6au3ke9gi4eirfch64rrccgh3kpj1dhpmab12d5q62r39cch3kpj1dhpmab12eln68pbidhkmspb448t6cobcediio8jjehp6iqr5ehk74rrlctk24ej6c5m76p9c49nm4pjledhm2t35cgh3kpj1dhpmab12cdnmorri48t24pric5si4b12ehingt1278hd19egmb8btk5pq2ut1fmgmkgd1cehg38bbk5iq2ut1fh2fleio8jkcls788hq48h7q2800h66usj51000000102d7m8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh6it31dhkm68hqcpgmosr55gh7arj4clp6oqbecli24ej6c5m76p9c49pn8sj9ddin8q3idtqmeq1279j62r3jckm24rr2cpqn6or1ehim88hqcpgmosr55gh66rrcdtp24eh2chgn4qqvctp62u925gh78pboegh3k8h0q2gd1dehg78o7kc0q60i4vat5gh78pboegh3k8h2fk00600f8dqn6t3fdl6mup35dh262t31000004000400agrfeln78080
+      Commands:
+      - '[CONSOLE] si give resource_log_spruce 1 %player_name%'
+      Items: []
+      Ignored_For_Permissions: []
+    хвойное_бревно1:
+      Name: '&7Хвойное бревно'
+      Chance: 40.0
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: a0000g002d5i006jdd5n6aoric5j78ejgd1gmst3fdlfmqpbdc9p62rj518006t31cs5001r4d5pn0r31f440012ec5mma053fch6au3ke9gi4eirfch64rrccgh3kpj1dhpmab12d5q62r39cch3kpj1dhpmab12eln68pbidhkmspb448t6cobcediio8jjehp6iqr5ehk74rrlctk24ej6c5m76p9c49nm4pjledhm2t35cgh3kpj1dhpmab12cdnmorri48t24pric5si4b12ehingt1278hd19egmb8btk5pq2ut1fmgmkgd1cehg38bbk5iq2ut1fh2fleio8jkcls788hq48h7q2800h66usj51000000102d7m8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh6it31dhkm68hqcpgmosr55gh7arj4clp6oqbecli24ej6c5m76p9c49pn8sj9ddin8q3idtqmeq1279j62r3jckm24rr2cpqn6or1ehim88hqcpgmosr55gh66rrcdtp24eh2chgn4qqvctp62u925gh78pboegh3k8h0q2gd1dehg78o7kc0q60i4vat5gh78pboegh3k8h2fk00600f8dqn6t3fdl6mup35dh262t31000004000400agrfeln780g0
+      Commands:
+      - '[CONSOLE] si give resource_log_spruce 2 %player_name%'
+      Items: []
+      Ignored_For_Permissions: []
+    берёзовое_бревно:
+      Name: '&7Берёзовое бревно'
+      Chance: 43.0
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: 1800020009km800qdlkmspb3e9gmct1qe1k62rjkdtmlurb5dlh74obeck5000rkc5jgk007chkn6s3cc5sgg0049pgmqp80ktti4pboehp628hqbdti4ojfdhi24ej6c5m76p9c49kn8obcd5hi4ej6c5m76p9c49qmsp35e9m6irj5cgh3kpj1dhpmab12edq74qbbclq6gsjfeljmg8hqcpgmosr55gh6uoj6elpm6obkcli24ej6c5m76p9c49hmur3fe8h3k8j7e9gni8hc49q6au3k48t25k4hq2qt306hi78bfk5uq2pd1fmgmkgd1cehg38bbk5iq2ut1fh2fleio8jkcls788hq48h7q2800h66usj51000000102d7m8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh6it31dhkm68hqcpgmosr55gh7arj4clp6oqbecli24ej6c5m76p9c49pn8sj9ddin8q3idtqmeq1279j62r3jckm24rr2cpqn6or1ehim88hqcpgmosr55gh66rrcdtp24eh2chgn4qqvctp62u925gh78pboegh3k8h0q2gd1dehg78o7kc0q60i4vat5gh78pboegh3k8h2fk00600f8dqn6t3fdl6mup35dh262t31000004800400agrfeln78080
+      Commands:
+      - '[CONSOLE] si give resource_log_birch 1 %player_name%'
+      Items: []
+      Ignored_For_Permissions: []
+    деревянная_шкатулка:
+      Name: '&aДеревянная шкатулка'
+      Chance: 2.0
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: 2g0004000j9cg01krb9dpim6sj1cpq3ks38c5n78rrdbtmmarb2e9gmsp8a001n8ob70c00ugrledq6uraddti6ar24c5q6200000i0k00ia1qm4r39cd17aqrbd5q5cobcelin620031ingor5dhm6arjkcdp62t35ect66sj1ehiisqb400666sj1ehilutrfdti6arg01800ep39edo6oobp10008jj1dlig1bjr49ingt3ic4h3kmrr49h6ur3448t6cobcediio8j9ehgmoqb348t6cobcediio8jldpi6asjcd5n6ap1279j62r3jckm24srke9kmmpbkd1p6utb7d0h3kpj1dhpmab12dth6ctbjcdgn8pb448t6cobcediio8j3dtm6ush278h6esj5cln24b12ehingt1278hd156gmn8o1k5lq2pd33ugnn8brk5gq67i1kc8q2td1c6hgb8o7k5rq2td1c12fleio8jkcls788hq48h7q2800h66usj51000000602c7m8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh6it31dhkm68hqcpgmosr55gh7arj4clp6oqbecli24ej6c5m76p9c49pn8sj9ddin8q3idtqmeq1279j62r3jckm24rr2cpqn6or1ehim88hqcpgmosr55gh66rrcdtp24eh2chgn4qqvctp62u925gh78pboegh3k8h0q2ht1d6gm38ofk5g49ulqb12ehingt1278h24v801dti4t35f1q24eh249ug1jrr49ingt3ic4h3kmrr49h6ur3448t6cobcediio8j9ehgmoqb348t6cobcediio8jldpi6asjcd5n6ap1279j62r3jckm24srke9kmmpbkd1p6utb7d0h3kpj1dhpmab12dth6ctbjcdgn8pb448t6cobcediio8j3dtm6ush278h26h1p8cqjegp25gh78pboegh3k8h0q2ed1fmgmr8bbkc2438o3k5uq2qd1dehg38bdk5gq61d3310q2vt1fmgnf8bbk5nq2ut32ugmkgd1cmgmn8ojk5o5ggd30mgm38blk5oq2qi4vat5gh78pboegh3k8h2fk0bmup2cls78sj148t5mup2c9nmop1279j62r3jckm24qbkc5m6iop279j62r3jckm24tbechin4r39dpim88hqcpgmosr55gh76t3id5lmat38e9nnapr848t6cobcediio8jfc9j7asr3c5q6ap1279j62r3jckm24orfdhnn48hq48hk8ea36krk68hc49q6au3k48t2486gnb8b1k5q78gd306hgf8brkcb5ggd306gmn8o3kc3q60d30ehhcm21k5iq2od1euhhr8o5kc35oh7qn9c49q6au3k48t248jt005nm8jkcls788hq48h7q05sfch6au3ke9gi4eirfch64rrccgh3kpj1dhpmab12d5q62r39cch3kpj1dhpmab12eln68pbidhkmspb448t6cobcediio8jjehp6iqr5ehk74rrlctk24ej6c5m76p9c49nm4pjledhm2t35cgh3kpj1dhpmab12cdnmorri48t248pl6h0j0di648m24t35f1q24eh243h8d4h0q2ft16mgjggd306hgf8blk5uq2sio86hgv8o5k5uq2ot32p0q2vd30mgnb8o1kcbq61d3312fleio8jkcls788hq48h7q0000400agrfeln78180
+      Commands:
+      - '[CONSOLE] si give crate_wooden 5 %player_name%'
+      Items: []
+      Ignored_For_Permissions: []
+Item:
+  Material: PHANTOM_MEMBRANE
+  Name: '&aДеревянная шкатулка'
+  Lore:
+  - '&8 Удача'
+  - ''
+  - '#D9C57C Может содержать полезные вещи, такие'
+  - '#D9C57C как: руны, ресурсы, валюту.'
+  - ''
+  - '#54A06F → ПКМ рукой, чтобы открыть'
+  Custom_Model_Data: 36

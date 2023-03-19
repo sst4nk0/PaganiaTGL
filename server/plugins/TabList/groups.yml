@@ -1,0 +1,18 @@
+# This global group will be applied to all players
+globalGroup:
+  prefix: '%luckperms_prefix%'
+  tabname: ''
+  suffix: '%luckperms_suffix%'
+
+groups:
+  # Vault group name OR player name OR custom group name (custom is assigned via permission)
+  exampleGroup:
+    prefix: '&a[&cStaff&a]&6 '
+    tabname: '%player-displayname%'
+    suffix: '&7 <12>'
+  # permission: tablist.staff
+
+  Default:
+    prefix: '&7'
+    tabname: '%player%'
+    suffix: ''

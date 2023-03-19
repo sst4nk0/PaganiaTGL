@@ -1,0 +1,142 @@
+size: 54
+menu_title: '§r&f少'
+items:
+#============ Interface ====================================================
+  'avatarRound':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:1
+    slots:
+    - 10-12
+    - 19
+    - 21
+    - 28-30
+    display_name: "&2Капитан"
+  'avatarIcon':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:22
+    slot: 20
+    display_name: "&2Капитан"
+  'communicate':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:3
+    slot: 39
+    priority: 0
+    display_name: "&#f8a049&lОбщение"
+    lore:
+    - '&#d9c57c&o%javascript_seaskipperdial1%'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы побеседовать'
+    left_click_commands:
+    - '[refresh]'
+    - '[sound] ENTITY_VILLAGER_AMBIENT'
+#============ Teleport 1 ====================================================
+  'trip1':
+    material: MAP
+    slot: 14
+    display_name: "&#f8a049&lОтправиться в путешествие"
+    lore:
+    - '&#d9c57c Пункт назначения: &fВосточное заречье'
+    - '&#d9c57c Координаты: &f1120, -1120'
+    - '&#d9c57c Стоимость: &f2 Медяника'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[close]'
+    - '[console] purchasepayment %player_name% 2 copper'
+    - '[console] effect give %player_name% minecraft:blindness 2 1 true'
+    - '[console] tp %player_name% -763 270 -1957'
+    - '[player] dospecialaction2 seakippar_lg0o561dh7'
+    - '[console] effect give %player_name% minecraft:blindness 2 1 true<delay=390>'
+    - '[console] tp %player_name% 1152 5 -1143<delay=400>'
+    - '[console] lp user %player_name% permission settemp wb.tripescape false 22s'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    left_click_requirement:
+      minimum_requirements: 2
+      stop_at_success: true  
+      deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько денег либо вы уже на месте!'      
+      requirements:
+        nothere:
+            type: '!is near'
+            location: 'world,1152,5,-1137'
+            distance: 9
+            optional: false
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_copper_coin}_{inventory}%'
+            output: '2'
+            optional: true            
+        hascoins2:
+            type: '>'
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '0'
+            optional: true
+        hascoins3:
+            type: '>'
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '0'  
+            optional: true       
+#============ Teleport 2 ====================================================
+  'trip2':
+    material: MAP
+    slot: 15
+    display_name: "&#f8a049&lОтправиться в путешествие"
+    lore:
+    - '&#d9c57c Пункт назначения: &fЗолотые поля Коростня'
+    - '&#d9c57c Координаты: &f879, -1628'
+    - '&#d9c57c Стоимость: &f4 Медяника'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[close]'
+    - '[console] purchasepayment %player_name% 4 copper'
+    - '[console] effect give %player_name% minecraft:blindness 2 1 true'
+    - '[console] tp %player_name% -763 270 -1957'
+    - '[player] dospecialaction2 seakippar_lg0o561dh7'
+    - '[console] effect give %player_name% minecraft:blindness 2 1 true<delay=390>'
+    - '[console] tp %player_name% 879 5 -1628<delay=400>'
+    - '[console] lp user %player_name% permission settemp wb.tripescape false 22s'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    left_click_requirement:
+      minimum_requirements: 2
+      stop_at_success: true  
+      deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько денег либо вы уже на месте!'      
+      requirements:
+        nothere:
+            type: '!is near'
+            location: 'world,883,5,-1628'
+            distance: 9
+            optional: false
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_copper_coin}_{inventory}%'
+            output: '4'
+            optional: true            
+        hascoins2:
+            type: '>'
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '0'
+            optional: true
+        hascoins3:
+            type: '>'
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '0'  
+            optional: true   
+#============ Developer Info ====================================================
+  'dev_info_tech':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:23
+    slot: 0
+    priority: 0
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'wb.developer'
+    display_name: "&#f8a049&lТехнические сведения"
+    lore:
+    - '&#d9c57cМенюшка = /DeluxeMenus/gui_menus/npc_basics/seaskipper.yml'
+    - '&#d9c57cКоорд инты = -761 271 -1959'

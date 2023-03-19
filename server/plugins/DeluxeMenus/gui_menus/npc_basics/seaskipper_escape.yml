@@ -1,0 +1,65 @@
+size: 54
+menu_title: '§r&f少'
+items:
+#============ Interface ====================================================
+  'avatarRound':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:1
+    slots:
+    - 10-12
+    - 19
+    - 21
+    - 28-30
+    display_name: "&2Капитан"
+  'avatarIcon':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:22
+    slot: 20
+    display_name: "&2Капитан"
+  'communicate':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:3
+    slot: 39
+    priority: 0
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'wb.talkpresent.1'
+    display_name: "&#f8a049&lОбщение"
+    lore:
+    - '&#d9c57c&o%javascript_seaskipperdial1%'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы побеседовать'
+    left_click_commands:
+    - '[refresh]'
+    - '[sound] ENTITY_VILLAGER_AMBIENT'
+#============ escape ====================================================
+  'trip1':
+    material: MAP
+    slot: 24
+    display_name: "&#f8a049&lВернуться"
+    lore:
+    - '&#d9c57c Пункт назначения: &fЗолотые поля коростня'
+    - '&#d9c57c Координаты: &f879, -1628'
+    - '&#d9c57c Стоимость: &fбесплатно'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[close]'
+    - '[console] effect give %player_name% minecraft:blindness 2 1 true'
+    - '[console] tp %player_name% 879 5 -1628'  
+#============ Developer Info ====================================================
+  'dev_info_tech':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:23
+    slot: 0
+    priority: 0
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'wb.developer'
+    display_name: "&#f8a049&lТехнические сведения"
+    lore:
+    - '&#d9c57cМенюшка = /DeluxeMenus/gui_menus/npc_basics/seaskipper_escape.yml'

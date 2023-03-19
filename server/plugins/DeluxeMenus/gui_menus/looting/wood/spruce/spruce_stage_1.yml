@@ -1,0 +1,56 @@
+size: 54
+menu_title: '§r&f少'
+items:
+############# Interface ####################################################
+  'sprucelog':
+    material: spruce_log
+    slots:
+    - 10
+    - 16
+    - 22
+    - 38
+    lore:
+    - ''
+    - '&#54a06f → Нажми ПКМ, чтобы рубить'
+    display_name: "&#f8a049&lХвоя"
+    right_click_commands:
+    - '[openguimenu] spruce_stage_2'
+    - '[sound] BLOCK_WOOD_BREAK'
+    - '[sound] BLOCK_WOOD_BREAK<delay=5>'
+    - '[sound] BLOCK_WOOD_BREAK<delay=10>'
+  'fakeitem1':
+    material: granite
+    slots:
+    - 6
+    - 13
+    - 18
+    - 27
+    - 41
+    - 49
+    lore:
+    - ''
+    - '&#54a06f → Нажми ПКМ, чтобы рубить'
+    display_name: "&#f8a049&lГранит"
+    right_click_commands:
+    - '[close]'
+    - '[sound] ENTITY_ITEM_BREAK 0.7 1'
+    - '[message] &c我 Рубить нужно только дерево!'
+  'fakeitem2':
+    material: gravel
+    slots:
+    - 0
+    - 12
+    - 15
+    - 23
+    - 29
+    - 39
+    - 43
+    - 53
+    lore:
+    - ''
+    - '&#54a06f → Нажми ПКМ, чтобы рубить'
+    display_name: "&#f8a049&lГравий"
+    right_click_commands:
+    - '[close]'
+    - '[sound] ENTITY_ITEM_BREAK 0.7 1'
+    - '[message] &c我 Рубить нужно только дерево!'

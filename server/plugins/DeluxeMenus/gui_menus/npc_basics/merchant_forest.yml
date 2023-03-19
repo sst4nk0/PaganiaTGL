@@ -1,0 +1,388 @@
+size: 54
+menu_title: '§r&f少'
+items:
+############# Interface ####################################################
+  'avatarRound':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:1
+    slots:
+    - 10-12
+    - 19
+    - 21
+    - 28-30
+    display_name: "&2Купец"
+  'avatarIcon':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:20
+    slot: 20
+    display_name: "&2Купец"
+  'communicate':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:3
+    slot: 39
+    display_name: "&#f8a049&lОбщение"
+    lore:
+    - '&#d9c57c&o Хочешь продать мне деревяшки - продавай.'
+    - '&#d9c57c&o Хочешь купить у меня деревяшки - вперёд.'
+    - '&#d9c57c&o Иначе делать тут тебе нечего, я занят.'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы побеседовать'
+    - '&#54a06f → Нажми ПКМ, для начала покупки брёвен'
+    left_click_commands:
+    - '[sound] ENTITY_EVOKER_HURT'
+    right_click_commands:
+    - '[console] dm open merchant_forest_seller %player_name%'
+    - '[sound] UI_BUTTON_CLICK 0.3 1'
+############# Oak sell ####################################################
+  '4trade1':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:15
+    slot: 14
+    display_name: "&#f8a049&lПродать дубовое бревно"
+    lore:
+    - '&#d9c57c Стоимость бревна - 2 медяника'
+    - '&#d9c57c Стоимость 64 брёвен - 2 серебряника'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы продать 1 бревно'
+    - '&#54a06f → Нажми ПКМ, чтобы продать 64 бревна'
+    left_click_commands:
+    - '[console] serveritem give currency_copper_coin 2 %player_name%'
+    - '[console] serveritem take resource_log_oak 1 %player_name% true'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    right_click_commands:
+    - '[console] serveritem give currency_silver_coin 2 %player_name%'
+    - '[console] serveritem take resource_log_oak 64 %player_name% true'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    left_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{resource_log_oak}_{inventory}%'
+            output: '1'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько брёвен!'
+    right_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{resource_log_oak}_{inventory}%'
+            output: '64'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько брёвен!'
+  '4trade2':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:7
+    slot: 15
+    display_name: "&#f8a049&lПродать дубовое бревно"
+    lore:
+    - '&#d9c57c Стоимость бревна - 2 медяника'
+    - '&#d9c57c Стоимость 64 брёвен - 2 серебряника'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы продать 1 бревно'
+    - '&#54a06f → Нажми ПКМ, чтобы продать 64 бревна'
+    left_click_commands:
+    - '[console] serveritem give currency_copper_coin 2 %player_name%'
+    - '[console] serveritem take resource_log_oak 1 %player_name% true'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    right_click_commands:
+    - '[console] serveritem give currency_silver_coin 2 %player_name%'
+    - '[console] serveritem take resource_log_oak 64 %player_name% true'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    left_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{resource_log_oak}_{inventory}%'
+            output: '1'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько брёвен!'
+    right_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{resource_log_oak}_{inventory}%'
+            output: '64'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько брёвен!'
+  '4trade3':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:4
+    slot: 16
+    amount: 2
+    display_name: "&#f8a049&lПродать дубовое бревно"
+    lore:
+    - '&#d9c57c Стоимость бревна - 2 медяника'
+    - '&#d9c57c Стоимость 64 брёвен - 2 серебряника'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы продать 1 бревно'
+    - '&#54a06f → Нажми ПКМ, чтобы продать 64 бревна'
+    left_click_commands:
+    - '[console] serveritem give currency_copper_coin 2 %player_name%'
+    - '[console] serveritem take resource_log_oak 1 %player_name% true'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    right_click_commands:
+    - '[console] serveritem give currency_silver_coin 2 %player_name%'
+    - '[console] serveritem take resource_log_oak 64 %player_name% true'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    left_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{resource_log_oak}_{inventory}%'
+            output: '1'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько брёвен!'
+    right_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{resource_log_oak}_{inventory}%'
+            output: '64'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько брёвен!'
+############# Spruce sell ####################################################
+  'SPRUCEtrade1':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:16
+    slot: 23
+    display_name: "&#f8a049&lПродать хвойное бревно"
+    lore:
+    - '&#d9c57c Стоимость бревна - 3 медяника'
+    - '&#d9c57c Стоимость 64 брёвен - 3 серебряника'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы продать 1 бревно'
+    - '&#54a06f → Нажми ПКМ, чтобы продать 64 бревна'
+    left_click_commands:
+    - '[console] serveritem give currency_copper_coin 3 %player_name%'
+    - '[console] serveritem take resource_log_spruce 1 %player_name% true'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    right_click_commands:
+    - '[console] serveritem give currency_silver_coin 3 %player_name%'
+    - '[console] serveritem take resource_log_spruce 64 %player_name% true'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    left_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{resource_log_spruce}_{inventory}%'
+            output: '1'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько брёвен!'
+    right_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{resource_log_spruce}_{inventory}%'
+            output: '64'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько брёвен!'
+  'SPRUCEtrade2':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:7
+    slot: 24
+    display_name: "&#f8a049&lПродать хвойное бревно"
+    lore:
+    - '&#d9c57c Стоимость бревна - 3 медяника'
+    - '&#d9c57c Стоимость 64 брёвен - 3 серебряника'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы продать 1 бревно'
+    - '&#54a06f → Нажми ПКМ, чтобы продать 64 бревна'
+    left_click_commands:
+    - '[console] serveritem give currency_copper_coin 3 %player_name%'
+    - '[console] serveritem take resource_log_spruce 1 %player_name% true'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    right_click_commands:
+    - '[console] serveritem give currency_silver_coin 3 %player_name%'
+    - '[console] serveritem take resource_log_spruce 64 %player_name% true'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    left_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{resource_log_spruce}_{inventory}%'
+            output: '1'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько брёвен!'
+    right_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{resource_log_spruce}_{inventory}%'
+            output: '64'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько брёвен!'
+  'SPRUCEtrade3':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:4
+    slot: 25
+    amount: 3
+    display_name: "&#f8a049&lПродать хвойное бревно"
+    lore:
+    - '&#d9c57c Стоимость бревна - 3 медяника'
+    - '&#d9c57c Стоимость 64 брёвен - 3 серебряника'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы продать 1 бревно'
+    - '&#54a06f → Нажми ПКМ, чтобы продать 64 бревна'
+    left_click_commands:
+    - '[console] serveritem give currency_copper_coin 3 %player_name%'
+    - '[console] serveritem take resource_log_spruce 1 %player_name% true'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    right_click_commands:
+    - '[console] serveritem give currency_silver_coin 3 %player_name%'
+    - '[console] serveritem take resource_log_spruce 64 %player_name% true'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    left_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{resource_log_spruce}_{inventory}%'
+            output: '1'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько брёвен!'
+    right_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{resource_log_spruce}_{inventory}%'
+            output: '64'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько брёвен!'
+############# Birch sell ####################################################
+  'BIRCHtrade1':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:17
+    slot: 32
+    display_name: "&#f8a049&lПродать берёзовое бревно"
+    lore:
+    - '&#d9c57c Стоимость бревна - 4 медяника'
+    - '&#d9c57c Стоимость 64 брёвен - 4 серебряника'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы продать 1 бревно'
+    - '&#54a06f → Нажми ПКМ, чтобы продать 64 бревна'
+    left_click_commands:
+    - '[console] serveritem give currency_copper_coin 4 %player_name%'
+    - '[console] serveritem take resource_log_birch 1 %player_name% true'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    right_click_commands:
+    - '[console] serveritem give currency_silver_coin 4 %player_name%'
+    - '[console] serveritem take resource_log_birch 64 %player_name% true'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    left_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{resource_log_birch}_{inventory}%'
+            output: '1'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько брёвен!'
+    right_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{resource_log_birch}_{inventory}%'
+            output: '64'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько брёвен!'
+  'BIRCHtrade2':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:7
+    slot: 33
+    display_name: "&#f8a049&lПродать берёзовое бревно"
+    lore:
+    - '&#d9c57c Стоимость бревна - 4 медяника'
+    - '&#d9c57c Стоимость 64 брёвен - 4 серебряника'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы продать 1 бревно'
+    - '&#54a06f → Нажми ПКМ, чтобы продать 64 бревна'
+    left_click_commands:
+    - '[console] serveritem give currency_copper_coin 4 %player_name%'
+    - '[console] serveritem take resource_log_birch 1 %player_name% true'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    right_click_commands:
+    - '[console] serveritem give currency_silver_coin 4 %player_name%'
+    - '[console] serveritem take resource_log_birch 64 %player_name% true'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    left_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{resource_log_birch}_{inventory}%'
+            output: '1'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько брёвен!'
+    right_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{resource_log_birch}_{inventory}%'
+            output: '64'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько брёвен!'
+  'BIRCHtrade3':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:4
+    slot: 34
+    amount: 4
+    display_name: "&#f8a049&lПродать берёзовое бревно"
+    lore:
+    - '&#d9c57c Стоимость бревна - 4 медяника'
+    - '&#d9c57c Стоимость 64 брёвен - 4 серебряника'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы продать 1 бревно'
+    - '&#54a06f → Нажми ПКМ, чтобы продать 64 бревна'
+    left_click_commands:
+    - '[console] serveritem give currency_copper_coin 4 %player_name%'
+    - '[console] serveritem take resource_log_birch 1 %player_name% true'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    right_click_commands:
+    - '[console] serveritem give currency_silver_coin 4 %player_name%'
+    - '[console] serveritem take resource_log_birch 64 %player_name% true'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    left_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{resource_log_birch}_{inventory}%'
+            output: '1'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько брёвен!'
+    right_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{resource_log_birch}_{inventory}%'
+            output: '64'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько брёвен!'
+############# Developer Info ####################################################
+  'dev_info_tech':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:23
+    slot: 0
+    priority: 0
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'wb.developer'
+    display_name: "&#f8a049&lТехнические сведения"
+    lore:
+    - '&#d9c57cМенюшка = /DeluxeMenus/gui_menus/npc_basics/merchant_forest.yml'

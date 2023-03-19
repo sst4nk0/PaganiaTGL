@@ -1,0 +1,53 @@
+size: 54
+menu_title: '§r&f少'
+items:
+############# Interface ####################################################
+  'oaklog':
+    material: oak_log
+    slots:
+    - 5
+    - 33
+    - 52
+    lore:
+    - ''
+    - '&#54a06f → Нажми ПКМ, чтобы рубить'
+    display_name: "&#f8a049&lДуб"
+    right_click_commands:
+    - '[openguimenu] oak_stage_3'
+    - '[sound] BLOCK_WOOD_BREAK'
+    - '[sound] BLOCK_WOOD_BREAK<delay=5>'
+    - '[sound] BLOCK_WOOD_BREAK<delay=10>'
+  'fakeitem1':
+    material: dirt
+    slots:
+    - 0
+    - 12
+    - 24
+    - 29
+    - 40
+    - 51
+    lore:
+    - ''
+    - '&#54a06f → Нажми ПКМ, чтобы рубить'
+    display_name: "&#f8a049&lЗемля"
+    right_click_commands:
+    - '[close]'
+    - '[sound] ENTITY_ITEM_BREAK 0.7 1'
+    - '[message] &c我 Рубить нужно только дерево!'
+  'fakeitem2':
+    material: oak_leaves
+    slots:
+    - 7
+    - 14
+    - 20
+    - 30
+    - 35
+    - 46
+    lore:
+    - ''
+    - '&#54a06f → Нажми ПКМ, чтобы рубить'
+    display_name: "&#f8a049&lЛиства"
+    right_click_commands:
+    - '[close]'
+    - '[sound] ENTITY_ITEM_BREAK 0.7 1'
+    - '[message] &c我 Рубить нужно только дерево!'

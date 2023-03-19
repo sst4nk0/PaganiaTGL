@@ -1,0 +1,92 @@
+open_command:
+  - gps
+  - navigator
+register_command: true
+size: 54
+menu_title: '§r&f少'
+items:
+#============== Important locations ===============================================
+  'importanticon':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:25
+    slot: 0
+    display_name: "&#f8a049&lВажные места"
+    lore:
+      - '&#d9c57c Самые самые основные места,'
+      - '&#d9c57c без которых жизнь не та.'
+      - ''
+      - '&#7da4cb → Нажми ЛКМ, чтобы открыть меню'
+    left_click_commands:
+    - '[openguimenu] gps_category_important_0'
+    - '[sound] UI_BUTTON_CLICK 0.3 1'
+  'important':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:1
+    slots:
+      - 1-2
+      - 9-11
+    display_name: "&#f8a049&lВажные места"
+    lore:
+      - '&#d9c57c Самые самые основные места,'
+      - '&#d9c57c без которых жизнь не та.'
+      - ''
+      - '&#7da4cb → Нажми ЛКМ, чтобы открыть меню'
+    left_click_commands:
+    - '[openguimenu] gps_category_important_0'
+    - '[sound] UI_BUTTON_CLICK 0.3 1'
+#============== Looting locations ===============================================
+  'lootingicon':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:30
+    slot: 3
+    display_name: "&#f8a049&lМеста добычи ресурсов"
+    lore:
+      - '&#d9c57c Добывай расходные материалы для'
+      - '&#d9c57c крафта или перепродажи.'
+      - ''
+      - '&#7da4cb → Нажми ЛКМ, чтобы открыть меню'
+    left_click_commands:
+    - '[openguimenu] gps_category_looting_0'
+    - '[sound] UI_BUTTON_CLICK 0.3 1'
+  'looting':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:1
+    slots:
+      - 4-5
+      - 12-14
+    display_name: "&#f8a049&lМеста добычи ресурсов"
+    lore:
+      - '&#d9c57c Добывай расходные материалы для'
+      - '&#d9c57c крафта или перепродажи.'
+      - ''
+      - '&#7da4cb → Нажми ЛКМ, чтобы открыть меню'
+    left_click_commands:
+    - '[openguimenu] gps_category_looting_0'
+    - '[sound] UI_BUTTON_CLICK 0.3 1'
+#============== Selling locations ===============================================
+  'sellingicon':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:31
+    slot: 6
+    display_name: "&#f8a049&lМеста продажи ресурсов"
+    lore:
+      - '&#d9c57c Продай всё лишнее и получи монеты'
+      - ''
+      - '&#7da4cb → Нажми ЛКМ, чтобы открыть меню'
+    left_click_commands:
+    - '[openguimenu] gps_category_selling_0'
+    - '[sound] UI_BUTTON_CLICK 0.3 1'
+  'selling':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:1
+    slots:
+      - 7-8
+      - 15-17
+    display_name: "&#f8a049&lМеста продажи ресурсов"
+    lore:
+      - '&#d9c57c Продай всё лишнее и получи монеты'
+      - ''
+      - '&#7da4cb → Нажми ЛКМ, чтобы открыть меню'
+    left_click_commands:
+    - '[openguimenu] gps_category_selling_0'
+    - '[sound] UI_BUTTON_CLICK 0.3 1'

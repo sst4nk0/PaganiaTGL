@@ -1,0 +1,624 @@
+Command:
+  Drop:
+    Usage: <crateId> <world> <x> <y> <z>
+    Desc: Drop crate at specified location in the world.
+    Done: Dropped &6%crate_name%&7 at &6%location_x%&7, &6%location_y%&7, &6%location_z%&7 in &6%location_world%&7.
+  ForceOpen:
+    Desc: Force open a crate for a player.
+    Usage: <crateId> [player]
+    Done: Force opened &6%crate_name%&7 for &6%player_name%&7.
+    Notify: You have been forced to open &6%crate_name%&7.
+  Give:
+    Usage: <player | *> <crateId> [amount]
+    Desc: Gives crate(s) to a player.
+    Done: Given &6x%amount% &7of &6%crate_name% &7crate(s) to &6%player_display_name%&7.
+    Notify: You recieved &6x%amount% &7of &6%crate_name%&7!
+  Key:
+    Desc: Manage or view player's crate keys.
+    Error:
+      Player: '&cCould not proccess operation for offline/invalid player &e%player_name%&c!'
+    Give:
+      Usage: <player | *> <keyId> <amount>
+      Desc: Give crate key(s) to a player.
+      Done: Given &ax%amount% &7of &a%key_name% &7key(s) to &a%player_name%&7.
+      Notify: You recieved &ax%amount% &7of &a%key_name%&7!
+    Take:
+      Usage: <player | *> <keyId> <amount>
+      Desc: Take crate key(s) from a player.
+      Done: Taken &cx%amount% &c%key_name% &7key(s) from &c%player_name%
+      Notify: You lost &cx%amount% &c%key_name%&7!
+    Set:
+      Usage: <player | *> <keyId> <amount>
+      Desc: Set crate key(s) amount for a player.
+      Done: Set &ex%amount% &7of &e%key_name% &7key(s) for &e%player_name%&7.
+      Notify: Your &e%key_name%&7 amount has been changed to &ex%amount%&7!
+    Show:
+      Desc: Show amount of your or other player keys.
+      Usage: '[player]'
+      Format:
+        List:
+        - <!prefix:"false"!>
+        - '&6&m              &6&l[ &a%player_name% &e&lCrate Keys &6&l]&6&m              &6'
+        - '&7'
+        - '&6▸ &e%key_name%: &6%amount%'
+  Preview:
+    Desc: Open crate preview.
+    Usage: <crateId> [player]
+    Done:
+      Others: Opened &6%crate_name%&7 preview for &6%player_display_name%&7.
+  ResetLimit:
+    Desc: Reset reward win limit for specified crate and reward.
+    Usage: <player> <crateId> [rewardId]
+    Done:
+      Crate: Reset &6%player_name% &7win limit for all rewards of &6%crate_name%&7.
+      Reward: Reset &6%player_name% &7win limit for &6%reward_name% &7reward of &6%crate_name%&7.
+  ResetCooldown:
+    Desc: Reset player cooldown for specified crate.
+    Usage: <player> <crateId>
+    Done: Reset &6%player_name% &7cooldown for &6%crate_name%&7.
+  Menu:
+    Usage: '[menuId]'
+    Desc: Open crate menu.
+    Done:
+      Others: Opened &6%menu_id%&7 crate menu for &6%player_display_name%&7.
+Crate:
+  Error:
+    Invalid: '&cInvalid crate!'
+  Open:
+    Error:
+      InventorySpace: '&cОсвободите место в инвентаре.'
+      Cooldown:
+        Temporary: '&cНужно подождать &6%time% &7before you can open &6%crate_name%&7 again!'
+        OneTimed: '&cБольше открыть не получится.'
+      NoKey: '&cУ тебя нет подходящего ключа.'
+      NoRewards: '&cThis crate does not contains any rewards for you!'
+      Cost:
+        Money: '&cYou don''t have enough money to open this crate!'
+        Exp: '&cYou don''t have enough exp levels to open this crate!'
+    Reward:
+      Info: ''
+      Broadcast: ''
+  Key:
+    Error:
+      Invalid: '&cInvalid key!'
+  Placeholder:
+    Cooldown:
+      Blank: Ready to open!
+Menu:
+  Invalid: '&cMenu does not exist!'
+Editor:
+  Crate:
+    Enter:
+      Id: '&7Enter &aunique &7crate &aidentifier&7...'
+      DisplayName: '&7Enter crate &adisplay name&7...'
+      Particle:
+        Name: '&7Enter &aparticle &7name...'
+        Data: '&7Enter &aparticle &7data...'
+      KeyId: '&7Enter &akey &7identifier...'
+      Block:
+        Location: '&7Click a &ablock &7to assign crate...'
+        Hologram:
+          Text: '&7Enter &atext &7line...'
+          Offset: '&7Enter &aoffset &7value...'
+      Cooldown: '&7Enter &acooldown &7in seconds...'
+      Citizens: '&7Enter &aCitizens NPC &7ID...'
+      AnimationConfig: '&7Enter &aanimation config &7name...'
+      PreviewConfig: '&7Enter &apreview config &7name...'
+      OpenCost:
+        Money: '&7Enter &amoney &7cost...'
+        Exp: '&7Enter &aexp levels &7cost...'
+    Error:
+      Create:
+        Exists: '&cCrate with such id is already exists!'
+  Reward:
+    Enter:
+      Id: '&7Enter &aunique &7reward &aidentifier&7...'
+      DisplayName: '&7Enter reward &adisplay name&7...'
+      Chance: '&7Enter win &achance&7...'
+      Command: '&7Enter a &acommand&7...'
+      Permissions: '&7Enter a &apermission&7...'
+      WinLimit:
+        Amount: '&7Enter win limit &aamount&7...'
+        Cooldown: '&7Enter win limit &acooldown&7...'
+    Error:
+      Create:
+        Exist: '&cReward with such id is already exists!'
+  Key:
+    Error:
+      Create:
+        Exist: Key with such id is already exists!
+  CrateEditorType:
+    EDITOR_CRATES:
+      Name: Crate Editor
+      Lore:
+      - '&6&l[?] Description:'
+      - '&7Create and configure your crates here!'
+      - ' '
+      - '#55e136&l[>] Actions:'
+      - '#86de2aLeft-Click to &fNavigate'
+    EDITOR_KEYS:
+      Name: Key Editor
+      Lore:
+      - '&6&l[?] Description:'
+      - '&7Create and configure crate keys here!'
+      - ' '
+      - '#55e136&l[>] Actions:'
+      - '#86de2aLeft-Click to &fNavigate'
+    CRATE_OBJECT:
+      Name: '&e%crate_name% &7(ID: &f%crate_id%&7)'
+      Lore:
+      - '#55e136&l[>] Actions:'
+      - '#86de2aLeft-Click to &fEdit'
+      - '#86de2aShift-Right to &fDelete &7(No Undo)'
+    CRATE_CREATE:
+      Name: Create a Crate
+      Lore:
+      - '&6&l[?] Description:'
+      - '&7Creates a new crate.'
+      - ' '
+      - '#55e136&l[>] Actions:'
+      - '#86de2aLeft-Click to &fCreate'
+    CRATE_CHANGE_NAME:
+      Name: Crate Display Name
+      Lore:
+      - '&b&l[?] Current:'
+      - '&a%crate_name%'
+      - ' '
+      - '&6&l[?] Description:'
+      - '&7Sets the crate display name. This'
+      - '&7name is used in messages, GUIs,'
+      - '&7holograms, etc.'
+      - ' '
+      - '#55e136&l[>] Actions:'
+      - '#86de2aLeft-Click to &fChange'
+    CRATE_CHANGE_PERMISSION:
+      Name: Permission Requirement
+      Lore:
+      - '&b&l[?] Current:'
+      - '&aEnabled: &f%crate_permission_required%'
+      - '&aNode: &f%crate_permission%'
+      - ' '
+      - '&6&l[?] Description:'
+      - '&7Sets whether permission is required to'
+      - '&7open this crate.'
+      - ' '
+      - '#55e136&l[>] Actions:'
+      - '#86de2aLeft-Click to &fToggle'
+    CRATE_CHANGE_COOLDOWN:
+      Name: Open Cooldown
+      Lore:
+      - '&b&l[?] Current:'
+      - '&a%crate_opening_cooldown%'
+      - ' '
+      - '&6&l[?] Description:'
+      - '&7Sets the cooldown for opening this'
+      - '&7crate again.'
+      - ' '
+      - '&e&l[!] Note:'
+      - '#FFC300When set a negative value, crate'
+      - '#FFC300can be opened only once.'
+      - ' '
+      - '#55e136&l[>] Actions:'
+      - '#86de2aLeft-Click to &fChange'
+      - '#86de2aRight-Click to &fDisable'
+      - '#86de2a[Q] Key to &fOne-Timed'
+    CRATE_CHANGE_CONFIG:
+      Name: GUI Layout
+      Lore:
+      - '&b&l[?] Current:'
+      - '&aPreview: &f%crate_preview_config%'
+      - '&aOpening: &f%crate_animation_config%'
+      - ' '
+      - '&6&l[?] Description:'
+      - '&7Sets the configuration used for crate'
+      - '&7Preview and Opening GUIs.'
+      - ' '
+      - '&e&l[!] Note:'
+      - '#FFC300You can create/edit crate Previews in'
+      - '#FFC300/previews/ folder.'
+      - ' '
+      - '&e&l[!] Note:'
+      - '#FFC300You can create/edit crate Openings in'
+      - '#FFC300/openings/ folder.'
+      - ' '
+      - '#55e136&l[>] Actions:'
+      - '#86de2aLeft-Click to &fChange Opening'
+      - '#86de2aRight-Click to &fDisable Opening'
+      - '#86de2aShift-Left to &fChange Preview'
+      - '#86de2aShift-Right to &fDisable Preview'
+    CRATE_CHANGE_KEYS:
+      Name: Attached Keys
+      Lore:
+      - '&b&l[?] Current:'
+      - '&a%crate_key_ids%'
+      - ' '
+      - '&6&l[?] Description:'
+      - '&7Sets a list of crate keys,'
+      - '&7that will open this crate.'
+      - ' '
+      - '&e&l[!] Note:'
+      - '#FFC300If no keys are attached, crate'
+      - '#FFC300can be opened without any key(s).'
+      - ' '
+      - '&c&l[!] Warning:'
+      - '#C70039Make sure to provide correct key'
+      - '#C70039identifiers!'
+      - ' '
+      - '#55e136&l[>] Actions:'
+      - '#86de2aLeft-Click to &fAdd Key'
+      - '#86de2aRight-Click to &fClear List'
+    CRATE_CHANGE_CITIZENS:
+      Name: Attached Citizens NPCs
+      Lore:
+      - '&b&l[?] Current:'
+      - '&aNPC Ids:'
+      - '&a%crate_attached_citizens%'
+      - ' '
+      - '&6&l[?] Description:'
+      - '&7Sets a list of NPC Ids'
+      - '&7that will open and preview this'
+      - '&7crate on clicks.'
+      - ' '
+      - '&c&l[!] Warning:'
+      - '#C70039You must have Citizens plugin installed!'
+      - ' '
+      - '#55e136&l[>] Actions:'
+      - '#86de2aLeft-Click to &fAdd NPC'
+      - '#86de2aRight-Click to &fClear List'
+    CRATE_CHANGE_OPEN_COST:
+      Name: Open Cost
+      Lore:
+      - '&b&l[?] Current:'
+      - '&aMoney: &f$%crate_opening_cost_money%'
+      - '&aExp Levels: &f%crate_opening_cost_exp%'
+      - ' '
+      - '&6&l[?] Description:'
+      - '&7Sets how many money/exp player will'
+      - '&7have to pay to open this'
+      - '&7crate.'
+      - ' '
+      - '&c&l[!] Warning:'
+      - '#C70039You must have Vault + Economy'
+      - '#C70039plugins installed for the Money cost'
+      - '#C70039to work!'
+      - ' '
+      - '#55e136&l[>] Actions:'
+      - '#86de2aLeft-Click to &fChange Money'
+      - '#86de2aRight-Click to &fChange Exp'
+      - '#86de2aShift-Left to &fDisable Money'
+      - '#86de2aShift-Right to &fDisable Exp'
+    CRATE_CHANGE_ITEM:
+      Name: Crate Item
+      Lore:
+      - '&b&l[?] Current:'
+      - '&a%crate_item_name%'
+      - ' '
+      - '&6&l[?] Description:'
+      - '&7Sets the crate item, that will'
+      - '&7be used when you give this'
+      - '&7crate to players, or adding it'
+      - '&7to crate menus.'
+      - ' '
+      - '&e&l[!] Note:'
+      - '#FFC300Apply custom item name, lore and'
+      - '#FFC300other settings before you put it'
+      - '#FFC300here for best result.'
+      - ' '
+      - '#55e136&l[>] Actions:'
+      - '#86de2aDrag & Drop to &fReplace'
+      - '#86de2aRight-Click to &fGet Item'
+    CRATE_CHANGE_BLOCK_LOCATION:
+      Name: Block Locations & Pushback
+      Lore:
+      - '&b&l[?] Current:'
+      - '&a%crate_block_locations%'
+      - '&aPushback Enabled: &f%crate_block_pushback_enabled%'
+      - ' '
+      - '&6&l[?] Description:'
+      - '&7Sets a list of block locations'
+      - '&7to which this crate will be'
+      - '&7attached. When clicking on that blocks,'
+      - '&7it will preview or open the'
+      - '&7crate.'
+      - '&7Also sets if the crate'
+      - '&7should push players back when they'
+      - '&7can''t open the crate.'
+      - ' '
+      - '#55e136&l[>] Actions:'
+      - '#86de2aLeft-Click to &fAssign Block'
+      - '#86de2aRight-Click to &fClear List'
+      - '#86de2a[Q] Key to &fToggle Pushback'
+    CRATE_CHANGE_BLOCK_HOLOGRAM:
+      Name: Block Hologram
+      Lore:
+      - '&b&l[?] Current:'
+      - '&aEnabled: &f%crate_block_hologram_enabled%'
+      - '&aY Offset: &f%crate_block_hologram_offset_y%'
+      - '&aText:'
+      - '&a%crate_block_hologram_text%'
+      - ' '
+      - '&6&l[?] Description:'
+      - '&7Sets the hologram text to appear'
+      - '&7above the crate block(s).'
+      - ' '
+      - '&c&l[!] Warning:'
+      - '#C70039You must have holograms plugin installed:'
+      - '#C70039- HolographicDisplays'
+      - '#C70039- DecentHolograms'
+      - ' '
+      - '#55e136&l[>] Actions:'
+      - '#86de2aLeft-Click to &fAdd Line'
+      - '#86de2aRight-Click to &fClear Text'
+      - '#86de2aShift-Left to &fToggle Hologram'
+      - '#86de2aShift-Right to &fChange Y Offset'
+    CRATE_CHANGE_BLOCK_EFFECT:
+      Name: Block Effect
+      Lore:
+      - '&b&l[?] Current:'
+      - '&aModel: &f%crate_block_effect_model%'
+      - '&aParticle: &f%crate_block_effect_particle_name%'
+      - '&aData: &f%crate_block_effect_particle_data%'
+      - ' '
+      - '&6&l[?] Description:'
+      - '&7Sets effect to play around the'
+      - '&7crate blocks infinitely.'
+      - ' '
+      - '&e&l[!] Note:'
+      - '#FFC300Data format for colored particles: ''R,G,B'''
+      - '#FFC300(255,0,0)'
+      - ' '
+      - '&e&l[!] Note:'
+      - '#FFC300Data format for item/block particles: MATERIAL_NAME'
+      - '#FFC300(SAND)'
+      - ' '
+      - '#55e136&l[>] Actions:'
+      - '#86de2a[Q] Key to &fToggle Model'
+      - '#86de2aLeft-Click to &fChange Particle'
+      - '#86de2aRight-Click to &fChange Data'
+    CRATE_CHANGE_REWARDS:
+      Name: Crate Rewards
+      Lore:
+      - '&6&l[?] Description:'
+      - '&7Here you can create and manage'
+      - '&7rewards for the crate.'
+      - ' '
+      - '#55e136&l[>] Actions:'
+      - '#86de2aLeft-Click to &fNavigate'
+    REWARD_OBJECT:
+      Name: '&e%reward_name% &7(ID: &f%reward_id%&7)'
+      Lore:
+      - '&6&l[?] Description:'
+      - '&7Chance: &f%reward_chance%%'
+      - ' '
+      - '#55e136&l[>] Actions:'
+      - '#86de2aLeft-Click to &fEdit'
+      - '#86de2a[Q] Key to &fDelete &7(No Undo)'
+      - '#86de2aShift-Left to &fMove Forward'
+      - '#86de2aShift-Right to &fMove Back'
+    REWARD_CREATE:
+      Name: Create Reward
+      Lore:
+      - '&6&l[?] Description:'
+      - '&7Creates a new reward for the'
+      - '&7crate.'
+      - ' '
+      - '#55e136&l[>] Actions:'
+      - '#86de2aLeft-Click to &fCreate'
+      - '#86de2aDrag & Drop to &fQuick Create'
+    REWARD_SORT:
+      Name: Sort Rewards
+      Lore:
+      - '&6&l[?] Description:'
+      - '&7Automatically sort your rewards in a'
+      - '&7certain order.'
+      - ' '
+      - '#55e136&l[>] Actions:'
+      - '#86de2aLeft-Click to &fSort by Chance'
+      - '#86de2aRight-Click to &fSort by Type'
+      - '#86de2aShift-Left to &fSort by Name'
+    REWARD_CHANGE_NAME:
+      Name: Reward Display Name
+      Lore:
+      - '&b&l[?] Current:'
+      - '&a%reward_name%'
+      - ' '
+      - '&6&l[?] Description:'
+      - '&7Sets the reward display name. This'
+      - '&7name is used in messages mostly.'
+      - ' '
+      - '&c&l[!] Warning:'
+      - '#C70039This is NOT the reward preview'
+      - '#C70039item name!'
+      - ' '
+      - '#55e136&l[>] Actions:'
+      - '#86de2aLeft-Click to &fChange'
+      - '#86de2aRight-Click to &fSync with Preview Name'
+    REWARD_CHANGE_PREVIEW:
+      Name: Preview Item
+      Lore:
+      - '&b&l[?] Current:'
+      - '&a%reward_preview_name%'
+      - ' '
+      - '&6&l[?] Description:'
+      - '&7Sets the preview item for this'
+      - '&7reward. This item will be displayed'
+      - '&7in crate preview and opening GUIs'
+      - '&7to display rewards.'
+      - ' '
+      - '&e&l[!] Note:'
+      - '#FFC300Apply custom name, lore and other'
+      - '#FFC300settings to the item before put'
+      - '#FFC300it here for best result.'
+      - ' '
+      - '#55e136&l[>] Actions:'
+      - '#86de2aDrag & Drop to &fReplace'
+      - '#86de2aRight-Click to &fGet Item'
+    REWARD_CHANGE_CHANCE:
+      Name: Chance
+      Lore:
+      - '&b&l[?] Current:'
+      - '&a%reward_chance%%'
+      - ' '
+      - '&6&l[?] Description:'
+      - '&7Sets the chance for this reward'
+      - '&7to be rolled.'
+      - ' '
+      - '&e&l[!] Note:'
+      - '#FFC300Reward chances works as ''weight'' actually,'
+      - '#FFC300so they don''t have to be'
+      - '#FFC300up to 100%.'
+      - ' '
+      - '#55e136&l[>] Actions:'
+      - '#86de2aLeft-Click to &fChange'
+    REWARD_CHANGE_COMMANDS:
+      Name: Reward Commands
+      Lore:
+      - '&b&l[?] Current:'
+      - '&a%reward_commands%'
+      - ' '
+      - '&6&l[?] Description:'
+      - '&7A list of commands that will'
+      - '&7be executed when this reward is'
+      - '&7given to the player.'
+      - ' '
+      - '&e&l[!] Note:'
+      - '#FFC300Look in chat for command prefixes'
+      - '#FFC300when adding a command.'
+      - ' '
+      - '#55e136&l[>] Actions:'
+      - '#86de2aLeft-Click to &fAdd Command'
+      - '#86de2aRight-Click to &fClear List'
+    REWARD_CHANGE_ITEMS:
+      Name: Reward Items
+      Lore:
+      - '&6&l[?] Description:'
+      - '&7A list of items that will'
+      - '&7be added to the player''s inventory'
+      - '&7when this reward is given.'
+      - ' '
+      - '&e&l[!] Note:'
+      - '#FFC300Simply close the inventory to save'
+      - '#FFC300& return.'
+      - ' '
+      - '#55e136&l[>] Actions:'
+      - '#86de2aLeft-Click to &fNavigate'
+    REWARD_CHANGE_BROADCAST:
+      Name: Broadcast
+      Lore:
+      - '&b&l[?] Current:'
+      - '&aEnabled: &f%reward_broadcast%'
+      - ' '
+      - '&6&l[?] Description:'
+      - '&7Sets whether a win message will'
+      - '&7be broadcasted to all online players'
+      - '&7for this reward.'
+      - ' '
+      - '#55e136&l[>] Actions:'
+      - '#86de2aLeft-Click to &fToggle'
+    REWARD_CHANGE_WIN_LIMITS:
+      Name: Win Limits
+      Lore:
+      - '&b&l[?] Current:'
+      - '&aAmount: &f%reward_win_limit_amount%'
+      - '&aCooldown: &f%reward_win_limit_cooldown%'
+      - ' '
+      - '&6&l[?] Description:'
+      - '&7Sets how many times and how'
+      - '&7often this reward can be rolled'
+      - '&7out to the player.'
+      - ' '
+      - '&e&l[!] Note:'
+      - '#FFC300Set amount to -1 for unlimit.'
+      - ' '
+      - '&e&l[!] Note:'
+      - '#FFC300Set cooldown to -1 for a'
+      - '#FFC300one-time reward.'
+      - ' '
+      - '&c&l[!] Warning:'
+      - '#C70039Limit is per player, not a'
+      - '#C70039global one.'
+      - ' '
+      - '#55e136&l[>] Actions:'
+      - '#86de2aLeft-Click to &fChange Amount'
+      - '#86de2aRight-Click to &fChange Cooldown'
+      - '#86de2a[Q] Key to &fDisable'
+    REWARD_CHANGE_IGNORED_FOR_PERMISSIONS:
+      Name: Ignored Player Permissions
+      Lore:
+      - '&b&l[?] Current:'
+      - '&a%reward_ignored_for_permissions%'
+      - ' '
+      - '&6&l[?] Description:'
+      - '&7A list of permissions to prevent'
+      - '&7giving this reward away if player'
+      - '&7has any of them.'
+      - ' '
+      - '#55e136&l[>] Actions:'
+      - '#86de2aLeft-Click to &fAdd Permission'
+      - '#86de2aRight-Click to &fClear List'
+    KEY_OBJECT:
+      Name: '&e%key_name% &7(ID: &f%key_id%&7)'
+      Lore:
+      - '&e&l[!] Note:'
+      - '#FFC300Is Virtual: &f%key_virtual%'
+      - ' '
+      - '#55e136&l[>] Actions:'
+      - '#86de2aLeft-Click to &fEdit'
+      - '#86de2aShift-Right to &fDelete &7(No Undo)'
+    KEY_CREATE:
+      Name: Create Key
+      Lore:
+      - '&6&l[?] Description:'
+      - '&7Creates a new crate key.'
+      - ' '
+      - '#55e136&l[>] Actions:'
+      - '#86de2aLeft-Click to &fCreate'
+    KEY_CHANGE_NAME:
+      Name: Key Display Name
+      Lore:
+      - '&b&l[?] Current:'
+      - '&a%key_name%'
+      - ' '
+      - '&6&l[?] Description:'
+      - '&7Sets the key display name. This'
+      - '&7name is used in messages mostly.'
+      - ' '
+      - '&c&l[!] Warning:'
+      - '#C70039This option does not affect display'
+      - '#C70039name of the key item!'
+      - ' '
+      - '#55e136&l[>] Actions:'
+      - '#86de2aLeft-Click to &fChange'
+    KEY_CHANGE_ITEM:
+      Name: Key Item
+      Lore:
+      - '&b&l[?] Current:'
+      - '&a%key_item_name%'
+      - ' '
+      - '&6&l[?] Description:'
+      - '&7Sets the key item, that will'
+      - '&7be used when key is given'
+      - '&7to player''s inventory.'
+      - ' '
+      - '&e&l[!] Note:'
+      - '#FFC300Apply custom name, lore and other'
+      - '#FFC300settings before put item here for'
+      - '#FFC300best result.'
+      - ' '
+      - '#55e136&l[>] Actions:'
+      - '#86de2aDrag & Drop to &fReplace'
+      - '#86de2aRight-Click to &fGet Item'
+    KEY_CHANGE_VIRTUAL:
+      Name: Virtual Key
+      Lore:
+      - '&b&l[?] Current:'
+      - '&aIs Virtual: &f%key_virtual%'
+      - ' '
+      - '&6&l[?] Description:'
+      - '&7Sets whether this key is a'
+      - '&7virtual key. Virtual keys can not'
+      - '&7be given as inventory items and'
+      - '&7are stored in the database.'
+      - ' '
+      - '#55e136&l[>] Actions:'
+      - '#86de2aLeft-Click to &fToggle'

@@ -1,0 +1,52 @@
+size: 54
+menu_title: '§r&f少'
+items:
+############# Interface ####################################################
+  'birchlog':
+    material: birch_log
+    slots:
+    - 8
+    - 26
+    - 36
+    lore:
+    - ''
+    - '&#54a06f → Нажми ПКМ, чтобы рубить'
+    display_name: "&#f8a049&lБерёза"
+    right_click_commands:
+    - '[openguimenu] birch_stage_3'
+    - '[sound] BLOCK_WOOD_BREAK'
+    - '[sound] BLOCK_WOOD_BREAK<delay=5>'
+    - '[sound] BLOCK_WOOD_BREAK<delay=10>'
+  'fakeitem1':
+    material: end_stone_bricks
+    slots:
+    - 2
+    - 10
+    - 16
+    - 31
+    - 37
+    - 50
+    lore:
+    - ''
+    - '&#54a06f → Нажми ПКМ, чтобы рубить'
+    display_name: "&#f8a049&lКирпичи"
+    right_click_commands:
+    - '[close]'
+    - '[sound] ENTITY_ITEM_BREAK 0.7 1'
+    - '[message] &c我 Рубить нужно только дерево!'
+  'fakeitem2':
+    material: bone_block
+    slots:
+    - 19
+    - 25
+    - 5
+    - 40
+    - 46
+    lore:
+    - ''
+    - '&#54a06f → Нажми ПКМ, чтобы рубить'
+    display_name: "&#f8a049&lКусок кости"
+    right_click_commands:
+    - '[close]'
+    - '[sound] ENTITY_ITEM_BREAK 0.7 1'
+    - '[message] &c我 Рубить нужно только дерево!'

@@ -1,0 +1,495 @@
+open_command: bank_s4fm45jmgks9
+register_command: false
+size: 54
+menu_title: '§r&f少'
+items:
+############# Interface ####################################################
+  'avatarRound':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:1
+    slots:
+    - 10-12
+    - 19
+    - 21
+    - 28-30
+    display_name: "&2Банкир"
+  'avatarIcon':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:2
+    slot: 20
+    display_name: "&2Банкир"
+  'communicate':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:3
+    slot: 39
+    priority: 0
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'wb.talkpresent.1'
+    display_name: "&#f8a049&lОбщение"
+    lore:
+    - '&#d9c57c&o%javascript_bankdial1%'
+    - '&#d9c57c&o%javascript_bankdial2%'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы побеседовать'
+    left_click_commands:
+    - '[refresh]'
+    - '[sound] ENTITY_VILLAGER_AMBIENT'
+  'communicateFirst':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:3
+    slot: 39
+    priority: 1
+    display_name: "&#f8a049&lОбщение"
+    lore:
+    - '&#d9c57c&o Я тебя раньше не видел. Или может у меня'
+    - '&#d9c57c&o ..начались проблемы с памятью? Тогда поступим так!'
+    - '&#d9c57c&o Возьми эту шкатулку, в честь знакомства.'
+    - '&#d9c57c&o Хмм, а откуда у меня эта шкатулка...'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы побеседовать'
+    left_click_commands:
+    - '[sound] UI_BUTTON_CLICK 0.3 1'
+    - '[console] lp user %player_name% permission set wb.talkpresent.1'
+    - '[console] serveritem give crate_wooden 1 %player_name%'
+    - '[close]'
+############# Copper -> Silver ####################################################
+  '1trade1':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:4
+    slot: 5
+    amount: 64
+    display_name: "&#f8a049&lОбменять валюту"
+    lore:
+    - '&#d9c57c Перевести 64 медяника 1 серебряник.'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    - '&#54a06f → Нажми ПКМ, чтобы совершить максимум сделок'
+    left_click_commands:
+    - '[console] serveritem give currency_silver_coin 1 %player_name% true'
+    - '[console] serveritem take currency_copper_coin 64 %player_name% true'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    right_click_commands:
+    - '[console] serveritem give currency_silver_coin %math_0:floor_{javascript_copperc}/64% %player_name% true'
+    - '[console] serveritem take currency_copper_coin %math_0_{javascript_copperc64}*64% %player_name% true'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    left_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_copper_coin}_{inventory}%'
+            output: '64'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько монет!'
+    right_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_copper_coin}_{inventory}%'
+            output: '64'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько монет!'
+  '1trade2':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:7
+    data: 27
+    slot: 6
+    display_name: "&#f8a049&lОбменять валюту"
+    lore:
+    - '&#d9c57c Перевести 64 медяника 1 серебряник.'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    - '&#54a06f → Нажми ПКМ, чтобы совершить максимум сделок'
+    left_click_commands:
+    - '[console] serveritem give currency_silver_coin 1 %player_name% true'
+    - '[console] serveritem take currency_copper_coin 64 %player_name% true'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    right_click_commands:
+    - '[console] serveritem give currency_silver_coin %math_0:floor_{javascript_copperc}/64% %player_name% true'
+    - '[console] serveritem take currency_copper_coin %math_0_{javascript_copperc64}*64% %player_name% true'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    left_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_copper_coin}_{inventory}%'
+            output: '64'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько монет!'
+    right_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_copper_coin}_{inventory}%'
+            output: '64'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько монет!'
+  '1trade3':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:5
+    slot: 7
+    display_name: "&#f8a049&lОбменять валюту"
+    lore:
+    - '&#d9c57c Перевести 64 медяника 1 серебряник.'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    - '&#54a06f → Нажми ПКМ, чтобы совершить максимум сделок'
+    left_click_commands:
+    - '[console] serveritem give currency_silver_coin 1 %player_name% true'
+    - '[console] serveritem take currency_copper_coin 64 %player_name% true'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    right_click_commands:
+    - '[console] serveritem give currency_silver_coin %math_0:floor_{javascript_copperc}/64% %player_name% true'
+    - '[console] serveritem take currency_copper_coin %math_0_{javascript_copperc64}*64% %player_name% true'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    left_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_copper_coin}_{inventory}%'
+            output: '64'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько монет!'
+    right_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_copper_coin}_{inventory}%'
+            output: '64'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько монет!'
+############# Silver -> Gold ####################################################
+  '2trade1':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:5
+    slot: 14
+    amount: 64
+    display_name: "&#f8a049&lОбменять валюту"
+    lore:
+    - '&#d9c57c Перевести 64 серебряника 1 златник.'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    - '&#54a06f → Нажми ПКМ, чтобы совершить максимум сделок'
+    left_click_commands:
+    - '[console] serveritem give currency_gold_coin 1 %player_name% true'
+    - '[console] serveritem take currency_silver_coin 64 %player_name% true'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    right_click_commands:
+    - '[console] serveritem give currency_gold_coin %math_0:floor_{javascript_silverc}/64% %player_name% true'
+    - '[console] serveritem take currency_silver_coin %math_0_{javascript_silverc64}*64% %player_name% true'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    left_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '64'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько монет!'
+    right_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '64'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько монет!'
+  '2trade2':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:7
+    slot: 15
+    display_name: "&#f8a049&lОбменять валюту"
+    lore:
+    - '&#d9c57c Перевести 64 серебряника 1 златник.'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    - '&#54a06f → Нажми ПКМ, чтобы совершить максимум сделок'
+    left_click_commands:
+    - '[console] serveritem give currency_gold_coin 1 %player_name% true'
+    - '[console] serveritem take currency_silver_coin 64 %player_name% true'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    right_click_commands:
+    - '[console] serveritem give currency_gold_coin %math_0:floor_{javascript_silverc}/64% %player_name% true'
+    - '[console] serveritem take currency_silver_coin %math_0_{javascript_silverc64}*64% %player_name% true'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    left_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '64'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько монет!'
+    right_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '64'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько монет!'
+  '2trade3':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:6
+    slot: 16
+    display_name: "&#f8a049&lОбменять валюту"
+    lore:
+    - '&#d9c57c Перевести 64 серебряника 1 златник.'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    - '&#54a06f → Нажми ПКМ, чтобы совершить максимум сделок'
+    left_click_commands:
+    - '[console] serveritem give currency_gold_coin 1 %player_name% true'
+    - '[console] serveritem take currency_silver_coin 64 %player_name% true'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    right_click_commands:
+    - '[console] serveritem give currency_gold_coin %math_0:floor_{javascript_silverc}/64% %player_name% true'
+    - '[console] serveritem take currency_silver_coin %math_0_{javascript_silverc64}*64% %player_name% true'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    left_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '64'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько монет!'
+    right_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '64'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько монет!'
+############# Silver -> Copper ####################################################
+  '4trade1':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:5
+    slot: 23
+    display_name: "&#f8a049&lОбменять валюту"
+    lore:
+    - '&#d9c57c Перевести 1 серебряника 64 медяника.'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[console] serveritem give currency_copper_coin 64 %player_name% true'
+    - '[console] serveritem take currency_silver_coin 1 %player_name% true'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    left_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '1'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько монет!'
+  '4trade2':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:7
+    slot: 24
+    display_name: "&#f8a049&lОбменять валюту"
+    lore:
+    - '&#d9c57c Перевести 1 серебряника 64 медяника.'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[console] serveritem give currency_copper_coin 64 %player_name% true'
+    - '[console] serveritem take currency_silver_coin 1 %player_name% true'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    left_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '1'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько монет!'
+  '4trade3':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:4
+    slot: 25
+    amount: 64
+    display_name: "&#f8a049&lОбменять валюту"
+    lore:
+    - '&#d9c57c Перевести 1 серебряника 64 медяника.'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[console] serveritem give currency_copper_coin 64 %player_name% true'
+    - '[console] serveritem take currency_silver_coin 1 %player_name% true'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    left_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '1'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько монет!'
+############# Gold -> Silver ####################################################
+  '5trade1':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:6
+    slot: 32
+    display_name: "&#f8a049&lОбменять валюту"
+    lore:
+    - '&#d9c57c Перевести 1 златника 64 серебряника.'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[console] serveritem give currency_silver_coin 64 %player_name% true'
+    - '[console] serveritem take currency_gold_coin 1 %player_name% true'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    left_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '1'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько монет!'
+  '5trade2':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:7
+    slot: 33
+    display_name: "&#f8a049&lОбменять валюту"
+    lore:
+    - '&#d9c57c Перевести 1 златника 64 серебряника.'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[console] serveritem give currency_silver_coin 64 %player_name% true'
+    - '[console] serveritem take currency_gold_coin 1 %player_name% true'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    left_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '1'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько монет!'
+  '5trade3':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:5
+    slot: 34
+    amount: 64
+    display_name: "&#f8a049&lОбменять валюту"
+    lore:
+    - '&#d9c57c Перевести 1 златника 64 серебряника.'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[console] serveritem give currency_silver_coin 64 %player_name% true'
+    - '[console] serveritem take currency_gold_coin 1 %player_name% true'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    left_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '1'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько монет!'
+############# formulas buy ####################################################
+  '6trade1':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:6
+    slot: 50
+    display_name: "&#f8a049&lКупить счётные формулы"
+    lore:
+    - '&#d9c57c Заплатить 1 златник за формулы.'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[console] serveritem give tool_formulas 1 %player_name%'
+    - '[console] serveritem take currency_gold_coin 1 %player_name% true'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    left_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '1'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько монет!'
+  '6trade2':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:7
+    slot: 51
+    display_name: "&#f8a049&lКупить счётные формулы"
+    lore:
+    - '&#d9c57c Заплатить 1 златник за формулы.'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[console] serveritem give tool_formulas 1 %player_name%'
+    - '[console] serveritem take currency_gold_coin 1 %player_name% true'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    left_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '1'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько монет!'
+  '6trade3':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:11
+    slot: 52
+    display_name: "&#f8a049&lКупить счётные формулы"
+    lore:
+    - '&#d9c57c Заплатить 1 златник за формулы.'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[console] serveritem give tool_formulas 1 %player_name%'
+    - '[console] serveritem take currency_gold_coin 1 %player_name% true'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.3 1'
+    left_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '1'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько монет!'
+############# Developer Info ####################################################
+  'dev_info_tech':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:23
+    slot: 0
+    priority: 0
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'wb.developer'
+    display_name: "&#f8a049&lТехнические сведения"
+    lore:
+    - '&#d9c57cМенюшка = /DeluxeMenus/gui_menus/npc_basics/currency_exchange_0.yml'

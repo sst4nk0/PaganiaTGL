@@ -1,0 +1,67 @@
+# Javascript Expansion: @VERSION@
+# This is the main configuration file for the Javascript Expansion.
+#
+# You will define your javascript placeholders in this file.
+#
+# Javascript files must be located in the:
+#  /plugins/placeholderapi/javascripts/ folder
+#
+# A detailed guide on how to create your own javascript placeholders
+# can be found here:
+# https://github.com/PlaceholderAPI-Expansions/Javascript-Expansion/wiki
+#
+# Your javascript placeholders will be identified by: %javascript_<identifier>%
+#
+# Configuration format:
+#
+# <identifier>:
+#   file: <name of file>.<file extension>
+#
+# Example:
+#
+# 'my_placeholder':
+#   file: 'my_placeholder.js'
+
+# Javascript Expansion: @VERSION@
+# This is the main configuration file for the Javascript Expansion.
+#
+# You will define your javascript placeholders in this file.
+#
+# Javascript files must be located in the:
+#  /plugins/placeholderapi/javascripts/ folder
+#
+# A detailed guide on how to create your own javascript placeholders
+# can be found here:
+# https://github.com/PlaceholderAPI-Expansions/Javascript-Expansion/wiki
+#
+# Your javascript placeholders will be identified by: %javascript_<identifier>%
+#
+# Configuration format:
+#
+# <identifier>:
+#   file: <name of file>.<file extension>
+#
+# Example:
+#
+# 'my_placeholder':
+#   file: 'my_placeholder.js'
+example:
+  file: example.js
+copperc:
+  file: system_check_amount_copper.js
+copperc64:
+  file: system_check_amount_copper64.js
+silverc:
+  file: system_check_amount_silver.js
+silverc64:
+  file: system_check_amount_silver64.js
+bankdial1:
+  file: system_random_bankdial1.js
+bankdial2:
+  file: system_random_bankdial2.js
+storagerdial1:
+  file: system_random_storagerdial1.js
+storagerdial2:
+  file: system_random_storagerdial2.js
+seaskipperdial1:
+  file: system_random_seaskipperdial1.js

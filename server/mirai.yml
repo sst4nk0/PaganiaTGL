@@ -1,0 +1,37 @@
+# Mirai Configuration
+# Join our Discord at https://discord.gg/DdH6Yfu9gM
+# Download new builds at https://ci.codemc.io/job/etil2jz/job/Mirai-1.19/lastSuccessfulBuild/
+info:
+  version: '2.0'
+dont-send-useless-entity-packets: true
+max-bees-in-hive: 3
+checks:
+  flight: true
+  vehicle-flight: true
+log-player-login-location: true
+use-alternate-keepalive: true
+logger:
+  suppress-init-legacy-material-errors: false
+  suppress-ignored-advancement-warnings: false
+  suppress-unrecognized-recipe-errors: false
+  suppress-setblock-in-far-chunk-errors: false
+  suppress-sent-expired-chat: false
+player-fix-stuck-in-portal: false
+fast-speed-check: true
+enchantment-table-book-animation-tick: false
+criterion-trigger:
+  enter-block: true
+  tick: true
+  location: true
+villager-lobotomize: false
+entities-can-use-portals: false
+map-update-interval: 5
+disable-chat-reports: true
+optimize-math-round: true
+optimize-math-hypot: true
+disable-enchantment-table-book-animation: true
+disable-spawners-pick-up-items:
+  skeleton: false
+  zombie: false
+enable-async-entity-tracker: true
+enable-async-pathfinding: true

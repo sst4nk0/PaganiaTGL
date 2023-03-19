@@ -1,0 +1,891 @@
+# Citizens NPC Storage
+
+
+last-created-npc-id: 11
+npc:
+  '1':
+    metadata:
+      player-skin-textures: ewogICJ0aW1lc3RhbXAiIDogMTYyNjUxNjk3NjM5OCwKICAicHJvZmlsZUlkIiA6ICJmOTc4YTA2ZmE1MDU0NTdmOTJiMWFmZGZiNDJmZmU3YyIsCiAgInByb2ZpbGVOYW1lIiA6ICJNMXNzaW5nTmFtZSIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9kY2FlMjUzYzI4YTM5Y2VkMDkyZjc1MzYxNjZlYTNmYjc5MTc3MzJmZGFlYzFmMzdmZTc1YjE2MWU1OWFmYWM2IgogICAgfQogIH0KfQ==
+      cached-skin-uuid-name: m1ssingname
+      cached-skin-uuid: f978a06f-a505-457f-92b1-afdfb42ffe7c
+      player-skin-name: m1ssingname
+      player-skin-signature: vHlE4oqNG1N2zFTp5k6VIvfl2+zqPt5WLZokCxDEKGK/mXOzubZ5XvWzGsJ4rArZeLg9b+QFHW/v12WMyvataFE2zZu+Ng9lVDh0r4DM6cbPMhkAOOg4aXqoq+9TGP+6StUGs1q2tCN2V5xH99+AUP6fBchMRn6mJb1uduvqgCGxQNhsVQBSeU3SeJ4Vm7YjKmxZvnhZqaqOrZSnBMIoqpa03vPWzohqWCggojYVH/Z1MqkWF4iAfIgnmhbmbB1w94ZuS5CTjntqqa5LSuDfBD71hyG+VJDpgUBgtie1hEanxOgfO8kwjd6ZWOfUWhdVVXINk2H02zWULpxm0TOMnTBLe3W3kY93L9WQ0Xgl1KXqiVywd0Y39sjpyKiEqIMAc9m5Q6G9+GGZ2RJa3XqYmi+4Wgl2NYAedZ7Scs/qFQZzaz9WYhY/8UXVPLErYPMHOYcE4/+0z8OsO5DMA/2DWy6qETNwd2dZOBB6BFKt2ExuxJ3aDtmCnIjHG2ihAlz4IpfoW4x8oUZOTP69YBSBCl9889Hkm0iQWEQf6sUFvosQ80KLLzQ1+QSoGCMJfD0ViVCRt4I8AIAuo5V4wsr6hFkv3AcO4aCbcfBOpHovhMnVgrpJ2N9xDTGUPzATK2LiwA3+URpDwCjjDwj47yqPtlwPNwMuOqh96+u/dexv3oY=
+      damage-others: true
+      nameplate-visible: 'true'
+      protected-leash: true
+      protected: false
+    name: §2Часовой
+    uuid: 683c62f9-70f6-4394-9d6c-9e5b27c3f46b
+    traits:
+      gravity:
+        enabled: false
+      spawned: true
+      location:
+        world: world
+        x: '824.5'
+        y: '10.0'
+        z: '-1374.5'
+        yaw: '-69.3221'
+        pitch: '0.0'
+        bodyYaw: 18.026474
+      lookclose:
+        range: '4.0'
+        enabled: true
+        realisticlooking: true
+        disablewhilenavigating: true
+        enableRandomLook: false
+        randomLookDelay: 60
+        headonly: false
+        perplayer: false
+        randomSwitchTargets: false
+        targetnpcs: false
+      type: PLAYER
+      waypoints:
+        linear:
+          cachePaths: false
+          cycle: false
+          points:
+            '0':
+              location:
+                world: world
+                x: '824.0'
+                y: '9.0'
+                z: '-1375.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+      equipment:
+        hand:
+          type: IRON_SWORD
+          amount: 1
+          meta:
+            unbreakable: true
+            repaircost: 0
+            encoded-meta: rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGphdmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAkU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2YWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAAA3QAAj09dAAJbWV0YS10eXBldAALVW5icmVha2FibGV1cQB+AAYAAAADdAAISXRlbU1ldGF0AApVTlNQRUNJRklDc3IAEWphdmEubGFuZy5Cb29sZWFuzSBygNWc+u4CAAFaAAV2YWx1ZXhwAQ==
+          type_key: iron_sword
+        helmet:
+          type: CHAINMAIL_HELMET
+          amount: 1
+          meta:
+            unbreakable: true
+            repaircost: 0
+            encoded-meta: rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGphdmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAkU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2YWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAAA3QAAj09dAAJbWV0YS10eXBldAALVW5icmVha2FibGV1cQB+AAYAAAADdAAISXRlbU1ldGF0AApVTlNQRUNJRklDc3IAEWphdmEubGFuZy5Cb29sZWFuzSBygNWc+u4CAAFaAAV2YWx1ZXhwAQ==
+          type_key: chainmail_helmet
+        chestplate:
+          type: CHAINMAIL_CHESTPLATE
+          amount: 1
+          meta:
+            unbreakable: true
+            repaircost: 0
+            encoded-meta: rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGphdmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAkU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2YWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAAA3QAAj09dAAJbWV0YS10eXBldAALVW5icmVha2FibGV1cQB+AAYAAAADdAAISXRlbU1ldGF0AApVTlNQRUNJRklDc3IAEWphdmEubGFuZy5Cb29sZWFuzSBygNWc+u4CAAFaAAV2YWx1ZXhwAQ==
+          type_key: chainmail_chestplate
+        leggings:
+          type: CHAINMAIL_LEGGINGS
+          amount: 1
+          meta:
+            unbreakable: true
+            repaircost: 0
+            encoded-meta: rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGphdmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAkU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2YWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAAA3QAAj09dAAJbWV0YS10eXBldAALVW5icmVha2FibGV1cQB+AAYAAAADdAAISXRlbU1ldGF0AApVTlNQRUNJRklDc3IAEWphdmEubGFuZy5Cb29sZWFuzSBygNWc+u4CAAFaAAV2YWx1ZXhwAQ==
+          type_key: chainmail_leggings
+        boots:
+          type: CHAINMAIL_BOOTS
+          amount: 1
+          meta:
+            unbreakable: true
+            repaircost: 0
+            encoded-meta: rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGphdmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAkU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2YWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAAA3QAAj09dAAJbWV0YS10eXBldAALVW5icmVha2FibGV1cQB+AAYAAAADdAAISXRlbU1ldGF0AApVTlNQRUNJRklDc3IAEWphdmEubGFuZy5Cb29sZWFuzSBygNWc+u4CAAFaAAV2YWx1ZXhwAQ==
+          type_key: chainmail_boots
+      inventory:
+        '0':
+          type_key: iron_sword
+          amount: 1
+          meta:
+            encoded-meta: rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGphdmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAkU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2YWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAAA3QAAj09dAAJbWV0YS10eXBldAALVW5icmVha2FibGV1cQB+AAYAAAADdAAISXRlbU1ldGF0AApVTlNQRUNJRklDc3IAEWphdmEubGFuZy5Cb29sZWFuzSBygNWc+u4CAAFaAAV2YWx1ZXhwAQ==
+        '36':
+          type_key: chainmail_boots
+          amount: 1
+          meta:
+            encoded-meta: rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGphdmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAkU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2YWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAAA3QAAj09dAAJbWV0YS10eXBldAALVW5icmVha2FibGV1cQB+AAYAAAADdAAISXRlbU1ldGF0AApVTlNQRUNJRklDc3IAEWphdmEubGFuZy5Cb29sZWFuzSBygNWc+u4CAAFaAAV2YWx1ZXhwAQ==
+        '37':
+          type_key: chainmail_leggings
+          amount: 1
+          meta:
+            encoded-meta: rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGphdmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAkU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2YWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAAA3QAAj09dAAJbWV0YS10eXBldAALVW5icmVha2FibGV1cQB+AAYAAAADdAAISXRlbU1ldGF0AApVTlNQRUNJRklDc3IAEWphdmEubGFuZy5Cb29sZWFuzSBygNWc+u4CAAFaAAV2YWx1ZXhwAQ==
+        '38':
+          type_key: chainmail_chestplate
+          amount: 1
+          meta:
+            encoded-meta: rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGphdmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAkU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2YWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAAA3QAAj09dAAJbWV0YS10eXBldAALVW5icmVha2FibGV1cQB+AAYAAAADdAAISXRlbU1ldGF0AApVTlNQRUNJRklDc3IAEWphdmEubGFuZy5Cb29sZWFuzSBygNWc+u4CAAFaAAV2YWx1ZXhwAQ==
+        '39':
+          type_key: chainmail_helmet
+          amount: 1
+          meta:
+            encoded-meta: rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGphdmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAkU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2YWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAAA3QAAj09dAAJbWV0YS10eXBldAALVW5icmVha2FibGV1cQB+AAYAAAADdAAISXRlbU1ldGF0AApVTlNQRUNJRklDc3IAEWphdmEubGFuZy5Cb29sZWFuzSBygNWc+u4CAAFaAAV2YWx1ZXhwAQ==
+      sentinel:
+        stats_ticksSpawned: 4971493
+        stats_timesSpawned: 395
+        stats_arrowsFired: 0
+        stats_potionsThrow: 0
+        stats_fireballsFired: 0
+        stats_snowballsThrown: 0
+        stats_eggsThrown: 0
+        stats_skullsThrown: 0
+        stats_pearlsUsed: 0
+        stats_punches: 240
+        stats_attackAttempts: 1450
+        stats_damageTaken: 4110.499706668835
+        stats_damageGiven: 1011.0971740484238
+        avoidRange: 10.0
+        range: 20.0
+        damage: -1.0
+        armor: -1.0
+        health: 2000.0
+        ranged_chase: false
+        close_chase: true
+        invincible: false
+        fightback: true
+        runaway: false
+        attackRate: 30
+        attackRateRanged: 30
+        healRate: 100
+        guardingUpper: 0
+        guardingLower: 0
+        guardedNPC: -1
+        needsAmmo: false
+        safeShot: true
+        respawnTime: 100
+        chaseRange: 100.0
+        enemyDrops: false
+        enemyTargetTime: 0
+        speed: 1.0
+        warning_text: ''
+        greeting_text: ''
+        greet_range: 10.0
+        greet_rate: 100
+        autoswitch: false
+        accuracy: 0.0
+        realistic: true
+        reach: 3.0
+        guard_distance_minimum: 7.0
+        guard_selection_range: 4.0
+        spawnPoint:
+          world: world
+          x: '824.5'
+          y: '10.0'
+          z: '-1374.5'
+          yaw: '-69.3221'
+          pitch: '0.0'
+        squad: town1_guards
+        stats_llamaSpitShot: 0
+        stats_shulkerBulletsShot: 0
+        stats_evokerFangsSpawned: 0
+        protected: true
+        ignore_los: false
+        projectileRange: 100.0
+        retain_target: false
+        disable_teleporting: false
+        reaction_slowdown: 0
+        allow_knockback: true
+        death_xp: 0
+        allTargets:
+          targets:
+            '0': MONSTER
+          byEvent:
+            '0': pvp
+            '1': pvsentinel
+      speech: chat
+      text:
+        delay: -1
+        talk-close: true
+        random-talker: true
+        realistic-looking: true
+        range: '2.0'
+        talkitem: default
+        speech-bubbles: false
+        text:
+          '0': Чего смотришь? Иди куда шёл...
+          '1': Не мельтиши перед глазами, брысь!
+          '2': Делать нечего, малокровка?
+          '3': Отойди от меня, оборванец.
+          '4': Сам-то не устал?
+          '5': Место красивое, а ты - нет!
+          '6': Мой меч всегда на готове...
+          '7': Отшельник никак? А, нет. Но похож.
+      owner:
+        uuid: 193c7d11-8a07-35a9-a657-d485e43824c5
+      skintrait:
+        fetchDefaultSkin: true
+        signature: vHlE4oqNG1N2zFTp5k6VIvfl2+zqPt5WLZokCxDEKGK/mXOzubZ5XvWzGsJ4rArZeLg9b+QFHW/v12WMyvataFE2zZu+Ng9lVDh0r4DM6cbPMhkAOOg4aXqoq+9TGP+6StUGs1q2tCN2V5xH99+AUP6fBchMRn6mJb1uduvqgCGxQNhsVQBSeU3SeJ4Vm7YjKmxZvnhZqaqOrZSnBMIoqpa03vPWzohqWCggojYVH/Z1MqkWF4iAfIgnmhbmbB1w94ZuS5CTjntqqa5LSuDfBD71hyG+VJDpgUBgtie1hEanxOgfO8kwjd6ZWOfUWhdVVXINk2H02zWULpxm0TOMnTBLe3W3kY93L9WQ0Xgl1KXqiVywd0Y39sjpyKiEqIMAc9m5Q6G9+GGZ2RJa3XqYmi+4Wgl2NYAedZ7Scs/qFQZzaz9WYhY/8UXVPLErYPMHOYcE4/+0z8OsO5DMA/2DWy6qETNwd2dZOBB6BFKt2ExuxJ3aDtmCnIjHG2ihAlz4IpfoW4x8oUZOTP69YBSBCl9889Hkm0iQWEQf6sUFvosQ80KLLzQ1+QSoGCMJfD0ViVCRt4I8AIAuo5V4wsr6hFkv3AcO4aCbcfBOpHovhMnVgrpJ2N9xDTGUPzATK2LiwA3+URpDwCjjDwj47yqPtlwPNwMuOqh96+u/dexv3oY=
+        skinName: m1ssingname
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTYyNjUxNjk3NjM5OCwKICAicHJvZmlsZUlkIiA6ICJmOTc4YTA2ZmE1MDU0NTdmOTJiMWFmZGZiNDJmZmU3YyIsCiAgInByb2ZpbGVOYW1lIiA6ICJNMXNzaW5nTmFtZSIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9kY2FlMjUzYzI4YTM5Y2VkMDkyZjc1MzYxNjZlYTNmYjc5MTc3MzJmZGFlYzFmMzdmZTc1YjE2MWU1OWFmYWM2IgogICAgfQogIH0KfQ==
+        updateSkins: false
+      sneak:
+        sneaking: false
+    traitnames: speech,lookclose,spawned,gravity,scoreboardtrait,rotationtrait,sentinel,inventory,mounttrait,equipment,type,skintrait,text,sneak,waypoints,owner,location
+    navigator:
+      speedmodifier: '0.800000011920929'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '2':
+    name: §2Часовой
+    uuid: 631daaed-73d8-4cf9-bfbb-a6fc92755c3f
+    traits:
+      type: PLAYER
+      location:
+        world: world
+        x: '891.5'
+        y: '25.0'
+        z: '-1428.5'
+        yaw: '-21.2767'
+        pitch: '0.0'
+        bodyYaw: 141.29959
+      gravity:
+        enabled: false
+      waypoints:
+        linear:
+          cachePaths: false
+          cycle: false
+          points:
+            '0':
+              location:
+                world: world
+                x: '891.0'
+                y: '24.0'
+                z: '-1429.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+      spawned: true
+      equipment:
+        hand:
+          type: IRON_SWORD
+          amount: 1
+          meta:
+            unbreakable: true
+            repaircost: 0
+            encoded-meta: rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGphdmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAkU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2YWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAAA3QAAj09dAAJbWV0YS10eXBldAALVW5icmVha2FibGV1cQB+AAYAAAADdAAISXRlbU1ldGF0AApVTlNQRUNJRklDc3IAEWphdmEubGFuZy5Cb29sZWFuzSBygNWc+u4CAAFaAAV2YWx1ZXhwAQ==
+          type_key: iron_sword
+        helmet:
+          type: CHAINMAIL_HELMET
+          amount: 1
+          meta:
+            unbreakable: true
+            repaircost: 0
+            encoded-meta: rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGphdmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAkU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2YWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAAA3QAAj09dAAJbWV0YS10eXBldAALVW5icmVha2FibGV1cQB+AAYAAAADdAAISXRlbU1ldGF0AApVTlNQRUNJRklDc3IAEWphdmEubGFuZy5Cb29sZWFuzSBygNWc+u4CAAFaAAV2YWx1ZXhwAQ==
+          type_key: chainmail_helmet
+        chestplate:
+          type: CHAINMAIL_CHESTPLATE
+          amount: 1
+          meta:
+            unbreakable: true
+            repaircost: 0
+            encoded-meta: rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGphdmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAkU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2YWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAAA3QAAj09dAAJbWV0YS10eXBldAALVW5icmVha2FibGV1cQB+AAYAAAADdAAISXRlbU1ldGF0AApVTlNQRUNJRklDc3IAEWphdmEubGFuZy5Cb29sZWFuzSBygNWc+u4CAAFaAAV2YWx1ZXhwAQ==
+          type_key: chainmail_chestplate
+        leggings:
+          type: CHAINMAIL_LEGGINGS
+          amount: 1
+          meta:
+            unbreakable: true
+            repaircost: 0
+            encoded-meta: rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGphdmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAkU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2YWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAAA3QAAj09dAAJbWV0YS10eXBldAALVW5icmVha2FibGV1cQB+AAYAAAADdAAISXRlbU1ldGF0AApVTlNQRUNJRklDc3IAEWphdmEubGFuZy5Cb29sZWFuzSBygNWc+u4CAAFaAAV2YWx1ZXhwAQ==
+          type_key: chainmail_leggings
+        boots:
+          type: CHAINMAIL_BOOTS
+          amount: 1
+          meta:
+            unbreakable: true
+            repaircost: 0
+            encoded-meta: rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGphdmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAkU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2YWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAAA3QAAj09dAAJbWV0YS10eXBldAALVW5icmVha2FibGV1cQB+AAYAAAADdAAISXRlbU1ldGF0AApVTlNQRUNJRklDc3IAEWphdmEubGFuZy5Cb29sZWFuzSBygNWc+u4CAAFaAAV2YWx1ZXhwAQ==
+          type_key: chainmail_boots
+      inventory:
+        '0':
+          type_key: iron_sword
+          amount: 1
+          meta:
+            encoded-meta: rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGphdmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAkU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2YWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAAA3QAAj09dAAJbWV0YS10eXBldAALVW5icmVha2FibGV1cQB+AAYAAAADdAAISXRlbU1ldGF0AApVTlNQRUNJRklDc3IAEWphdmEubGFuZy5Cb29sZWFuzSBygNWc+u4CAAFaAAV2YWx1ZXhwAQ==
+        '36':
+          type_key: chainmail_boots
+          amount: 1
+          meta:
+            encoded-meta: rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGphdmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAkU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2YWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAAA3QAAj09dAAJbWV0YS10eXBldAALVW5icmVha2FibGV1cQB+AAYAAAADdAAISXRlbU1ldGF0AApVTlNQRUNJRklDc3IAEWphdmEubGFuZy5Cb29sZWFuzSBygNWc+u4CAAFaAAV2YWx1ZXhwAQ==
+        '37':
+          type_key: chainmail_leggings
+          amount: 1
+          meta:
+            encoded-meta: rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGphdmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAkU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2YWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAAA3QAAj09dAAJbWV0YS10eXBldAALVW5icmVha2FibGV1cQB+AAYAAAADdAAISXRlbU1ldGF0AApVTlNQRUNJRklDc3IAEWphdmEubGFuZy5Cb29sZWFuzSBygNWc+u4CAAFaAAV2YWx1ZXhwAQ==
+        '38':
+          type_key: chainmail_chestplate
+          amount: 1
+          meta:
+            encoded-meta: rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGphdmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAkU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2YWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAAA3QAAj09dAAJbWV0YS10eXBldAALVW5icmVha2FibGV1cQB+AAYAAAADdAAISXRlbU1ldGF0AApVTlNQRUNJRklDc3IAEWphdmEubGFuZy5Cb29sZWFuzSBygNWc+u4CAAFaAAV2YWx1ZXhwAQ==
+        '39':
+          type_key: chainmail_helmet
+          amount: 1
+          meta:
+            encoded-meta: rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGphdmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAkU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2YWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAAA3QAAj09dAAJbWV0YS10eXBldAALVW5icmVha2FibGV1cQB+AAYAAAADdAAISXRlbU1ldGF0AApVTlNQRUNJRklDc3IAEWphdmEubGFuZy5Cb29sZWFuzSBygNWc+u4CAAFaAAV2YWx1ZXhwAQ==
+      sentinel:
+        stats_ticksSpawned: 4813532
+        stats_timesSpawned: 381
+        stats_arrowsFired: 0
+        stats_potionsThrow: 0
+        stats_fireballsFired: 0
+        stats_snowballsThrown: 0
+        stats_eggsThrown: 0
+        stats_skullsThrown: 0
+        stats_pearlsUsed: 0
+        stats_punches: 143
+        stats_attackAttempts: 725
+        stats_damageTaken: 1100.6104525804499
+        stats_damageGiven: 764.8263138532639
+        avoidRange: 10.0
+        range: 20.0
+        damage: -1.0
+        armor: -1.0
+        health: 2000.0
+        ranged_chase: false
+        close_chase: true
+        invincible: false
+        fightback: true
+        runaway: false
+        attackRate: 30
+        attackRateRanged: 30
+        healRate: 100
+        guardingUpper: 0
+        guardingLower: 0
+        guardedNPC: -1
+        needsAmmo: false
+        safeShot: true
+        respawnTime: 100
+        chaseRange: 100.0
+        enemyDrops: false
+        enemyTargetTime: 0
+        speed: 1.0
+        warning_text: ''
+        greeting_text: ''
+        greet_range: 10.0
+        greet_rate: 100
+        autoswitch: false
+        accuracy: 0.0
+        realistic: true
+        reach: 3.0
+        guard_distance_minimum: 7.0
+        guard_selection_range: 4.0
+        squad: town1_guards
+        spawnPoint:
+          world: world
+          x: '891.5'
+          y: '25.0'
+          z: '-1428.5'
+          yaw: '-21.2767'
+          pitch: '0.0'
+        stats_llamaSpitShot: 0
+        stats_shulkerBulletsShot: 0
+        stats_evokerFangsSpawned: 0
+        protected: true
+        ignore_los: false
+        projectileRange: 100.0
+        retain_target: false
+        disable_teleporting: false
+        reaction_slowdown: 0
+        allow_knockback: true
+        death_xp: 0
+        allTargets:
+          targets:
+            '0': MONSTER
+          byEvent:
+            '0': pvsentinel
+            '1': pvp
+      lookclose:
+        range: '4.0'
+        enabled: true
+        realisticlooking: true
+        disablewhilenavigating: true
+        enableRandomLook: false
+        randomLookDelay: 60
+        headonly: false
+        perplayer: false
+        randomSwitchTargets: false
+        targetnpcs: false
+      speech: chat
+      text:
+        delay: -1
+        talk-close: true
+        random-talker: true
+        realistic-looking: true
+        range: '2.0'
+        talkitem: default
+        speech-bubbles: false
+        text:
+          '0': Уходи отсюда, тут ничего нет.
+          '1': Нечего там делать, брысь!
+          '2': Пойди лучше, отдохни. Я тут разберусь.
+          '3': Там ничего нет, не веришь?
+          '4': Прохода нет! Не видишь?
+          '5': Шахта? А... Нет. Точно нет.
+          '6': Мой меч наточен как никогда...
+          '7': Совсем страх потерял? Отойди!
+      owner:
+        uuid: 193c7d11-8a07-35a9-a657-d485e43824c5
+      skintrait:
+        fetchDefaultSkin: true
+        signature: w1LLNwxkP82OOoSS8R2UaGvhMZpXQShwcN7KHj7ePgpdUhRAUxgiGQW5MfL5wPjsy8aJrFgJAybedKl4V2fTF5jTHAyuGJmLw87oDGnBV6TroD1RirPL6R1ahsR6Ihn3tgSda7QapOkA+hx6GEkQT7U9EPQXikoalpoFLQhmvCTsMeGtCoHlY7vGG/3O4fvAT58OgqGRJ+i/O1vYfnnOsHJ9PSJIWT5BsSJlYbeEChwdSh8TlEe5gYFafqDSIT/+1Re/v6AvifWiZT7ctgYnlYTS4GYHCfykLV9MD5geecRi8WmxGSKxwhdUNECWDDccbA9IZcK9+O5bqEOAXIDTkMuiWnoaAz01gl3hEC6BCRiAAN6XKn+rsgAQcrUKhx+5FC1RcJFBbjNnVGqChC+p4dyJEW/llKU7KncopEVKeC7gzr/EnizwlHjZ3vPp2mgMvDxL4oC3O2PVNDLOZa7lyWNXzGBr7GUN7Z8epd5JPr5JBKyiIhHAxjK0hGVHyKAmtvhigK3aQ9tVItKTZvfIeD4O88iWIlbM5hoIkyjp1tRTGGHkI3qHn4SclEVjUNP+utcJ6FikR0iVv8097hoXHePn9e1Wk06e4XJHW/HoUBQ9QHfwZCw7tsCTP/VTQWM7/YqHHtus4fDZTOMtxds/O23NyNe7uQIKusfQQqiRmHM=
+        skinName: seraphil
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTYyNjUyNTM0MTYzOCwKICAicHJvZmlsZUlkIiA6ICI1ZGE4YzMxODAxZDI0YzU5OTk5NTgxMjQ5NmY0YjdkNCIsCiAgInByb2ZpbGVOYW1lIiA6ICJTZXJhcGhpbCIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9hOTg4MWViYmUyZWIxMjk0MTdhNzQ4NDY2OWQ0MDg1YmFhNjkzODIzZTkyODY1ZWE1MGVhOWIwYjQyMTIyM2E4IgogICAgfQogIH0KfQ==
+        updateSkins: false
+      sneak:
+        sneaking: false
+    traitnames: speech,lookclose,spawned,gravity,scoreboardtrait,rotationtrait,sentinel,inventory,mounttrait,equipment,type,skintrait,waypoints,text,sneak,owner,location
+    navigator:
+      speedmodifier: '0.800000011920929'
+      avoidwater: false
+      usedefaultstuckaction: true
+    metadata:
+      player-skin-textures: ewogICJ0aW1lc3RhbXAiIDogMTYyNjUyNTM0MTYzOCwKICAicHJvZmlsZUlkIiA6ICI1ZGE4YzMxODAxZDI0YzU5OTk5NTgxMjQ5NmY0YjdkNCIsCiAgInByb2ZpbGVOYW1lIiA6ICJTZXJhcGhpbCIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9hOTg4MWViYmUyZWIxMjk0MTdhNzQ4NDY2OWQ0MDg1YmFhNjkzODIzZTkyODY1ZWE1MGVhOWIwYjQyMTIyM2E4IgogICAgfQogIH0KfQ==
+      cached-skin-uuid-name: seraphil
+      cached-skin-uuid: 5da8c318-01d2-4c59-9995-812496f4b7d4
+      player-skin-name: seraphil
+      protected: false
+      player-skin-signature: w1LLNwxkP82OOoSS8R2UaGvhMZpXQShwcN7KHj7ePgpdUhRAUxgiGQW5MfL5wPjsy8aJrFgJAybedKl4V2fTF5jTHAyuGJmLw87oDGnBV6TroD1RirPL6R1ahsR6Ihn3tgSda7QapOkA+hx6GEkQT7U9EPQXikoalpoFLQhmvCTsMeGtCoHlY7vGG/3O4fvAT58OgqGRJ+i/O1vYfnnOsHJ9PSJIWT5BsSJlYbeEChwdSh8TlEe5gYFafqDSIT/+1Re/v6AvifWiZT7ctgYnlYTS4GYHCfykLV9MD5geecRi8WmxGSKxwhdUNECWDDccbA9IZcK9+O5bqEOAXIDTkMuiWnoaAz01gl3hEC6BCRiAAN6XKn+rsgAQcrUKhx+5FC1RcJFBbjNnVGqChC+p4dyJEW/llKU7KncopEVKeC7gzr/EnizwlHjZ3vPp2mgMvDxL4oC3O2PVNDLOZa7lyWNXzGBr7GUN7Z8epd5JPr5JBKyiIhHAxjK0hGVHyKAmtvhigK3aQ9tVItKTZvfIeD4O88iWIlbM5hoIkyjp1tRTGGHkI3qHn4SclEVjUNP+utcJ6FikR0iVv8097hoXHePn9e1Wk06e4XJHW/HoUBQ9QHfwZCw7tsCTP/VTQWM7/YqHHtus4fDZTOMtxds/O23NyNe7uQIKusfQQqiRmHM=
+  '3':
+    name: §2Банкир
+    uuid: 95fc5bff-7c05-47c4-b7d4-3e85352bfb95
+    traits:
+      type: VILLAGER
+      spawned: true
+      gravity:
+        enabled: false
+      location:
+        world: world
+        x: '858.6972'
+        y: '58.0'
+        z: '-1373.4539'
+        yaw: '-104.1441'
+        pitch: '0.0'
+        bodyYaw: -104.14409
+      owner:
+        uuid: 193c7d11-8a07-35a9-a657-d485e43824c5
+      profession: NITWIT
+      lookclose:
+        range: '3.0'
+        disablewhilenavigating: true
+        enabled: true
+        enableRandomLook: false
+        randomLookDelay: 60
+        realisticlooking: false
+        headonly: false
+        perplayer: false
+        randomSwitchTargets: false
+        targetnpcs: false
+        randomPitchRange:
+          '0': 0.0
+          '1': 0.0
+        randomYawRange:
+          '0': 0.0
+          '1': 360.0
+    traitnames: profession,lookclose,mounttrait,gravity,spawned,equipment,type,scoreboardtrait,owner,rotationtrait,location,inventory
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '4':
+    name: §2Кладовщик
+    uuid: 95fc5bff-7c05-47c4-b7d4-3e85352bfd96
+    traits:
+      type: VILLAGER
+      spawned: true
+      gravity:
+        enabled: false
+      location:
+        world: world
+        x: '864.5'
+        y: '58.0'
+        z: '-1369.5'
+        yaw: '110.7919'
+        pitch: '0.0'
+        bodyYaw: 109.72853
+      owner:
+        uuid: 193c7d11-8a07-35a9-a657-d485e43824c5
+      profession: NITWIT
+      lookclose:
+        range: '3.0'
+        disablewhilenavigating: true
+        enabled: true
+        enableRandomLook: false
+        randomLookDelay: 60
+        realisticlooking: false
+        headonly: false
+        perplayer: false
+        randomSwitchTargets: false
+        targetnpcs: false
+        randomPitchRange:
+          '0': 0.0
+          '1': 0.0
+        randomYawRange:
+          '0': 0.0
+          '1': 360.0
+    traitnames: profession,lookclose,mounttrait,spawned,gravity,equipment,type,scoreboardtrait,owner,rotationtrait,location,inventory
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '5':
+    metadata:
+      cached-skin-uuid-name: 0519b2c9-d936-4e0c-ba96-694c02afe566
+    name: §2Лесник
+    uuid: 9f067bb2-ac8d-4bc3-9b35-10f4e58765eb
+    traits:
+      hologramtrait:
+        direction: BOTTOM_UP
+        lineHeight: -1.0
+      skintrait:
+        fetchDefaultSkin: true
+        signature: ijnjBp7Y3W+GEPrtnzWW5pyCsUiNDItF+B7P3Qrm1MSnDqbbMO8brwwTYwSNlRJNiYlv9YFNykpPJTrkSJHnmEms7Jjsy/IND3lLfnK2iBCi5koLXOHD83ZtlvsmI4ult1jM9sAXWWpwdQdQ8n2npgLxQ6iPyh4qfzw52uBrNjPJ11fO5EXvDnD8SuQHoJuq/7gMO9TlDiMtUmwcBPCBP6YQNJQb1J6Qq59f4a3YRWtzpltFUlp9JkQYPXU3+pDRaaPnXmtjF6ZMD0uxhNAlLDTUnT6iMDJkRma8BcsBvc4o+ONaU0CKWxkIHB7vUFpPPtAIHywNR2M+GQwIyzQLih8CdFkW+OYkiVArXcw6Qa6qLIb3HjJsB/+SSi1WSYcphBSALMSiac+JFmnnPwnSASTO7WGlWsymgqWteUBatJxX0D+lMZlSNLukMyDuQsf4ju0kt8HOMQ7VPH6sS0XJWPYbsD6kstkle5zV33VJ5iT8PK2Zsn0gYZdtf2UFAvm5TG9msr9S/GmXVhTBs6VXwk9ZZ2lKvmbQpwl5sg7T418hcn/S2szqbnjxlsHDByjqC0+1pl3uFRGH/B6q04M2sZ3h/4cP74a6fMLKgDCSHmJRNTwWkRMEz1XW/OkZqz5mXTB1MNMWnf/AYVIB9MVXoKXGJzhXTeD+KcsHkCAzkI0=
+        skinName: 0519b2c9-d936-4e0c-ba96-694c02afe566
+        textureRaw: eyJ0aW1lc3RhbXAiOjE1ODc0MDQzMjk0OTAsInByb2ZpbGVJZCI6IjRkNzA0ODZmNTA5MjRkMzM4NmJiZmM5YzEyYmFiNGFlIiwicHJvZmlsZU5hbWUiOiJzaXJGYWJpb3pzY2hlIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS85YTMzZmFmNzAyMThjYjMzNmY1NWQ1MDViNzRmMTczYzNmNGUyYWU0OGU0ZGYwNDVhODM4MWYzY2EyNzA5ZmEyIn19fQ==
+        updateSkins: false
+      spawned: true
+      type: PLAYER
+      age:
+        age: 0
+        locked: true
+      owner:
+        uuid: 193c7d11-8a07-35a9-a657-d485e43824c5
+      lookclose:
+        range: '3.0'
+        disablewhilenavigating: true
+        enabled: true
+        enableRandomLook: false
+        randomLookDelay: 60
+        realisticlooking: false
+        headonly: false
+        perplayer: false
+        randomSwitchTargets: false
+        targetnpcs: false
+        randomPitchRange:
+          '0': 0.0
+          '1': 0.0
+        randomYawRange:
+          '0': 0.0
+          '1': 360.0
+      location:
+        bodyYaw: 11.101852
+        world: world
+        x: '597.5299'
+        y: '41.0'
+        z: '-1588.4198'
+        yaw: '11.1019'
+        pitch: '0.0'
+      equipment:
+        hand:
+          type_key: iron_axe
+          amount: 1
+          meta:
+            encoded-meta: rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGphdmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAkU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2YWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAAA3QAAj09dAAJbWV0YS10eXBldAALVW5icmVha2FibGV1cQB+AAYAAAADdAAISXRlbU1ldGF0AApVTlNQRUNJRklDc3IAEWphdmEubGFuZy5Cb29sZWFuzSBygNWc+u4CAAFaAAV2YWx1ZXhwAQ==
+      inventory:
+        '0':
+          type_key: iron_axe
+          amount: 1
+          meta:
+            encoded-meta: rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGphdmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAkU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2YWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAAA3QAAj09dAAJbWV0YS10eXBldAALVW5icmVha2FibGV1cQB+AAYAAAADdAAISXRlbU1ldGF0AApVTlNQRUNJRklDc3IAEWphdmEubGFuZy5Cb29sZWFuzSBygNWc+u4CAAFaAAV2YWx1ZXhwAQ==
+    traitnames: lookclose,spawned,scoreboardtrait,rotationtrait,age,inventory,mounttrait,equipment,type,hologramtrait,skintrait,owner,location
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '6':
+    metadata:
+      cached-skin-uuid-name: 7b9d04c0-5243-4e24-9d6e-a9f567d61e5f
+    name: §2Купец §7(дерево)
+    uuid: 9bfcc557-6ea0-40c7-bf89-0de6ced81feb
+    traits:
+      location:
+        bodyYaw: -1.7973862
+        world: world
+        x: '395.5134'
+        y: '39.0'
+        z: '-1481.5025'
+        yaw: '-1.7974'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      spawned: true
+      lookclose:
+        range: '3.0'
+        disablewhilenavigating: true
+        enabled: true
+        enableRandomLook: false
+        randomLookDelay: 60
+        realisticlooking: false
+        headonly: false
+        perplayer: false
+        randomSwitchTargets: false
+        targetnpcs: false
+        randomPitchRange:
+          '0': 0.0
+          '1': 0.0
+        randomYawRange:
+          '0': 0.0
+          '1': 360.0
+      skintrait:
+        fetchDefaultSkin: true
+        signature: QTyd+6K0IQNGUgZrO11/fMuLX+7x0iLTa7OcQCkNfTvRjaRHJWpVHH6LI+fqh+1yamEUi4aEP6641/ZyhCvvEzbRzbd2cRGXqEDX66EAcRRJU/k8Gu2VmWLGOi8RFrcKOnZcCAaD1FvRImqdnDde3Ij5CBeNmBOWR1+74o1WQsexPZjI8W54w6QdvJL3HkxbGPK0lSOfVPNs1MRBwtEyLTcxaYMBX/5+DQTPyOCOJ8XJXlNTRcYOmZZmuGClBZDyqfiAzk6Wshc5/IbfL9+Qca8PX7NUSZuQvI4TtyTJfhxYMrprKkN/RR7iou3DuC6xrUm4nMd4opRglDosLlb8Xt+GUsC++21sjO8rDcItwkSLkFVUsD/6a+gwbOU2GLi3B/O/uBROeOB64P7NsB10+MVJKnSX8ZRWuRFkqXKG9tazeLl8G623RqZBxovtS6xpj67oz7gMnWELL+BnJZy3xGrnr+0OBAHAxhO4DWI/wBjRC668LUHjyRjcp1PFxTLGnLt+qEo5hCjzrzLVADiHye79/GMtlWY2xxZON7DM7mEiLg556MjHyOPbWh67fMd2lrogBPPXMKXIofZIg1dY7yFY5K5/5KsmBqvF/dRSiXqRojpp7JlCF7HjM8OxX6fvyscm1IS+YM/dTwFAQDMt5QHgYM/1LtIHJOGmJkqea3E=
+        skinName: 7b9d04c0-5243-4e24-9d6e-a9f567d61e5f
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTYwMTIzMjIyNTc3MywKICAicHJvZmlsZUlkIiA6ICI5YzQ5YjU0YjFjZjU0NjZjYjRhNzA4M2JmZGQ4MDIxNSIsCiAgInByb2ZpbGVOYW1lIiA6ICI5U0kiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2Q5YTYzOTIzZDIwMzY5ZDk2MzIyMzE2ZWM1MmFiNmY2YTcyYTViMjIxNTZlYjYzZTcyOGZlZjAwMjY2ODMxIgogICAgfQogIH0KfQ==
+        updateSkins: false
+      owner:
+        uuid: 193c7d11-8a07-35a9-a657-d485e43824c5
+      type: PLAYER
+      hologramtrait:
+        direction: BOTTOM_UP
+        lineHeight: -1.0
+    traitnames: lookclose,mounttrait,spawned,type,hologramtrait,skintrait,scoreboardtrait,owner,rotationtrait,age,location,inventory
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '7':
+    metadata:
+      cached-skin-uuid-name: 67da0254-e4c5-454e-9931-d764f45886a7
+      minecraft-ai: false
+    name: §2Волхв Велимудр
+    uuid: d7cfe0da-e709-442f-8ca7-63254a23c559
+    traits:
+      owner:
+        uuid: 193c7d11-8a07-35a9-a657-d485e43824c5
+      skintrait:
+        fetchDefaultSkin: true
+        signature: yUFOSG9VJqT6UbJFignezCtvZY79A8K24OK2qEysZXR5lzTFMKakggjYlOPmFKLmQ9x0zG5QdKHMUxe5C8rPy3z5gN8m0YkIYWwlY5Tv5V1vuKit+uqy3Tibdx5pM1GK9LHo22z9ePWDEfQn0v/O4G8EIF08FqruY020AsotQxKqU2r5sN51oOVPkUuzvz4UfzY6vLV0aqVCr6B5fOPC13Kyj80TxkivzVnHEABB9XikkkXZHdcEU+ZdAXDNNPmN5V5ZKPGRW2o+dZkhTzN4uHiuxBk2l7pBC6ApaiweaIad6Lin87UrgcGQxw8PkhGBaUCQ890fNn7lreRRnmRI5iccdbmox210+N9uI9Wn1S0nrv+rIuOBTrS3dYp2FnTUB3xXufhzbAJYL9h1s5Jj5xRgG8DmFLYqjgQg4hdbeKeq48az/QkCgzHt/aScdfsOmh0c/Wg0vhrI62O5LahWcnAQoAxalQudR/w8h59owK/MvvvyLIc/ambdbk917x2SQix/xquy0XY1ViAqkyi+mhaqKquvVgir/1Wy21fJKbqVPFZH+zLwbbmVdQGY+I3ALIBlCrv3J1ZJ9J2WhdBwsDri/is05WmL0avJCii+fI8E6pTIAqhs9JvuvDV/HnypR8wBp70LBZTcvlI/sJPxoYjbS47cs7IWpOyt5/iB30o=
+        skinName: 67da0254-e4c5-454e-9931-d764f45886a7
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTU5NDU5NDA1MTgxMCwKICAicHJvZmlsZUlkIiA6ICI2N2RhMDI1NGU0YzU0NTRlOTkzMWQ3NjRmNDU4ODZhNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJTYWVyY3VsbyIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9hOTg4MWViYmUyZWIxMjk0MTdhNzQ4NDY2OWQ0MDg1YmFhNjkzODIzZTkyODY1ZWE1MGVhOWIwYjQyMTIyM2E4IiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0=
+        updateSkins: false
+      age:
+        age: 0
+        locked: true
+      spawned: true
+      type: PLAYER
+      lookclose:
+        range: '3.0'
+        disablewhilenavigating: true
+        enabled: false
+        enableRandomLook: false
+        randomLookDelay: 60
+        realisticlooking: false
+        headonly: false
+        perplayer: false
+        randomSwitchTargets: false
+        targetnpcs: false
+        randomPitchRange:
+          '0': 0.0
+          '1': 0.0
+        randomYawRange:
+          '0': 0.0
+          '1': 360.0
+      controllable:
+        enabled: false
+        owner_required: false
+      location:
+        bodyYaw: 88.66089
+        world: world
+        x: '888.4301'
+        y: '64.0'
+        z: '-1389.5841'
+        yaw: '88.6609'
+        pitch: '13.1998'
+    traitnames: controllable,lookclose,mounttrait,spawned,type,skintrait,scoreboardtrait,owner,age,location,inventory
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '8':
+    name: §2Капитан
+    uuid: 657e3220-78c9-4d32-b3ab-f6b1c23c404f
+    traits:
+      type: VILLAGER
+      profession: FISHERMAN
+      lookclose:
+        range: '3.0'
+        disablewhilenavigating: true
+        enabled: true
+        enableRandomLook: false
+        randomLookDelay: 60
+        realisticlooking: false
+        headonly: false
+        perplayer: false
+        randomSwitchTargets: false
+        targetnpcs: false
+        randomPitchRange:
+          '0': 0.0
+          '1': 0.0
+        randomYawRange:
+          '0': 0.0
+          '1': 360.0
+      skintrait:
+        fetchDefaultSkin: true
+        updateSkins: false
+      owner:
+        uuid: 193c7d11-8a07-35a9-a657-d485e43824c5
+      spawned: true
+      age:
+        age: 0
+        locked: true
+      location:
+        bodyYaw: 72.08588
+        world: world
+        x: '883.2218'
+        y: '5.5'
+        z: '-1628.7155'
+        yaw: '84.8147'
+        pitch: '0.0'
+      villagertrait:
+        level: 1
+        type: SAVANNA
+    traitnames: lookclose,profession,spawned,scoreboardtrait,rotationtrait,age,inventory,villagertrait,mounttrait,type,skintrait,owner,location
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '9':
+    name: §2Капитан
+    uuid: 642e3220-78c9-4d32-b3ab-f6b1c23c404f
+    traits:
+      type: VILLAGER
+      profession: FISHERMAN
+      lookclose:
+        range: '3.0'
+        disablewhilenavigating: true
+        enabled: true
+        enableRandomLook: false
+        randomLookDelay: 60
+        realisticlooking: false
+        headonly: false
+        perplayer: false
+        randomSwitchTargets: false
+        targetnpcs: false
+        randomPitchRange:
+          '0': 0.0
+          '1': 0.0
+        randomYawRange:
+          '0': 0.0
+          '1': 360.0
+      skintrait:
+        fetchDefaultSkin: true
+        updateSkins: false
+      owner:
+        uuid: 193c7d11-8a07-35a9-a657-d485e43824c5
+      spawned: true
+      age:
+        age: 0
+        locked: true
+      location:
+        bodyYaw: 173.07214
+        world: world
+        x: '-761.5018'
+        y: '270.5'
+        z: '-1952.5055'
+        yaw: '-166.9279'
+        pitch: '0.0'
+      villagertrait:
+        level: 1
+        type: SAVANNA
+    traitnames: profession,lookclose,spawned,scoreboardtrait,rotationtrait,age,inventory,villagertrait,mounttrait,type,skintrait,owner,location
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '10':
+    name: §2Капитан
+    uuid: 642e3214-73c9-4d32-b3ab-f6b1c23c404f
+    traits:
+      type: VILLAGER
+      profession: FISHERMAN
+      lookclose:
+        range: '3.0'
+        disablewhilenavigating: true
+        enabled: true
+        enableRandomLook: false
+        randomLookDelay: 60
+        realisticlooking: false
+        headonly: false
+        perplayer: false
+        randomSwitchTargets: false
+        targetnpcs: false
+        randomPitchRange:
+          '0': 0.0
+          '1': 0.0
+        randomYawRange:
+          '0': 0.0
+          '1': 360.0
+      skintrait:
+        fetchDefaultSkin: true
+        updateSkins: false
+      owner:
+        uuid: 193c7d11-8a07-35a9-a657-d485e43824c5
+      spawned: true
+      age:
+        age: 0
+        locked: true
+      location:
+        bodyYaw: 161.50317
+        world: world
+        x: '1152.5018'
+        y: '5.5'
+        z: '-1137.5055'
+        yaw: '-178.4968'
+        pitch: '0.0'
+      villagertrait:
+        level: 1
+        type: SAVANNA
+    traitnames: profession,lookclose,spawned,scoreboardtrait,age,rotationtrait,inventory,villagertrait,mounttrait,type,skintrait,owner,location
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '11':
+    name: §2Главный шахтёр
+    uuid: 642e3123-73c9-4d32-b3ab-f6b1c23c404f
+    traits:
+      type: VILLAGER
+      profession: MASON
+      lookclose:
+        range: '3.0'
+        disablewhilenavigating: true
+        enabled: true
+        enableRandomLook: false
+        randomLookDelay: 60
+        realisticlooking: false
+        headonly: false
+        perplayer: false
+        randomSwitchTargets: false
+        targetnpcs: false
+        randomPitchRange:
+          '0': 0.0
+          '1': 0.0
+        randomYawRange:
+          '0': 0.0
+          '1': 360.0
+      skintrait:
+        fetchDefaultSkin: true
+        updateSkins: false
+      owner:
+        uuid: 193c7d11-8a07-35a9-a657-d485e43824c5
+      spawned: true
+      age:
+        age: 0
+        locked: true
+      location:
+        bodyYaw: -26.12246
+        world: world
+        x: '612.3938'
+        y: '-15.9375'
+        z: '-1335.0668'
+        yaw: '-26.1225'
+        pitch: '0.0'
+      villagertrait:
+        level: 1
+        type: PLAINS
+    traitnames: profession,lookclose,spawned,scoreboardtrait,age,rotationtrait,inventory,villagertrait,mounttrait,type,skintrait,owner,location
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true

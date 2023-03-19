@@ -1,0 +1,36 @@
+size: 54
+menu_title: 'Места добычи ресурсов'
+items:
+#============== . ===============================================
+  'forest':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:15
+    slot: 0
+    display_name: "&#f8a049&lЛесничество"
+    lore:
+      - '&#d9c57c Лесник поможет получить топор, которым'
+      - '&#d9c57c ты нарубишь себе пару брёвен.'
+      - '&#d9c57c Локация:&f пригород Коростня'
+      - '&#d9c57c Координаты:&f x:596 y:41 z:-1586'
+      - ''
+      - '&#7da4cb → Нажми ЛКМ, чтобы получить компас'
+    left_click_commands: 
+    - '[console] serveritem give gps_looting_forest 1 %player_name%'    
+    - '[sound] UI_BUTTON_CLICK 0.3 1'
+    - '[close]'
+  'mineshaft':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:34
+    slot: 2
+    display_name: "&#f8a049&lРудник"
+    lore:
+      - '&#d9c57c Огромные залежи ценной породы.'
+      - '&#d9c57c Кирку выдаст главный шахтёр.'
+      - '&#d9c57c Локация:&f пригород Коростня'
+      - '&#d9c57c Координаты:&f x:617 y:-16 z:-1332'
+      - ''
+      - '&#7da4cb → Нажми ЛКМ, чтобы получить компас'
+    left_click_commands: 
+    - '[console] serveritem give gps_looting_mineshaft 1 %player_name%'    
+    - '[sound] UI_BUTTON_CLICK 0.3 1'
+    - '[close]'

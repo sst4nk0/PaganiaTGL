@@ -1,0 +1,10 @@
+Name: key_common
+Virtual: false
+Item:
+  Material: PHANTOM_MEMBRANE
+  Name: '&fКлюч'
+  Lore:
+  - '&8 Инструмент'
+  - ''
+  - '#D9C57C Откроет деревянную шкатулку.'
+  Custom_Model_Data: 42

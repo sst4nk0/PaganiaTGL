@@ -1,0 +1,64 @@
+Plugin:
+  # Command names that will be registered as main plugin commands.
+  # Do not leave this empty. Split multiple names with a comma.
+  Command_Aliases: excellentcrates,ecrates,crates,crate,case,cases
+  # Sets the plugin language.
+  # It will use language config from the '/lang/' sub-folder for specified language code.
+  # By default it's 'en', so 'messages_en.yml' will be used.
+  Language: en
+  # Localized plugin name. It's used in messages and with internal placeholders.
+  Name: ExcellentCrates
+  # Plugin prefix. Used in messages.
+  # You can use %plugin_name_localized% placeholder for a plugin name.
+  Prefix: '&c我 '
+
+Database:
+  # Defines how often (in minutes) user data of online players will be saved to the database.
+  # Set -1 to disable.
+  Auto_Save_Interval: 60
+  # Defines how often (in seconds) plugin data will be fetched and loaded from the remote database.
+  Sync_Interval: -1
+  # Sets database type.
+  # Available values: MYSQL,SQLITE
+  Type: SQLITE
+  # Table prefix to use when plugin create tables. Do not leave this empty.
+  Table_Prefix: excellentcrates
+  MySQL:
+    # Database user name.
+    Username: root
+    # Database user password.
+    Password: root
+    # Database host address. Like http://127.0.0.1:3306/
+    Host: localhost
+    # MySQL database name, where plugin tables will be created.
+    Database: minecraft
+  SQLite:
+    # File name for the database file.
+    # Actually it's a path to the file, so you can use directories here.
+    FileName: data.db
+  Purge:
+    # Enables/Disables purge feature.
+    # Purge will remove all records from the plugin tables that are 'old' enough.
+    Enabled: false
+    # Sets maximal 'age' for the database records before they will be purged.
+    # This option may have different behavior depends on the plugin.
+    # By default it's days of inactivity for the plugin users.
+    For_Period: 60
+
+Crate:
+  Click_Actions:
+    LEFT: CRATE_PREVIEW
+    RIGHT: CRATE_OPEN
+  Block_Pushback:
+    Y: -0.4
+    Multiply: -1.25
+  # When 'true' applies PlaceholderAPI placeholders for crate reward items when they're about to be given to a player.
+  PlaceholderAPI_For_Rewards: false
+  # When 'true' prevents force closing opening animations to get reward instantly.
+  Prevent_Opening_Skip: false
+Editor:
+  Title:
+    # Title for the Crate Editor GUIs.
+    Crate: Crate Editor
+    # Title for the Key Editor GUIs.
+    Key: Key Editor

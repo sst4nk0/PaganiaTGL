@@ -1,0 +1,1545 @@
+open_command: storage_lw6ijkks9
+register_command: false
+size: 54
+menu_title: '§r&f少'
+items:
+############# Interface ####################################################
+  'avatarRound':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:1
+    slots:
+    - 10-12
+    - 19
+    - 21
+    - 28-30
+    display_name: "&2Кладовщик"
+  'avatarIcon':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:9
+    slot: 20
+    display_name: "&2Кладовщик"
+  'communicate':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:3
+    slot: 39
+    priority: 0
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'wb.talkpresent.2'
+    display_name: "&#f8a049&lОбщение"
+    lore:
+    - '&#d9c57c&o%javascript_storagerdial1%'
+    - '&#d9c57c&o%javascript_storagerdial2%'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы побеседовать'
+    left_click_commands:
+    - '[refresh]'
+    - '[sound] ENTITY_VILLAGER_AMBIENT'
+  'communicateFirst':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:3
+    slot: 39
+    priority: 1
+    display_name: "&#f8a049&lОбщение"
+    lore:
+    - '&#d9c57c&o Доброго здравия. Нужна помощь? Я могу'
+    - '&#d9c57c&o ..спрятать твои вещи далеко и надежно!'
+    - '&#d9c57c&o Мои услуги не дешёвые. И что?'
+    - '&#d9c57c&o А еще для тебя есть подарок. Держи!'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы побеседовать'
+    left_click_commands:
+    - '[sound] UI_BUTTON_CLICK 0.3 1'
+    - '[console] lp user %player_name% permission set wb.talkpresent.2'
+    - '[console] serveritem give crate_wooden 1 %player_name%'
+    - '[close]'
+############# Deal #########################################################
+  'dealmanage':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:10
+    slot: 38
+    priority: 1
+    view_requirement:
+      requirements:
+        money:
+            type: string equals
+            input: "%player_name%"
+            output: "%wbutils_dealowner_1%"    
+    display_name: "&#f8a049&lУправление сделкой"
+    lore:
+    - '&#d9c57c Златников:      %wbutils_dealgold_1%'
+    - '&#d9c57c Серебряников:  %wbutils_dealsilver_1%'
+    - '&#d9c57c Медяников:      %wbutils_dealcopper_1%'
+    - ''
+    - '&#d9c57c Материалов:     %wbutils_dealmaterials_1%  &c%wbutils_dealstatus_1%'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы забрать прибыль'
+    - '&#54a06f → Нажми ПКМ, чтобы пересчитать деньги'
+    - '&#3e5370 → Нажми Shift+ЛКМ, чтобы положить материалы'
+    left_click_commands:
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[console] serveritem give currency_copper_coin %wbutils_dealcopper_1% %player_name%'
+    - '[console] dealinfo 1 coins_copper 0'
+    - '[console] serveritem give currency_silver_coin %wbutils_dealsilver_1% %player_name%'
+    - '[console] dealinfo 1 coins_silver 0'  
+    - '[console] serveritem give currency_gold_coin %wbutils_dealgold_1% %player_name%'
+    - '[console] dealinfo 1 coins_gold 0'
+    - '[refresh]'
+    right_click_commands:
+    - '[console] dealrecount 1'
+    - '[refresh]'
+    - '[sound] ENTITY_VILLAGER_AMBIENT'
+    - '[message] &2Кладовщик: &aЯ пересчитал твои сбережения. Так удобней?'
+    shift_left_click_commands:
+    - '[sound] UI_BUTTON_CLICK 0.3 1'
+    - '[console] serveritem take resource_log_oak 1 %player_name% true'
+    - '[console] dealinfo 1 materials %math_0:_{wbutils_dealmaterials_1}+1%'
+    - '[refresh]'
+    right_click_requirement:
+      requirements:
+        hasformula:
+            type: '>='
+            input: '%itemedit_amount_{tool_formulas}_{inventory}%'
+            output: '1'
+            deny_commands:
+            - '[close]'
+            - '[console] effect give %player_name% minecraft:slowness 3 4 true'
+            - '[message] &2Кладовщик: &aС удовольствием бы занялся пересчётом, но...'
+            - '[sound] ENTITY_VILLAGER_AMBIENT'
+            - '[message] &2Кладовщик: &aК несчастью, я - безграмотен.<delay=28>'
+            - '[sound] ENTITY_VILLAGER_NO<delay=28>'
+            - '[message] &2Кладовщик: &aМожет банкир поможет нам чем-нибудь?<delay=54>'
+            - '[sound] ENTITY_VILLAGER_YES<delay=54>'
+    shift_left_click_requirement:
+      requirements:
+        hasmaterials:
+            type: '>='
+            input: '%itemedit_amount_{resource_log_oak}_{inventory}%'
+            output: '1'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет дубовых брёвен!'    
+  'dealbuy':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:10
+    slot: 38
+    priority: 2
+    display_name: "&#f8a049&lСовершение партнёрской сделки"
+    lore:
+    - '&#d9c57c&o Вот это новость! Ты решил сотрудничать!'
+    - '&#d9c57c&o Тогда сотрудничаем на моих условиях.'
+    - '&#d9c57c&o Ты даешь мне 8 златников задатком, а'
+    - '&#d9c57c&o ..я делюсь прибылью. Договорились?'
+    - '&#1a1a1a deal_id = 1'
+    - '&#7da4cb → Нажми ЛКМ, чтобы заключить партнёрство'
+    left_click_commands:
+    - '[console] serveritem take currency_gold_coin 8 %player_name% true'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.3 1'
+    - '[console] dealbuy 1 %player_name%'
+    - '[close]'  
+    left_click_requirement:
+      requirements:
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '8'
+            deny_commands:
+            - '[sound] UI_BUTTON_CLICK 0.3 1'
+            - '[message] &c我 У вас нет столько денег!'
+        noowner:
+            type: string equals
+            input: "%wbutils_dealowner_1%"
+            output: "-"
+            deny_commands:
+            - '[sound] ENTITY_VILLAGER_NO 0.3 1'
+            - '[message] &2Кладовщик:&a Извини, я уже заключил сделку с %wbutils_dealowner_1%'
+############# Storage 1 ####################################################
+  'storage1':
+    material: BARREL
+    slot: 14
+    priority: 0
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'playervaults.amount.1'
+    display_name: "&#f8a049&lХранилище №1"
+    lore:
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы открыть'
+    left_click_commands:
+    - '[refresh]'
+    - '[player] pv 1'
+    - '[sound] BLOCK_BARREL_OPEN 1 1'
+  'storage1locked':
+    material: BARRIER
+    slot: 14
+    priority: 1
+    display_name: "&#f8a049&lХранилище №1"
+    lore:
+    - '&#d9c57c Недоступно. Приобретите хранилище!'
+############# Storage 2 ####################################################
+  'storage2':
+    material: BARREL
+    slot: 15
+    priority: 0
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'playervaults.amount.2'
+    display_name: "&#f8a049&lХранилище №2"
+    lore:
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы открыть'
+    left_click_commands:
+    - '[refresh]'
+    - '[player] pv 2'
+    - '[sound] BLOCK_BARREL_OPEN 1 1'
+  'storage2locked':
+    material: BARRIER
+    slot: 15
+    priority: 1
+    display_name: "&#f8a049&lХранилище №2"
+    lore:
+    - '&#d9c57c Недоступно. Приобретите хранилище!'
+############# Storage 3 ####################################################
+  'storage3':
+    material: BARREL
+    slot: 16
+    priority: 0
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'playervaults.amount.3'
+    display_name: "&#f8a049&lХранилище №3"
+    lore:
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы открыть'
+    left_click_commands:
+    - '[refresh]'
+    - '[player] pv 3'
+    - '[sound] BLOCK_BARREL_OPEN 1 1'
+  'storage3locked':
+    material: BARRIER
+    slot: 16
+    priority: 1
+    display_name: "&#f8a049&lХранилище №3"
+    lore:
+    - '&#d9c57c Недоступно. Приобретите хранилище!'
+############# Storage 4 ####################################################
+  'storage4':
+    material: BARREL
+    slot: 23
+    priority: 0
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'playervaults.amount.4'
+    display_name: "&#f8a049&lХранилище №4"
+    lore:
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы открыть'
+    left_click_commands:
+    - '[refresh]'
+    - '[player] pv 4'
+    - '[sound] BLOCK_BARREL_OPEN 1 1'
+  'storage4locked':
+    material: BARRIER
+    slot: 23
+    priority: 1
+    display_name: "&#f8a049&lХранилище №4"
+    lore:
+    - '&#d9c57c Недоступно. Приобретите хранилище!'
+############# Storage 5 ####################################################
+  'storage5':
+    material: BARREL
+    slot: 24
+    priority: 0
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'playervaults.amount.5'
+    display_name: "&#f8a049&lХранилище №5"
+    lore:
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы открыть'
+    left_click_commands:
+    - '[refresh]'
+    - '[player] pv 5'
+    - '[sound] BLOCK_BARREL_OPEN 1 1'
+  'storage5locked':
+    material: BARRIER
+    slot: 24
+    priority: 1
+    display_name: "&#f8a049&lХранилище №5"
+    lore:
+    - '&#d9c57c Недоступно. Приобретите хранилище!'
+############# Storage 6 ####################################################
+  'storage6':
+    material: BARREL
+    slot: 25
+    priority: 0
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'playervaults.amount.6'
+    display_name: "&#f8a049&lХранилище №6"
+    lore:
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы открыть'
+    left_click_commands:
+    - '[refresh]'
+    - '[player] pv 6'
+    - '[sound] BLOCK_BARREL_OPEN 1 1'
+  'storage6locked':
+    material: BARRIER
+    slot: 25
+    priority: 1
+    display_name: "&#f8a049&lХранилище №6"
+    lore:
+    - '&#d9c57c Недоступно. Приобретите хранилище!'
+############# Storage 7 ####################################################
+  'storage7':
+    material: BARREL
+    slot: 32
+    priority: 0
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'playervaults.amount.7'
+    display_name: "&#f8a049&lХранилище №7"
+    lore:
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы открыть'
+    left_click_commands:
+    - '[refresh]'
+    - '[player] pv 7'
+    - '[sound] BLOCK_BARREL_OPEN 1 1'
+  'storage7locked':
+    material: BARRIER
+    slot: 32
+    priority: 1
+    display_name: "&#f8a049&lХранилище №7"
+    lore:
+    - '&#d9c57c Недоступно. Приобретите хранилище!'
+############# Storage 8 ####################################################
+  'storage8':
+    material: BARREL
+    slot: 33
+    priority: 0
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'playervaults.amount.8'
+    display_name: "&#f8a049&lХранилище №8"
+    lore:
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы открыть'
+    left_click_commands:
+    - '[refresh]'
+    - '[player] pv 8'
+    - '[sound] BLOCK_BARREL_OPEN 1 1'
+  'storage8locked':
+    material: BARRIER
+    slot: 33
+    priority: 1
+    display_name: "&#f8a049&lХранилище №8"
+    lore:
+    - '&#d9c57c Недоступно. Приобретите хранилище!'
+############# Storage 9 ####################################################
+  'storage9':
+    material: BARREL
+    slot: 34
+    priority: 0
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'playervaults.amount.9'
+    display_name: "&#f8a049&lХранилище №9"
+    lore:
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы открыть'
+    left_click_commands:
+    - '[refresh]'
+    - '[player] pv 9'
+    - '[sound] BLOCK_BARREL_OPEN 1 1'
+  'storage9locked':
+    material: BARRIER
+    slot: 34
+    priority: 1
+    display_name: "&#f8a049&lХранилище №9"
+    lore:
+    - '&#d9c57c Недоступно. Приобретите хранилище!'
+################################################################################### 
+
+
+  
+############# Storage buy finish ################################################## 
+  'buy_left_f':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:1
+    slot: 41
+    priority: 0
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'playervaults.amount.9'
+    display_name: " "
+  'buy_midle_f':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:1
+    slot: 42
+    priority: 0
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'playervaults.amount.9'
+    display_name: " "
+  'buy_right_f':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:1
+    slot: 43
+    priority: 0
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'playervaults.amount.9'
+    display_name: " "
+############# Storage 9 buying ####################################################
+  'buy_left_9':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:5
+    slot: 41
+    amount: 30
+    priority: 1
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'playervaults.amount.8'
+    display_name: "&#f8a049&lКупить хранилище №9"
+    lore:
+    - '&#d9c57c Вы отдадите 30 серебряников'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[console] purchasepayment %player_name% 30 silver'
+    - '[console] lp user %player_name% permission set playervaults.amount.9 true'
+    - '[refresh]'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+    - '[console] dealinfo 1 coins_silver %math_0:_{wbutils_dealsilver_1}+5%'
+    - '[console] dealinfo 1 materials %math_0:_{wbutils_dealmaterials_1}-3%'
+    left_click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true 
+      deny_commands:
+            - '[sound] UI_BUTTON_CLICK 1 1'
+            - '[message] &c我 У вас нет столько денег!'
+      requirements:              
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '30'
+            optional: true
+        hascoins2:
+            type: '>'
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '0'
+            optional: true
+  'buy_midle_9':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:7
+    slot: 42
+    priority: 1
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'playervaults.amount.8'
+    display_name: "&#f8a049&lКупить хранилище №9"
+    lore:
+    - '&#d9c57c Вы отдадите 30 серебряников'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[console] purchasepayment %player_name% 30 silver'
+    - '[console] lp user %player_name% permission set playervaults.amount.9 true'
+    - '[refresh]'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+    - '[console] dealinfo 1 coins_silver %math_0:_{wbutils_dealsilver_1}+5%'
+    - '[console] dealinfo 1 materials %math_0:_{wbutils_dealmaterials_1}-3%'
+    left_click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true 
+      deny_commands:
+            - '[sound] UI_BUTTON_CLICK 1 1'
+            - '[message] &c我 У вас нет столько денег!'
+      requirements:              
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '30'
+            optional: true
+        hascoins2:
+            type: '>'
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '0'
+            optional: true
+  'buy_right_9':
+    material: BARREL
+    slot: 43
+    priority: 1
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'playervaults.amount.8'
+    display_name: "&#f8a049&lКупить хранилище №9"
+    lore:
+    - '&#d9c57c Вы отдадите 30 серебряников'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[console] purchasepayment %player_name% 30 silver'
+    - '[console] lp user %player_name% permission set playervaults.amount.9 true'
+    - '[refresh]'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+    - '[console] dealinfo 1 coins_silver %math_0:_{wbutils_dealsilver_1}+5%'
+    - '[console] dealinfo 1 materials %math_0:_{wbutils_dealmaterials_1}-3%'
+    left_click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true 
+      deny_commands:
+            - '[sound] UI_BUTTON_CLICK 1 1'
+            - '[message] &c我 У вас нет столько денег!'
+      requirements:              
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '30'
+            optional: true
+        hascoins2:
+            type: '>'
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '0'
+            optional: true
+############# Storage 8 buying ####################################################
+  'buy_left_8':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:5
+    slot: 41
+    amount: 25
+    priority: 2
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'playervaults.amount.7'
+    display_name: "&#f8a049&lКупить хранилище №8"
+    lore:
+    - '&#d9c57c Вы отдадите 25 серебряников'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[console] purchasepayment %player_name% 25 silver'
+    - '[console] lp user %player_name% permission set playervaults.amount.8 true'
+    - '[refresh]'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+    - '[console] dealinfo 1 coins_silver %math_0:_{wbutils_dealsilver_1}+5%'
+    - '[console] dealinfo 1 materials %math_0:_{wbutils_dealmaterials_1}-3%'
+    left_click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true 
+      deny_commands:
+            - '[sound] UI_BUTTON_CLICK 1 1'
+            - '[message] &c我 У вас нет столько денег!'
+      requirements:              
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '25'
+            optional: true
+        hascoins2:
+            type: '>'
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '0'
+            optional: true
+  'buy_midle_8':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:7
+    slot: 42
+    priority: 2
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'playervaults.amount.7'
+    display_name: "&#f8a049&lКупить хранилище №8"
+    lore:
+    - '&#d9c57c Вы отдадите 25 серебряников'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[console] purchasepayment %player_name% 25 silver'
+    - '[console] lp user %player_name% permission set playervaults.amount.8 true'
+    - '[refresh]'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+    - '[console] dealinfo 1 coins_silver %math_0:_{wbutils_dealsilver_1}+5%'
+    - '[console] dealinfo 1 materials %math_0:_{wbutils_dealmaterials_1}-3%'
+    left_click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true 
+      deny_commands:
+            - '[sound] UI_BUTTON_CLICK 1 1'
+            - '[message] &c我 У вас нет столько денег!'
+      requirements:              
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '25'
+            optional: true
+        hascoins2:
+            type: '>'
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '0'
+            optional: true
+  'buy_right_8':
+    material: BARREL
+    slot: 43
+    priority: 2
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'playervaults.amount.7'
+    display_name: "&#f8a049&lКупить хранилище №8"
+    lore:
+    - '&#d9c57c Вы отдадите 25 серебряников'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[console] purchasepayment %player_name% 25 silver'
+    - '[console] lp user %player_name% permission set playervaults.amount.8 true'
+    - '[refresh]'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+    - '[console] dealinfo 1 coins_silver %math_0:_{wbutils_dealsilver_1}+5%'
+    - '[console] dealinfo 1 materials %math_0:_{wbutils_dealmaterials_1}-3%'
+    left_click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true 
+      deny_commands:
+            - '[sound] UI_BUTTON_CLICK 1 1'
+            - '[message] &c我 У вас нет столько денег!'
+      requirements:              
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '25'
+            optional: true
+        hascoins2:
+            type: '>'
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '0'
+            optional: true
+############# Storage 7 buying ####################################################
+  'buy_left_7':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:5
+    slot: 41
+    amount: 21
+    priority: 3
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'playervaults.amount.6'
+    display_name: "&#f8a049&lКупить хранилище №7"
+    lore:
+    - '&#d9c57c Вы отдадите 21 серебряник'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[console] purchasepayment %player_name% 21 silver'
+    - '[console] lp user %player_name% permission set playervaults.amount.7 true'
+    - '[refresh]'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+    - '[console] dealinfo 1 coins_silver %math_0:_{wbutils_dealsilver_1}+5%'
+    - '[console] dealinfo 1 materials %math_0:_{wbutils_dealmaterials_1}-3%'
+    left_click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true 
+      deny_commands:
+            - '[sound] UI_BUTTON_CLICK 1 1'
+            - '[message] &c我 У вас нет столько денег!'
+      requirements:              
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '21'
+            optional: true
+        hascoins2:
+            type: '>'
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '0'
+            optional: true
+  'buy_midle_7':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:7
+    slot: 42
+    priority: 3
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'playervaults.amount.6'
+    display_name: "&#f8a049&lКупить хранилище №7"
+    lore:
+    - '&#d9c57c Вы отдадите 21 серебряник'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[console] purchasepayment %player_name% 21 silver'
+    - '[console] lp user %player_name% permission set playervaults.amount.7 true'
+    - '[refresh]'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+    - '[console] dealinfo 1 coins_silver %math_0:_{wbutils_dealsilver_1}+5%'
+    - '[console] dealinfo 1 materials %math_0:_{wbutils_dealmaterials_1}-3%'
+    left_click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true 
+      deny_commands:
+            - '[sound] UI_BUTTON_CLICK 1 1'
+            - '[message] &c我 У вас нет столько денег!'
+      requirements:              
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '21'
+            optional: true
+        hascoins2:
+            type: '>'
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '0'
+            optional: true
+  'buy_right_7':
+    material: BARREL
+    slot: 43
+    priority: 3
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'playervaults.amount.6'
+    display_name: "&#f8a049&lКупить хранилище №7"
+    lore:
+    - '&#d9c57c Вы отдадите 21 серебряник'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[console] purchasepayment %player_name% 21 silver'
+    - '[console] lp user %player_name% permission set playervaults.amount.7 true'
+    - '[refresh]'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+    - '[console] dealinfo 1 coins_silver %math_0:_{wbutils_dealsilver_1}+5%'
+    - '[console] dealinfo 1 materials %math_0:_{wbutils_dealmaterials_1}-3%'
+    left_click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true 
+      deny_commands:
+            - '[sound] UI_BUTTON_CLICK 1 1'
+            - '[message] &c我 У вас нет столько денег!'
+      requirements:              
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '21'
+            optional: true
+        hascoins2:
+            type: '>'
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '0'
+            optional: true
+############# Storage 6 buying ####################################################
+  'buy_left_6':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:5
+    slot: 41
+    amount: 17
+    priority: 4
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'playervaults.amount.5'
+    display_name: "&#f8a049&lКупить хранилище №6"
+    lore:
+    - '&#d9c57c Вы отдадите 17 серебряников'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[console] purchasepayment %player_name% 17 silver'
+    - '[console] lp user %player_name% permission set playervaults.amount.6 true'
+    - '[refresh]'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+    - '[console] dealinfo 1 coins_silver %math_0:_{wbutils_dealsilver_1}+5%'
+    - '[console] dealinfo 1 materials %math_0:_{wbutils_dealmaterials_1}-2%'
+    left_click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true 
+      deny_commands:
+            - '[sound] UI_BUTTON_CLICK 1 1'
+            - '[message] &c我 У вас нет столько денег!'
+      requirements:              
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '17'
+            optional: true
+        hascoins2:
+            type: '>'
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '0'
+            optional: true
+  'buy_midle_6':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:7
+    slot: 42
+    priority: 4
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'playervaults.amount.5'
+    display_name: "&#f8a049&lКупить хранилище №6"
+    lore:
+    - '&#d9c57c Вы отдадите 17 серебряников'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[console] purchasepayment %player_name% 17 silver'
+    - '[console] lp user %player_name% permission set playervaults.amount.6 true'
+    - '[refresh]'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+    - '[console] dealinfo 1 coins_silver %math_0:_{wbutils_dealsilver_1}+5%'
+    - '[console] dealinfo 1 materials %math_0:_{wbutils_dealmaterials_1}-2%'
+    left_click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true 
+      deny_commands:
+            - '[sound] UI_BUTTON_CLICK 1 1'
+            - '[message] &c我 У вас нет столько денег!'
+      requirements:              
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '17'
+            optional: true
+        hascoins2:
+            type: '>'
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '0'
+            optional: true
+  'buy_right_6':
+    material: BARREL
+    slot: 43
+    priority: 4
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'playervaults.amount.5'
+    display_name: "&#f8a049&lКупить хранилище №6"
+    lore:
+    - '&#d9c57c Вы отдадите 17 серебряников'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[console] purchasepayment %player_name% 17 silver'
+    - '[console] lp user %player_name% permission set playervaults.amount.6 true'
+    - '[refresh]'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+    - '[console] dealinfo 1 coins_silver %math_0:_{wbutils_dealsilver_1}+5%'
+    - '[console] dealinfo 1 materials %math_0:_{wbutils_dealmaterials_1}-2%'
+    left_click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true 
+      deny_commands:
+            - '[sound] UI_BUTTON_CLICK 1 1'
+            - '[message] &c我 У вас нет столько денег!'
+      requirements:              
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '17'
+            optional: true
+        hascoins2:
+            type: '>'
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '0'
+            optional: true
+############# Storage 5 buying ####################################################
+  'buy_left_5':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:5
+    slot: 41
+    amount: 13
+    priority: 5
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'playervaults.amount.4'
+    display_name: "&#f8a049&lКупить хранилище №5"
+    lore:
+    - '&#d9c57c Вы отдадите 13 серебряников'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[console] purchasepayment %player_name% 13 silver'
+    - '[console] lp user %player_name% permission set playervaults.amount.5 true'
+    - '[refresh]'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+    - '[console] dealinfo 1 coins_silver %math_0:_{wbutils_dealsilver_1}+5%'
+    - '[console] dealinfo 1 materials %math_0:_{wbutils_dealmaterials_1}-2%'
+    left_click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true 
+      deny_commands:
+            - '[sound] UI_BUTTON_CLICK 1 1'
+            - '[message] &c我 У вас нет столько денег!'
+      requirements:              
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '13'
+            optional: true
+        hascoins2:
+            type: '>'
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '0'
+            optional: true
+  'buy_midle_5':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:7
+    slot: 42
+    priority: 5
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'playervaults.amount.4'
+    display_name: "&#f8a049&lКупить хранилище №5"
+    lore:
+    - '&#d9c57c Вы отдадите 13 серебряников'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[console] purchasepayment %player_name% 13 silver'
+    - '[console] lp user %player_name% permission set playervaults.amount.5 true'
+    - '[refresh]'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+    - '[console] dealinfo 1 coins_silver %math_0:_{wbutils_dealsilver_1}+5%'
+    - '[console] dealinfo 1 materials %math_0:_{wbutils_dealmaterials_1}-2%'
+    left_click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true 
+      deny_commands:
+            - '[sound] UI_BUTTON_CLICK 1 1'
+            - '[message] &c我 У вас нет столько денег!'
+      requirements:              
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '13'
+            optional: true
+        hascoins2:
+            type: '>'
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '0'
+            optional: true
+  'buy_right_5':
+    material: BARREL
+    slot: 43
+    priority: 5
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'playervaults.amount.4'
+    display_name: "&#f8a049&lКупить хранилище №5"
+    lore:
+    - '&#d9c57c Вы отдадите 13 серебряников'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[console] purchasepayment %player_name% 13 silver'
+    - '[console] lp user %player_name% permission set playervaults.amount.5 true'
+    - '[refresh]'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+    - '[console] dealinfo 1 coins_silver %math_0:_{wbutils_dealsilver_1}+5%'
+    - '[console] dealinfo 1 materials %math_0:_{wbutils_dealmaterials_1}-2%'
+    left_click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true 
+      deny_commands:
+            - '[sound] UI_BUTTON_CLICK 1 1'
+            - '[message] &c我 У вас нет столько денег!'
+      requirements:              
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '13'
+            optional: true
+        hascoins2:
+            type: '>'
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '0'
+            optional: true
+############# Storage 4 buying ####################################################
+  'buy_left_4':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:5
+    slot: 41
+    amount: 11
+    priority: 6
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'playervaults.amount.3'
+    display_name: "&#f8a049&lКупить хранилище №4"
+    lore:
+    - '&#d9c57c Вы отдадите 11 серебряников'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[console] purchasepayment %player_name% 11 silver'
+    - '[console] lp user %player_name% permission set playervaults.amount.4 true'
+    - '[refresh]'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+    - '[console] dealinfo 1 coins_silver %math_0:_{wbutils_dealsilver_1}+5%'
+    - '[console] dealinfo 1 materials %math_0:_{wbutils_dealmaterials_1}-2%'
+    left_click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true 
+      deny_commands:
+            - '[sound] UI_BUTTON_CLICK 1 1'
+            - '[message] &c我 У вас нет столько денег!'
+      requirements:              
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '11'
+            optional: true
+        hascoins2:
+            type: '>'
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '0'
+            optional: true
+  'buy_midle_4':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:7
+    slot: 42
+    priority: 6
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'playervaults.amount.3'
+    display_name: "&#f8a049&lКупить хранилище №4"
+    lore:
+    - '&#d9c57c Вы отдадите 11 серебряников'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[console] purchasepayment %player_name% 11 silver'
+    - '[console] lp user %player_name% permission set playervaults.amount.4 true'
+    - '[refresh]'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+    - '[console] dealinfo 1 coins_silver %math_0:_{wbutils_dealsilver_1}+5%'
+    - '[console] dealinfo 1 materials %math_0:_{wbutils_dealmaterials_1}-2%'
+    left_click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true 
+      deny_commands:
+            - '[sound] UI_BUTTON_CLICK 1 1'
+            - '[message] &c我 У вас нет столько денег!'
+      requirements:              
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '11'
+            optional: true
+        hascoins2:
+            type: '>'
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '0'
+            optional: true
+  'buy_right_4':
+    material: BARREL
+    slot: 43
+    priority: 6
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'playervaults.amount.3'
+    display_name: "&#f8a049&lКупить хранилище №4"
+    lore:
+    - '&#d9c57c Вы отдадите 11 серебряников'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[console] purchasepayment %player_name% 11 silver'
+    - '[console] lp user %player_name% permission set playervaults.amount.4 true'
+    - '[refresh]'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+    - '[console] dealinfo 1 coins_silver %math_0:_{wbutils_dealsilver_1}+5%'
+    - '[console] dealinfo 1 materials %math_0:_{wbutils_dealmaterials_1}-2%'
+    left_click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true 
+      deny_commands:
+            - '[sound] UI_BUTTON_CLICK 1 1'
+            - '[message] &c我 У вас нет столько денег!'
+      requirements:              
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '11'
+            optional: true
+        hascoins2:
+            type: '>'
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '0'
+            optional: true
+############# Storage 3 buying ####################################################
+  'buy_left_3':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:5
+    slot: 41
+    amount: 8
+    priority: 7
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'playervaults.amount.2'
+    display_name: "&#f8a049&lКупить хранилище №3"
+    lore:
+    - '&#d9c57c Вы отдадите 8 серебряников'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[console] purchasepayment %player_name% 8 silver'
+    - '[console] lp user %player_name% permission set playervaults.amount.3 true'
+    - '[refresh]'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+    - '[console] dealinfo 1 coins_silver %math_0:_{wbutils_dealsilver_1}+4%'
+    - '[console] dealinfo 1 materials %math_0:_{wbutils_dealmaterials_1}-1%'
+    left_click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true 
+      deny_commands:
+            - '[sound] UI_BUTTON_CLICK 1 1'
+            - '[message] &c我 У вас нет столько денег!'
+      requirements:              
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '8'
+            optional: true
+        hascoins2:
+            type: '>'
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '0'
+            optional: true
+  'buy_midle_3':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:7
+    slot: 42
+    priority: 7
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'playervaults.amount.2'
+    display_name: "&#f8a049&lКупить хранилище №3"
+    lore:
+    - '&#d9c57c Вы отдадите 8 серебряников'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[console] purchasepayment %player_name% 8 silver'
+    - '[console] lp user %player_name% permission set playervaults.amount.3 true'
+    - '[refresh]'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+    - '[console] dealinfo 1 coins_silver %math_0:_{wbutils_dealsilver_1}+4%'
+    - '[console] dealinfo 1 materials %math_0:_{wbutils_dealmaterials_1}-1%'
+    left_click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true 
+      deny_commands:
+            - '[sound] UI_BUTTON_CLICK 1 1'
+            - '[message] &c我 У вас нет столько денег!'
+      requirements:              
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '8'
+            optional: true
+        hascoins2:
+            type: '>'
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '0'
+            optional: true
+  'buy_right_3':
+    material: BARREL
+    slot: 43
+    priority: 7
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'playervaults.amount.2'
+    display_name: "&#f8a049&lКупить хранилище №3"
+    lore:
+    - '&#d9c57c Вы отдадите 8 серебряников'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[console] purchasepayment %player_name% 8 silver'
+    - '[console] lp user %player_name% permission set playervaults.amount.3 true'
+    - '[refresh]'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+    - '[console] dealinfo 1 coins_silver %math_0:_{wbutils_dealsilver_1}+4%'
+    - '[console] dealinfo 1 materials %math_0:_{wbutils_dealmaterials_1}-1%'
+    left_click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true 
+      deny_commands:
+            - '[sound] UI_BUTTON_CLICK 1 1'
+            - '[message] &c我 У вас нет столько денег!'
+      requirements:              
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '8'
+            optional: true
+        hascoins2:
+            type: '>'
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '0'
+            optional: true
+############# Storage 2 buying ####################################################
+  'buy_left_2':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:5
+    slot: 41
+    amount: 5
+    priority: 8
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'playervaults.amount.1'
+    display_name: "&#f8a049&lКупить хранилище №2"
+    lore:
+    - '&#d9c57c Вы отдадите 5 серебряников'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[console] purchasepayment %player_name% 5 silver'
+    - '[console] lp user %player_name% permission set playervaults.amount.2 true'
+    - '[refresh]'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+    - '[console] dealinfo 1 coins_silver %math_0:_{wbutils_dealsilver_1}+3%'
+    - '[console] dealinfo 1 materials %math_0:_{wbutils_dealmaterials_1}-1%'
+    left_click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true 
+      deny_commands:
+            - '[sound] UI_BUTTON_CLICK 1 1'
+            - '[message] &c我 У вас нет столько денег!'
+      requirements:              
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '5'
+            optional: true
+        hascoins2:
+            type: '>'
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '0'
+            optional: true
+  'buy_midle_2':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:7
+    slot: 42
+    priority: 8
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'playervaults.amount.1'
+    display_name: "&#f8a049&lКупить хранилище №2"
+    lore:
+    - '&#d9c57c Вы отдадите 5 серебряников'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[console] purchasepayment %player_name% 5 silver'
+    - '[console] lp user %player_name% permission set playervaults.amount.2 true'
+    - '[refresh]'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+    - '[console] dealinfo 1 coins_silver %math_0:_{wbutils_dealsilver_1}+3%'
+    - '[console] dealinfo 1 materials %math_0:_{wbutils_dealmaterials_1}-1%'
+    left_click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true 
+      deny_commands:
+            - '[sound] UI_BUTTON_CLICK 1 1'
+            - '[message] &c我 У вас нет столько денег!'
+      requirements:              
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '5'
+            optional: true
+        hascoins2:
+            type: '>'
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '0'
+            optional: true
+  'buy_right_2':
+    material: BARREL
+    slot: 43
+    priority: 8
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'playervaults.amount.1'
+    display_name: "&#f8a049&lКупить хранилище №2"
+    lore:
+    - '&#d9c57c Вы отдадите 5 серебряников'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[console] purchasepayment %player_name% 5 silver'
+    - '[console] lp user %player_name% permission set playervaults.amount.2 true'
+    - '[refresh]'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+    - '[console] dealinfo 1 coins_silver %math_0:_{wbutils_dealsilver_1}+3%'
+    - '[console] dealinfo 1 materials %math_0:_{wbutils_dealmaterials_1}-1%'
+    left_click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true 
+      deny_commands:
+            - '[sound] UI_BUTTON_CLICK 1 1'
+            - '[message] &c我 У вас нет столько денег!'
+      requirements:              
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '5'
+            optional: true
+        hascoins2:
+            type: '>'
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '0'
+            optional: true
+############# Storage 1 buying ####################################################
+  'buy_left_1':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:4
+    slot: 41
+    amount: 25
+    priority: 9
+    display_name: "&#f8a049&lКупить хранилище №1"
+    lore:
+    - '&#d9c57c Вы отдадите 25 медяников'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[console] purchasepayment %player_name% 25 copper'
+    - '[console] lp user %player_name% permission set playervaults.amount.1 true'
+    - '[refresh]'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+    - '[console] dealinfo 1 coins_copper %math_0:_{wbutils_dealcopper_1}+16%'
+    - '[console] dealinfo 1 materials %math_0:_{wbutils_dealmaterials_1}-1%'
+    left_click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true 
+      deny_commands:
+            - '[sound] UI_BUTTON_CLICK 1 1'
+            - '[message] &c我 У вас нет столько денег!'
+      requirements:              
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_copper_coin}_{inventory}%'
+            output: '25'
+            optional: true
+        hascoins2:
+            type: '>'
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '0'
+            optional: true
+        hascoins3:
+            type: '>'
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '0'  
+            optional: true
+  'buy_midle_1':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:7
+    slot: 42
+    priority: 9
+    display_name: "&#f8a049&lКупить хранилище №1"
+    lore:
+    - '&#d9c57c Вы отдадите 25 медяников'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[console] purchasepayment %player_name% 25 copper'
+    - '[console] lp user %player_name% permission set playervaults.amount.1 true'
+    - '[refresh]'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+    - '[console] dealinfo 1 coins_copper %math_0:_{wbutils_dealcopper_1}+16%'
+    - '[console] dealinfo 1 materials %math_0:_{wbutils_dealmaterials_1}-1%'
+    left_click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true 
+      deny_commands:
+            - '[sound] UI_BUTTON_CLICK 1 1'
+            - '[message] &c我 У вас нет столько денег!'
+      requirements:              
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_copper_coin}_{inventory}%'
+            output: '25'
+            optional: true
+        hascoins2:
+            type: '>'
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '0'
+            optional: true
+        hascoins3:
+            type: '>'
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '0'  
+            optional: true
+  'buy_right_1':
+    material: BARREL
+    slot: 43
+    priority: 9
+    display_name: "&#f8a049&lКупить хранилище №1"
+    lore:
+    - '&#d9c57c Вы отдадите 25 медяников'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы совершить сделку'
+    left_click_commands:
+    - '[console] purchasepayment %player_name% 25 copper'
+    - '[console] lp user %player_name% permission set playervaults.amount.1 true'
+    - '[refresh]'
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
+    - '[console] dealinfo 1 coins_copper %math_0:_{wbutils_dealcopper_1}+16%'
+    - '[console] dealinfo 1 materials %math_0:_{wbutils_dealmaterials_1}-1%'
+    left_click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true 
+      deny_commands:
+            - '[sound] UI_BUTTON_CLICK 1 1'
+            - '[message] &c我 У вас нет столько денег!'
+      requirements:              
+        hascoins:
+            type: '>='
+            input: '%itemedit_amount_{currency_copper_coin}_{inventory}%'
+            output: '25'
+            optional: true
+        hascoins2:
+            type: '>'
+            input: '%itemedit_amount_{currency_silver_coin}_{inventory}%'
+            output: '0'
+            optional: true
+        hascoins3:
+            type: '>'
+            input: '%itemedit_amount_{currency_gold_coin}_{inventory}%'
+            output: '0'  
+            optional: true            
+############# Developer Info ####################################################
+  'dev_info_tech':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:23
+    slot: 0
+    priority: 0
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'wb.developer'
+    display_name: "&#f8a049&lТехнические сведения"
+    lore:
+    - '&#d9c57cМенюшка = /DeluxeMenus/gui_menus/npc_basics/storage_manager_0.yml'
+    - '&#d9c57cПодсистема = /PlayerVaults/'
+    - ''
+    - '&#d9c57cdeal_id = 1'
+    - '&#d9c57cowner = %wbutils_dealowner_1%'
+    - '&#d9c57c/dealinfo 1 <параметр> <значение>'
+    - '&#d9c57cУдалить владельца = /dealinfo 1 owner -'
+  'dev_info_admin':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:23
+    slot: 0
+    priority: 1
+    view_requirement:
+      requirements:
+        checker:
+          type: 'has permission'
+          permission: 'wb.admin'
+    display_name: "&#f8a049&lАдмин сведения"
+    lore:
+    - '&#d9c57cdeal_id = 1'
+    - '&#d9c57cowner = %wbutils_dealowner_1%'
+    - '&#d9c57c/dealinfo 1 <параметр> <значение>'
+    - '&#d9c57cУдалить владельца = /dealinfo 1 owner -'

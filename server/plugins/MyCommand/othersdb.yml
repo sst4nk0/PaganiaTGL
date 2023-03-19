@@ -1,0 +1,7 @@
+# -----------------------------------------------------------------------------------------------------------#
+# 					MyCommand lmcmd & Variables Database File (last update v5.0.0)							#
+# 																											#
+#  					BukkitDev Help page : http://dev.bukkit.org/server-mods/mycommand/    					#
+
+variables:
+  stock_merchant_forest_oak: 3

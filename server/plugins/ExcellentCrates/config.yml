@@ -20,18 +20,18 @@ Database:
   Sync_Interval: -1
   # Sets database type.
   # Available values: MYSQL,SQLITE
-  Type: SQLITE
+  Type: MYSQL
   # Table prefix to use when plugin create tables. Do not leave this empty.
   Table_Prefix: excellentcrates
   MySQL:
     # Database user name.
-    Username: root
+    Username: root@localhost
     # Database user password.
-    Password: root
+    Password: mypass01
     # Database host address. Like http://127.0.0.1:3306/
-    Host: localhost
+    Host: http://127.0.0.1:3306/
     # MySQL database name, where plugin tables will be created.
-    Database: minecraft
+    Database: pagania
   SQLite:
     # File name for the database file.
     # Actually it's a path to the file, so you can use directories here.

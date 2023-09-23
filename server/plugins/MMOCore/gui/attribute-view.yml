@@ -1,0 +1,72 @@
+
+# GUI display name
+name: Атрибуты Игрока
+
+
+# Number of slots in your inventory. Must be
+# between 9 and 54 and must be a multiple of 9.
+slots: 27
+
+items:
+    reallocate:
+        slots: [26]
+        function: reallocation
+        item: CAULDRON
+        name: '&aОчки Атрибутов'
+        lore:
+            - ''
+            - 'Вы потратили всего &6{total}&7 очков атрибутов.'
+            - '&7Щелкните правой кнопкой мыши, чтобы их перераспределить.'
+            - ''
+            - '&eСтоимость 1 очка перераспределения атрибута.'
+            - '&e◆ Очки Перераспределения Атрибутов: &6{points}'
+    str:
+        slots: [11]
+        function: attribute_strength
+        name: '&a{name}'
+        item: GOLDEN_APPLE
+        lore: # {buffs} возвращает количество баффов
+            - ''
+            - '&7Потраченные очки: &6{spent}&7/&6{max}'
+            - '&7Текущая {name}: &6&l{current}'
+            - ''
+            - '&8При повышении уровня:'
+            - '&7  +{buff_weapon_damage}% Урон Оружием (&a+{total_weapon_damage}%&7)'
+            - '&7  +{buff_max_health} Макс. Здоровье (&a+{total_max_health}&7)'
+            - ''
+            - '&eНажмите, чтобы повысить уровень за 1 очко атрибута.'
+            - '&e◆ Текущие Очки Атрибутов: {attribute_points}'
+    dex:
+        slots: [13]
+        function: attribute_dexterity
+        name: '&a{name}'
+        item: LEATHER_BOOTS
+        hide-flags: true
+        lore:
+            - ''
+            - '&7Потраченные очки: &6{spent}&7/&6{max}'
+            - '&7Текущая {name}: &6&l{current}'
+            - ''
+            - '&8При повышении уровня:'
+            - '&7  +{buff_physical_damage}% Урон Физический (&a+{total_physical_damage}%&7)'
+            - '&7  +{buff_projectile_damage}% Урон Снарядами (&a+{total_projectile_damage}%&7)'
+            - '&7  +{buff_attack_speed} Скорость Атаки (&a+{total_attack_speed}&7)'
+            - ''
+            - '&eНажмите, чтобы повысить уровень за 1 очко атрибута.'
+            - '&e◆ Текущие Очки Атрибутов: {attribute_points}'
+    int:
+        slots: [15]
+        function: attribute_intelligence
+        name: '&a{name}'
+        item: BOOK
+        lore:
+            - ''
+            - '&7Потраченные очки: &6{spent}&7/&6{max}'
+            - '&7Текущая {name}: &6&l{current}'
+            - ''
+            - '&8При повышении уровня:'
+            - '&7  +{buff_magic_damage}% Магический Урон (&a+{total_magic_damage}%&7)'
+            - '&7  +{buff_cooldown_reduction}% Уменьшение Времени Перезарядки (&a+{total_cooldown_reduction}%&7)'
+            - ''
+            - '&eНажмите, чтобы повысить уровень за 1 очко атрибута.'
+            - '&e◆ Текущие Очки Атрибутов: {attribute_points}'

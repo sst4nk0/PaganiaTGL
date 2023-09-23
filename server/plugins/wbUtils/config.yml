@@ -1,0 +1,9 @@
+db-connection:
+  address: localhost
+  database: pagania
+  username: minecraftadmin
+  password: minecraftadmin
+spawn:
+  x: 1
+  y: 1
+  z: 1

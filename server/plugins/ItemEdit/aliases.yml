@@ -201,6 +201,7 @@ flag_type:
   hide_placed_on: placed_on
   hide_potion_effects: potion_effects
   hide_dye: dye
+  hide_armor_trim: hide_armor_trim
 boolean:
   'true': 'true'
   'false': 'false'

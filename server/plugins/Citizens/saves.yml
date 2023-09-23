@@ -1,7 +1,7 @@
 # Citizens NPC Storage
 
 
-last-created-npc-id: 11
+last-created-npc-id: 12
 npc:
   '1':
     metadata:
@@ -25,9 +25,9 @@ npc:
         x: '824.5'
         y: '10.0'
         z: '-1374.5'
-        yaw: '-69.3221'
-        pitch: '0.0'
-        bodyYaw: 18.026474
+        yaw: '155.7328'
+        pitch: '14.8204'
+        bodyYaw: 139.95555
       lookclose:
         range: '4.0'
         enabled: true
@@ -122,8 +122,8 @@ npc:
           meta:
             encoded-meta: rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGphdmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAkU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2YWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAAA3QAAj09dAAJbWV0YS10eXBldAALVW5icmVha2FibGV1cQB+AAYAAAADdAAISXRlbU1ldGF0AApVTlNQRUNJRklDc3IAEWphdmEubGFuZy5Cb29sZWFuzSBygNWc+u4CAAFaAAV2YWx1ZXhwAQ==
       sentinel:
-        stats_ticksSpawned: 4971493
-        stats_timesSpawned: 395
+        stats_ticksSpawned: 6129434
+        stats_timesSpawned: 474
         stats_arrowsFired: 0
         stats_potionsThrow: 0
         stats_fireballsFired: 0
@@ -221,7 +221,7 @@ npc:
         updateSkins: false
       sneak:
         sneaking: false
-    traitnames: speech,lookclose,spawned,gravity,scoreboardtrait,rotationtrait,sentinel,inventory,mounttrait,equipment,type,skintrait,text,sneak,waypoints,owner,location
+    traitnames: location,skintrait,sneak,lookclose,rotationtrait,sentinel,type,waypoints,mounttrait,owner,gravity,inventory,equipment,speech,spawned,scoreboardtrait,text
     navigator:
       speedmodifier: '0.800000011920929'
       avoidwater: false
@@ -238,7 +238,7 @@ npc:
         z: '-1428.5'
         yaw: '-21.2767'
         pitch: '0.0'
-        bodyYaw: 141.29959
+        bodyYaw: -167.24332
       gravity:
         enabled: false
       waypoints:
@@ -324,8 +324,8 @@ npc:
           meta:
             encoded-meta: rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGphdmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAkU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2YWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAAA3QAAj09dAAJbWV0YS10eXBldAALVW5icmVha2FibGV1cQB+AAYAAAADdAAISXRlbU1ldGF0AApVTlNQRUNJRklDc3IAEWphdmEubGFuZy5Cb29sZWFuzSBygNWc+u4CAAFaAAV2YWx1ZXhwAQ==
       sentinel:
-        stats_ticksSpawned: 4813532
-        stats_timesSpawned: 381
+        stats_ticksSpawned: 6006202
+        stats_timesSpawned: 435
         stats_arrowsFired: 0
         stats_potionsThrow: 0
         stats_fireballsFired: 0
@@ -434,7 +434,7 @@ npc:
         updateSkins: false
       sneak:
         sneaking: false
-    traitnames: speech,lookclose,spawned,gravity,scoreboardtrait,rotationtrait,sentinel,inventory,mounttrait,equipment,type,skintrait,waypoints,text,sneak,owner,location
+    traitnames: location,skintrait,sneak,lookclose,rotationtrait,sentinel,type,waypoints,mounttrait,owner,gravity,inventory,equipment,speech,spawned,scoreboardtrait,text
     navigator:
       speedmodifier: '0.800000011920929'
       avoidwater: false
@@ -459,9 +459,9 @@ npc:
         x: '858.6972'
         y: '58.0'
         z: '-1373.4539'
-        yaw: '-104.1441'
+        yaw: '-111.8892'
         pitch: '0.0'
-        bodyYaw: -104.14409
+        bodyYaw: -111.889206
       owner:
         uuid: 193c7d11-8a07-35a9-a657-d485e43824c5
       profession: NITWIT
@@ -482,7 +482,7 @@ npc:
         randomYawRange:
           '0': 0.0
           '1': 360.0
-    traitnames: profession,lookclose,mounttrait,gravity,spawned,equipment,type,scoreboardtrait,owner,rotationtrait,location,inventory
+    traitnames: mounttrait,location,owner,gravity,inventory,equipment,spawned,lookclose,scoreboardtrait,profession,rotationtrait,type
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -500,9 +500,9 @@ npc:
         x: '864.5'
         y: '58.0'
         z: '-1369.5'
-        yaw: '110.7919'
+        yaw: '66.6277'
         pitch: '0.0'
-        bodyYaw: 109.72853
+        bodyYaw: 66.62775
       owner:
         uuid: 193c7d11-8a07-35a9-a657-d485e43824c5
       profession: NITWIT
@@ -523,7 +523,7 @@ npc:
         randomYawRange:
           '0': 0.0
           '1': 360.0
-    traitnames: profession,lookclose,mounttrait,spawned,gravity,equipment,type,scoreboardtrait,owner,rotationtrait,location,inventory
+    traitnames: mounttrait,location,gravity,owner,inventory,equipment,lookclose,spawned,scoreboardtrait,profession,rotationtrait,type
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -568,13 +568,13 @@ npc:
           '0': 0.0
           '1': 360.0
       location:
-        bodyYaw: 11.101852
+        bodyYaw: 19.077095
         world: world
         x: '597.5299'
         y: '41.0'
         z: '-1588.4198'
-        yaw: '11.1019'
-        pitch: '0.0'
+        yaw: '19.0771'
+        pitch: '-24.5724'
       equipment:
         hand:
           type_key: iron_axe
@@ -587,7 +587,7 @@ npc:
           amount: 1
           meta:
             encoded-meta: rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGphdmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAkU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2YWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAAA3QAAj09dAAJbWV0YS10eXBldAALVW5icmVha2FibGV1cQB+AAYAAAADdAAISXRlbU1ldGF0AApVTlNQRUNJRklDc3IAEWphdmEubGFuZy5Cb29sZWFuzSBygNWc+u4CAAFaAAV2YWx1ZXhwAQ==
-    traitnames: lookclose,spawned,scoreboardtrait,rotationtrait,age,inventory,mounttrait,equipment,type,hologramtrait,skintrait,owner,location
+    traitnames: location,skintrait,lookclose,rotationtrait,type,age,mounttrait,hologramtrait,owner,inventory,equipment,scoreboardtrait,spawned
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -599,12 +599,12 @@ npc:
     uuid: 9bfcc557-6ea0-40c7-bf89-0de6ced81feb
     traits:
       location:
-        bodyYaw: -1.7973862
+        bodyYaw: -6.476143
         world: world
         x: '395.5134'
         y: '39.0'
         z: '-1481.5025'
-        yaw: '-1.7974'
+        yaw: '-6.4761'
         pitch: '0.0'
       age:
         age: 0
@@ -639,7 +639,7 @@ npc:
       hologramtrait:
         direction: BOTTOM_UP
         lineHeight: -1.0
-    traitnames: lookclose,mounttrait,spawned,type,hologramtrait,skintrait,scoreboardtrait,owner,rotationtrait,age,location,inventory
+    traitnames: age,mounttrait,location,hologramtrait,skintrait,owner,inventory,spawned,lookclose,scoreboardtrait,rotationtrait,type
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -692,7 +692,7 @@ npc:
         z: '-1389.5841'
         yaw: '88.6609'
         pitch: '13.1998'
-    traitnames: controllable,lookclose,mounttrait,spawned,type,skintrait,scoreboardtrait,owner,age,location,inventory
+    traitnames: age,mounttrait,location,skintrait,owner,inventory,lookclose,scoreboardtrait,spawned,type,controllable
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -730,17 +730,17 @@ npc:
         age: 0
         locked: true
       location:
-        bodyYaw: 72.08588
+        bodyYaw: 33.322906
         world: world
         x: '883.2218'
         y: '5.5'
         z: '-1628.7155'
-        yaw: '84.8147'
+        yaw: '33.3229'
         pitch: '0.0'
       villagertrait:
         level: 1
         type: SAVANNA
-    traitnames: lookclose,profession,spawned,scoreboardtrait,rotationtrait,age,inventory,villagertrait,mounttrait,type,skintrait,owner,location
+    traitnames: location,skintrait,lookclose,profession,rotationtrait,type,villagertrait,age,mounttrait,owner,inventory,spawned,scoreboardtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -778,17 +778,17 @@ npc:
         age: 0
         locked: true
       location:
-        bodyYaw: 173.07214
+        bodyYaw: 160.7395
         world: world
         x: '-761.5018'
         y: '270.5'
         z: '-1952.5055'
-        yaw: '-166.9279'
+        yaw: '-179.2605'
         pitch: '0.0'
       villagertrait:
         level: 1
         type: SAVANNA
-    traitnames: profession,lookclose,spawned,scoreboardtrait,rotationtrait,age,inventory,villagertrait,mounttrait,type,skintrait,owner,location
+    traitnames: location,skintrait,lookclose,rotationtrait,profession,type,villagertrait,age,mounttrait,owner,inventory,scoreboardtrait,spawned
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -826,17 +826,17 @@ npc:
         age: 0
         locked: true
       location:
-        bodyYaw: 161.50317
+        bodyYaw: 153.5921
         world: world
         x: '1152.5018'
         y: '5.5'
         z: '-1137.5055'
-        yaw: '-178.4968'
+        yaw: '173.5921'
         pitch: '0.0'
       villagertrait:
         level: 1
         type: SAVANNA
-    traitnames: profession,lookclose,spawned,scoreboardtrait,age,rotationtrait,inventory,villagertrait,mounttrait,type,skintrait,owner,location
+    traitnames: location,skintrait,lookclose,profession,rotationtrait,type,villagertrait,age,mounttrait,owner,inventory,spawned,scoreboardtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -874,17 +874,47 @@ npc:
         age: 0
         locked: true
       location:
-        bodyYaw: -26.12246
+        bodyYaw: -53.29974
         world: world
         x: '612.3938'
         y: '-15.9375'
         z: '-1335.0668'
-        yaw: '-26.1225'
+        yaw: '-53.2997'
         pitch: '0.0'
       villagertrait:
         level: 1
         type: PLAINS
-    traitnames: profession,lookclose,spawned,scoreboardtrait,age,rotationtrait,inventory,villagertrait,mounttrait,type,skintrait,owner,location
+    traitnames: location,skintrait,lookclose,profession,rotationtrait,type,villagertrait,age,mounttrait,owner,inventory,spawned,scoreboardtrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '12':
+    name: '&2ААнтикварщик'
+    uuid: 19cabcaf-aef9-4277-a1c5-d2197e03dd00
+    traits:
+      location:
+        bodyYaw: 0.3876953
+        world: world
+        x: '848.9617'
+        y: '35.0'
+        z: '-1352.3'
+        yaw: '0.3877'
+        pitch: '0.1496'
+      skintrait:
+        fetchDefaultSkin: true
+        updateSkins: false
+      spawned: true
+      hologramtrait:
+        direction: BOTTOM_UP
+        lineHeight: -1.0
+      owner:
+        uuid: 193c7d11-8a07-35a9-a657-d485e43824c5
+      type: PLAYER
+      age:
+        age: 0
+        locked: true
+    traitnames: age,mounttrait,location,hologramtrait,skintrait,owner,inventory,scoreboardtrait,spawned,type
     navigator:
       speedmodifier: '1.0'
       avoidwater: false

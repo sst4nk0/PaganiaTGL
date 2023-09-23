@@ -1,0 +1,100 @@
+display:
+    name: 'Паладин'
+    lore:
+    - 'Паладин - это массивный танковый боец,'
+    - 'который использует свою ману для исцеления и защиты'
+    - 'членов своей команды.'
+    attribute-lore:
+    - '&a+ &7Максимальное Здоровье'
+    - '&a+ &7Сопротивление Отбрасыванию'
+    - '&a+ &7Снижение Минуса Скорости'
+    - '&c- &7Скорость Передвижения'
+    - '&c- &7Скорость Атаки'
+    - ''
+    - '&8&lСила'
+    - '&7  Урон Атаки: &c1 &7(+&c0&7)'
+    - '&7  Скорость Атаки: &c3.7 &7(+&c0&7)'
+    - '&7  Максимальное Здоровье: &c22 &7(+&c.3&7)'
+    - ''
+    - '&8&lЛовкость'
+    - '&7  Сопротивление Отбрасыванию: &a30% &7(+&a1%&7)'
+    - '&7  Скорость Передвижения: &a19 &7(+&a0&7)'
+    - '&7  Снижение Минуса Скорости: &a30% &7(+&a2%&7)'
+    - ''
+    - '&8&lИнтеллект'
+    - '&7  Максимальная Мана: &920 &7(+&90&7)'
+    - '&7  Регенерация Здоровья: &90.1 &7(+&90&7)'
+    - '&7  Регенерация Маны: &90.166 &7(+&90&7)'
+    item: ENCHANTED_GOLDEN_APPLE:0 # Supports custom model data/texture by durability
+
+# Must match an existing exp curve filename from the 'expcurves' folder
+exp-curve: levels
+
+skill-slots:
+    1:
+        name: "&aСлот навыка I"
+        unlocked-by-default: true
+    2:
+        name: "&aСлот навыка II"
+        unlocked-by-default: true
+    3:
+        name: "&aСлот навыка III"
+        unlocked-by-default: true
+    4:
+        name: "&aСлот навыка IV"
+        unlocked-by-default: true
+
+skill-trees:
+    - 'general'
+    - 'warrior-paladin'
+    - 'combat'
+
+# The maximum level players can reach
+max-level: 100
+
+exp-table: class_exp_table
+
+cast-particle:
+    particle: VILLAGER_HAPPY
+
+skills:
+    DEEP_WOUND:
+        level: 10
+        max-level: 30
+    WEAKEN:
+        level: 5
+        max-level: 30
+    AMBERS:
+        level: 15
+        max-level: 30
+    GREATER_HEALINGS:
+        level: 7
+        max-level: 30
+    MINOR_HEALINGS:
+        level: 3
+        max-level: 30
+    HUMAN_SHIELD:
+        level: 13
+        max-level: 20
+
+attributes:
+    knockback-resistance:
+        base: .3
+        per-level: .01
+    speed-malus-reduction:
+        base: 30
+        per-level: 2
+    max-health:
+        base: 22
+        per-level: 0.3
+    attack-speed:
+        base: 3.7
+        per-level: 0
+    movement-speed:
+        base: .095
+        per-level: 0
+
+# Experience sources for main class experience.
+main-exp-sources:
+- 'killmob{type=ZOMBIE;amount=1-3}'
+- 'killmob{type=ENDERMAN;amount=6-9}'

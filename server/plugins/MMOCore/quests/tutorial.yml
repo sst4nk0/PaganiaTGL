@@ -1,0 +1,69 @@
+
+# Levels players must have in
+# order to unlock this quest.
+level-req:
+    main: 10
+    mining: 5
+
+# Quest name displayed in the quest menu.
+name: 'Совершенно Новый Мир'
+
+# Quest lore displayed in the quest menu.
+lore:
+- 'Это обучающий квест.'
+- 'Пример описания...'
+- ''
+- '&eНаграды:'
+- '&7► Деревянные Инструменты'
+- '&7► Кожаная Броня'
+- '&7► 100 ОПЫТА'
+
+# Quests the player must finish
+# in order to unlock this one.
+parent: []
+
+# Cooldown in hours. Don't put any
+# to make the quest a one-time quest.
+# Put it to 0 to make it instantly redoable.
+delay: 12
+
+# Objectives the player needs to
+# complete. Once they're all complete,
+# the quest will end.
+objectives:
+    1:
+        type: 'goto{world="world";x=56;y=68;z=115;range=5}'
+        lore: 'Иди в лагерь.'
+        triggers:
+        - 'message{format="&aКузнец> &fПривет, %player%! Я сейчас ищу помощи."}'
+        - 'message{format="&aКузнец> &fМожешь принести мне 3 дубовых бревна?"}'
+        - 'sound{sound=ENTITY_EXPERIENCE_ORB_PICKUP}'
+    2:
+        type: 'mineblock{type="OAK_LOG";amount=3}'
+        lore: 'Добудь три дубовых бревна!'
+        triggers:
+        - 'message{format="&aКузнец> &fОтлично, теперь принеси мне эти бревна обратно!"}'
+        - 'sound{sound="ENTITY_EXPERIENCE_ORB_PICKUP"}'
+    3:
+        type: 'getitem{type="OAK_LOG";amount=3;npc=0}'
+        lore: 'Дай эти дубовые бревна кузнецу.'
+        triggers:
+        - 'message{format="&aКузнец> &fОтлично, теперь поговори с кузнецом снова, чтобы получить свое оружие!"}'
+        - 'sound{sound=ENTITY_EXPERIENCE_ORB_PICKUP}'
+    4:
+        type: 'talkto{npc=0}'
+        lore: 'Получи свое оружие у кузнеца!'
+        triggers:
+        - 'item{type=WOODEN_SWORD}'
+        - 'item{type=WOODEN_AXE}'
+        - 'item{type=BOW}'
+        - 'message{format="&aКузнец> &fТеперь иди убей 5 скелетных рыцарей, чтобы завершить обучение!"}'
+        - 'sound{sound=ENTITY_PLAYER_LEVELUP}'
+    5:
+        type: 'killmythicmob{name="SkeletalKnight";amount=5}'
+        lore: 'Убей 5 скелетных рыцарей!'
+        triggers:
+        - 'message{format="&aТы успешно завершил обучение!"}'
+        - 'sound{sound="ENTITY_PLAYER_LEVELUP"}'
+        - 'mmoitem{type=SWORD;id=CUTLASS}'
+        - 'experience{amount=100}'

@@ -39,6 +39,18 @@ regions:
         owners: {}
         type: cuboid
         priority: 1
+    job_mineshaft_0:
+        min: {x: 600, y: -41, z: -1358}
+        max: {x: 707, y: 15, z: -1210}
+        members: {}
+        flags:
+            greeting-title: |4-
+
+                §7Рудник
+        owners:
+            unique-ids: [193c7d11-8a07-35a9-a657-d485e43824c5]
+        type: cuboid
+        priority: 0
     town_corosten:
         min: {x: 812, y: -64, z: -1456}
         max: {x: 933, y: 265, z: -1265}
@@ -57,12 +69,12 @@ regions:
     __global__:
         members: {}
         flags: {other-explosion: deny, wither-damage: deny, ice-form: deny, lava-fire: deny,
-            frosted-ice-form: deny, mycelium-spread: deny, leaf-decay: deny, ice-melt: deny,
+            frosted-ice-form: deny, mycelium-spread: deny, ice-melt: deny, leaf-decay: deny,
             enderman-grief: deny, fire-spread: deny, crop-growth: deny, enderdragon-block-damage: deny,
-            soil-dry: deny, creeper-explosion: deny, vine-growth: deny, snowman-trails: deny,
-            rock-growth: deny, frosted-ice-melt: deny, ravager-grief: deny, entity-painting-destroy: deny,
-            ghast-fireball: deny, entity-item-frame-destroy: deny, grass-growth: deny,
-            mushroom-growth: deny}
+            creeper-explosion: deny, soil-dry: deny, vine-growth: deny, snowman-trails: deny,
+            rock-growth: deny, frosted-ice-melt: deny, entity-painting-destroy: deny,
+            ravager-grief: deny, entity-item-frame-destroy: deny, ghast-fireball: deny,
+            mushroom-growth: deny, grass-growth: deny}
         owners: {}
         type: global
         priority: 0

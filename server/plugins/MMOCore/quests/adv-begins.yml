@@ -1,0 +1,30 @@
+
+# Display options
+name: 'Начало Приключения'
+lore:
+- 'Еще один пример квеста.'
+- ''
+- '&eНаграды:'
+- '&7► Каменные Инструменты'
+- '&7► 30 ОПЫТА'
+
+# Parent quests
+parent:
+- 'tutorial'
+
+# Quest objectives
+objectives:
+    1:
+        type: 'goto{world="world";x=120;y=46;z=652;range=10}'
+        lore: 'Иди к лагерю.'
+        triggers:
+        - 'message{format="Хорошая работа!"}'
+    2:
+        type: 'talkto{npc=0}'
+        lore: 'Пойди поговори с Кузнецом.'
+        triggers:
+        - 'message{format="Кузнец сказал тебе прийти ко мне... ?"}'
+        - 'item{type=STONE_SWORD}'
+        - 'item{type=STONE_AXE}'
+        - 'item{type=STONE_PICKAXE}'
+        - 'experience{amount=30}'

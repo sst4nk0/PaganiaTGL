@@ -1,0 +1,23 @@
+cast-mode:
+  cast: Заклятье
+  shoot-bow: Выстрел лука
+  shoot-trident: Бросок трезубца
+  sneak: Крадучись
+  shift-left-click: Shift-ЛКМ
+  arrow-tick: Тик стрелы
+  timer: Отсчёт
+  death: Смерть
+  trident-land: Падение трезубца
+  arrow-land: Падение стрелы
+  trident-tick: Тик трезубца
+  kill-entity: Убийство
+  right-click: ПКМ
+  attack: Атака
+  arrow-hit: Поражение стрелой
+  login: Логин
+  api: Апи
+  damaged: Получение урона
+  left-click: ЛКМ
+  trident-hit: Удар трезубцем
+  damaged-by-entity: Урон от сущности
+  shift-right-click: Shift-ПКМ

@@ -1,0 +1,223 @@
+# Уровень и Опыт
+level-up:
+  - ''
+  - '&eПоздравляем! Вы достигли уровня &6{level}&e!'
+  - '&eИспользуйте &6/p &eдля просмотра новой статистики!'
+  - ''
+profession-level-up:
+  - '&eТеперь вы на уровне &6{level}&e в профессии &6{profession}&e!'
+exp-notification: '%&f{profession} &e{progress} &e{ratio}%'
+exp-hologram: '&e+{exp} ОПЫТА!'
+class-select: '&eТеперь вы &6{class}&e!'
+already-on-class: '&cВы уже &6{class}&c.'
+death-exp-loss:
+  - ''
+  - '&4Вы умерли и потеряли {loss} опыта.'
+  - ''
+
+# Общее
+not-enough-perms: '&cУ вас недостаточно прав для выполнения этой команды.'
+
+# Усилители опыта
+booster-main:
+  - '&e'
+  - '&eАктивирован множитель опыта &6{multiplier}x&e!'
+  - '&e'
+booster-skill:
+  - '&e'
+  - '&eАктивирован множитель опыта &6{multiplier}x&e для навыка &6{profession}&e!'
+  - '&e'
+booster-expired: '&cИстек срок действия!'
+
+# Режим PvP
+pvp-mode:
+  cooldown: '&cПожалуйста, подождите {remaining} секунд, чтобы использовать эту команду снова.'
+
+  # Когда вы не можете атаковать другого игрока
+  cannot-hit:
+    high-level-difference: '&cСлишком большая разница в уровнях для борьбы с этим игроком.'
+    low-level-target: '&cВы не можете сражаться с этим игроком, так как его уровень слишком низкий.'
+    low-level-self: '&cВаш уровень слишком низкий для борьбы с другими игроками.'
+    pvp-mode-disabled-target: '&cЭтот игрок не включил режим PvP.'
+    pvp-mode-disabled-self: '&cВы не включили режим PvP.'
+    invulnerable-self: '&cВы все еще находитесь в режиме бессмертия в течение {left} секунд.'
+    invulnerable-target: '&cЭтот игрок находится в режиме бессмертия в течение {left} секунд.'
+
+  # При использовании команды /pvpmode
+  toggle:
+    on-safe: '&aТеперь вы сможете сражаться с другими игроками в выделенных зонах PvP.'
+    on-invulnerable: '&aВы сможете сражаться с другими игроками через {time} секунд.'
+    off-safe: '&cВы больше не можете сражаться с другими игроками.'
+
+  # Вход/выход из регионов
+  leave:
+    pvp-allowed: '&cВы покинули зону PvP, но все еще уязвимы в течение {remaining} секунд!'
+    pvp-denied: '&cВы покинули зону PvP.'
+  enter:
+    pvp-mode-on: '&aВы вошли в зону PvP и получили неуязвимость на {time} секунд!'
+    pvp-mode-off: '&aВы вошли в зону PvP. Вы можете использовать команду /pvpmode для сражения с другими игроками.'
+
+# Профессия Рыболов
+caught-fish: '&cВы поймали рыбу!'
+fish-out-water: '&aОтличная работа!'
+fish-out-water-crit: '&aКритическая рыба!'
+
+# Ввод игрока
+player-input:
+  anvil:
+    friend-request: 'Имя друга...'
+    party-invite: 'Имя игрока...'
+    guild-invite: 'Имя игрока...'
+    guild-creation-tag: 'Тег гильдии...'
+    guild-creation-name: 'Имя гильдии...'
+  chat:
+    friend-request: '&eНапишите имя игрока в чате.'
+    party-invite: '&eНапишите имя игрока, которого хотите пригласить.'
+    guild-invite: '&eНапишите имя игрока, которого хотите пригласить.'
+    guild-creation-tag: '&eНапишите в чате тег для создания гильдии.'
+    guild-creation-name: '&eНапишите в чате имя для создания гильдии.'
+    cancel: '&eНапишите &c''cancel'' &eдля отмены.'
+
+# Заклинания
+casting:
+  action-bar:
+    ready: '&6[{index}] &a&l{skill}'
+    on-cooldown: '&6[{index}] &c&l{skill} &6(&c{cooldown}&6)'
+    no-mana: '&6[{index}] &9&l{skill}'
+    no-stamina: '&6[{index}] &9&l{skill}'
+  split: '&7 &7 - &7 '
+  no-longer: '%&cВы прервали кастинг заклинания.'
+  no-mana: '&cУ вас недостаточно {mana}, требуется еще {mana-required}!'
+  no-stamina: '&cУ вас недостаточно выносливости!'
+  on-cooldown: '&cЭто заклинание в перезарядке, осталось {cooldown} секунд.'
+
+# Журнал боя
+now-in-combat: '%&cВы находитесь в бою!'
+leave-combat: '%&aВы покинули бой.'
+
+# Точки маршрута
+new-waypoint: '%&eВы открыли точку маршрута &6{waypoint}&e!'
+new-waypoint-book: '%&eВы открыли точку маршрута &6{waypoint}&e!'
+not-enough-stellium: '&cУ вас недостаточно стеллиума: вам нужно еще {more}.'
+waypoint-cooldown: '&cПожалуйста, подождите {cooldown} перед использованием точки маршрута снова.'
+not-unlocked-waypoint: '&cВы еще не открыли эту точку маршрута.'
+not-dynamic-waypoint: '&cВы можете телепортироваться только к нединамической точке маршрута, находясь на другой точке маршрута.'
+standing-on-waypoint: '&cВы уже стоите на этой точке маршрута.'
+warping-canceled: '%&cТелепортация к точке маршрута отменена.'
+warping-comencing: '%&cНЕ ДВИГАЙТЕСЬ!&e Вы будете телепортированы через {left} секунд.'
+cannot-teleport-to: '&cЭти две точки маршрута не связаны.'
+
+# Деньги
+deposit: '&eВы успешно внесли &6{worth}g&e.'
+withdrawing: '&eНапишите в чат сумму &6золота&e, которую вы хотите &6снять&e.'
+withdraw-cancel: '&eСнятие отменено.'
+withdrew: '&eВы успешно сняли &6{worth}g&e.'
+wrong-number: '&c{arg} не является допустимым числом.'
+not-enough-money: '&cУ вас недостаточно денег, вам нужно еще {left} золота.'
+stand-near-enderchest: '&cВы должны находиться рядом с банком, чтобы сделать это.'
+
+# Блоки
+cannot-break: '%&cУ вас нет подходящего инструмента для разрушения этого блока.'
+
+# Друзья
+no-longer-friends: '&cВы и {unfriend} больше не друзья.'
+not-online-player: '&c{player} не в сети.'
+sent-friend-request: '&eВы отправили запрос в друзья игроку &6{player}&e.'
+now-friends: '&eТеперь вы друзья с игроком &6{player}&e.'
+friend-request-cooldown: '&cПожалуйста, подождите {cooldown}.'
+cant-request-to-yourself: '&cВы не можете отправить запрос самому себе.'
+already-friends: '&cВы уже друзья с игроком {player}.'
+friend-request:
+  - '{"text":""}'
+  - '{"text":"&6{player} &eтолько что отправил вам запрос в друзья!"}'
+  - '[{"text":"        ","hoverEvent":{}},{"text":"&8[&a&lПРИНЯТЬ&8]","clickEvent":{"action":"run_command","value":"/friends accept {uuid}"},"hoverEvent":{"action":"show_text","value":"&eНажмите, чтобы принять!"}},{"text":"&r             ","hoverEvent":{}},{"text":"&8[&c&lОТКЛОНИТЬ&8]","clickEvent":{"action":"run_command","value":"/friends deny {uuid}"},"hoverEvent":{"action":"show_text","value":"&eНажмите, чтобы отклонить."}}]'
+  - '{"text":""}'
+
+# Группы
+party-chat: '&5[Группа] {player}: {message}'
+sent-party-invite: '&eВы отправили приглашение в группу игроку &6{player}&e.'
+already-in-party: '&c{player} уже в вашей группе.'
+party-invite:
+  - '{"text":""}'
+  - '{"text":"&6{player} &eпригласил вас в свою группу!"}'
+  - '[{"text":"        "},{"text":"&8[&a&lПРИНЯТЬ&8]","clickEvent":{"action":"run_command","value":"/party accept {uuid}"},"hoverEvent":{"action":"show_text","value":"&eНажмите, чтобы принять!"}},{"text":"&r             "},{"text":"&8[&c&lОТКЛОНИТЬ&8]","clickEvent":{"action":"run_command","value":"/party deny {uuid}"},"hoverEvent":{"action":"show_text","value":"&eНажмите, чтобы отклонить."}}]'
+  - '{"text":""}'
+party-is-full: '&cИзвините, ваша группа полная.'
+party-joined: '&eВы успешно присоединились к группе владельца &6{owner}&e.'
+party-joined-other: '&6{player}&e присоединился к вашей группе!'
+transfer-party-ownership: '&eВы стали владельцем группы.'
+kick-from-party: '&eВы успешно исключили игрока &6{player}&e из группы.'
+party-invite-cooldown: '&cПожалуйста, подождите {cooldown}, прежде чем пригласить {player}.'
+high-level-difference: '&cВы не можете пригласить {player}, так как разница уровней слишком велика ({diff}).'
+
+# Гильдии
+guild-chat: '&a[{tag}] {player}: {message}'
+sent-guild-invite: '&eВы отправили приглашение в гильдию игроку &6{player}&e.'
+already-in-guild: '&c{player} уже в вашей гильдии.'
+guild-invite:
+  - '{"text":""}'
+  - '{"text":"&6{player} &eпригласил вас в свою гильдию!"}'
+  - '[{"text":"        "},{"text":"&8[&a&lПРИНЯТЬ&8]","clickEvent":{"action":"run_command","value":"/guild accept {uuid}"},"hoverEvent":{"action":"show_text","value":"&eНажмите, чтобы принять!"}},{"text":"&r             "},{"text":"&8[&c&lОТКЛОНИТЬ&8]","clickEvent":{"action":"run_command","value":"/guild deny {uuid}"},"hoverEvent":{"action":"show_text","value":"&eНажмите, чтобы отклонить."}}]'
+  - '{"text":""}'
+#guild-is-full: '&cSorry, your guild is full.' -Unused right now
+guild-joined: '&eВы успешно присоединились к гильдии владельца &6{owner}&e.'
+guild-joined-other: '&6{player}&e присоединился к вашей гильдии!'
+transfer-guild-ownership: '&eВы стали владельцем гильдии.'
+kick-from-guild: '&eВы успешно исключили игрока &6{player}&e из гильдии.'
+guild-invite-cooldown: '&cПожалуйста, подождите {cooldown}, прежде чем пригласить {player}.'
+guild-creation:
+  failed: "&cНе удалось создать гильдию: {reason}"
+  reasons:
+    invalid-characters: "&eНедопустимый(е) символ(ы)!"
+    invalid-length: "&eДлина должна быть между {min} и {max}!"
+    already-exists: "&eЭтот тег гильдии уже существует!"
+
+# Квесты
+already-on-quest: '&cВы уже находитесь на квесте.'
+cancel-quest: '&eВы успешно отменили текущий квест.'
+quest-level-restriction: '&cВам необходимо достичь {level} уровня.'
+cant-redo-quest: '&cВы не можете начать этот квест второй раз.'
+quest-cooldown: '&cПодождите {delay}.'
+start-quest: '&eВы успешно начали квест &6{quest}&e.'
+
+# Атрибуты
+no-attribute-points-spent: '&cВы не потратили ни одного очка атрибута.'
+not-attribute-reallocation-point: '&cУ вас нет 1 точки перераспределения атрибутов.'
+not-attribute-point: '&cУ вас нет очков атрибута.'
+not-attribute-point-shift: '&cУ вас должно быть &4{shift_points} &cочков атрибута.'
+attribute-points-reallocated: '&eВы успешно сбросили свои атрибуты. Теперь у вас &6{points} &eочков атрибута.'
+attribute-max-points-hit: '&cВы не можете более повышать этот атрибут.'
+attribute-level-up: '&eВы успешно повысили уровень атрибута &6{attribute}&e.' # {level}
+
+# Выбор класса
+cant-choose-new-class:
+  - '&cДля этого действия вам нужно одно очко класса.'
+no-permission-for-class:
+  - "&cУ вас нет разрешения выбрать этот класс."
+
+# Навыки
+no-class-skill: '&cВаш класс не имеет навыков.'
+not-enough-skill-points: '&cВам нужно одно очко навыка.'
+not-enough-skill-points-shift: '&cВам нужно {shift_points} очков навыка.'
+upgrade-skill: '&eВаш навык &6{skill} &eтеперь на уровне &6{level}&e!'
+skill-level-not-met: '&cВы еще не можете использовать этот навык.'
+no-skill-bound: '&cУ вас нет навыка, привязанного к этому слоту.'
+not-compatible-skill: '&cВыбранный навык несовместим с этим слотом.'
+cant-manually-bind: "&cВы не можете вручную привязывать/отвязывать навык от этого слота."
+skill-max-level-hit: '&cВы уже достигли максимального уровня для этого навыка.'
+no-skill-placeholder: 'Нет Привязанного Навыка'
+not-skill-reallocation-point: '&cУ вас нет 1 точки перераспределения навыков.'
+no-skill-points-spent: '&cВы не потратили ни одного навыкового очка.'
+skill-points-reallocated: '&eВы успешно сбросили свои навыковые очки. Теперь у вас &6{points} &eочков навыка.'
+max-points-reached: '&cВы достигли максимального количества очков, которое можно потратить. Вам нужно перераспределить ваши очки, чтобы откатить изменения.'
+
+# Древа навыков
+no-skill-tree-points-spent: '&cВы не потратили ни одного очка древа навыков.'
+locked-node: '&cЭтот навык заблокирован!'
+upgrade-skill-node: '&eВаш навык &6{skill-node} &eтеперь на уровне &6{level}&e!'
+skill-node-max-level-hit: '&cВы уже достигли максимального уровня для этого навыка.'
+missing-skill-node-permission: '&cУ вас нет разрешения для разблокировки этого навыка.'
+not-enough-skill-tree-points: '&cВам нужно {point} очка древа навыков.'
+reallocated-points: '&eВы успешно сбросили древо навыков {skill-tree}. Теперь у вас &6{points} &eочков древа навыков.'
+not-skill-tree-reallocation-point: '&cУ вас нет 1 точки перераспределения древа навыков.'
+no-skill-tree: '&cВаш класс не имеет древа навыков.'

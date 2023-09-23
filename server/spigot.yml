@@ -59,6 +59,7 @@ commands:
   - /skill
 world-settings:
   default:
+    seed-trailruins: 83469867
     seed-ancientcity: 20083232
     seed-buriedtreasure: 10387320
     seed-mineshaft: default
@@ -77,6 +78,8 @@ world-settings:
       exp: 4.0
       item: 4.5
     growth:
+      torchflower-modifier: 100
+      pitcherplant-modifier: 100
       cactus-modifier: 100
       cane-modifier: 100
       melon-modifier: 100
@@ -144,6 +147,7 @@ world-settings:
       hopper-check: 16
     hopper-amount: 9
     entity-tracking-range:
+      display: 128
       players: 48
       animals: 48
       monsters: 48

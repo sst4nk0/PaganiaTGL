@@ -1,0 +1,94 @@
+# GUI display name
+name: 'Выбранный навык: &6{skill}'
+
+# Number of slots in your inventory. Must be
+# between 9 and 54 and must be a multiple of 9.
+slots: 54
+
+items:
+  skill:
+    slots: [ 10,11,12,19,20,21,28,29,30,37,38,39]
+
+    function: skill
+    name: '&a{skill} &6[{level}]'
+    lore:
+      - ''
+      - '{unlocked}&a✔ Требуется уровень {unlock}'
+      - '{locked}&c✖ Требуется уровень {unlock}'
+      - '{max_level}&e✔ Максимальный уровень достигнут!'
+      - ''
+      - '{lore}'
+  next:
+    slots: [ 47 ]
+    function: next
+    item: PLAYER_HEAD
+    texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTliZjMyOTJlMTI2YTEwNWI1NGViYTcxM2FhMWIxNTJkNTQxYTFkODkzODgyOWM1NjM2NGQxNzhlZDIyYmYifX19
+    name: '&aДалее'
+    lore: { }
+  previous:
+    slots: [ 2 ]
+    function: previous
+    item: PLAYER_HEAD
+    texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmQ2OWUwNmU1ZGFkZmQ4NGU1ZjNkMWMyMTA2M2YyNTUzYjJmYTk0NWVlMWQ0ZDcxNTJmZGM1NDI1YmMxMmE5In19fQ==
+    name: '&aПредыдущий'
+    lore: { }
+
+  reallocate:
+    slots: [45]
+    function: reallocation
+    item: CAULDRON
+    name: '&aПерераспределить очки навыков'
+    lore:
+      - ''
+      - 'Вы потратили всего &6{total}&7 очков навыков.'
+      - '&7Правый клик, чтобы перераспределить их.'
+      - ''
+      - '&eСтоимость 1 очка перераспределения навыков.'
+      - '&e◆ Очки перераспределения навыков: &6{points}'
+
+  slot:
+    slots: [ 8,17,26,35,44,53 ]
+    function: slot
+    item: GRAY_DYE
+
+    name: '&aСлот навыка {slot}'
+    no-skill: '&cНет'
+    lore:
+      - '&7Текущий навык: &6{skill}'
+      - ''
+      - '{slot-lore}'
+      - ''
+      - '&7&oИспользуйте этот навык, нажав [F], за которым'
+      - '&7&оследует назначенная клавиша на панели действий.'
+      - ''
+      - '&e► Левый клик для назначения {selected}.'
+      - '&e► Правый клик для снятия назначения.'
+      - '&e► Shift + левый клик для выбора.'
+  skill-level:
+    slots: [ 6,15,24,33,42,51 ]
+    function: level
+
+    # Skill level offset, should be changed
+    # according to the amount of inventory
+    # slots the skill-level item occupies.
+    offset: 2
+
+    # Item displayed if the skill level is
+    # too low to display a level item in the GUI
+    too-low:
+      item: AIR
+
+    item: LIME_DYE
+    name: '&a{skill} Уровень {roman}'
+    lore:
+      - ''
+      - '{lore}'
+  upgrade:
+    slots: [ 15 ]
+    function: upgrade
+    item: GREEN_STAINED_GLASS_PANE
+    name: '&a&lУЛУЧШЕНИЕ {skill_caps}'
+    lore:
+      - '&7Стоимость 1 очка навыка.'
+      - ''
+      - '&eТекущие очки навыков: {skill_points}'

@@ -1,0 +1,10 @@
+name: Дар Нептуна
+lore:
+- Регенерация ресурсов увеличивается на &8{extra}% &7,
+- когда вы стоите в воде.
+material: LILY_PAD
+extra:
+  base: 30.0
+  per-level: 5.0
+  #Optional: The decimal format used for this skill parameter.
+  decimal-format: '0.#'

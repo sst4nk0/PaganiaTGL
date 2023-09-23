@@ -1,0 +1,44 @@
+name: Проклятие Заморозки
+lore:
+- Быстро вырисовывайте проклятый круг магии,
+- который мгновенно накладывает
+- на вашу цель замедление
+- ''
+- '&eПерезарядка: {cooldown} сек.'
+- '&9Стоимость: {mana} {mana_name}'
+material: SNOWBALL
+duration:
+  base: 3
+  per-level: 2
+  #Optional: The decimal format used for this skill parameter.
+  decimal-format: '0.#'
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+damage:
+  base: 2
+  per-level: 1
+delay:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 3
+  per-level: 1
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 2
+  per-level: 1
+amplifier:
+  base: 2
+  per-level: 1
+radius:
+  base: 3
+  per-level: 2

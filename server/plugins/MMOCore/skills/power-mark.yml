@@ -1,0 +1,40 @@
+name: Метка Силы
+lore:
+- Атака противника наносит смертоносную
+- магическую метку, которая распространяется
+- по земле. Эта метка накапливает &6{ratio}%
+- урона, нанесенного начальной цели,
+- в течение &6{duration} &7секунд.
+- ''
+- По истечении этого времени метка взрывается,
+- нанося скопившийся урон ближайшим врагам
+- и оглушая их на &6{stun}+ &7секунд.
+- ''
+- Чем больше урона, тем дольше оглушение.
+- ''
+- '&eПерезарядка: {cooldown} сек.'
+material: WITHER_SKELETON_SKULL
+duration:
+  base: 10.0
+  per-level: 1.1
+  #Optional: The decimal format used for this skill parameter.
+  decimal-format: '0.#'
+mana:
+  base: 2.0
+  per-level: 1.0
+  max: 0.0
+  min: 0.0
+stamina:
+  base: 2.0
+  per-level: 1.0
+  max: 0.0
+  min: 0.0
+cooldown:
+  base: 30.0
+  per-level: 1.0
+stun:
+  base: 2.4
+  per-level: 1.03
+ratio:
+  base: 10.0
+  per-level: 5.0

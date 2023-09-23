@@ -1,0 +1,44 @@
+name: Взрывистый Индюк
+lore:
+- Запустите взрывистого индюка,
+- направив его на землю
+- рядом с вашей целью
+- ''
+- '&eПерезарядка: {cooldown} сек.'
+- '&9Стоимость: {mana} {mana_name}'
+material: BOOK
+duration:
+  base: 4
+  per-level: 1
+  #Optional: The decimal format used for this skill parameter.
+  decimal-format: '0.#'
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+damage:
+  base: 2
+  per-level: 1
+delay:
+  base: 2
+  per-level: 1
+  min: 0
+  max: 0
+mana:
+  base: 7
+  per-level: 1.1
+  min: 0
+  max: 0
+stamina:
+  base: 2
+  per-level: 1
+cooldown:
+  base: 2
+  per-level: 1
+knockback:
+  base: 3
+  per-level: 1
+radius:
+  base: 2
+  per-level: 1

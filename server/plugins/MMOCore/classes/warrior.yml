@@ -1,0 +1,142 @@
+display:
+    name: 'Воин'
+    lore:
+    - 'Воин обладает великолепными боевыми и'
+    - 'эволюционными способностями, что дает ему'
+    - 'гораздо более высокие характеристики на уровень, чем у других классов.'
+    - ''
+    - 'Воин собирает ярость при использовании навыков,'
+    - 'временно увеличивая его базовый урон.'
+    attribute-lore:
+    - '&a+ &7Урон Атаки'
+    - '&a+ &7Скорость Атаки'
+    - '&a+ &7Максимальное Здоровье'
+    - '&a+ &7Снижение Минуса Скорости'
+    - '&c- &7Скорость Передвижения'
+    - ''
+    - '&8&lСила'
+    - '&7  Урон Атаки: &c2 &7(+&c0.1&7)'
+    - '&7  Скорость Атаки: &c4.2 &7(+&c0.05&7)'
+    - '&7  Максимальное Здоровье: &c24 &7(+&c0.5&7)'
+    - ''
+    - '&8&lЛовкость'
+    - '&7  Сопротивление Отбрасыванию: &a0% &7(+&a0%&7)'
+    - '&7  Скорость Передвижения: &a19 &7(+&a0&7)'
+    - '&7  Снижение Минуса Скорости: &a40% &7(+&a2%&7)'
+    - ''
+    - '&8&lВоля'
+    - '&7  Максимальная Ярость: &c20 &7(+&c1&7)'
+    - '&7  Регенерация Здоровья: &90.1 &7(+&90&7)'
+    - '&7  Дегенерация Ярости: &9-0.5&7/с'
+    item: IRON_SWORD:0 # Supports custom model data/texture by durability
+
+# Must match an existing exp curve filename from the 'expcurves' folder
+exp-curve: levels
+
+# The maximum level players can reach
+max-level: 100
+
+skill-slots:
+    1:
+        name: "Слот навыка I"
+        unlocked-by-default: true
+    2:
+        name: "Слот навыка II"
+        unlocked-by-default: true
+    3:
+        name: "Слот навыка III"
+        unlocked-by-default: true
+    4:
+        name: "Слот навыка IV"
+        unlocked-by-default: true
+
+skill-trees:
+    - 'general'
+    - 'warrior-paladin'
+    - 'combat'
+
+# Warrior has rage which he gains while casting spells
+# Rage increase its skill damage. Use <mmocore.rage>
+# to get the player's rage (MythicMobs formulas)
+#
+# 'char' is the character used to generate the mana bar as a message
+# 'color' are also the colors used to generate the mana bar
+# 'icon' is the icon display on the player action bar
+# 'name' is basically displayed everywhere
+mana:
+    char: ♦
+    icon: '&4♦'
+    color:
+        full: DARK_RED
+        half: RED
+        empty: WHITE
+    name: 'Ярость'
+
+exp-table: class_exp_table
+
+# Rage charges when dealing weapon and physical damage.
+triggers:
+    weapon-damage:
+    - 'mana{operation=GIVE;amount=2-3}'
+    physical-damage:
+    - 'mana{operation=GIVE;amount=2-3}'
+
+cast-particle:
+    particle: REDSTONE
+    color:
+        red: 255
+        green: 0
+        blue: 0
+
+# Rage only decays when out of combat
+options:
+    off-combat-mana-regen: true
+    needs-permission: false
+
+skills:
+    DEEP_WOUND:
+        level: 1
+        max-level: 30
+    WEAKEN:
+        level: 3
+        max-level: 30
+    EMPOWERED_ATTACK:
+        level: 5
+        max-level: 30
+    COMBO_ATTACK:
+        level: 7
+        max-level: 30
+    MINOR_HEALINGS:
+        level: 10
+        max-level: 30
+    FIRE_BERSERKER:
+        level: 15
+    
+attributes:
+    mana-regeneration:
+        base: -0.5
+        per-level: 0
+    speed-malus-reduction:
+        base: 50
+        per-level: 2
+    max-mana:
+        base: 20
+        per-level: 1
+    max-health:
+        base: 24
+        per-level: 0.5
+    movement-speed:
+        base: .12
+        per-level: 0
+    attack-damage:
+        base: 2
+        per-level: 0.1
+    attack-speed:
+        base: 4.2
+        per-level: 0.05
+
+# Experience sources for main class experience.
+main-exp-sources:
+- 'killmob{type=ZOMBIE;amount=1-3}'
+- 'killmob{type=ENDERMAN;amount=6-9}'
+

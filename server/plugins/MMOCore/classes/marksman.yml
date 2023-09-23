@@ -1,0 +1,109 @@
+display:
+    name: 'Меткий Стрелок'
+    lore:
+    - 'Меткий стрелок - это быстрый и точный'
+    - 'дальний боец, который никогда не промахивается ни одной стрелой.'
+    attribute-lore:
+    - '&a+ &7Сопротивление Отбрасыванию'
+    - '&a+ &7Снижение Минуса Скорости'
+    - '&c- &7Максимальное Здоровье'
+    - '&c- &7Скорость Передвижения'
+    - ''
+    - '&8&lСила'
+    - '&7  Урон Атаки: &c1 &7(+&c0&7)'
+    - '&7  Скорость Атаки: &c4 &7(+&c0&7)'
+    - '&7  Максимальное Здоровье: &c18 &7(+&c0&7)'
+    - ''
+    - '&8&lЛовкость'
+    - '&7  Сопротивление Отбрасыванию: &a15% &7(+&a1%&7)'
+    - '&7  Скорость Передвижения: &a21 &7(+&a0&7)'
+    - '&7  Снижение Минуса Скорости: &a10% &7(+&a2%&7)'
+    - ''
+    - '&8&lИнтеллект'
+    - '&7  Максимальная Мана: &920 &7(+&90&7)'
+    - '&7  Регенерация Здоровья: &90.1 &7(+&90&7)'
+    - '&7  Регенерация Маны: &90.166 &7(+&90&7)'
+    item: BOW
+
+# Must match an existing exp curve filename from the 'expcurves' folder
+exp-curve: levels
+
+# The maximum level players can reach
+max-level: 100
+
+exp-table: class_exp_table
+
+skill-slots:
+    1:
+        name: "&aСлот навыка I"
+        unlocked-by-default: true
+    2:
+        name: "&aСлот навыка II"
+        unlocked-by-default: true
+    3:
+        name: "&aСлот навыка III"
+        unlocked-by-default: true
+    4:
+        name: "&aСлот навыка IV"
+        unlocked-by-default: true
+
+skill-trees:
+    - 'general'
+    - 'rogue-marksman'
+
+# Particles displayed around the player
+# when he enters the casting mode.
+cast-particle:
+    particle: CRIT
+
+# Special resource regeneration: (when out of combat),
+# players can regen a set % of their stamina mana/missing stamina.
+# This % can scale with the player level.
+# It also works with other player resources: health, stellium and mana!
+resource:
+    stamina:
+    
+        # Regen scales with missing stamina.
+        type: MISSING
+        
+        # Regen from 3 to 10% of missing stamina every second
+        value:
+            base: 5
+            per-level: .2
+            max: 13
+        
+        # Only regen when out of combat.
+        off-combat: true
+
+skills:
+    WEAKEN:
+        level: 3
+        max-level: 30
+    COMBO_ATTACK:
+        level: 7
+        max-level: 30
+    EVADE:
+        level: 9
+        max-level: 30
+    MINOR_HEALINGS:
+        level: 10
+        max-level: 30
+
+attributes:
+    knockback-resistance:
+        base: .15
+        per-level: .01
+    speed-malus-reduction:
+        base: 10
+        per-level: 2
+    max-health:
+        base: 18
+        per-level: 0
+    movement-speed:
+        base: .105
+        per-level: 0
+
+# Experience sources for main class experience.
+main-exp-sources:
+- 'killmob{type=ZOMBIE;amount=1-3}'
+- 'killmob{type=ENDERMAN;amount=6-9}'

@@ -1,0 +1,151 @@
+# Weapon Stats
+attack-damage: ' &6✤ &7Урон: &f{value}'
+attack-speed: '&3 &7⚡ Скорость атаки: &f{value}'
+critical-strike-chance: ' &7<plus>{value}% шанс крит. удара'
+critical-strike-power: ' &7<plus>{value}% сила крит. удара'
+skill-critical-strike-chance: ' &7<plus>{value}% шанс крит. заклятия:'
+skill-critical-strike-power: ' &7<plus>{value}% сила крит. заклятия'
+range: ' &7{value} дистанция'
+mana-cost: '&3 &7■ Использует &9{value} манны'
+stamina-cost: '&3 &7■ Использует &9{value} выносливости'
+arrow-velocity: '&3 &7■ Скорость стрелы: &f{value}'
+blunt-power: '&3 &7■ Сила дроби: &f{value}'
+blunt-rating: '&3 &7■ Оценка дроби: &f{value}%'
+two-handed: '&3 &7■ Дву-ручный'
+handworn: '&3 &7■ Ручной'
+knockback: '&3 &7■ Откидывание: &f{value}'
+recoil: '&3 &7■ Отдача: &f{value}%'
+note-weight: '&3 &7■ Note Weight: &f{value}'
+lifesteal: ' &7+{value}% жизнекрад'
+spell-vampirism: ' &7+{value}% магичный вампиризм'
+
+# Extra Damage
+pve-damage: ' &7<plus>{value}% урон PvE:'
+pvp-damage: ' &7<plus>{value}% урон PvP:'
+magic-damage: ' &7<plus>{value}% урон магией'
+weapon-damage: ' &7<plus>{value}% урон оружием'
+undead-damage: ' &7<plus>{value}% урон нежитью'
+skill-damage: ' &7<plus>{value}% урон заклятьем'
+physical-damage: ' &7<plus>{value}% урон кинетикой'
+projectile-damage: ' &7<plus>{value}% урон снарядом'
+faction-damage-undead: ' &7<plus>{value}% урон по монстрам'
+
+# Abilities
+ability-format: '&a>&8| &7{trigger} &8|&e|&8| &7&l{ability}'
+ability-modifier: ' &3>&8|&7 {modifier}&8: &f{value}'
+ability-splitter: '&8'
+
+# Armor Stats
+block-power: ' &7<plus>{value}% сила блока'
+block-rating: ' &7<plus>{value}% оценка блока'
+block-cooldown-reduction: ' &7<plus>{value}% снижение к/д блока:'
+dodge-rating: ' &7<plus>{value}% уклонение'
+dodge-cooldown-reduction: ' &7<plus>{value}% снижение к/д уклонения:'
+parry-rating: ' &7<plus>{value}% парирование'
+parry-cooldown-reduction: ' &7<plus>{value}% снижение к/д парирования'
+armor: '&3 &7✠ Броня: &f<plus>{value}'
+armor-toughness: '&3 &7✠ Прочность брони: &f<plus>{value}'
+knockback-resistance: '&3 &7✠ Отбросостойкость: &f<plus>{value}%'
+max-health: ' &c❤ &7Здоровье: &f<plus>{value}'
+movement-speed: ' &7<plus>{value} скорость ходьбы'
+
+# Damage Reduction
+defense: '&3 &7■ Защита: &f<plus>{value}'
+damage-reduction: '&3 &7■ Поглощение урона: &f<plus>{value}%'
+fall-damage-reduction: '&3 &7■ Защита от падений: &f<plus>{value}%'
+fire-damage-reduction: '&3 &7■ Защита от огня: &f<plus>{value}%'
+magic-damage-reduction: '&3 &7■ Защита от магии: &f<plus>{value}%'
+projectile-damage-reduction: '&3 &7■ Защита от снарядов: &f<plus>{value}%'
+physical-damage-reduction: '&3 &7■ Защита от кинетики: &f<plus>{value}%'
+pve-damage-reduction: '&3 &7■ Защита в PvE: &f<plus>{value}%'
+pvp-damage-reduction: '&3 &7■ Защита в PvP: &f<plus>{value}%'
+
+# RPG stats
+health-regeneration: '&3 &7■ Регенерация HP: &f<plus>{value}'
+max-mana: '&3 &7■ Макс. манна: &f<plus>{value}'
+mana-regeneration: '&3 &7■ Регенерация манны: &f<plus>{value}'
+max-stamina: '&3 &7■ Макс. выносливость: &f<plus>{value}'
+stamina-regeneration: '&3 &7■ Регенерация выносливости: &f<plus>{value}'
+cooldown-reduction: '&3 &7■ Снижение к/д заклятия: &f<plus>{value}%'
+additional-experience: '&3 &7■ Доп. опыт: &f<plus>{value}%'
+additional-experience-alchemy: '&7■ Доп. опыт алхимии: &f<plus>{value}%'
+additional-experience-enchanting: '&7■ Доп. опыт чародея: &f<plus>{value}%'
+additional-experience-farming: '&7■ Доп. опыт фермера: &f<plus>{value}%'
+additional-experience-fishing: '&7■ Доп. опыт рыболова: &f<plus>{value}%'
+additional-experience-mining: '&7■ Доп. опыт шахтера: &f<plus>{value}%'
+additional-experience-smelting: '&7■ Доп. опыт выплавки: &f<plus>{value}%'
+additional-experience-smithing: '&7■ Доп. опыт кузнеца: &f<plus>{value}%'
+additional-experience-woodcutting: '&7■ Доп. Woodcutting Experience: &f<plus>{value}%'
+
+# Extra Options
+perm-effect: '&3 &7■ Вечно &f{effect}'
+command: '&3 &7■ Команда: &f{format} &3 &7(&f{cooldown}&3 &7s)'
+item-cooldown: '&3 &7■ &f{value}&3 &7s Cooldown'
+arrow-potion-effects: '&3 &7■ Эффект стрелы: &f{effect}'
+
+# Consumables
+restore-health: '&3 &7■ Восстановит &f{value} &7HP'
+restore-food: '&3 &7■ Восстановит &f{value} &7еды'
+restore-saturation: '&3 &7■ Восстановит &f{value} &7насыщения'
+restore-mana: '&3 &7■ Восстановит &f{value} &7манны'
+restore-stamina: '&3 &7■ Восстановит &f{value} &7выносливости'
+effect: '&3 &7■ Дает &f{effect} &7на &f{duration} &7сек.'
+repair: '&3 &7■ Починка: &f{value}'
+repair-percent: '&3 &7■ Починка: &f{value}%'
+can-identify: '&3 &7■ Может идентифицировать предметы.'
+can-deconstruct: '&3 &7■ Может разобрать сложные предметы.'
+can-deskin: '&3 &7■ Может снять скин с предмета.'
+success-rate: '&3 &7■ Шанс удачи: &a&l{value}%'
+max-consume: '&3 &7■ &f{value} &7Использований осталось'
+
+# Gem Stones
+empty-gem-socket: ' &7◆ Пустое отверстие под самоцвет ' #{name}
+filled-gem-socket: ' &7◆ Инкрустирован: {name}'
+when-applied: '&aКогда применён:'
+gem-stone-lore: '&8&l[&2&l*&8&l] &aПеремести на предмет &7для применения!'
+
+# Soulbound
+soulbinding-chance: '&3 &7■ Has a &a{value}% &7chance to bind your item.'
+soulbound-break-chance: '&3 &7■ Has a &a{value}% &7chance to break soulbounds.'
+soulbound-level: '&3 &7■ Level &e{value} &7Soulbound'
+
+# Tools
+autosmelt: '&3 &7■ &fАвтоплавка'
+bouncing-crack: '&3 &7■ &fBouncing Crack'
+pickaxe-power: '&3 &7■ &fСила кирки: &a{value}'
+durability: ' &7Прочность: {current} / {max}'
+
+# General
+item-type: '&c{type}'
+tier: '&3 &7Редкость: {value}'
+required-class: '&3 &7Для класса {value}'
+required-level: ' &a✔ &7Необходим уровень &a{value}'
+
+# MMOCore Attributes
+required-dexterity: '&eНеобходимо &c{value} &eЛовкости'
+required-strength: '&eНеобходимо &c{value} &eСилы'
+required-intelligence: '&eНеобходимо &c{value} &eИнтеллекта'
+
+additional-dexterity: '&3 &7■ Доп. Ловкость: &f<plus>{value}'
+additional-strength: '&3 &7■ Доп. Сила: &f<plus>{value}'
+additional-intelligence: '&3 &7■ Доп. Интеллект: &f<plus>{value}'
+
+# Professions
+profession-alchemy: '&eУровень алхимии: &c{value}'
+profession-enchanting: '&eУровень чародея: &c{value}'
+profession-farming: '&eУровень фермера: &c{value}'
+profession-fishing: '&eУровень рыболова: &c{value}'
+profession-mining: '&eУровень шахтера: &c{value}'
+profession-smelting: '&eУровень выплавки: &c{value}'
+profession-smithing: '&eУровень кузнеца: &c{value}'
+profession-woodcutting: '&eУровень древоруба: &c{value}'
+
+# Elemental Stat Format
+elemental-damage: ' {color}{icon}&7 {element} урон: &f{value}'
+elemental-damage-percent: ' {color}{icon}&7 {element} урон: &f+{value}%'
+elemental-defense: ' {color}{icon}&7 {element} защита: &f{value}'
+elemental-defense-percent: ' {color}{icon}&7 {element} защита: &f+{value}%'
+elemental-weakness: ' {color}{icon}&7 {element} уязвимость: &f{value}%'
+
+# Custom stats
+custom-myluck: '&3 &7■ Удача: &f<plus>{value}'

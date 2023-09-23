@@ -1,0 +1,104 @@
+size: 54
+menu_title: '§r&f少'
+items:
+#============ Interface ====================================================
+  'icon':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:10
+    slot: 4
+    display_name: "&#f8a049&lСведения о сделке"
+    lore:
+    - '&#d9c57c Тип сделки:     &fКладовщик'
+    - '&#d9c57c Номер сделки:  &f1'
+    - '&#d9c57c Координаты:    &f862, 58, -1369'
+    - ''
+    - '&#d9c57c Златников:      &f%wbutils_dealgold_1%'
+    - '&#d9c57c Серебряников:  &f%wbutils_dealsilver_1%'
+    - '&#d9c57c Медяников:      &f%wbutils_dealcopper_1%'
+    - ''
+    - '&#d9c57c Брёвен:           &f%wbutils_dealmaterials_1%  &c%wbutils_dealstatus_1%'
+############# Deal #########################################################
+  'materials':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:15
+    slot: 19
+    display_name: "&#f8a049&lМатериалы"
+    lore:
+    - '&#d9c57c Подходящие материалы: дубовое бревно, ..'
+    - '&#d9c57c ..берёзовое бревно, хвойное бревно.'
+    - ''
+    - '&#d9c57c В наличии: %wbutils_dealmaterials_1%'
+    - ''
+    - '&#d9c57c Возьмите в левую руку все брёвна, которые хотите..'
+    - '&#d9c57c ..положить на баланс этой сделки.'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы положить брёвна'
+    left_click_commands:
+    - '[sound] UI_BUTTON_CLICK 0.3 1'
+    - '[console] dealtakeitems %player_name% 1 resource_log_oak resource_log_birch resource_log_spruce'
+    - '[refresh]'
+  'coins':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:43
+    slot: 21
+    display_name: "&#f8a049&lПрибыль"
+    lore:
+    - '&#d9c57c Все заработанные монеты.'
+    - ''
+    - '&#d9c57c Златники:      %wbutils_dealgold_1%'
+    - '&#d9c57c Серебряники:  %wbutils_dealsilver_1%'
+    - '&#d9c57c Медяники:      %wbutils_dealcopper_1%'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы забрать прибыль'
+    left_click_commands:
+    - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
+    - '[console] serveritem give currency_copper_coin %wbutils_dealcopper_1% %player_name%'
+    - '[console] dealinfo 1 coins_copper 0'
+    - '[console] serveritem give currency_silver_coin %wbutils_dealsilver_1% %player_name%'
+    - '[console] dealinfo 1 coins_silver 0'  
+    - '[console] serveritem give currency_gold_coin %wbutils_dealgold_1% %player_name%'
+    - '[console] dealinfo 1 coins_gold 0'
+    - '[refresh]'
+  'recount':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:11
+    slot: 23
+    display_name: "&#f8a049&lПересчёт"
+    lore:
+    - '&#d9c57c Если у вас накопилось очень много дешёвых монет, ..'
+    - '&#d9c57c ..то рекомендую их пересчитать в более дорогие.'
+    - '&#d9c57c Курс пересчёта равен курсу обмена монет у банкира.'
+    - '&#d9c57c Необходимо иметь специальные формулы!'
+    - ''
+    - '&#7da4cb → Нажми ЛКМ, чтобы пересчитать деньги'
+    left_click_commands:
+    - '[console] dealrecount 1 %player_name%'
+    - '[refresh]'
+    left_click_requirement:
+      requirements:
+        hasformula:
+            type: '>='
+            input: '%itemedit_amount_{tool_formulas}_{inventory}%'
+            output: '1'
+            deny_commands:
+            - '[close]'
+            - '[console] effect give %player_name% minecraft:slowness 3 4 true'
+            - '[message] &2Кладовщик: &aС удовольствием бы занялся пересчётом, но...'
+            - '[sound] ENTITY_VILLAGER_AMBIENT'
+            - '[message] &2Кладовщик: &aК несчастью, я - безграмотен.<delay=28>'
+            - '[sound] ENTITY_VILLAGER_NO<delay=28>'
+            - '[message] &2Кладовщик: &aМожет банкир поможет нам чем-нибудь?<delay=54>'
+            - '[sound] ENTITY_VILLAGER_YES<delay=54>'
+#============ Developer Info ====================================================
+  'dev_info_tech':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:23
+    slot: 0
+    view_requirement:
+      requirements:
+        checker:
+          type: has permission
+          permission: 'wb.developer'
+    display_name: "&#f8a049&lТехнические сведения"
+    lore:
+    - '&#d9c57cМенюшка = /DeluxeMenus/gui_menus/deals_management/deals_manager_1.yml'

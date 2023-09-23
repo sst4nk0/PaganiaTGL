@@ -1,0 +1,68 @@
+player:
+  main: player
+  aliases:
+  - p
+  - profile
+  description: Отображает статистику игрока
+attributes:
+  main: attributes
+  aliases:
+  - att
+  - stats
+  description: Отображение атрибутов и управление ими
+class:
+  main: class
+  aliases:
+  - c
+  description: Выберите новый класс
+waypoints:
+  main: waypoints
+  aliases:
+  - wp
+  description: Показать обнаруженные путевые точки
+quests:
+  main: quests
+  aliases:
+  - q
+  - journal
+  description: Показать доступные квесты
+skills:
+  main: skills
+  aliases:
+  - s
+  description: Тратьте очки навыков, чтобы разблокировать новые навыки
+friends:
+  main: friends
+  aliases:
+  - f
+  description: Показать онлайн/офлайн друзей
+party:
+  main: party
+  aliases: []
+  description: Пригласите игроков в группу, чтобы разделить опыт
+guild:
+  main: guild
+  aliases: []
+  description: Показать игроков в текущей гильдии
+withdraw:
+  main: withdraw
+  aliases:
+  - w
+  description: Вывод денег в монеты и банкноты
+skill-trees:
+  main: skilltrees
+  aliases:
+  - st
+  - trees
+  - tree
+  description: Откройте меню дерева навыков.
+deposit:
+  main: deposit
+  aliases:
+  - d
+  description: Откройте меню пополнения валюты
+pvp-mode:
+  main: pvpmode
+  aliases:
+  - pvp
+  description: Включить/выключить режим PVP.

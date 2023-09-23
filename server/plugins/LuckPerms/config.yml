@@ -83,7 +83,7 @@ use-server-uuid-cache: false
 #
 # - A H2 database is the default option.
 # - If you want to edit data manually in "traditional" storage files, we suggest using YAML.
-storage-method: MariaDB
+storage-method: H2
 
 # The following block defines the settings for remote database storage methods.
 #
@@ -671,7 +671,7 @@ skip-bulkupdate-confirmation: false
 # If LuckPerms should allow a users primary group to be removed with the 'parent remove' command.
 #
 # - When this happens, the plugin will set their primary group back to default.
-prevent-primary-group-removal: false
+prevent-primary-group-removal: true
 
 # If LuckPerms should update the list of commands sent to the client when permissions are changed.
 update-client-command-list: true

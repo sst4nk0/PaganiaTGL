@@ -47,21 +47,21 @@ log:
   log-date-format: '[dd.MM.yyyy HH:mm:ss]'
   action:
     # log when a player receive items? (/serveritem give [...])
-    give: true
+    give: false
     # log when a player receive items? (/serveritem giveall [...])
-    giveall: true
+    giveall: false
     # log when removing items from player? (/serveritem take [...])
-    take: true
+    take: false
     # log when a player buy items? (/serveritem sell/sellmax [...])
-    sell: true
+    sell: false
     # log when a player sell items? (/serveritem buy/buymax [...])
-    buy: true
+    buy: false
 blocked:
   log:
     # when text is blocked a message will be displayed on console, reporting the text and the blocked word/regex
-    console: true
+    console: false
     # when text is blocked a message will be saved on file, reporting the text and the blocked word/regex
-    file: true
+    file: false
   # Words blocked when editing items unless you have permission to bypass
   # Affects commands like /ie rename, /ie lore and similar
   # Any text which contains a subsequence that matches a blocked word is blocked

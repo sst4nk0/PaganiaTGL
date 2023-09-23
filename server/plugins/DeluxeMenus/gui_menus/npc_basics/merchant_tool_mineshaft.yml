@@ -110,7 +110,7 @@ items:
     material: PHANTOM_MEMBRANE
     nbt_int: CustomModelData:5
     slot: 23
-    amount: 47
+    amount: 60
     display_name: "&#f8a049&lКупить железную кирку"
     lore:
     - '&#d9c57c Железной киркой можно добыть не только медь!'
@@ -123,7 +123,7 @@ items:
           type: has permission
           permission: 'wb.stonepickaxe'
     left_click_commands:
-    - '[console] purchasepayment %player_name% 47 silver'
+    - '[console] purchasepayment %player_name% 60 silver'
     - '[console] si give tool_pickaxe_iron 1 %player_name%'
     - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
     - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
@@ -162,7 +162,7 @@ items:
           type: has permission
           permission: 'wb.stonepickaxe'
     left_click_commands:
-    - '[console] purchasepayment %player_name% 47 silver'
+    - '[console] purchasepayment %player_name% 60 silver'
     - '[console] si give tool_pickaxe_iron 1 %player_name%'
     - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
     - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
@@ -201,7 +201,7 @@ items:
           type: has permission
           permission: 'wb.stonepickaxe'
     left_click_commands:
-    - '[console] purchasepayment %player_name% 47 silver'
+    - '[console] purchasepayment %player_name% 60 silver'
     - '[console] si give tool_pickaxe_iron 1 %player_name%'
     - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
     - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
@@ -229,7 +229,7 @@ items:
     material: PHANTOM_MEMBRANE
     nbt_int: CustomModelData:6
     slot: 32
-    amount: 5
+    amount: 7
     display_name: "&#f8a049&lКупить золотую кирку"
     lore:
     - '&#d9c57c Золотая кирка совершенна. Почти...'
@@ -242,7 +242,7 @@ items:
           type: has permission
           permission: 'wb.ironpickaxe'
     left_click_commands:
-    - '[console] purchasepayment %player_name% 5 gold'
+    - '[console] purchasepayment %player_name% 7 gold'
     - '[console] si give tool_pickaxe_gold 1 %player_name%'
     - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
     - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
@@ -271,7 +271,7 @@ items:
           type: has permission
           permission: 'wb.ironpickaxe'
     left_click_commands:
-    - '[console] purchasepayment %player_name% 5 gold'
+    - '[console] purchasepayment %player_name% 7 gold'
     - '[console] si give tool_pickaxe_gold 1 %player_name%'
     - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
     - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'
@@ -300,7 +300,7 @@ items:
           type: has permission
           permission: 'wb.ironpickaxe'
     left_click_commands:
-    - '[console] purchasepayment %player_name% 5 gold'
+    - '[console] purchasepayment %player_name% 7 gold'
     - '[console] si give tool_pickaxe_gold 1 %player_name%'
     - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
     - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP 0.2 1<delay=8>'

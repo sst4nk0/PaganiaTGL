@@ -1607,3 +1607,16 @@ Editor:
     CONFIRMATION_DECLINE:
       Name: '&c&lDecline'
       Lore: []
+  Generic:
+    Close:
+      Name: '#FF5733(✕) &lExit'
+      Lore: []
+    Return:
+      Name: '#ffee9a(↓) &fReturn'
+      Lore: []
+    NextPage:
+      Name: '#e3fbf9(→) &lNext Page'
+      Lore: []
+    PreviousPage:
+      Name: '#e3fbf9(←) &lPrevious Page'
+      Lore: []

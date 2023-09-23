@@ -1,0 +1,787 @@
+id: 'general'
+name: '&4Общий'
+type: 'custom'
+item: 'DIAMOND_AXE'
+lore: 
+- '&6Это дерево навыков используется для боевых способностей!'
+max-point-spent: 11
+
+nodes:
+
+#### A
+  a1:
+    name: 'Регенерация маны'
+    coordinates:
+      x: -3
+      y: -2
+
+    max-level: 1
+    is-root: true
+    size: 1
+    point-consumed: 1
+    experience-table:
+      first_table_item:
+        triggers:
+          - 'stat{stat="MANA_REGENERATION";amount=1;type="FLAT"}'
+    lores:
+      0:
+        - "&eРегенерация маны в ед./сек. +1"
+      1:
+        - "&eРегенерация маны в ед./сек. +1"
+  a2:
+    name: 'Регенерация маны'
+    coordinates:
+      x: -2
+      y: -2
+
+    parents: 
+      strong: 
+        a1: 1
+
+    max-level: 1
+    size: 1
+    point-consumed: 1
+    experience-table:
+      first_table_item:
+        triggers:
+          - 'stat{stat="MANA_REGENERATION";amount=2;type="FLAT"}'
+    lores:
+      0:
+        - "&eРегенерация маны в ед./сек. +2"
+      1:
+        - "&eРегенерация маны в ед./сек. +2"
+  a3:
+    name: 'Регенерация маны'
+    coordinates:
+      x: -1
+      y: -1
+      
+    parents: 
+      strong: 
+        a2: 1
+        
+    max-level: 1
+    size: 1
+    point-consumed: 1
+    experience-table:
+      first_table_item:
+        triggers:
+          - 'stat{stat="MANA_REGENERATION";amount=2;type="FLAT"}'
+    lores:
+      0:
+        - "&eРегенерация маны в ед./сек. +2"
+      1:
+        - "&eРегенерация маны в ед./сек. +2"
+        
+#### B
+  b1:
+    name: 'Регенерация здоровья'
+    coordinates:
+      x: -3
+      y: -0
+
+    max-level: 1
+    is-root: true
+    size: 1
+    point-consumed: 1
+    experience-table:
+      first_table_item:
+        triggers:
+          - 'stat{stat="HEALTH_REGENERATION";amount=1;type="FLAT"}'
+    lores:
+      0:
+        - "&eРегенерация здоровья в ед./сек. +1"
+      1:
+        - "&eРегенерация здоровья в ед./сек. +1"
+
+  b2:
+    name: 'Регенерация здоровья'
+    coordinates:
+      x: -2
+      y: -0
+
+    parents: 
+      strong: 
+        b1: 1
+
+    max-level: 1
+    size: 1
+    point-consumed: 1
+    experience-table:
+      first_table_item:
+        triggers:
+          - 'stat{stat="HEALTH_REGENERATION";amount=2;type="FLAT"}'
+    lores:
+      0:
+        - "&eРегенерация здоровья в ед./сек. +2"
+      1:
+        - "&eРегенерация здоровья в ед./сек. +2"
+
+  b3:
+    name: 'Регенерация здоровья'
+    coordinates:
+      x: -1
+      y: -0
+      
+    parents: 
+      strong: 
+        b2: 1
+        
+    max-level: 1
+    size: 1
+    point-consumed: 1
+    experience-table:
+      first_table_item:
+        triggers:
+          - 'stat{stat="HEALTH_REGENERATION";amount=2;type="FLAT"}'
+    lores:
+      0:
+        - "&eРегенерация здоровья в ед./сек. +2"
+      1:
+        - "&eРегенерация здоровья в ед./сек. +2"
+
+#### C
+  c1:
+    name: 'Снижение Восстановления'
+    coordinates:
+      x: -3
+      y: 2
+
+    max-level: 1
+    is-root: true
+    size: 1
+    point-consumed: 1
+    experience-table:
+      first_table_item:
+        triggers:
+          - 'stat{stat="COOLDOWN_REDUCTION";amount=5;type="FLAT"}'
+    lores:
+      0:
+        - "&eСнижает время восстановления предметов и навыков игрока (5%)"
+      1:
+        - "&eСнижает время восстановления предметов и навыков игрока (5%)"
+
+  c2:
+    name: 'Снижение Восстановления'
+    coordinates:
+      x: -2
+      y: 2
+
+    parents: 
+      strong: 
+        c1: 1
+
+    max-level: 1
+    size: 1
+    point-consumed: 1
+    experience-table:
+      first_table_item:
+        triggers:
+          - 'stat{stat="COOLDOWN_REDUCTION";amount=10;type="FLAT"}'
+    lores:
+      0:
+        - "&eСнижает время восстановления предметов и навыков игрока (10%)"
+      1:
+        - "&eСнижает время восстановления предметов и навыков игрока (10%)"
+
+  c3:
+    name: 'Снижение Восстановления'
+    coordinates:
+      x: -1
+      y: 1
+
+    parents: 
+      strong: 
+        c2: 1
+
+    max-level: 1
+    size: 1
+    point-consumed: 1
+    experience-table:
+      first_table_item:
+        triggers:
+          - 'stat{stat="COOLDOWN_REDUCTION";amount=15;type="FLAT"}'
+    lores:
+      0:
+        - "&eСнижает время восстановления предметов и навыков игрока (15%)"
+      1:
+        - "&eСнижает время восстановления предметов и навыков игрока (15%)"
+
+#### D
+  d1:
+    name: 'Шанс Критического Удара'
+    coordinates:
+      x: 0
+      y: 0
+
+    parents: 
+      soft: 
+        a3: 1
+        b3: 1
+        c3: 1
+        
+    max-level: 1
+    size: 1
+    point-consumed: 1
+    experience-table:
+      first_table_item:
+        triggers:
+          - 'stat{stat="CRITICAL_STRIKE_CHANCE";amount=2;type="FLAT"}'
+    lores:
+      0:
+        - "&eКритические удары наносят дополнительный урон с +%2 шансом"
+      1:
+        - "&eКритические удары наносят дополнительный урон с +%2 шансом"
+
+  d2:
+    name: 'Шанс Критического Удара'
+    coordinates:
+      x: 1
+      y: 0
+
+    parents: 
+      strong: 
+        d1: 1
+
+    max-level: 1
+    size: 1
+    point-consumed: 1
+    experience-table:
+      first_table_item:
+        triggers:
+          - 'stat{stat="CRITICAL_STRIKE_CHANCE";amount=3;type="FLAT"}'
+    lores:
+      0:
+        - "&eКритические удары наносят дополнительный урон с +%3 шансом"
+      1:
+        - "&eКритические удары наносят дополнительный урон с +%3 шансом"
+
+  d3:
+    name: 'Шанс Критического Удара'
+    coordinates:
+      x: 2
+      y: 0
+      
+    parents:
+      strong:
+        d2: 1
+
+    max-level: 1
+    size: 1
+    point-consumed: 1
+    experience-table:
+      first_table_item:
+        triggers:
+          - 'stat{stat="CRITICAL_STRIKE_CHANCE";amount=5;type="FLAT"}'
+    lores:
+      0:
+        - "&eКритические удары наносят дополнительный урон с % шансом"
+      1:
+        - "&eКритические удары наносят дополнительный урон с +%5 шансом"
+
+
+#### E
+  e1:
+    name: 'Снижение Урона'
+    coordinates:
+      x: 2
+      y: 1
+
+    parents:
+      strong:
+        d3: 1
+
+    max-level: 1
+    size: 1
+    point-consumed: 1
+    experience-table:
+      first_table_item:
+        triggers:
+          - 'stat{stat="DAMAGE_REDUCTION";amount=1;type="FLAT"}'
+    lores:
+      0:
+        - "&eСнижает урон от любых источников на %."
+      1:
+        - "&eСнижает урон от любых источников на +%1."
+
+  e2:
+    name: 'Снижение Урона'
+    coordinates:
+      x: 2
+      y: 2
+
+    parents:
+      strong:
+        e1: 1
+
+    max-level: 1
+    size: 1
+    point-consumed: 1
+    experience-table:
+      first_table_item:
+        triggers:
+          - 'stat{stat="DAMAGE_REDUCTION";amount=2;type="FLAT"}'
+    lores:
+      0:
+        - "&eСнижает урон от любых источников на %."
+      1:
+        - "&eСнижает урон от любых источников на +%2."
+
+  e3:
+    name: 'Снижение Урона'
+    coordinates:
+      x: 3
+      y: 2
+
+    parents:
+      strong:
+        e2: 1
+
+    max-level: 1
+    size: 1
+    point-consumed: 1
+    experience-table:
+      first_table_item:
+        triggers:
+          - 'stat{stat="DAMAGE_REDUCTION";amount=2;type="FLAT"}'
+    lores:
+      0:
+        - "&eСнижает урон от любых источников на %."
+      1:
+        - "&eСнижает урон от любых источников на +%2."
+
+#### F
+  f1:
+    name: 'Урон Оружия'
+    coordinates:
+      x: 2
+      y: -1
+
+    parents:
+      strong:
+        d3: 1
+
+    max-level: 1
+    size: 1
+    point-consumed: 1
+    experience-table:
+      first_table_item:
+        triggers:
+          - 'stat{stat="WEAPON_DAMAGE";amount=1;type="FLAT"}'
+    lores:
+      0:
+        - "&eДополнительный урон при ударе оружием в +%1."
+      1:
+        - "&eДополнительный урон при ударе оружием в +%1."
+
+  f2:
+    name: 'Урон Оружия'
+    coordinates:
+      x: 2
+      y: -2
+
+    parents:
+      strong:
+        f1: 1
+
+    max-level: 1
+    size: 1
+    point-consumed: 1
+    experience-table:
+      first_table_item:
+        triggers:
+          - 'stat{stat="WEAPON_DAMAGE";amount=2;type="FLAT"}'
+    lores:
+      0:
+        - "&eДополнительный урон при ударе оружием в +%2."
+      1:
+        - "&eДополнительный урон при ударе оружием в +%2."
+
+  f3:
+    name: 'Урон Оружия'
+    coordinates:
+      x: 3
+      y: -2
+      
+    parents:
+      strong:
+        f2: 1
+        
+    max-level: 1
+    size: 1
+    point-consumed: 1
+    experience-table:
+      first_table_item:
+        triggers:
+          - 'stat{stat="WEAPON_DAMAGE";amount=2;type="FLAT"}'
+    lores:
+      0:
+        - "&eДополнительный урон при ударе оружием в +%2."
+      1:
+        - "&eДополнительный урон при ударе оружием в +%2."
+
+
+##last line
+  g1:
+    name: 'Похищение Жизни'
+    coordinates:
+      x: 4
+      y: -1
+      
+    parents:
+      strong:
+        f3: 1
+        
+    max-level: 1
+    size: 1
+    point-consumed: 1
+    experience-table:
+      first_table_item:
+        triggers:
+          - 'stat{stat="LIFESTEAL";amount=3;type="FLAT"}'
+    lores:
+      0:
+        - "&eПроцент урона, возвращаемый вам в виде здоровья при нанесении урона оружием."
+      1:
+        - "&eПроцент урона, возвращаемый вам в виде здоровья при нанесении урона оружием +%3"
+
+  j1:
+    name: 'Максимальное Здоровье'
+    coordinates:
+      x: 4
+      y: 0
+      
+    parents: 
+      soft: 
+        g1: 1
+        h1: 1
+        
+    max-level: 1
+    size: 1
+    point-consumed: 1
+    experience-table:
+      first_table_item:
+        triggers:
+          - 'stat{stat="LIFESTEAL";amount=5;type="FLAT"}'
+    lores:
+      0:
+        - "&eДополнительное количество здоровья в +%5"
+      1:
+        - "&eДополнительное количество здоровья в +%5"
+
+  h1:
+    name: 'Магический Урон'
+    coordinates:
+      x: 4
+      y: 1
+      
+    parents:
+      strong:
+        e3: 1
+        
+    max-level: 1
+    size: 1
+    point-consumed: 1
+    experience-table:
+      first_table_item:
+        triggers:
+          - 'stat{stat="LIFESTEAL";amount=3;type="FLAT"}'
+    lores:
+      0:
+        - "&eДополнительный урон магическими навыками в +%3"
+      1:
+        - "&eДополнительный урон магическими навыками в +%3"
+
+
+# This section is to have a specific display for the skill tree in the GUI.
+# It is optional as if you don't fill it the config in gui/skill-tree.yml will be used.
+# For each node it will first look if the node has a specific display, if not it will look if
+# the display is defined in this section. If not it will use the default display in gui/skill-tree.yml.
+#
+#display:
+#  paths:
+#    unlocked:
+#      up:
+#        item: "WHITE_DYE"
+#        custom-model-data: 0
+#      up-right:
+#        item: "WHITE_DYE"
+#        custom-model-data: 0
+#      up-left:
+#        item: "WHITE_DYE"
+#        custom-model-data: 0
+#      down-right:
+#        item: "WHITE_DYE"
+#        custom-model-data: 0
+#      down-left:
+#        item: "WHITE_DYE"
+#        custom-model-data: 0
+#      right:
+#        item: "WHITE_DYE"
+#        custom-model-data: 0
+#      default:
+#        item: "WHITE_DYE"
+#        custom-model-data: 0
+#    unlockable:
+#      up:
+#        item: "BLUE_DYE"
+#        custom-model-data: 0
+#      up-right:
+#        item: "BLUE_DYE"
+#        custom-model-data: 0
+#      up-left:
+#        item: "BLUE_DYE"
+#        custom-model-data: 0
+#      down-right:
+#        item: "BLUE_DYE"
+#        custom-model-data: 0
+#      down-left:
+#        item: "BLUE_DYE"
+#        custom-model-data: 0
+#      right:
+#        item: "BLUE_DYE"
+#        custom-model-data: 0
+#      default:
+#        item: "BLUE_DYE"
+#        custom-model-data: 0
+#    locked:
+#      up:
+#        item: "GRAY_DYE"
+#        custom-model-data: 0
+#      up-right:
+#        item: "GRAY_DYE"
+#        custom-model-data: 0
+#      up-left:
+#        item: "GRAY_DYE"
+#        custom-model-data: 0
+#      down-right:
+#        item: "GRAY_DYE"
+#        custom-model-data: 0
+#      down-left:
+#        item: "GRAY_DYE"
+#        custom-model-data: 0
+#      right:
+#        item: "GRAY_DYE"
+#        custom-model-data: 0
+#      default:
+#        item: "GRAY_DYE"
+#        custom-model-data: 0
+#    fully-locked:
+#      up:
+#        item: "BLACK_DYE"
+#        custom-model-data: 0
+#      up-right:
+#        item: "BLACK_DYE"
+#        custom-model-data: 0
+#      up-left:
+#        item: "BLACK_DYE"
+#        custom-model-data: 0
+#      down-right:
+#        item: "BLACK_DYE"
+#        custom-model-data: 0
+#      down-left:
+#        item: "BLACK_DYE"
+#        custom-model-data: 0
+#      right:
+#        item: "BLACK_DYE"
+#        custom-model-data: 0
+#      default:
+#        item: "BLACK_DYE"
+#        custom-model-data: 0
+#  nodes:
+#    unlocked:
+#      up-right-down-left:
+#        item: "WHITE_CONCRETE"
+#        custom-model-data: 0
+#      up-right-down:
+#        item: "WHITE_CONCRETE"
+#        custom-model-data: 0
+#      up-right-left:
+#        item: "WHITE_CONCRETE"
+#        custom-model-data: 0
+#      up-down-left:
+#        item: "WHITE_CONCRETE"
+#        custom-model-data: 0
+#      down-right-left:
+#        item: "WHITE_CONCRETE"
+#        custom-model-data: 0
+#      up-right:
+#        item: "WHITE_CONCRETE"
+#        custom-model-data: 0
+#      up-down:
+#        item: "WHITE_CONCRETE"
+#        custom-model-data: 0
+#      up-left:
+#        item: "WHITE_CONCRETE"
+#        custom-model-data: 0
+#      down-right:
+#        item: "WHITE_CONCRETE"
+#        custom-model-data: 0
+#      down-left:
+#        item: "WHITE_CONCRETE"
+#        custom-model-data: 0
+#      right-left:
+#        item: "WHITE_CONCRETE"
+#        custom-model-data: 0
+#      right:
+#        item: "WHITE_CONCRETE"
+#        custom-model-data: 0
+#      left:
+#        item: "WHITE_CONCRETE"
+#        custom-model-data: 0
+#      up:
+#        item: "WHITE_CONCRETE"
+#        custom-model-data: 0
+#      down:
+#        item: "WHITE_CONCRETE"
+#        custom-model-data: 0
+#      no-path:
+#        item: "WHITE_CONCRETE"
+#        custom-model-data: 0
+#    locked:
+#      up-right-down-left:
+#        item: "GRAY_CONCRETE"
+#        custom-model-data: 0
+#      up-right-down:
+#        item: "GRAY_CONCRETE"
+#        custom-model-data: 0
+#      up-right-left:
+#        item: "GRAY_CONCRETE"
+#        custom-model-data: 0
+#      up-down-left:
+#        item: "GRAY_CONCRETE"
+#        custom-model-data: 0
+#      down-right-left:
+#        item: "GRAY_CONCRETE"
+#        custom-model-data: 0
+#      up-right:
+#        item: "GRAY_CONCRETE"
+#        custom-model-data: 0
+#      up-down:
+#        item: "GRAY_CONCRETE"
+#        custom-model-data: 0
+#      up-left:
+#        item: "GRAY_CONCRETE"
+#        custom-model-data: 0
+#      down-right:
+#        item: "GRAY_CONCRETE"
+#        custom-model-data: 0
+#      down-left:
+#        item: "GRAY_CONCRETE"
+#        custom-model-data: 0
+#      right-left:
+#        item: "GRAY_CONCRETE"
+#        custom-model-data: 0
+#      right:
+#        item: "GRAY_CONCRETE"
+#        custom-model-data: 0
+#      left:
+#        item: "GRAY_CONCRETE"
+#        custom-model-data: 0
+#      up:
+#        item: "GRAY_CONCRETE"
+#        custom-model-data: 0
+#      down:
+#        item: "GRAY_CONCRETE"
+#        custom-model-data: 0
+#      no-path:
+#        item: "GRAY_CONCRETE"
+#        custom-model-data: 0
+#    unlockable:
+#      up-right-down-left:
+#        item: "BLUE_CONCRETE"
+#        custom-model-data: 0
+#      up-right-down:
+#        item: "BLUE_CONCRETE"
+#        custom-model-data: 0
+#      up-right-left:
+#        item: "BLUE_CONCRETE"
+#        custom-model-data: 0
+#      up-down-left:
+#        item: "BLUE_CONCRETE"
+#        custom-model-data: 0
+#      down-right-left:
+#        item: "BLUE_CONCRETE"
+#        custom-model-data: 0
+#      up-right:
+#        item: "BLUE_CONCRETE"
+#        custom-model-data: 0
+#      up-down:
+#        item: "BLUE_CONCRETE"
+#        custom-model-data: 0
+#      up-left:
+#        item: "BLUE_CONCRETE"
+#        custom-model-data: 0
+#      down-right:
+#        item: "BLUE_CONCRETE"
+#        custom-model-data: 0
+#      down-left:
+#        item: "BLUE_CONCRETE"
+#        custom-model-data: 0
+#      right-left:
+#        item: "BLUE_CONCRETE"
+#        custom-model-data: 0
+#      right:
+#        item: "BLUE_CONCRETE"
+#        custom-model-data: 0
+#      left:
+#        item: "BLUE_CONCRETE"
+#        custom-model-data: 0
+#      up:
+#        item: "BLUE_CONCRETE"
+#        custom-model-data: 0
+#      down:
+#        item: "BLUE_CONCRETE"
+#        custom-model-data: 0
+#      no-path:
+#        item: "BLUE_CONCRETE"
+#        custom-model-data: 0
+#    fully-locked:
+#      up-right-down-left:
+#        item: "BLACK_CONCRETE"
+#        custom-model-data: 0
+#      up-right-down:
+#        item: "BLACK_CONCRETE"
+#        custom-model-data: 0
+#      up-right-left:
+#        item: "BLACK_CONCRETE"
+#        custom-model-data: 0
+#      up-down-left:
+#        item: "BLACK_CONCRETE"
+#        custom-model-data: 0
+#      down-right-left:
+#        item: "BLACK_CONCRETE"
+#        custom-model-data: 0
+#      up-right:
+#        item: "BLACK_CONCRETE"
+#        custom-model-data: 0
+#      up-down:
+#        item: "BLACK_CONCRETE"
+#        custom-model-data: 0
+#      up-left:
+#        item: "BLACK_CONCRETE"
+#        custom-model-data: 0
+#      down-right:
+#        item: "BLACK_CONCRETE"
+#        custom-model-data: 0
+#      down-left:
+#        item: "BLACK_CONCRETE"
+#        custom-model-data: 0
+#      right-left:
+#        item: "BLACK_CONCRETE"
+#        custom-model-data: 0
+#      right:
+#        item: "BLACK_CONCRETE"
+#        custom-model-data: 0
+#      left:
+#        item: "BLACK_CONCRETE"
+#        custom-model-data: 0
+#      up:
+#        item: "BLACK_CONCRETE"
+#        custom-model-data: 0
+#      down:
+#        item: "BLACK_CONCRETE"
+#        custom-model-data: 0
+#      no-path:
+#        item: "BLACK_CONCRETE"
+#        custom-model-data: 0

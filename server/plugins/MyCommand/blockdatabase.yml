@@ -324,23 +324,23 @@ block:
     x620y-5z-1297:
       launchby: player
       command:
-      - /dospecialaction4 gold_p1zfvb6jg7 11
+      - /dospecialaction3 gold_p1zfvb6jg7 11
     x619y-5z-1297:
       launchby: player
       command:
-      - /dospecialaction4 gold_p1zfvb6jg7 11
+      - /dospecialaction3 gold_p1zfvb6jg7 11
     x619y-4z-1297:
       launchby: player
       command:
-      - /dospecialaction4 gold_p1zfvb6jg7 11
+      - /dospecialaction3 gold_p1zfvb6jg7 11
     x618y-4z-1298:
       launchby: player
       command:
-      - /dospecialaction4 gold_p1zfvb6jg7 11
+      - /dospecialaction3 gold_p1zfvb6jg7 11
     x618y-3z-1297:
       launchby: player
       command:
-      - /dospecialaction4 gold_p1zfvb6jg7 11
+      - /dospecialaction3 gold_p1zfvb6jg7 11
     x684y-20z-1243:
       launchby: player
       command:

@@ -1,0 +1,124 @@
+
+# Display options
+display:
+    name: 'Тайный Маг'
+    lore:
+    - 'Маг овладел силой'
+    - 'Тайной магии, сокрушая врагов на своем пути'
+    - 'с помощью мощной магии и дальнобойных способностей.'
+    attribute-lore:
+    - '&a+ &7Восстановление Маны'
+    - '&a+ &7Восстановление Здоровья'
+    - '&a+ &7Максимальная Мана'
+    - '&c- &7Максимальное Здоровье'
+    - ''
+    - '&8&lСила'
+    - '&7  Урон Атаки: &c1 &7(+&c0&7)'
+    - '&7  Скорость Атаки: &c4 &7(+&c0&7)'
+    - '&7  Максимальное Здоровье: &c18 &7(+&c0&7)'
+    - ''
+    - '&8&lЛовкость'
+    - '&7  Сопротивление Отбрасыванию: &a0% &7(+&a0%&7)'
+    - '&7  Скорость Передвижения: &a20 &7(+&a0&7)'
+    - '&7  Снижение Минуса Скорости: &a0% &7(+&a0%&7)'
+    - ''
+    - '&8&lИнтеллект'
+    - '&7  Максимальная Мана: &930 &7(+&91.3&7)'
+    - '&7  Регенерация Здоровья: &90.13 &7(+&90&7)'
+    - '&7  Регенерация Маны: &90.2 &7(+&90.04&7)'
+    item: BLAZE_POWDER:1 # Поддерживает пользовательские данные модели / текстуры через прочность
+
+# Must match an existing exp curve filename from the 'expcurves' folder
+exp-curve: levels
+
+skill-slots:
+    1:
+        name: "&aСлот навыка I"
+        unlocked-by-default: true
+    2:
+        name: "&aСлот навыка II"
+        unlocked-by-default: true
+    3:
+        name: "&aСлот навыка III"
+        unlocked-by-default: true
+    4:
+        name: "&aСлот навыка IV"
+        unlocked-by-default: true
+
+# The maximum level players can reach
+max-level: 100
+
+skill-trees:
+    - 'general'
+    - 'mage-arcane-mage'
+
+# This class must not display in /class
+# because it is a subclass of mage
+options:
+    display: false
+    needs-permission: false
+
+exp-table: class_exp_table
+
+attributes:
+    max-health:
+        base: 18
+        per-level: 0
+    max-mana:
+        base: 30
+        per-level: 1.3
+    mana-regeneration:
+        base: .2
+        per-level: .04
+    health-regeneration:
+        base: 0.13
+        per-level: 0
+
+skills:
+    FIRE_STORM:
+        level: 1
+        max-level: 30
+        damage:
+            base: 8.0
+            per-level: 4.0
+        ignite:
+            base: 2.0
+            per-level: 0.1
+        mana:
+            base: 15.0
+            per-level: 2.0
+        cooldown:
+            base: 5.0
+            per-level: -0.1
+            max: 5.0
+            min: 1.0
+
+    POWER_MARK:
+        level: 3
+        max-level: 30
+    FIREBALL:
+        level: 5
+        max-level: 30
+    MINOR_HEALINGS:
+        level: 6
+        max-level: 30
+    ICE_SPIKES:
+        level: 8
+        max-level: 30
+    AMBERS:
+        level: 9
+        max-level: 30
+    WEAKEN:
+        level: 10
+        max-level: 30
+    WARP:
+        level: 13
+        max-level: 30
+    GREATER_HEALINGS:
+        level: 15
+        max-level: 30
+
+# Experience sources for main class experience.
+main-exp-sources:
+- 'killmob{type=ZOMBIE;amount=1-3}'
+- 'killmob{type=ENDERMAN;amount=6-9}'

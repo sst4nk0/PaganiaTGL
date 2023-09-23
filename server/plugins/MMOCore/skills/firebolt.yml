@@ -1,0 +1,38 @@
+name: Огненный Снаряд
+lore:
+- Вы призываете пламенный
+- шар и бросаете его
+- в ваши цели
+- ''
+- '&eПерезарядка: {cooldown} сек.'
+- '&9Стоимость: {mana} {mana_name}'
+material: BOOK
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+  #Optional: The decimal format used for this skill parameter.
+  decimal-format: '0.#'
+damage:
+  base: 3
+  per-level: 1
+ignite:
+  base: 2
+  per-level: 1
+delay:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 2
+  per-level: 1
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 7
+  per-level: 1

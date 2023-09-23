@@ -75,6 +75,7 @@ Crate:
       Cost:
         Money: '&cYou don''t have enough money to open this crate!'
         Exp: '&cYou don''t have enough exp levels to open this crate!'
+      NoHoldKey: '&cYou must hold a key to open this crate!'
     Reward:
       Info: ''
       Broadcast: ''
@@ -110,6 +111,18 @@ Editor:
     Error:
       Create:
         Exists: '&cCrate with such id is already exists!'
+    BlockPushback:
+      Name: '#ffed6a&lBlock Pushback'
+      Lore:
+      - '#ffed6a&lCurrent:'
+      - '#ffed6a▪ #bdc8c9Enabled: #ffed6a%crate_block_pushback_enabled%'
+      - ''
+      - '#bdc8c9Sets whether player will be pushed'
+      - '#bdc8c9back from the crate block when'
+      - '#bdc8c9trying to open it without a key.'
+      - ''
+      - '#bbff6a&lActions:'
+      - '#bbff6a▪ #bdc8c9Left-Click: #bbff6aToggle'
   Reward:
     Enter:
       Id: '&7Enter &aunique &7reward &aidentifier&7...'
@@ -622,3 +635,16 @@ Editor:
       - ' '
       - '#55e136&l[>] Actions:'
       - '#86de2aLeft-Click to &fToggle'
+    KEY_VIRTUAL:
+      Name: '#ffed6a&lVirtual'
+      Lore:
+      - '#ffed6a&lCurrent:'
+      - '#ffed6a▪ #bdc8c9Is Virtual: #ffed6a%key_virtual%'
+      - ''
+      - '#bdc8c9Sets whether this key is virtual one.'
+      - ''
+      - '#ffa76a&lNotes:'
+      - '#ffa76a▪ #bdc8c9Virtual keys stored in database, not in inventories.'
+      - ''
+      - '#bbff6a&lActions:'
+      - '#bbff6a▪ #bdc8c9Left-Click: #bbff6aToggle'

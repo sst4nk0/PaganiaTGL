@@ -16,6 +16,8 @@ gui_menus:
     file: mainmenu/gps/looting/gps_category_looting_0.yml
   gps_category_selling_0:
     file: mainmenu/gps/selling/gps_category_selling_0.yml
+  deals_manager_1:
+    file: deals_management/deals_manager_1.yml
   currency_exchange_0:
     file: npc_basics/currency_exchange_0.yml
   storage_manager_0:

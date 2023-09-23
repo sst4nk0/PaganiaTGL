@@ -10,6 +10,7 @@
 
 verbose: false
 settings:
+  fix-network-serialized-items-in-creative: false
   clamp-attributes: true
   limit-armor: true
   fix-projectile-looting-transfer: false
@@ -60,6 +61,7 @@ settings:
     suppress-ignored-advancement-warnings: false
     suppress-unrecognized-recipe-errors: true
   messages:
+    afk-broadcast-use-display-name: false
     ram-command-output: '<green>Ram Usage: <used>/<xmx> (<percent>)'
     rambar-command-output: <green>Rambar toggled <onoff> for <target>
     tpsbar-command-output: <green>Tpsbar toggled <onoff> for <target>
@@ -199,7 +201,15 @@ world-settings:
       entity:
         shared-random: true
     mobs:
+      sniffer:
+        ridable: false
+        ridable-in-water: true
+        controllable: true
+        attributes:
+          max_health: 14.0
+        breeding-delay-ticks: 6000
       camel:
+        ridable-in-water: false
         attributes:
           max_health:
             min: 32.0
@@ -285,6 +295,13 @@ world-settings:
         ridable-in-water: false
         ridable-max-y: 256.0
         attributes:
+          follow_range: 16.0
+          knockback_resistance: 0.0
+          movement_speed: 0.6
+          flying_speed: 0.6
+          armor: 0.0
+          armor_toughness: 0.0
+          attack_knockback: 0.0
           max_health: 6.0
         takes-damage-from-water: false
         always-drop-exp: false
@@ -1306,6 +1323,15 @@ world-settings:
           minecraft:mangrove_wood:
             drops: {}
             into: minecraft:stripped_mangrove_wood
+          minecraft:cherry_log:
+            into: minecraft:stripped_cherry_log
+            drops: {}
+          minecraft:cherry_wood:
+            into: minecraft:stripped_cherry_wood
+            drops: {}
+          minecraft:bamboo_block:
+            into: minecraft:stripped_bamboo_block
+            drops: {}
         waxables:
           minecraft:waxed_oxidized_cut_copper_stairs:
             drops: {}
@@ -1418,12 +1444,14 @@ world-settings:
         replant-crops: false
         replant-nether-warts: false
     ridable-settings:
+      use-dismounts-underwater-tag: true
       babies-are-ridable: true
       untamed-tamables-are-ridable: true
       use-night-vision: false
     hunger:
       starvation-damage: 1.0
     gameplay-mechanics:
+      mending-multiplier: 1.0
       milk-clears-beneficial-effects: true
       clamp-explosion-radius: true
       arrow:
@@ -1456,6 +1484,9 @@ world-settings:
           fire: []
           lightning: []
         shears:
+          ignore-in-water: false
+          ignore-in-lava: false
+          defuse-tnt-chance: 0.0
           damage-if-sprinting: false
           sprinting-damage: 1.0
         ender-pearl:
@@ -1489,6 +1520,8 @@ world-settings:
         hunger-exhaustion-amount: 0.004999999888241291
         saturation-regen-amount: 1.0
       player:
+        portal-wait-time: 80
+        creative-portal-wait-time: 1
         teleport-on-nether-ceiling-damage: false
         burp-delay: 10
         exp-pickup-delay-ticks: 2

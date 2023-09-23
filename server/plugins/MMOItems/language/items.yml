@@ -1,0 +1,55 @@
+CONFIRM:
+  name: '&aПодтвердить'
+  lore: []
+FILL:
+  name: '&8'
+  lore: []
+PREVIOUS_PAGE:
+  name: '&aПрошлая страница'
+  lore: []
+NEXT_PAGE:
+  name: '&aСледующая страница'
+  lore: []
+PREVIOUS_IN_QUEUE:
+  name: '&aНазад'
+  lore: []
+NEXT_IN_QUEUE:
+  name: '&aВперед'
+  lore: []
+BACK:
+  name: '&aНазад'
+  lore: []
+CRAFTING_RECIPE_DISPLAY:
+  name: '&a&lСоздание&f #name#'
+  lore:
+  - '{conditions}'
+  - '{conditions}&8Условия:'
+  - '{crafting_time}'
+  - '{crafting_time}&7Время крафта: &c#crafting-time#&7s'
+  - ''
+  - '&8Ингредиенты:'
+  - '#ingredients#'
+  - ''
+  - '&#7da4cb → Нажми ЛКМ, чтобы создать'
+  - '&#54a06f → Нажми ПКМ для предпросмотра'
+UPGRADING_RECIPE_DISPLAY:
+  name: '&e&lУлучшение&f #name#'
+  lore:
+  - '{conditions}'
+  - '{conditions}&8Условия:'
+  - ''
+  - '&8Ингредиенты:'
+  - '#ingredients#'
+  - ''
+  - '&#7da4cb → Нажми ЛКМ, чтобы создать'
+  - '&#54a06f → Нажми ПКМ для предпросмотра'
+QUEUE_ITEM_DISPLAY:
+  name: '&6&lQueue&f #name#'
+  lore:
+  - '{ready}&7&oПредмет был успешно создан.'
+  - '{queue}&7&oПредмет в очереди на создание.'
+  - '{queue}'
+  - '{queue}&7Времени осталось: &c#left#'
+  - ''
+  - '&#7da4cb → Нажми ЛКМ, чтобы забрать'
+  - '&#54a06f → Нажми ПКМ, чтобы отменить'

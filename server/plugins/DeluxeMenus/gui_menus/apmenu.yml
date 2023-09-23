@@ -12,44 +12,56 @@ open_requirement:
       deny_commands:
         - "[message] &8[&bDeluxe&cMenus&8] &cYou don't have perms for this!"
 items:
-  'donate':
-    material: PAPER
-    nbt_int: CustomModelData:1
-    slots:
-      - 0
-    display_name: "%javascript_system_color_buttontitle%Изменить множитель PayDay"
-    lore:
-      - '%javascript_system_color_buttonlore%Пейдей - ежечасовое событие.'
-      - '%javascript_system_color_buttonlore%Игроки получают билли, а сервер пополняет ресурсы.'
-      - '%javascript_system_color_buttonlore%Изменив, вы проведете бонусный пейдей!'
-      - ''
-      - '%javascript_system_color_presslmb% → Нажми ЛКМ, чтобы проводить 4 пейдея за раз'
-      - '%javascript_system_color_pressrmb% → Нажми ПКМ, чтобы проводить 1 пейдей за раз'
-    left_click_commands:
-    - '[sound] UI_BUTTON_CLICK 0.3 1'
-    - '[player] bc 警 &cАдминистратор %player_name% установил x4 PayDay!' 
-    - '[player] bc 警 &cВ честь этого проведен дополнительный пейдей.'
-    - '[console] cmt deactivate payday'
-    - '[console] cmt activate payday_x4<delay=3>'
-    - '[console] cmt execute payday_x4<delay=5>'
-    right_click_commands:
-    - '[sound] UI_BUTTON_CLICK 0.3 1'
-    - '[player] bc 警 &cАдминистратор %player_name% установил x1 PayDay!' 
-    - '[player] bc 警 &cВ честь этого проведен дополнительный пейдей.'
-    - '[console] cmt deactivate payday_x4'
-    - '[console] cmt activate payday<delay=3>'
-    - '[console] cmt execute payday<delay=5>'
   'clearchat':
     material: PHANTOM_MEMBRANE
-    nbt_int: CustomModelData:1
+    nbt_int: CustomModelData:0
     slots:
-      - 1
-    display_name: "%javascript_system_color_buttontitle%Очистить чат"
+      - 0
+    display_name: "Очистить чат"
     lore:
-      - '%javascript_system_color_buttonlore%В чате пропадут все старые сообщения, будет чисто.'
-      - '%javascript_system_color_buttonlore%Применять при замусоренном рекламой/флудом чате.'
-      - ''
-      - '%javascript_system_color_presslmb% → Нажми ЛКМ, чтобы очистить чат'
+      - 'Просто очищает чат'
     left_click_commands:
     - '[sound] UI_BUTTON_CLICK 0.3 1'
     - '[player] clearchat'
+  'payday':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:0
+    slots:
+      - 1
+    display_name: "Провести 1 пейдей"
+    lore:
+      - '/payday 1'
+    left_click_commands:
+    - '[sound] UI_BUTTON_CLICK 0.3 1'
+    - '[player] payday 1'
+  'paydays':
+    material: PHANTOM_MEMBRANE
+    nbt_int: CustomModelData:0
+    slots:
+      - 2
+    display_name: "Провести 4 пейдея"
+    lore:
+      - '/payday 4'
+    left_click_commands:
+    - '[sound] UI_BUTTON_CLICK 0.3 1'
+    - '[player] payday 4'
+  'simpleitems':
+    material: CHEST
+    slots:
+      - 3
+    display_name: "Все предметы"
+    lore:
+      - '/si show'
+    left_click_commands:
+    - '[sound] UI_BUTTON_CLICK 0.3 1'
+    - '[player] si show'
+  'mmoitems':
+    material: CHEST
+    slots:
+      - 4
+    display_name: "Все снаряжение"
+    lore:
+      - '/mi browse'
+    left_click_commands:
+    - '[sound] UI_BUTTON_CLICK 0.3 1'
+    - '[player] mi browse'

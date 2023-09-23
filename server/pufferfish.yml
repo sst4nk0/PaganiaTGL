@@ -26,6 +26,7 @@ flare:
 misc:
   disable-method-profiler: true
   disable-out-of-order-chat: false
+  suppress-null-id-disconnections: false
 # Optimizes entity brains when
 # they're far away from the player
 dab:
@@ -38,3 +39,4 @@ enable-suffocation-optimization: true
 inactive-goal-selector-throttle: true
 web-services:
   token: ''
+allow-end-crystal-respawn: true

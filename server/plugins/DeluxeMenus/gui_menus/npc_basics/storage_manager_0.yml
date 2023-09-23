@@ -73,12 +73,11 @@ items:
     - '&#d9c57c Серебряников:  %wbutils_dealsilver_1%'
     - '&#d9c57c Медяников:      %wbutils_dealcopper_1%'
     - ''
-    - '&#d9c57c Материалов:     %wbutils_dealmaterials_1%  &c%wbutils_dealstatus_1%'
+    - '&#d9c57c Брёвен:           %wbutils_dealmaterials_1%  &c%wbutils_dealstatus_1%'
     - ''
-    - '&#7da4cb → Нажми ЛКМ, чтобы забрать прибыль'
-    - '&#54a06f → Нажми ПКМ, чтобы пересчитать деньги'
-    - '&#3e5370 → Нажми Shift+ЛКМ, чтобы положить материалы'
-    left_click_commands:
+    - '&#7da4cb → Нажми ЛКМ, чтобы открыть управление'
+    - '&#54a06f → Нажми ПКМ, чтобы забрать прибыль'
+    right_click_commands:
     - '[sound] ENTITY_ENDER_DRAGON_DEATH 0.5 1'
     - '[console] serveritem give currency_copper_coin %wbutils_dealcopper_1% %player_name%'
     - '[console] dealinfo 1 coins_copper 0'
@@ -87,40 +86,9 @@ items:
     - '[console] serveritem give currency_gold_coin %wbutils_dealgold_1% %player_name%'
     - '[console] dealinfo 1 coins_gold 0'
     - '[refresh]'
-    right_click_commands:
-    - '[console] dealrecount 1'
-    - '[refresh]'
-    - '[sound] ENTITY_VILLAGER_AMBIENT'
-    - '[message] &2Кладовщик: &aЯ пересчитал твои сбережения. Так удобней?'
-    shift_left_click_commands:
+    left_click_commands:
+    - '[openguimenu] deals_manager_1'
     - '[sound] UI_BUTTON_CLICK 0.3 1'
-    - '[console] serveritem take resource_log_oak 1 %player_name% true'
-    - '[console] dealinfo 1 materials %math_0:_{wbutils_dealmaterials_1}+1%'
-    - '[refresh]'
-    right_click_requirement:
-      requirements:
-        hasformula:
-            type: '>='
-            input: '%itemedit_amount_{tool_formulas}_{inventory}%'
-            output: '1'
-            deny_commands:
-            - '[close]'
-            - '[console] effect give %player_name% minecraft:slowness 3 4 true'
-            - '[message] &2Кладовщик: &aС удовольствием бы занялся пересчётом, но...'
-            - '[sound] ENTITY_VILLAGER_AMBIENT'
-            - '[message] &2Кладовщик: &aК несчастью, я - безграмотен.<delay=28>'
-            - '[sound] ENTITY_VILLAGER_NO<delay=28>'
-            - '[message] &2Кладовщик: &aМожет банкир поможет нам чем-нибудь?<delay=54>'
-            - '[sound] ENTITY_VILLAGER_YES<delay=54>'
-    shift_left_click_requirement:
-      requirements:
-        hasmaterials:
-            type: '>='
-            input: '%itemedit_amount_{resource_log_oak}_{inventory}%'
-            output: '1'
-            deny_commands:
-            - '[sound] UI_BUTTON_CLICK 0.3 1'
-            - '[message] &c我 У вас нет дубовых брёвен!'    
   'dealbuy':
     material: PHANTOM_MEMBRANE
     nbt_int: CustomModelData:10
@@ -130,9 +98,9 @@ items:
     lore:
     - '&#d9c57c&o Вот это новость! Ты решил сотрудничать!'
     - '&#d9c57c&o Тогда сотрудничаем на моих условиях.'
-    - '&#d9c57c&o Ты даешь мне 8 златников задатком, а'
+    - '&#d9c57c&o Ты даешь мне 8 златников задатком, а..'
     - '&#d9c57c&o ..я делюсь прибылью. Договорились?'
-    - '&#1a1a1a deal_id = 1'
+    - ''
     - '&#7da4cb → Нажми ЛКМ, чтобы заключить партнёрство'
     left_click_commands:
     - '[console] serveritem take currency_gold_coin 8 %player_name% true'
@@ -1525,7 +1493,7 @@ items:
     - ''
     - '&#d9c57cdeal_id = 1'
     - '&#d9c57cowner = %wbutils_dealowner_1%'
-    - '&#d9c57c/dealinfo 1 <параметр> <значение>'
+    - ''
     - '&#d9c57cУдалить владельца = /dealinfo 1 owner -'
   'dev_info_admin':
     material: PHANTOM_MEMBRANE
@@ -1541,5 +1509,5 @@ items:
     lore:
     - '&#d9c57cdeal_id = 1'
     - '&#d9c57cowner = %wbutils_dealowner_1%'
-    - '&#d9c57c/dealinfo 1 <параметр> <значение>'
+    - ''
     - '&#d9c57cУдалить владельца = /dealinfo 1 owner -'

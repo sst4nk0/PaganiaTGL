@@ -20,14 +20,14 @@ Database:
   Sync_Interval: -1
   # Sets database type.
   # Available values: MYSQL,SQLITE
-  Type: MYSQL
+  Type: SQLITE
   # Table prefix to use when plugin create tables. Do not leave this empty.
   Table_Prefix: excellentcrates
   MySQL:
     # Database user name.
-    Username: root@localhost
+    Username: minecraftadmin
     # Database user password.
-    Password: mypass01
+    Password: minecraftadmin
     # Database host address. Like http://127.0.0.1:3306/
     Host: http://127.0.0.1:3306/
     # MySQL database name, where plugin tables will be created.
@@ -46,16 +46,35 @@ Database:
     For_Period: 60
 
 Crate:
+  # Defines the crate behavior on certain block/NPC clicks.
+  # Allowed click types: LEFT, RIGHT, MIDDLE, SHIFT_LEFT, SHIFT_RIGHT
+  # Allowed crate actions: CRATE_OPEN, CRATE_PREVIEW
   Click_Actions:
     LEFT: CRATE_PREVIEW
     RIGHT: CRATE_OPEN
   Block_Pushback:
+    # Sets the Y offset for crate block pushback.
     Y: -0.4
+    # Vector multiplier for crate block pushback. The higher value - the harder pushback.
     Multiply: -1.25
   # When 'true' applies PlaceholderAPI placeholders for crate reward items when they're about to be given to a player.
   PlaceholderAPI_For_Rewards: false
   # When 'true' prevents force closing opening animations to get reward instantly.
   Prevent_Opening_Skip: false
+  Cooldown_Formatter:
+    # Sets the time formatter for crate opening cooldown.
+    # 'hh' - hours, 'mm' - minutes, 'ss' - seconds.
+    Time: hh:mm:ss
+    # Sets the custom message instead of empty counter when there is no cooldown for a crate.
+    Ready: '&aReady to Open!'
+  # When 'true' and if crate has NO opening animation, holographic reward will appear above crate block for a short amount of time.
+  # This option will have effect only when interacted with crate blocks.
+  Display_Reward_Above_Block: true
+  # Sets whether player must hold key in main hand in order to open crate.
+  Hold_Key_To_Open: false
+  # Sets how soon (in ticks) crate opening animation GUI will be closed when completed.
+  # 1 second = 20 ticks. 20 ticks by default.
+  Opening_Close_Time: 20
 Editor:
   Title:
     # Title for the Crate Editor GUIs.

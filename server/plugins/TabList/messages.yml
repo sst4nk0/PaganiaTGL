@@ -1,6 +1,5 @@
 reloadconfig: '&aReloaded!'
 nopermission: '&cYou don''t have permission for that!&7 (%perm%)'
-unknownsub-command: '&cUnknown sub-command&7 %subcmd%&c.'
 noconsole: '&cThis command ''&7/%command%&c'' can only be in-game.'
 set-group:
   meta-could-not-be-empty: '&cThe prefix text could not be empty!'
@@ -23,5 +22,5 @@ fake-player:
   ping-can-not-be-less: '&cThe ping amount should be greater than&e %amount%&c and
     the value should be a number.'
   list:
-  - '&cFake players&7 (&e%amount%&7):'
-  - '&r%fake-players%'
+  - '§cFake players§7 (§e%amount%§7):'
+  - §r%fake-players%

@@ -202,6 +202,13 @@ flag_type:
   hide_potion_effects: potion_effects
   hide_dye: dye
   hide_armor_trim: hide_armor_trim
+  enchants: enchants
+  attributes: attributes
+  unbreakable: unbreakable
+  destroys: destroys
+  placed_on: placed_on
+  potion_effects: potion_effects
+  dye: dye
 boolean:
   'true': 'true'
   'false': 'false'
@@ -226,6 +233,18 @@ attribute:
   horse_jump_strength: horse_jump_strength
   zombie_spawn_reinforcements: zombie_spawn_reinforcements
   generic_attack_knockback: attack_knockback
+  generic_max_absorption: max_absorption
+  max_health: max_health
+  follow_range: follow_range
+  knockback_resistance: knockback_resistance
+  movement_speed: movement_speed
+  flying_speed: flying_speed
+  attack_damage: attack_damage
+  attack_knockback: attack_knockback
+  attack_speed: attack_speed
+  armor: armor
+  armor_toughness: armor_toughness
+  luck: luck
 operation:
   add_number: add_number
   add_scalar: add_scalar
@@ -255,3 +274,40 @@ axolotl_variant:
   gold: gold
   cyan: cyan
   blue: blue
+goat_horn_sound:
+  sing_goat_horn: sing
+  call_goat_horn: call
+  dream_goat_horn: dream
+  yearn_goat_horn: yearn
+  ponder_goat_horn: ponder
+  admire_goat_horn: admire
+  feel_goat_horn: feel
+  seek_goat_horn: seek
+trim_material:
+  minecraft:quartz: quartz
+  minecraft:redstone: redstone
+  minecraft:emerald: emerald
+  minecraft:copper: copper
+  minecraft:iron: iron
+  minecraft:lapis: lapis
+  minecraft:diamond: diamond
+  minecraft:gold: gold
+  minecraft:netherite: netherite
+  minecraft:amethyst: amethyst
+trim_pattern:
+  minecraft:rib: rib
+  minecraft:snout: snout
+  minecraft:wild: wild
+  minecraft:coast: coast
+  minecraft:spire: spire
+  minecraft:wayfinder: wayfinder
+  minecraft:shaper: shaper
+  minecraft:tide: tide
+  minecraft:silence: silence
+  minecraft:vex: vex
+  minecraft:sentry: sentry
+  minecraft:dune: dune
+  minecraft:raiser: raiser
+  minecraft:eye: eye
+  minecraft:host: host
+  minecraft:ward: ward

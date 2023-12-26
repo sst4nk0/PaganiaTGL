@@ -1620,3 +1620,33 @@ Editor:
     PreviousPage:
       Name: '#e3fbf9(←) &lPrevious Page'
       Lore: []
+# Here you can create your own custom placeholders to use it in language config.
+# Key = Placeholder, Value = Replacer.
+Placeholders:
+  '%gray%': '#d4d9d8'
+  '%red%': '#fd5e5e'
+  '%green%': '#aefd5e'
+Command:
+  Usage:
+  - <! prefix:"false" !>
+  - '#d4d9d8'
+  - '#fd5e5eError: #d4d9d8Wrong arguments!'
+  - '#fd5e5eUsage: #fdf35e/%command_label% #fdba5e%command_usage%'
+  - '#d4d9d8'
+  Help:
+    List:
+    - <! prefix:"false" !>
+    - '#d4d9d8'
+    - '  #fdf35e&l%plugin_name_localized%#d4d9d8 - #fdf35e&lCommands:'
+    - '#d4d9d8'
+    - '  #fd5e5e&l<> #d4d9d8- Required, #aefd5e&l[] #d4d9d8- Optional.'
+    - '#d4d9d8'
+    - '  #fdf35e/%command_label% #fdba5e%command_usage% #d4d9d8- %command_description%'
+    - '#d4d9d8'
+    Desc: Show help page.
+  CheckPerm:
+    Desc: Print player permission info.
+    Usage: <player>
+  Reload:
+    Desc: Reload the whole plugin.
+    Done: All data & configuration has been reloaded!

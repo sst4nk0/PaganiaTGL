@@ -1,6 +1,8 @@
-Title: 'Opening Crate'
-Size: 27
-
+# ==================== GUI CONTENT ====================
+# You can freely edit items in this section as you wish (add, remove, modify items).
+# Get some tips in documentation: https://github.com/nulli0n/NexEngine-spigot/wiki/Menu-Config
+# The following values are available for button types:
+# ==================================================
 Content: {}
 
 Rewards:
@@ -12,7 +14,7 @@ Rewards:
     Roll_Tick_Interval: 1
     Roll_Slowdown_Every: 10
     Roll_Slowdown_Ticks: 1
-    Tick_Sound: 'BLOCK_NOTE_BLOCK_BELL'
+    Tick_Sound: BLOCK_NOTE_BLOCK_BELL
     Slots: '13'
     Slots_Mode: INDEPENDENT
     Win_Slots: '13'
@@ -31,3 +33,14 @@ Animations:
         Material: GRAY_STAINED_GLASS_PANE
       black:
         Material: BLACK_STAINED_GLASS_PANE
+Settings:
+  # Sets the GUI title.
+  Title: Opening Crate
+  # Sets the GUI size. Must be multiply of 9.
+  # Useful for 'CHEST' Inventory Type only.
+  Size: 27
+  # Sets the GUI type.
+  # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/inventory/InventoryType.html
+  Inventory_Type: CHEST
+  # Sets the GUI auto-refresh interval (in seconds). Set this to 0 to disable.
+  Auto_Refresh: 0

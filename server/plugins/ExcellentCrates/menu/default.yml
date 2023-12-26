@@ -1,5 +1,3 @@
-Title: '&nCrates Menu'
-Size: 36
 
 Crates:
   virtual:
@@ -17,7 +15,12 @@ Crates:
       - '&7'
       - '&fLeft Click &7to preview'
       - '&fRight Click &7to open'
-
+# ==================== GUI CONTENT ====================
+# You can freely edit items in this section as you wish (add, remove, modify items).
+# Get some tips in documentation: https://github.com/nulli0n/NexEngine-spigot/wiki/Menu-Config
+# The following values are available for button types:
+# - CLOSE
+# ==================================================
 Content:
   exit:
     Slots: 31
@@ -50,8 +53,16 @@ Content:
       - '&dand use them in this menu!'
       - '&7'
       - '&bOur Store: &awww.store.mycraft.com&a'
-# Sets Inventory Type for the GUI.
-# https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/inventory/InventoryType.html
-Inventory_Type: CHEST
 # Sets whether to use Paper's MiniMessage API for the GUI Title.
 Use_Mini_Message: false
+Settings:
+  # Sets the GUI title.
+  Title: '&nCrates Menu'
+  # Sets the GUI size. Must be multiply of 9.
+  # Useful for 'CHEST' Inventory Type only.
+  Size: 36
+  # Sets the GUI type.
+  # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/inventory/InventoryType.html
+  Inventory_Type: CHEST
+  # Sets the GUI auto-refresh interval (in seconds). Set this to 0 to disable.
+  Auto_Refresh: 0

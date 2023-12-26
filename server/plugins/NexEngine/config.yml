@@ -4,7 +4,7 @@ Plugin:
   Command_Aliases: nexengine
   # Sets the plugin language.
   # It will use language config from the '/lang/' sub-folder for specified language code.
-  # By default it's 'en', so 'messages_en.yml' will be used.
+  # By default uses your system's default locale.
   Language: en
   # Localized plugin name. It's used in messages and with internal placeholders.
   Name: NexEngine
@@ -38,3 +38,31 @@ Head_Texture_Cache:
   : 67b03bc9-9b2e-4e35-8b80-9514733aabb7
   ? eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTA2ZmJjNzU2MWVhZGNjZjdiYzZkNWE5NmM0NjM1MTRkNzlmZTY0ODlmZTE5OTJkZTQxNjBiYTI3MjA4ZjU1In19fQ==
   : 28ea98f3-dab3-4611-81b5-25461c2b45fe
+UserData:
+  # Enables debug messages for user data management.
+  # [Default is false]
+  Debug: false
+  Cache:
+    # Sets how long (in seconds) user data will be cached for offline users
+    # until removed and needs to be loaded from the database again.
+    # [Default is 300 (5 minutes)]
+    LifeTime: 300
+    # Sets whether or not plugin will cache player names and UUIDs.
+    # This will improve database performance when checking if user exists, but will increase memory usage.
+    # [Default is true]
+    Names_And_UUIDs: true
+TabCompleter:
+  # Sets maximal length for input text to use a regex based search (aka smart tab-completer).
+  # When player entered text with length that exceeds this value, basic text search will be used instead.
+  # [Default is 32]
+  Regex_Max_Length: 32
+  # Amount of milliseconds for regex matcher timeout in tab completion.
+  # If tab-completion takes more than this amount to find matches from a list, it will be interrupted.
+  # [Default is 25ms]
+  Regex_Timeout: 25
+Engine:
+  # Sets whether or not 'Player#getDisplayName' can be used to find & get players in addition to regular 'Player#getName'.
+  # This is useful if you want to use custom player nicknames in commands.
+  # (Works only for NexEngine based plugins.)
+  # [Default is false]
+  Respect_Player_DisplayName: false

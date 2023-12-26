@@ -4,7 +4,7 @@ Plugin:
   Command_Aliases: excellentcrates,ecrates,crates,crate,case,cases
   # Sets the plugin language.
   # It will use language config from the '/lang/' sub-folder for specified language code.
-  # By default it's 'en', so 'messages_en.yml' will be used.
+  # By default uses your system's default locale.
   Language: en
   # Localized plugin name. It's used in messages and with internal placeholders.
   Name: ExcellentCrates
@@ -46,9 +46,9 @@ Database:
     For_Period: 60
 
 Crate:
-  # Defines the crate behavior on certain block/NPC clicks.
-  # Allowed click types: LEFT, RIGHT, MIDDLE, SHIFT_LEFT, SHIFT_RIGHT
-  # Allowed crate actions: CRATE_OPEN, CRATE_PREVIEW
+  # Defines the crate behavior on certain clicks.
+  # Allowed click types: LEFT, RIGHT, SHIFT_LEFT, SHIFT_RIGHT
+  # Allowed crate actions: CRATE_OPEN, CRATE_MASS_OPEN, CRATE_PREVIEW
   Click_Actions:
     LEFT: CRATE_PREVIEW
     RIGHT: CRATE_OPEN
@@ -75,9 +75,53 @@ Crate:
   # Sets how soon (in ticks) crate opening animation GUI will be closed when completed.
   # 1 second = 20 ticks. 20 ticks by default.
   Opening_Close_Time: 20
+  Holograms:
+    # Sets which hologram handler will be used to display crate holograms.
+    # Available values: INTERNAL, DECENT_HOLOGRAMS, HOLOGRAPHIC_DISPLAYS
+    # For all handlers, except the 'INTERNAL' one, you will have to install respective holograms plugin.
+    # For 'INTERNAL' hologram handler you must have ProtocolLib installed and to be on 1.19.4 or newer.
+    Handler: INTERNAL
+    # Here you can create your own hologram text templates to use it in your crates.
+    # You can use 'Crate' placeholders: https://github.com/nulli0n/ExcellentCrates-spigot/wiki/Internal-Placeholders
+    # PlaceholderAPI is also supported here (if hologram handler supports it).
+    Templates:
+      default:
+      - '#ead931&l%crate_name%'
+      - '#aaa8a8Purchase keys at #ead931http://samplesmp.com/store'
+      - '#aaa8a8You currently have #ead931%excellentcrates_keys_%crate_id%%#aaa8a8 keys'
+      crate_wooden:
+      - '&c&l&bCRATE_WOODEN CRATE'
+      - '&7Buy a key at &cwww.myserver.com'
+      virtual:
+      - '&bVIRTUAL CRATE'
+      - '&7Buy a key at &cwww.myserver.com&c'
+    # [For EXTERNAL handlers only]
+    # Sets Y offset for hologram location.
+    Y_Offset: 1.5
+    # [For INTERNAL handler only]
+    # Sets the gap between hologram lines.
+    LineGap: 0.3
+    # [For INTERNAL handler only]
+    # Sets how often (in seconds) crate holograms will be updated.
+    # Basically, this just removes them and adding back with updated placeholders.
+    # Setting this to low values may result in flickering.
+    # Setting this to high values may result in some players missing them until updated.
+    Update_Interval: 5
 Editor:
   Title:
     # Title for the Crate Editor GUIs.
     Crate: Crate Editor
     # Title for the Key Editor GUIs.
     Key: Key Editor
+Logs:
+  DateFormat: dd/MM/yyyy HH:mm:ss
+  Enabled:
+    # Sets whether or not all crate openings & reward wins will be logged to console.
+    Console: false
+    # Sets whether or not all crate openings & reward wins will be logged to a file.
+    File: true
+Currency:
+  xp:
+    Enabled: true
+    Name: Xp
+    Format: '%amount% %currency_name%'

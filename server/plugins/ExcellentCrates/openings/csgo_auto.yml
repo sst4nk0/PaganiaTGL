@@ -1,8 +1,3 @@
-Title: §r&f箱
-Size: 27
-
-Content:
-
 Rewards:
   main:
     Start_Action: AUTO
@@ -16,10 +11,16 @@ Rewards:
     Slots: 17,16,15,14,13,12,11,10,9
     Slots_Mode: INHERITANCE
     Win_Slots: '13'
-
-Animations:
-# Sets Inventory Type for the GUI.
-# https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/inventory/InventoryType.html
-Inventory_Type: CHEST
 # Sets whether to use Paper's MiniMessage API for the GUI Title.
 Use_Mini_Message: false
+Settings:
+  # Sets the GUI title.
+  Title: &r&f箱
+  # Sets the GUI size. Must be multiply of 9.
+  # Useful for 'CHEST' Inventory Type only.
+  Size: 27
+  # Sets the GUI type.
+  # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/inventory/InventoryType.html
+  Inventory_Type: CHEST
+  # Sets the GUI auto-refresh interval (in seconds). Set this to 0 to disable.
+  Auto_Refresh: 0

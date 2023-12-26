@@ -1,6 +1,8 @@
-Title: 'Opening Crate'
-Size: 45
-
+# ==================== GUI CONTENT ====================
+# You can freely edit items in this section as you wish (add, remove, modify items).
+# Get some tips in documentation: https://github.com/nulli0n/NexEngine-spigot/wiki/Menu-Config
+# The following values are available for button types:
+# ==================================================
 Content: {}
 
 Rewards:
@@ -12,11 +14,11 @@ Rewards:
     Roll_Tick_Interval: 2
     Roll_Slowdown_Every: 0
     Roll_Slowdown_Ticks: 0
-    Tick_Sound: 'BLOCK_NOTE_BLOCK_BELL'
+    Tick_Sound: BLOCK_NOTE_BLOCK_BELL
     Slots: '22'
     Slots_Mode: INHERITANCE
     Win_Slots: '22'
-
+  
   dummy_r1:
     Start_Action: AUTO
     Start_Chance: 100.0
@@ -25,10 +27,10 @@ Rewards:
     Roll_Tick_Interval: 2
     Roll_Slowdown_Every: 0
     Roll_Slowdown_Ticks: 0
-    Slots: '0,9,18,27,36,8,17,26,35,44'
+    Slots: 0,9,18,27,36,8,17,26,35,44
     Slots_Mode: INDEPENDENT
     Win_Slots: ''
-
+  
   dummy_r2:
     Start_Action: AUTO
     Start_Chance: 100.0
@@ -37,10 +39,10 @@ Rewards:
     Roll_Tick_Interval: 2
     Roll_Slowdown_Every: 0
     Roll_Slowdown_Ticks: 0
-    Slots: '1,10,19,28,37,7,16,25,34,43'
+    Slots: 1,10,19,28,37,7,16,25,34,43
     Slots_Mode: INDEPENDENT
     Win_Slots: ''
-
+  
   dummy_r3:
     Start_Action: AUTO
     Start_Chance: 100.0
@@ -49,10 +51,10 @@ Rewards:
     Roll_Tick_Interval: 2
     Roll_Slowdown_Every: 0
     Roll_Slowdown_Ticks: 0
-    Slots: '2,11,20,29,38,6,15,24,33,42'
+    Slots: 2,11,20,29,38,6,15,24,33,42
     Slots_Mode: INDEPENDENT
     Win_Slots: ''
-
+  
   dummy_r4:
     Start_Action: AUTO
     Start_Chance: 100.0
@@ -61,10 +63,10 @@ Rewards:
     Roll_Tick_Interval: 2
     Roll_Slowdown_Every: 0
     Roll_Slowdown_Ticks: 0
-    Slots: '3,5,39,41'
+    Slots: 3,5,39,41
     Slots_Mode: INDEPENDENT
     Win_Slots: ''
-
+  
   dummy_r5:
     Start_Action: AUTO
     Start_Chance: 100.0
@@ -73,10 +75,10 @@ Rewards:
     Roll_Tick_Interval: 2
     Roll_Slowdown_Every: 0
     Roll_Slowdown_Ticks: 0
-    Slots: '4,40'
+    Slots: 4,40
     Slots_Mode: INDEPENDENT
     Win_Slots: ''
-
+  
   dummy_r6:
     Start_Action: AUTO
     Start_Chance: 100.0
@@ -85,10 +87,10 @@ Rewards:
     Roll_Tick_Interval: 2
     Roll_Slowdown_Every: 0
     Roll_Slowdown_Ticks: 0
-    Slots: '12,21,30,14,23,32'
+    Slots: 12,21,30,14,23,32
     Slots_Mode: INDEPENDENT
     Win_Slots: ''
-
+  
   dummy_r7:
     Start_Action: AUTO
     Start_Chance: 100.0
@@ -97,7 +99,7 @@ Rewards:
     Roll_Tick_Interval: 2
     Roll_Slowdown_Every: 0
     Roll_Slowdown_Ticks: 0
-    Slots: '13,31'
+    Slots: 13,31
     Slots_Mode: INDEPENDENT
     Win_Slots: ''
 
@@ -108,7 +110,7 @@ Animations:
     Slots: 0,9,18,27,36,8,17,26,35,44
     Mode: SINGLE # TOGETHER SINGLE
     Tick_Interval: 0
-    Tick_Sound: 'BLOCK_PISTON_EXTEND'
+    Tick_Sound: BLOCK_PISTON_EXTEND
     Items:
       i_like_tea:
         Material: BLACK_STAINED_GLASS_PANE
@@ -118,7 +120,7 @@ Animations:
     Slots: 1,10,19,28,37,7,16,25,34,43
     Mode: SINGLE # TOGETHER SINGLE
     Tick_Interval: 0
-    Tick_Sound: 'BLOCK_PISTON_EXTEND'
+    Tick_Sound: BLOCK_PISTON_EXTEND
     Items:
       i_like_tea:
         Material: BLACK_STAINED_GLASS_PANE
@@ -128,7 +130,7 @@ Animations:
     Slots: 2,11,20,29,38,6,15,24,33,42
     Mode: SINGLE # TOGETHER SINGLE
     Tick_Interval: 0
-    Tick_Sound: 'BLOCK_PISTON_EXTEND'
+    Tick_Sound: BLOCK_PISTON_EXTEND
     Items:
       i_like_tea:
         Material: GRAY_STAINED_GLASS_PANE
@@ -138,7 +140,7 @@ Animations:
     Slots: 3,5,39,41
     Mode: SINGLE # TOGETHER SINGLE
     Tick_Interval: 0
-    Tick_Sound: 'BLOCK_PISTON_EXTEND'
+    Tick_Sound: BLOCK_PISTON_EXTEND
     Items:
       i_like_tea:
         Material: GRAY_STAINED_GLASS_PANE
@@ -148,7 +150,7 @@ Animations:
     Slots: 4,40
     Mode: SINGLE # TOGETHER SINGLE
     Tick_Interval: 0
-    Tick_Sound: 'BLOCK_PISTON_EXTEND'
+    Tick_Sound: BLOCK_PISTON_EXTEND
     Items:
       i_like_tea:
         Material: GRAY_STAINED_GLASS_PANE
@@ -158,7 +160,7 @@ Animations:
     Slots: 12,21,30,14,23,32
     Mode: SINGLE # TOGETHER SINGLE
     Tick_Interval: 0
-    Tick_Sound: 'BLOCK_PISTON_EXTEND'
+    Tick_Sound: BLOCK_PISTON_EXTEND
     Items:
       i_like_tea:
         Material: WHITE_STAINED_GLASS_PANE
@@ -168,10 +170,21 @@ Animations:
     Slots: 13,31
     Mode: SINGLE # TOGETHER SINGLE
     Tick_Interval: 0
-    Tick_Sound: 'BLOCK_PISTON_EXTEND'
+    Tick_Sound: BLOCK_PISTON_EXTEND
     Items:
       i_like_tea:
         Material: WHITE_STAINED_GLASS_PANE
+Settings:
+  # Sets the GUI title.
+  Title: Opening Crate
+  # Sets the GUI size. Must be multiply of 9.
+  # Useful for 'CHEST' Inventory Type only.
+  Size: 45
+  # Sets the GUI type.
+  # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/inventory/InventoryType.html
+  Inventory_Type: CHEST
+  # Sets the GUI auto-refresh interval (in seconds). Set this to 0 to disable.
+  Auto_Refresh: 0
 
 
 

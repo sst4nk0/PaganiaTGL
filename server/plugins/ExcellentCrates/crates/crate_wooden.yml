@@ -15,11 +15,7 @@ Block:
     Enabled: true
   Hologram:
     Enabled: false
-    Offset:
-      Y: 1.5
-    Text:
-    - '&c&l&bCRATE_WOODEN CRATE'
-    - '&7Buy a key at &cwww.myserver.com'
+    Template: crate_wooden
   Effect:
     Model: HELIX
     Particle:

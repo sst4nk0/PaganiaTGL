@@ -6,7 +6,7 @@ DUAL_LONGSWORD:
     lore:
     - §eShall light save you!
     - §8And darkness consume you...
-    tier: EPIC
+    tier: GODLIKE
     required-level: 45.0
     required-class:
     - Paladin

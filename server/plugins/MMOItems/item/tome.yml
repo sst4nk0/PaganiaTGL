@@ -70,7 +70,7 @@ CELESTIAL_TOME:
     - §bThe gods shall not let others take
     - §bthis from you. It can't drop on death.
     name: §b§lCelestial Tome
-    tier: EPIC
+    tier: GODLIKE
     ability:
       ability1:
         type: HOLY_MISSILE
@@ -84,7 +84,7 @@ OMNIELEMENTAL_TOME:
     material: BOOK
     name: §c§lO§6§lm§e§ln§a§li§2§lE§3§ll§9§le§b§lm§f§le§e§ln§a§lt§6§la§c§ll §6§lT§e§lo§a§lm§2§le
     required-level: 30.0
-    tier: VERY_RARE
+    tier: GODLIKE
     magic-damage:
       base: 30.0
       scale: 0.15

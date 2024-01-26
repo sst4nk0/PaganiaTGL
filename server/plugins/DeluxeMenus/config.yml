@@ -18,10 +18,14 @@ gui_menus:
     file: mainmenu/gps/selling/gps_category_selling_0.yml
   deals_manager_1:
     file: deals_management/deals_manager_1.yml
+  deals_manager_2:
+    file: deals_management/deals_manager_2.yml
   currency_exchange_0:
     file: npc_basics/currency_exchange_0.yml
   storage_manager_0:
     file: npc_basics/storage_manager_0.yml
+  storage_manager_1:
+    file: npc_basics/storage_manager_1.yml
   merchant_forest:
     file: npc_basics/merchant_forest.yml
   merchant_forest_seller:

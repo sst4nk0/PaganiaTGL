@@ -73,7 +73,7 @@ UNDEAD_SLAYER:
         duration: 5.0
         damage: 10.0
         cooldown: 9.0
-    tier: EPIC
+    tier: GODLIKE
     physical-damage: 10.0
     enchants:
       smite: 3.0
@@ -83,7 +83,7 @@ BUTCHER_AXE:
   base:
     material: IRON_AXE
     name: '&cButcher&f''s Axe'
-    tier: UNCOMMON
+    tier: RARE
     critical-strike-chance: 5.0
     critical-strike-power: 248.0
     attack-damage: 6.0

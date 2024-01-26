@@ -1,15 +1,15 @@
 sharp:
     chance: 0.3
-    prefix: '&fSharp'
+    prefix: '&fОстрый'
     stats:
         attack-damage: 3
-        lore:
-        - '&7Much sharper!'
+#        lore:
+#        - '&7Much sharper!'
 
 fiery:
     chance: 0.1
     prefix:
-        format: '&cFiery'
+        format: '&cПылкий'
         priority: 1
     stats:
         ability:
@@ -19,7 +19,7 @@ fiery:
 
 # Lucky modifier which grants more crit chance
 lucky:
-    prefix: '&fLucky'
+    prefix: '&fУдачный'
     stats:
         critical-strike-chance:
             base: 9
@@ -28,7 +28,7 @@ lucky:
 
 # Gives more man mana
 arcane:
-    suffix: '&fof the Arcane'
+    suffix: '&fарканы'
     stats:
         max-mana:
             base: 6
@@ -37,7 +37,7 @@ arcane:
             max-spread: .3
 
 ancient:
-    prefix: '&fAncient'
+    prefix: '&fДревний'
     stats:
         magic-damage:
             base: 7
@@ -46,7 +46,7 @@ ancient:
             max-spread: .9
 
 accuracy:
-    suffix: 'of Accuracy'
+    suffix: 'точности'
     stats:
         critical-strike-chance:
             base: 9
@@ -58,14 +58,14 @@ accuracy:
             max-spread: .3
 
 swiftness:
-    suffix: 'of Swiftness'
+    suffix: 'скорости'
     stats:
         perm-effects:
             speed: 1
 
 # Modifier that makes weapons two-handed but more damage and crit power
 heavy:
-    prefix: '&fHeavy'
+    prefix: '&fТяжелый'
     stats:
         two-handed: true
         attack-damage:
@@ -77,7 +77,7 @@ heavy:
 
 # Elemental modifiers
 blazing:
-    prefix: '&fBlazing'
+    prefix: '&fПылающий'
     stats:
         element:
             fire:
@@ -88,7 +88,7 @@ blazing:
 
 # Love u terraria!
 impending-doom:
-    suffix: '&fof Impending Doom'
+    suffix: '&fгрядущей смерти'
     stats:
         magic-damage:
             base: 7

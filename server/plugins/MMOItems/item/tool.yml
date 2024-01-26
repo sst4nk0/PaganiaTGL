@@ -42,7 +42,7 @@ AUTOSMELT_PICKAXE:
     - §7implies. Works with enchantments.
     attack-damage: 7.5
     attack-speed: 1.6
-    tier: UNCOMMON
+    tier: RARE
     required-level: 5.0
     pickaxe-power: 5.0
     autosmelt: true
@@ -62,5 +62,5 @@ UNBREAKABLE_SHEARS:
     - §7If you're tired to craft new shears,
     - §7try out this one! It can also
     - §7pick up §9glass§7 or §2grass§7!
-    tier: UNCOMMON
+    tier: RARE
     required-level: 5.0

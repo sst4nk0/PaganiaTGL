@@ -6,7 +6,7 @@ MEDIEVAL_CROSSBOW:
     - §6Like in the old times.
     - §eFor more realism, it also poisons
     - §eand makes a different sound!
-    tier: UNCOMMON
+    tier: RARE
     weapon-damage:
       base: 15.0
       scale: 0.05

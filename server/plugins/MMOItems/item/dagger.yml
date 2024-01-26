@@ -177,7 +177,7 @@ SNEAKY_DAGGER:
     lore:
     - §7This dagger is very sneaky.
     - §8§oWhat dagger?
-    tier: UNCOMMON
+    tier: RARE
     attack-damage: 5.0
     attack-speed: 2.2
     critical-strike-chance:

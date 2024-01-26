@@ -47,4 +47,10 @@ npc-data:
     - '[player] dospecialaction2 merchantpickaxe_zxj45gns09'
     left-click-commands: []
     price: 0
+  npc-13:
+    cooldown: 0
+    right-click-commands:
+    - '[player] storage_dng74hdmj'
+    left-click-commands: []
+    price: 0
 

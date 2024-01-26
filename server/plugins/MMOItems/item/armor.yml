@@ -2,7 +2,7 @@ DRAGON_HELMET:
   base:
     material: DIAMOND_HELMET
     max-durability: 5500.0
-    tier: EPIC
+    tier: GODLIKE
     max-health: 4.0
     armor-toughness: 3.0
     magic-damage-reduction:
@@ -43,7 +43,7 @@ DRAGON_CHESTPLATE:
   base:
     material: DIAMOND_CHESTPLATE
     max-durability: 6850.0
-    tier: EPIC
+    tier: GODLIKE
     max-health: 10.0
     armor-toughness: 3.0
     magic-damage-reduction:
@@ -84,7 +84,7 @@ DRAGON_LEGGINGS:
   base:
     material: DIAMOND_LEGGINGS
     max-durability: 6150.0
-    tier: EPIC
+    tier: GODLIKE
     max-health: 7.0
     armor-toughness: 3.0
     magic-damage-reduction:
@@ -125,7 +125,7 @@ DRAGON_BOOTS:
   base:
     material: DIAMOND_BOOTS
     max-durability: 5500.0
-    tier: EPIC
+    tier: GODLIKE
     max-health: 4.0
     armor-toughness: 3.0
     magic-damage-reduction:
@@ -179,7 +179,7 @@ SPELLCASTER_HELMET:
       base: 7.0
       spread: 0.1
       max-spread: 0.2
-    tier: UNCOMMON
+    tier: RARE
     max-durability: 950.0
     element:
       water:
@@ -212,7 +212,7 @@ SPELLCASTER_CHESTPLATE:
       base: 10.0
       spread: 0.1
       max-spread: 0.2
-    tier: UNCOMMON
+    tier: RARE
     max-durability: 1450.0
     element:
       water:
@@ -245,7 +245,7 @@ SPELLCASTER_LEGGINGS:
       base: 8.5
       spread: 0.1
       max-spread: 0.2
-    tier: UNCOMMON
+    tier: RARE
     max-durability: 1450.0
     element:
       water:
@@ -278,7 +278,7 @@ SPELLCASTER_BOOTS:
       base: 7.0
       spread: 0.1
       max-spread: 0.2
-    tier: UNCOMMON
+    tier: RARE
     max-durability: 950.0
     element:
       water:
@@ -339,7 +339,7 @@ OMNIELEMENTAL_HELMET:
     - Rainbow
     perm-effects:
       NIGHT_VISION: 1.0
-    tier: VERY_RARE
+    tier: GODLIKE
     max-health: 5.0
 OMNIELEMENTAL_CHESTPLATE:
   base:
@@ -386,7 +386,7 @@ OMNIELEMENTAL_CHESTPLATE:
     - Rainbow
     perm-effects:
       DAMAGE_RESISTANCE: 1.0
-    tier: VERY_RARE
+    tier: GODLIKE
     max-health: 5.0
 OMNIELEMENTAL_LEGGINGS:
   base:
@@ -433,7 +433,7 @@ OMNIELEMENTAL_LEGGINGS:
     - Rainbow
     perm-effects:
       SPEED: 1.0
-    tier: VERY_RARE
+    tier: GODLIKE
     max-health: 5.0
 OMNIELEMENTAL_BOOTS:
   base:
@@ -480,7 +480,7 @@ OMNIELEMENTAL_BOOTS:
     - Rainbow
     perm-effects:
       JUMP: 1.0
-    tier: VERY_RARE
+    tier: GODLIKE
     max-health: 5.0
 HELMET_OF_THE_SEA:
   base:
@@ -539,7 +539,7 @@ UNDEADSLAYER_HELMET:
   base:
     material: NETHERITE_HELMET
     max-durability: 10500.0
-    tier: EPIC
+    tier: GODLIKE
     armor-toughness: 2.5
 MOON_BOOTS:
   base:
@@ -550,7 +550,7 @@ MOON_BOOTS:
     - §cWill only work in "the end" biome.
     max-durability: 2650.0
     name: §b§lMoon Boots
-    tier: UNIQUE
+    tier: RARE
     armor-toughness: 1.5
     armor: 3.0
     fall-damage-reduction: 75.0
@@ -591,7 +591,7 @@ UNDEAD_SLAYER_HELMET:
     physical-damage: 5.0
     armor: 8.0
     armor-toughness: 4.0
-    tier: MYTHICAL
+    tier: MYTHIC
     knockback-resistance: 0.25
     perm-effects:
       NIGHT_VISION: 1.0
@@ -620,7 +620,7 @@ UNDEAD_SLAYER_CHESTPLATE:
     physical-damage: 5.0
     armor: 11.0
     armor-toughness: 4.0
-    tier: MYTHICAL
+    tier: MYTHIC
     knockback-resistance: 0.25
     perm-effects:
       FIRE_RESISTANCE: 1.0
@@ -649,7 +649,7 @@ UNDEAD_SLAYER_LEGGINGS:
     physical-damage: 5.0
     armor: 10.0
     armor-toughness: 4.0
-    tier: MYTHICAL
+    tier: MYTHIC
     knockback-resistance: 0.25
     perm-effects:
       SPEED: 1.0
@@ -678,7 +678,7 @@ UNDEAD_SLAYER_BOOTS:
     physical-damage: 5.0
     armor: 8.0
     armor-toughness: 4.0
-    tier: MYTHICAL
+    tier: MYTHIC
     knockback-resistance: 0.25
     perm-effects:
       JUMP: 1.0
@@ -718,7 +718,7 @@ MYTHRIL_CHAINMAIL:
     - Red
     - Blue
     required-level: 4.0
-    tier: UNCOMMON
+    tier: RARE
 STEEL_HELMET:
   base:
     material: IRON_HELMET
@@ -852,7 +852,7 @@ CURSED_WITHER_SKULL:
     material: WITHER_SKELETON_SKULL
     name: '&7Cursed Wither Skull'
     required-level: 30.0
-    tier: UNIQUE
+    tier: RARE
     gem-sockets:
     - Red
     - Blue
@@ -873,7 +873,7 @@ CURSED_WITHER_SKULL:
       shaped:
         '1':
         - BONE BONE BONE
-        - BONE MATERIAL.UNIQUE_WEAPON_ESSENCE BONE
+        - BONE MATERIAL.RARE_WEAPON_ESSENCE BONE
         - BONE BONE BONE
 HUGE_MOTHRON_WINGS:
   base:

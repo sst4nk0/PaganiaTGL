@@ -34,7 +34,7 @@ RARE_WEAPON_ESSENCE:
     name: '&eRare Weapon Essence'
     disable-crafting: true
     disable-smelting: true
-VERY_RARE_WEAPON_ESSENCE:
+GODLIKE_WEAPON_ESSENCE:
   base:
     material: BLAZE_POWDER
     enchants:
@@ -56,26 +56,26 @@ LEGENDARY_WEAPON_ESSENCE:
     name: '&eLegendary Weapon Essence'
     disable-crafting: true
     disable-smelting: true
-MYTHICAL_WEAPON_ESSENCE:
+MYTHIC_WEAPON_ESSENCE:
   base:
     material: BLAZE_POWDER
     enchants:
       unbreaking: 1
     hide-enchants: true
     lore:
-    - '&7Can be used to craft mythical items.'
-    name: '&eMythical Weapon Essence'
+    - '&7Can be used to craft MYTHIC items.'
+    name: '&eMYTHIC Weapon Essence'
     disable-crafting: true
     disable-smelting: true
-EPIC_WEAPON_ESSENCE:
+GODLIKE_WEAPON_ESSENCE:
   base:
     material: BLAZE_POWDER
     enchants:
       unbreaking: 1
     hide-enchants: true
     lore:
-    - '&7Can be used to craft epic items.'
-    name: '&eEpic Weapon Essence'
+    - '&7Can be used to craft GODLIKE items.'
+    name: '&eGODLIKE Weapon Essence'
     disable-crafting: true
     disable-smelting: true
 MAGICAL_WEAPON_ESSENCE:
@@ -89,15 +89,15 @@ MAGICAL_WEAPON_ESSENCE:
     name: '&eMagical Weapon Essence'
     disable-crafting: true
     disable-smelting: true
-UNIQUE_WEAPON_ESSENCE:
+RARE_WEAPON_ESSENCE:
   base:
     material: BLAZE_POWDER
     enchants:
       unbreaking: 1
     hide-enchants: true
     lore:
-    - '&7Can be used to craft unique items.'
-    name: '&eUnique Weapon Essence'
+    - '&7Can be used to craft RARE items.'
+    name: '&eRARE Weapon Essence'
     disable-crafting: true
     disable-smelting: true
 WEAPON_POWDER:
@@ -170,7 +170,7 @@ RESTORATION_GEM:
     name: §a§lRestoration Gem
     lore:
     - §7This gem can be used to repair magic items.
-    tier: UNCOMMON
+    tier: RARE
 ITEM_UPGRADER:
   base:
     material: PAPER

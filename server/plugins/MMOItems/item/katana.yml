@@ -56,7 +56,7 @@ MASTER_KATANA:
     name: §f§l§oMaster's Katana
     required-dexterity: 20.0
     required-level: 20.0
-    tier: EPIC
+    tier: GODLIKE
     attack-damage:
       base: 20.0
       scale: 0.1

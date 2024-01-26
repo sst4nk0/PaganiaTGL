@@ -42,7 +42,7 @@ LEVEL_1_KEY:
     - §7held.
     granted-permissions:
     - mmoitems.key
-    tier: UNIQUE
+    tier: RARE
     unstackable: true
     disable-interaction: true
     disable-repairing: true

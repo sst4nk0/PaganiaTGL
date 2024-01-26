@@ -38,7 +38,7 @@ SCROLL_OF_IDENTIFICATION:
   base:
     material: PAPER
     name: '&fScroll of Identification'
-    tier: UNCOMMON
+    tier: RARE
     can-identify: true
     crafting:
       shaped:
@@ -139,7 +139,7 @@ DEATH_STEW:
     name: '&fDeath Soup'
     lore:
     - '&8&oDon''t you dare drinking that...'
-    tier: UNIQUE
+    tier: RARE
     effects:
       HARM:
         duration: 1
@@ -388,7 +388,7 @@ RECALL_STAR:
     - §bOtherwise, you could §9identify§b items with it.
     max-consume: 5.0
     can-identify: true
-    tier: EPIC
+    tier: GODLIKE
     commands:
       cmd0:
         format: spawn

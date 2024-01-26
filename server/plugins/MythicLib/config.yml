@@ -94,9 +94,9 @@ mitigation:
     # Whether or not they should display on action bar instead of chat
     action-bar: true
 
-    parry: '&cВы только что парировали урон #damage#.'
-    block: '&cВы только что заблокировали урон #damage#.' # Use #power# to display block power.
-    dodge: '&cВы только что уклонились от #damage# урона.'
+    parry: '&cYou just parried #damage# damage.'
+    block: '&cYou just blocked #damage# damage.' # Use #power# to display block power.
+    dodge: '&cYou just dodged #damage# damage.'
 
   block:
     cooldown: 5.0

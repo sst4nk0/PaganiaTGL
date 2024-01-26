@@ -6,7 +6,7 @@ THUNDER_BLESSING:
     attack-damage: 3.0
     weapon-damage: 10.0
     skill-damage: 50.0
-    tier: EPIC
+    tier: GODLIKE
     perm-effects:
       SPEED: 1.0
     lore:

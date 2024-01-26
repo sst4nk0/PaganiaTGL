@@ -51,6 +51,21 @@ regions:
             unique-ids: [193c7d11-8a07-35a9-a657-d485e43824c5]
         type: cuboid
         priority: 0
+    town_libria:
+        min: {x: -951, y: 1, z: -1446}
+        max: {x: -419, y: 223, z: -957}
+        members: {}
+        flags:
+            interact: allow
+            greeting-title: |-
+                §7Либрия
+                §8Вы в городе
+            farewell-title: |4-
+
+                §8Вы покинули Либрию
+        owners: {}
+        type: cuboid
+        priority: 0
     town_corosten:
         min: {x: 812, y: -64, z: -1456}
         max: {x: 933, y: 265, z: -1265}
@@ -59,7 +74,7 @@ regions:
             interact: allow
             greeting-title: |-
                 §7Коростень
-                §8Вы входите в город
+                §8Вы в городе
             farewell-title: |4-
 
                 §8Вы покинули Коростень

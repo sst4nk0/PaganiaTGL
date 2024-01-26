@@ -46,7 +46,7 @@ THOR_HAMMER:
       scale: 0.15
       spread: 0.1
       max-spread: 0.2
-    tier: MYTHICAL
+    tier: MYTHIC
     stamina-cost: 15.0
     mana-cost: 10.0
     blunt-power: 6.0

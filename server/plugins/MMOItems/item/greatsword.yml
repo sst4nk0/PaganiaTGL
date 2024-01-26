@@ -122,7 +122,7 @@ TWO_HANDED_STEEL_SWORD:
     gem-sockets:
     - Blue
     - Blue
-    tier: UNCOMMON
+    tier: RARE
     ability:
       right-click:
         type: CIRCULAR_SLASH
@@ -153,7 +153,7 @@ EARTHLY_GREATSWORD:
       spread: 0.2
     required-class:
     - Warrior
-    tier: EPIC
+    tier: GODLIKE
     name: §2Earthly Greatsword
     gem-sockets:
     - Green

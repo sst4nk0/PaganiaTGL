@@ -1,24 +1,33 @@
-LONG_SWORD:
+# MYTHRIL_SWORD:
+#  base:
+#    material: IRON_SWORD
+#    custom-model-data: 7.0
+#    name: '&f 뀊 Mythril Greatsword'
+#    attack-damage: 12.0
+#    attack-speed: 2.0
+#    critical-strike-chance: 20.0
+#    critical-strike-power: 40.0
+#    unstackable: true
+#    required-level:
+#      base: 0
+#    required-class:
+#    - воин
+#    tier: RARE
+DEFENCE_STICK:
   base:
-    material: IRON_SWORD
-    name: '&fLong Sword'
-    attack-speed: 1.6
+    material: STICK
+    name: 'Оборонная дубина'
+    tier: COMMON
+    attack-speed: 1.4
     attack-damage:
-      base: 6
+      base: 3.8
       scale: 1.2
       spread: 0.1
       max-spread: 0.3
-    required-level:
-      base: 0
-      scale: 1
-    element:
-      fire:
-        damage: 10
-  modifiers:
-    sharp:
-      chance: 0.5
-    fiery:
-      chance: 0.5
+    unbreakable: true
+    lore:
+    - ' <#d9c57c>Самая обычная палка. Лучше'
+    - ' <#d9c57c>..чем просто голая рука.'
 CUTLASS:
   base:
     material: IRON_SWORD
@@ -69,13 +78,7 @@ FALCON_BLADE:
     perm-effects:
       SPEED: 1
     disable-enchanting: true
-    tier: EPIC
-    crafting:
-      shaped:
-        '1':
-        - AIR MATERIAL.EPIC_WEAPON_ESSENCE AIR
-        - MATERIAL.EPIC_WEAPON_ESSENCE GOLDEN_SWORD MATERIAL.EPIC_WEAPON_ESSENCE
-        - AIR MATERIAL.EPIC_WEAPON_ESSENCE AIR
+    tier: GODLIKE
     disable-repairing: true
     name: '&eFalcon Blade'
     upgrade:
@@ -120,12 +123,6 @@ SOULSTEALER:
         type: VAMPIRISM
         mode: ATTACK
         cooldown: 7.0
-    crafting:
-      shaped:
-        '1':
-        - MISCELLANEOUS.HUMAN_SOUL MISCELLANEOUS.HUMAN_SOUL MISCELLANEOUS.HUMAN_SOUL
-        - MISCELLANEOUS.HUMAN_SOUL SWORD.SILVER_SWORD MISCELLANEOUS.HUMAN_SOUL
-        - MISCELLANEOUS.HUMAN_SOUL MISCELLANEOUS.HUMAN_SOUL MISCELLANEOUS.HUMAN_SOUL
     lore:
     - '&7Drains &c10%&7 of the damage'
     - '&7dealt as health points.'
@@ -155,20 +152,6 @@ SILVER_SWORD:
     lore:
     - '&7May be upgraded.'
     required-level: 4.0
-    crafting:
-      shaped:
-        '1':
-        - AIR MATERIAL.SILVER_INGOT AIR
-        - AIR MATERIAL.SILVER_INGOT AIR
-        - AIR STICK AIR
-        '2':
-        - MATERIAL.SILVER_INGOT AIR AIR
-        - MATERIAL.SILVER_INGOT AIR AIR
-        - STICK AIR AIR
-        '3':
-        - AIR AIR MATERIAL.SILVER_INGOT
-        - AIR AIR MATERIAL.SILVER_INGOT
-        - AIR AIR STICK
 AMETHYST_SWORD:
   base:
     material: IRON_SWORD
@@ -243,25 +226,6 @@ AMETHYST_SWORD:
         cooldown: 20.0
         heal: 60.0
         radius: 8.0
-    crafting:
-      supershaped:
-        '1':
-          input:
-          - v AIR 0 1..|v amethyst_block - 1.0..|v diamond_block - 1.0..|v amethyst_block
-            - 1.0..|v AIR 0 1..
-          - v amethyst_shard - 1.0..|v amethyst_block - 1.0..|v nether_star - 1.0..|v
-            amethyst_block - 1.0..|v amethyst_shard - 1.0..
-          - v AIR 0 1..|v amethyst_block - 1.0..|v diamond_block - 1.0..|v amethyst_block
-            - 1.0..|v AIR 0 1..
-          - v AIR 0 1..|v stick - 1.0..|v blaze_rod - 1.0..|v stick - 1.0..|v AIR
-            0 1..
-          - v AIR 0 1..|v AIR 0 1..|v blaze_rod - 1.0..|v AIR 0 1..|v AIR 0 1..
-      shaped:
-        '1':
-          input:
-          - v amethyst_block - 1.0..|v nether_star - 1.0..|v amethyst_block - 1.0..
-          - v amethyst_block - 1.0..|v amethyst_shard - 1.0..|v amethyst_block - 1.0..
-          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
     attack-speed: 1.6
 FROZEN_BLADE:
   base:
@@ -270,7 +234,7 @@ FROZEN_BLADE:
     - §bMade from ice so cold that
     - §bit will never melt.
     max-durability: 15000.0
-    tier: MYTHICAL
+    tier: MYTHIC
     name: §b§lEternal Frozen Blade
     weapon-damage:
       base: 30.0
@@ -342,7 +306,7 @@ OMNIELEMENTAL_SWORD:
       scale: 0.08
       spread: 0.08
       max-spread: 0.15
-    tier: VERY_RARE
+    tier: GODLIKE
     gem-sockets:
     - Uncolored
     - Uncolored
@@ -419,3 +383,14 @@ YANISDARK_SWORD:
     - §eHere's a special gift!
     - §2It won't break!
     unbreakable: true
+# MYTHRIL_SWORD:
+#  base:
+#    material: IRON_SWORD
+#    custom-model-data: 7.0
+#    name: '&f 뀊 Mythril Greatsword'
+#    attack-damage: 12.0
+#    attack-speed: 2.0
+#    critical-strike-chance: 20.0
+#    critical-strike-power: 40.0
+#    unstackable: true
+#    tier: RARE

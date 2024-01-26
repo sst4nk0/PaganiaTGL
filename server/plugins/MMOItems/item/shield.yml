@@ -113,7 +113,7 @@ OBSIDIAN_SHIELD:
       spread: 0.11
       max-spread: 0.19
     block-power: 100.0
-    tier: UNCOMMON
+    tier: RARE
     physical-damage-reduction:
       base: 20.0
       scale: 0.05

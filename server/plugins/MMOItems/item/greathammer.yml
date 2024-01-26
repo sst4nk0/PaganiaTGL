@@ -3,7 +3,7 @@ UNRELIABLE_HAMMER:
     material: DIAMOND_AXE
     name: §3Unreliable Greathammer
     required-level: 10.0
-    tier: UNCOMMON
+    tier: RARE
     lore:
     - §7This hammer has very randomized stats
     - §7it may have §cvery low durability§7 or

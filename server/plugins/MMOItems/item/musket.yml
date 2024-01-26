@@ -74,7 +74,7 @@ SNIPER_RIFLE:
       scale: 0.05
       spread: 0.1
       max-spread: 0.2
-    tier: EPIC
+    tier: GODLIKE
     gem-sockets:
     - Cyan
     - Cyan

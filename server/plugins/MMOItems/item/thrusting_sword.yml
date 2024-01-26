@@ -2,7 +2,7 @@ SKILLED_SWORD:
   base:
     material: GOLDEN_SWORD
     name: §fSkilled Sword
-    tier: EPIC
+    tier: GODLIKE
     dodge-rating: 15.0
     parry-rating: 40.0
     parry-cooldown-reduction: 30.0

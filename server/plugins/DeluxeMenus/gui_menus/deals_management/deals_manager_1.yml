@@ -102,3 +102,4 @@ items:
     display_name: "&#f8a049&lТехнические сведения"
     lore:
     - '&#d9c57cМенюшка = /DeluxeMenus/gui_menus/deals_management/deals_manager_1.yml'
+    - '&#d9c57cNPC = /DeluxeMenus/gui_menus/npc_basics/storage_manager_0.yml'

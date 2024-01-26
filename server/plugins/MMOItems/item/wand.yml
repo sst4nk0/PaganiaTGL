@@ -99,7 +99,7 @@ COSMOS_WAND:
           - v stick - 1.0..
           - v AIR - 1.0..
     unbreakable: true
-    tier: EPIC
+    tier: GODLIKE
     magic-damage:
       base: 35.0
       spread: 0.05
@@ -168,7 +168,7 @@ SPELLCASTER_WAND:
       scale: 0.1
       spread: 0.08
       max-spread: 0.12
-    tier: UNCOMMON
+    tier: RARE
     element:
       water:
         damage:
